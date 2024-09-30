@@ -521,8 +521,8 @@
         "title_thinner": "",
         "title_thinner_italic": false,
         "title_color": "",
-        "padding_top_desktop": 172,
-        "padding_bottom_desktop": 172,
+        "padding_top_desktop": 164,
+        "padding_bottom_desktop": 164,
         "padding_top_mobile": 100,
         "padding_bottom_mobile": 100
       }
