@@ -61,7 +61,7 @@
 }
 
 .everydays-product-info .text-box p {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 21px;
 }
@@ -119,6 +119,7 @@ product-info__box {
 .everydays-product-info__carousel li .box.start div {
   margin-bottom: 23px;
   font-size: 15px;
+  font-weight: 600;
   line-height: 20px;
 }
 
@@ -146,7 +147,7 @@ product-info__box {
   margin-top: 40px;
   font-size: 15px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .everydays-product-info__carousel li .box.block .container {
@@ -158,14 +159,14 @@ product-info__box {
   margin: auto auto 24px;
   color: var(--productInfoBoxHeadlineColor);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 34px;
 }
 
 .everydays-product-info__carousel li .box.block p {
   font-size: 15px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .everydays-product-info__carousel .splide__pagination {
