@@ -1,0 +1,96 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding">
+{%- unless section.settings.full_width -%}
+  <div class="page-width">
+    {%- endunless -%}
+
+    {%- for block in section.blocks -%}
+      {% render block %}
+    {%- endfor -%}
+
+    {%- unless section.settings.full_width -%}
+  </div>
+  {%- endunless -%}
+</div>
+
+{% schema %}
+{
+  "name": "everydays Apps",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.apps.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding bottom",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "everydays Apps"
+    }
+  ]
+}
+{% endschema %}
