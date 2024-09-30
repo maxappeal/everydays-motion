@@ -964,7 +964,7 @@
     "everydays_divider_GjMCk9": {
       "type": "everydays-divider",
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
