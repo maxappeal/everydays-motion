@@ -1036,6 +1036,7 @@
       ],
       "custom_css": [
         "h2 {font-size: 30px;}",
+        ".index-section {margin: 0;}",
         "@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"
       ],
       "settings": {
