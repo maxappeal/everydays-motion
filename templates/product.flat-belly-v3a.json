@@ -969,10 +969,10 @@
       "type": "everydays-divider",
       "settings": {
         "full_width": true,
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
+        "padding_top_desktop": 52,
+        "padding_bottom_desktop": 52,
+        "padding_top_mobile": 56,
+        "padding_bottom_mobile": 52
       }
     },
     "custom_popup_GxFVMz": {
