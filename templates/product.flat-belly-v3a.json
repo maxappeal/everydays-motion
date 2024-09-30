@@ -1074,8 +1074,8 @@
       "settings": {
         "color_background": "",
         "align_text": "left",
-        "margin_top_px": -200,
-        "margin_top_px_mobile": -50,
+        "margin_top_px": 0,
+        "margin_top_px_mobile": 0,
         "margin_bottom": 100,
         "margin_bottom_mobile": 50,
         "narrow_column": false,
