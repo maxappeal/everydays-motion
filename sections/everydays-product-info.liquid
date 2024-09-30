@@ -16,13 +16,27 @@
   }
 {%- endstyle -%}
 
+{%- style -%}
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+  }
+{%- endstyle -%}
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
 {{ 'everydays-product-info.css' | asset_url | stylesheet_tag }}
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
 
 <div class="everydays-product-info product-info">
-  <div class="page-width">
+  <div class="page-width section-{{ section.id }}-padding">
     <div class="everydays-product-info__grid">
       <div class="text-center">
         {% if section.settings.image != blank %}
@@ -143,7 +157,7 @@
 {% schema %}
 {
   "name": "t:everydays.sections.product-info.name",
-  "class": "index-section",
+  "tag": "section",
   "settings": [
     {
       "type": "color",
@@ -241,6 +255,50 @@
       "id": "box_headline_color",
       "label": "Color of Headline from Boxes",
       "default": "#176851"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding top",
+      "default": 172
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding bottom",
+      "default": 172
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding bottom",
+      "default": 100
     }
   ],
   "blocks": [

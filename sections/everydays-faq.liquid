@@ -66,7 +66,21 @@
     {% endif %}
   {% endstyle %}
 
-  <div id="product-faq" class="everydays-faq page-width {% if section.settings.layout == 'column1' %}page-width--ultra-narrow{% endif %} faq--{{ section.settings.layout }}">
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+    }
+    }
+  {%- endstyle -%}
+
+  <div id="product-faq" class="everydays-faq page-width section-{{ section.id }}-padding {% if section.settings.layout == 'column1' %}page-width--ultra-narrow{% endif %} faq--{{ section.settings.layout }}">
 
     {%- if section.settings.title != blank -%}
       <header class="section-heading">
@@ -95,7 +109,7 @@
           <div {{ block.shopify_attributes }}>
             {% case block.type %}
               {% when 'rich-text'%}
-                <div class="index-section index-section--faq">
+                <div class="index-section--faq">
                   <div class="text-{{ block.settings.align_text }}">
                     <div class="grid">
                       <div class="grid__item{% if block.settings.narrow_column %} medium-up--three-quarters medium-up--push-one-eighth{% endif %}">
@@ -153,7 +167,7 @@
 {% schema %}
 {
   "name": "t:everydays.sections.faq.name",
-  "class": "index-section",
+  "tag": "section",
   "settings": [
     {
       "type": "color",
@@ -305,6 +319,50 @@
       "type": "color",
       "id": "title_color",
       "label": "Title scheme color"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding top",
+      "default": 172
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding bottom",
+      "default": 172
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding bottom",
+      "default": 100
     }
   ],
   "blocks": [
