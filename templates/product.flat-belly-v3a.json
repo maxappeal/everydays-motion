@@ -562,10 +562,10 @@
       "settings": {
         "background_color": "#176851",
         "button_background_color": "#008262",
-        "padding_top_desktop": 172,
-        "padding_bottom_desktop": 172,
-        "padding_top_mobile": 100,
-        "padding_bottom_mobile": 100
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     },
     "everydays_movement_FxqNgK": {
