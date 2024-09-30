@@ -1,0 +1,5 @@
+<li data-target="{{ block.id }}" data-parent={{ section_id }} class="tab-nav__item {% if index == 1 %}active{% endif %}">
+  {%- if block.settings.title -%}
+    <span>{{ block.settings.title }}</span>
+  {%- endif -%}
+</li>

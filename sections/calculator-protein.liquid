@@ -1,0 +1,334 @@
+<style>
+#proteinCalculator .flex_wrapper {
+    display: flex;
+}
+#proteinCalculator label,
+#proteinCalculator .label {
+  font-family: var(--typeBasePrimary),var(--typeBaseFallback);
+  text-transform: none;
+  letter-spacing: 0;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  line-height: 26px;
+  margin-bottom: 1rem;
+}
+#proteinCalculator ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#proteinCalculator .calc_form {
+    width: 60%;
+    margin-right: 3em;
+    border-right: 1px solid var(--colorTextHeader);
+    padding-right: 3em;
+}
+#proteinCalculator .calc_form__numbers {
+    display: flex;
+    margin: 3em 0 2em 0;
+}
+#proteinCalculator .calc_form__numbers div:first-child {
+    margin-right: 3em;
+}
+#proteinCalculator .calc_form__numbers .input-container {
+  background-color: #fff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+}
+#proteinCalculator .calc_form__numbers div input {
+  border-width: 0px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  line-height: 26px;
+  margin-right: 0.5rem;
+  text-align: right;
+  width: 100%;
+}
+.new-calculator .calc_form__numbers .input-container span {
+  opacity: 0.5;
+}
+#proteinCalculator .calc_form__numbers div input::-webkit-outer-spin-button, #proteinCalculator .calc_form__numbers div input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#proteinCalculator .calc_form__numbers div input[type=number] {
+    -moz-appearance:textfield;
+}
+#proteinCalculator .calc_form__activity ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#proteinCalculator .calc_form__activity li {
+    display: flex;
+    padding: 1rem;
+    margin: 0 0.875rem 1.25rem 0;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+    flex: 0 0 calc(50% - 0.875rem);
+}
+#proteinCalculator .calc_form__activity li.active {
+    color: #fff;
+    background: #969696;
+}
+#proteinCalculator .calc_form__{
+    display: flex;
+    margin: 2em 0 3em 0;
+}
+#proteinCalculator .calc_form__pregnant {
+    display: flex;
+    margin: auto auto 1.5em auto;
+}
+#proteinCalculator .calc_form__pregnant div.calc_form__pregnant__container {
+    margin-top: 0.3em;
+}
+#proteinCalculator .calc_form__pregnant div.calc_form__pregnant__container div {
+    display: flex;
+}
+#proteinCalculator .calc_form__pregnant input {
+}
+#proteinCalculator button {
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .1em;
+}
+.result_pills {
+    margin: 1em auto;
+    padding: .5em 1em;
+    background: #fff;
+    color: #111;
+    font-size: 1.5em;
+    text-align: center;
+}
+.result_gram, .result_price {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #proteinCalculator .flex_wrapper {
+        display: inherit;
+   }
+    #proteinCalculator .calc_form {
+        width: inherit;
+        margin-right: 0;
+        border-right: 0;
+   }
+    #proteinCalculator .calc_form__numbers {
+        flex-direction: column;
+   }
+    #proteinCalculator .calc_form__numbers div {
+        width: 375px;
+        margin: 0 auto 1em auto;
+   }
+    #proteinCalculator .calc_form__numbers div:first-child {
+        margin-right: auto;
+   }
+    #proteinCalculator .calc_form__numbers div label {
+        width: 90px;
+        margin: 0;
+   }
+    #proteinCalculator .calc_form__activity {
+        width: 375px;
+        margin: auto;
+   }
+    #proteinCalculator .calc_form__activity li {
+        display: inline-flex;
+   }
+    #proteinCalculator .calc_form__pregnant {
+        width: inherit;
+        margin: auto auto 1.5em auto;
+   }
+    #proteinCalculator .calc_form__pregnant div.calc_form__pregnant__container {
+        display: flex;
+        flex-direction: column;
+   }
+    #proteinCalculator .calc_form__pregnant div input {
+        margin-top: .15em;
+        margin-right: .5em;
+   }
+    #proteinCalculator button {
+        display: block;
+        width: inherit;
+        margin: auto;
+   }
+    #proteinCalculator #result h5 {
+        width: 375px;
+        margin: 2.5em auto auto auto;
+   }
+  }
+</style>
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .section-bg {
+    padding: 100px 0;
+    overflow: hidden;
+    {% if section.settings.color_background != blank %}
+        background-color: {{ section.settings.color_background }};
+    {% endif %}
+  }
+  @media only screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .section-bg {
+          padding: 50px 0;
+      }
+  }
+{%- endstyle -%}
+
+<div class="section-bg">
+  <div class="page-width">
+    <div id="proteinCalculator">
+      <h2 class="h4">Eiweiß mit Aminosäuren decken. So viel brauchst du:</h2>
+      <div class="flex_wrapper">
+        <div class="calc_form">
+          <p>smart protein liefert reine kristalline Aminosäuren in freier Form, statt gebundene Aminosäuren in Proteinen
+            anderer Lebewesen/Pflanzen. Daher variiert die Einnahmenmenge im Vergleich zu anderen Produkten deutlich.
+          </p>
+          <div class="calc_form__numbers">
+            <div>
+              <label for="weight">Gewicht</label>
+              <div class="input-container">
+                <input id="weight" name="weight" type="number">
+                <span>kg</span>
+              </div>
+            </div>
+            <div>
+              <label for="age">Alter</label>
+              <div class="input-container">
+                <input id="age" name="age" type="number">
+                <span>Jahre</span>
+              </div>
+            </div>
+          </div>
+          <div class="calc_form__activity">
+            <p class="label">Aktivitätt</p>
+            <input id="hiddenFitness" type="hidden" value="0.9">
+            <ul>
+              <li class="fitness_item active" data-fitness="0.9">kein oder wenig Sport</li>
+              <li class="fitness_item" data-fitness="1">regelmäßiger Sport</li>
+              <li class="fitness_item" data-fitness="1.4">intensiver Ausdauersport</li>
+              <li class="fitness_item" data-fitness="1.5">intensiver Kraftsport</li>
+              <li class="fitness_item" data-fitness="2">professioneller Sport auf Wettkampfniveau</li>
+            </ul>
+          </div>
+          <div class="calc_form__pregnant">
+            <p class="label">Sonstiges</p>
+            <div class="calc_form__pregnant__container">
+              <div>
+                <input id="pregnant" type="checkbox">
+                <label for="pregnant">Schwangerschaft oder stillende Mutter</label>
+              </div>
+              <div>
+                <input id="vegan" type="checkbox">
+                <label for="vegan">vollständig vegane Ernährung</label>
+              </div>
+            </div>
+          </div>
+          <button id="calculate">Verzehrempfehlung berechnen</button>
+        </div>
+        <div id="result">
+          <h5>Verzehrempfehlung smart protein:</h5>
+          <div class="result_pills">Presslinge / Tag: <span id="pillResult">0</span></div>
+          <div class="result_gram">Täglicher Proteinbedarf: <span id="gramResult">0g</span></div>
+          <div class="result_price">Saubere Proteinversorgung für <span id="priceResult">0€ / Tag</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('calculate').addEventListener("click", proteinCalculation);
+
+  document.getElementById('calculate').addEventListener('click', function(){
+      document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest'});
+  });
+
+
+  const elements = document.querySelectorAll('.fitness_item');
+
+  for (const element of elements) {
+      element.addEventListener('click', function(event) {
+          for(const el of elements) {
+              el.classList.remove('active');
+          }
+          this.classList.add('active');
+          document.getElementById('hiddenFitness').value = this.dataset.fitness;
+      });
+  }
+
+  function proteinCalculation() {
+
+      let weight = document.getElementById('weight').value;
+      let age = document.getElementById('age').value;
+      let fitness = document.getElementById('hiddenFitness').value;
+
+      let gramPerDay = weight * fitness;
+      let extraGramm = 0;
+      let pregnant = 0;
+
+      let vegan = 12;
+
+      if (document.getElementById('pregnant').checked) {
+          pregnant = 20;
+      }
+
+      if (document.getElementById('vegan').checked) {
+          vegan = 10;
+      }
+
+
+      if (age >= 50 || age < 18)
+      {
+          extraGramm = gramPerDay / 100 * 5;
+      }
+
+      let totalPerDay = gramPerDay + extraGramm + pregnant;
+      let total = totalPerDay / vegan;
+      let roundTotal = Math.round(total);
+      let price = (roundTotal * 0.165).toFixed(2);
+
+      document.getElementById('pillResult').innerHTML = roundTotal;
+      document.getElementById('gramResult').innerHTML = totalPerDay.toFixed(2) + 'g';
+      document.getElementById('priceResult').innerHTML = price + '€ / Tag';
+
+      dataLayer.push({
+              'event': 'calculator',
+              'data': {
+                'age': age,
+                'weight': weight,
+                'fitness': fitness,
+                'pregnant': (document.getElementById('pregnant').checked) ? 'yes' : 'no',
+                'vegan': (document.getElementById('vegan').checked) ? 'yes' : 'no',
+                'pills': roundTotal,
+                'gram': totalPerDay.toFixed(2) + 'g',
+                'price': price + '€ / Tag'
+              }          
+          });
+}
+</script>
+
+{% schema %}
+{
+  "name": "Eiweiß Calculator",
+  "class": "index-section protein-calculator",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.testimonials.settings.color_background.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Eiweiß Calculator"
+    }
+  ]
+}
+{% endschema %}

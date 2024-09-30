@@ -1,0 +1,160 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .section-heading {
+    margin-bottom: 100px;
+  }
+{%- endstyle -%}
+
+<div class="collections">
+
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <header class="section-heading">
+        <h2 class="section-header__title">
+          {%- render 'title', 
+            title: section.settings.title, 
+            title_underline: section.settings.title_underline, 
+            underline_style: section.settings.title_underline_style,
+            title_circle: section.settings.title_circle, 
+            circle_style: section.settings.title_circle_style,
+            title_thinner: section.settings.title_thinner,
+            title_thinner_italic: section.settings.title_thinner_italic,
+            color: section.settings.title_color 
+          -%}
+        </h2>
+      </header>
+    </div>
+  {% endif %}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="carousel page-width collections__carousel">
+      {%- for block in section.blocks -%}
+        <div class="carousel-cell collections__cell">
+          {%- assign collection = collections[block.settings.collection] -%}
+          <div class="img-carousel__box">
+            <div class="image-wrap img-carousel__box__image-wrap" style="height: 0;">
+              {%- if block.settings.image != blank -%}
+                {%- render 'image-element',
+                  img: block.settings.image,
+                  img_width: 400,
+                  loading: true
+                -%}
+              {%- else -%}
+                <div class="img-carousel__box__placeholder"></div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "Images carousel",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.blog-posts.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.faq.settings.title.label",
+      "default": "FAQs"
+    },
+    {
+      "type": "text",
+      "id": "title_underline",
+      "label": "Underlined text"
+    },
+    {
+      "type": "select",
+      "id": "title_underline_style",
+      "label": "Underline style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_circle",
+      "label": "Circled text"
+    },
+    {
+      "type": "select",
+      "id": "title_circle_style",
+      "label": "Circle style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_thinner",
+      "label": "Thinner text"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_thinner_italic",
+      "label": "Thinner text italic",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title scheme color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Images carousel",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Images carousel"
+    }
+  ]
+}
+{% endschema %}

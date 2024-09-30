@@ -1,0 +1,159 @@
+{%- style -%}
+  :root {
+    --emojiBackground: {{ section.settings.background_color_circle }}
+  }
+{%- endstyle -%}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+{{ 'everydays-movement.css' | asset_url | stylesheet_tag }}
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+
+<div class="everydays-movement">
+  <div class="page-width">
+    <div class="intro">
+      <div class="box">
+        <svg width="102" height="57" viewBox="0 0 102 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.0352 1.82832C2.43572 10.5884 -6.41303 24.8825 12.6084 31.4885C33.1194 38.6119 58.6952 32.7761 74.1825 21.2116C79.8225 17.0002 78.0817 11.6215 69.641 12.202C56.7226 13.0905 45.9586 17.8887 37.3107 25.8354C32.5009 30.2552 24.1181 38.8448 29.6873 45.4298C40.6537 58.3963 78.4905 51.8674 100.304 45.4322" stroke="#176851" stroke-width="2" stroke-linecap="round"/>
+          <path d="M93.9739 42.8357C96.3209 43.5042 98.6385 44.1938 100.954 44.9449" stroke="{{ section.settings.arrow_color }}" stroke-width="2" stroke-linecap="round"/>
+          <path d="M100.956 45.1599C100.015 47.3066 98.7626 49.329 97.7561 51.4406" stroke="{{ section.settings.arrow_color }}" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <p>{{ section.settings.arrow_text }}</p>
+      </div>
+      <div class="box">
+        <div class="emoji">{{ section.settings.emoji }}</div>
+        <p>{{ section.settings.emoji_text }}</p>
+      </div>
+      <div class="box">
+        <svg height="24" width="136" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 96"><g fill="none"><g fill="#00b67a"><path d="M0 0h96v96H0zM104 0h96v96h-96zM208 0h96v96h-96zM312 0h96v96h-96zM416 0h96v96h-96z"/></g><path d="M48 64.7L62.6 61l6.1 18.8zm33.6-24.3H55.9L48 16.2l-7.9 24.2H14.4l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM152 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L152 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM256 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L256 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM360 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L360 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM464 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L464 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2z" fill="#fff"/></g></svg><p><a href="https://www.trustpilot.com/review/everydays.de" target="_blank">{{ section.settings.stars_text }}</a></p>
+      </div>
+    </div>
+    <div class="testimonials">
+      {% for block in section.blocks %}
+        <div class="testimonial">
+          <img src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image }}">
+          <div class="testimonial__text-box" style="background: {{ block.settings.testimonial_background_color }};">
+            <svg height="24" width="136" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 96"><g fill="none"><g fill="#00b67a"><path d="M0 0h96v96H0zM104 0h96v96h-96zM208 0h96v96h-96zM312 0h96v96h-96zM416 0h96v96h-96z"/></g><path d="M48 64.7L62.6 61l6.1 18.8zm33.6-24.3H55.9L48 16.2l-7.9 24.2H14.4l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM152 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L152 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM256 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L256 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM360 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L360 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM464 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L464 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2z" fill="#fff"/></g></svg>
+            <p>{{ block.settings.text }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="everydays-testimonial-splide splide" aria-label="Testimonial Carousel">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {%- for block in section.blocks -%}
+          <li class="splide__slide">
+            <div class="testimonial">
+              <img src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image }}">
+              <div class="testimonial__text-box" style="background: {{ block.settings.testimonial_background_color }};">
+                <svg height="16" width="90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 96"><g fill="none"><g fill="#00b67a"><path d="M0 0h96v96H0zM104 0h96v96h-96zM208 0h96v96h-96zM312 0h96v96h-96zM416 0h96v96h-96z"/></g><path d="M48 64.7L62.6 61l6.1 18.8zm33.6-24.3H55.9L48 16.2l-7.9 24.2H14.4l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM152 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L152 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM256 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L256 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM360 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L360 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2zM464 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7L464 16.2l-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2z" fill="#fff"/></g></svg>
+                <p>{{ block.settings.text }}</p>
+              </div>
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+    new Splide('.everydays-testimonial-splide', {
+        arrows: false,
+        fixedHeight: "300px",
+        padding: { left: 40 },
+        gap: "4rem"
+    }).mount();
+</script>
+
+{% schema %}
+{
+  "name": "t:everydays.sections.movement.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Color arrow",
+      "default": "#176851"
+    },
+    {
+      "type": "text",
+      "id": "arrow_text",
+      "label": "Text arrow",
+      "default": "Zahlen sprechen für sich:"
+    },
+    {
+      "type": "color",
+      "id": "background_color_circle",
+      "label": "Background Color circle",
+      "default": "#F5F5FC"
+    },
+    {
+      "type": "text",
+      "id": "emoji",
+      "label": "Emoji",
+      "default": "👏🏽"
+    },
+    {
+      "type": "text",
+      "id": "emoji_text",
+      "label": "Emoji text",
+      "default": "+100.000 zufriedene Kund*Innen"
+    },
+    {
+      "type": "color",
+      "id": "cards_background_color",
+      "label": "Cards background Color",
+      "default": "#F5F5FC"
+    },
+    {
+      "type": "text",
+      "id": "stars_text",
+      "label": "Stars text",
+      "default": "Hervorragende Bewertung"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "expert",
+      "name": "Expert",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "“Ein unglaubliches Produkt, ich bin dankbar dafür, ich fühle mich viel besser.”"
+        },
+        {
+          "type": "color",
+          "id": "testimonial_background_color",
+          "label": "Testimonial background color",
+          "default": "#F5F5FC"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:everydays.sections.movement.name"
+    }
+  ],
+  "disabled_on": {
+    "groups": [
+      "footer",
+      "header",
+      "custom.popups"
+    ]
+  }
+}
+{% endschema %}

@@ -1,0 +1,50 @@
+{% style %}
+  {% if section.settings.height != blank %}
+    #shopify-section-{{ section.id }} .space { height: {{ section.settings.height }}px; }
+  {% endif %}
+  @media only screen and (max-width: 768px) {
+    {% if section.settings.height_mobile != blank %}
+      #shopify-section-{{ section.id }} .space { height: {{ section.settings.height_mobile }}px; }
+    {% endif %}
+  }
+{% endstyle %}
+
+<div class="space" {% if section.settings.background != blank %}style="background: {{ section.settings.background }};"{% endif %}></div>
+
+{% schema %}
+  {
+    "name": "Space",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background"
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "label": "Height",
+        "default": 120,
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "height_mobile",
+        "label": "Height (mobile)",
+        "default": 60,
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Space"
+      }
+    ]
+  }
+{% endschema %}

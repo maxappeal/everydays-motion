@@ -1,0 +1,45 @@
+<script>
+  setTimeout(() => {
+    let icons = JSON.parse('{{ shop.metaobjects.purchase_options_icon.values | json }}');
+
+    const slsPlansLabels = document.querySelectorAll('.sls-selling-plan-group-name');
+    if (slsPlansLabels.length) {
+      slsPlansLabels.forEach(label => {
+        let displayIcon = '';
+
+        if (label.textContent.includes('Einmalige Lieferung') || label.textContent.includes('One-time purchase')) {
+          if (icons) {
+            icons.forEach(icon => {
+              if (icon.key == 'Einmalige Lieferung' || icon.key == 'One-time purchase') {
+                displayIcon = icon.icon;
+              }
+            });
+          }
+          label.innerHTML = '<span class="icon">' + displayIcon + '</span><span class="text">' + "{{ 'general.custom.one_time_purchase' | t }}" + '</span>';
+        }
+        if (label.textContent.includes('Wiederholte Lieferung')) {
+          if (icons) {
+            icons.forEach(icon => {
+              if (icon.key == 'Wiederholte Lieferung') {
+                displayIcon = icon.icon;
+              }
+            });
+          }
+          label.innerHTML = '<span class="icon">' + displayIcon + '</span><span class="text">' + "{{ 'general.custom.repeated_delivery' | t }}" + '</span>';
+        }
+      });
+    }
+    const slsPlansOptions = document.querySelectorAll('select[name="subs_interval"] option');
+    if (slsPlansOptions.length) {
+      slsPlansOptions.forEach(option => {
+        if (option.textContent.includes('Monatliche Lieferung')) {
+          option.innerHTML = "{{ 'general.custom.monthly_delivery' | t }}";
+        } else if (option.textContent.includes('2-monatlich')) {
+          option.innerHTML = "{{ 'general.custom.2_monthly_delivery' | t }}";
+        } else if (option.textContent.includes('3-monatlich')) {
+          option.innerHTML = "{{ 'general.custom.3_monthly_delivery' | t }}";
+        }
+      });
+    }
+  }, 1000);
+</script>

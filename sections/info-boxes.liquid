@@ -1,0 +1,78 @@
+{{ 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide-core.min.css' | stylesheet_tag }}
+  <div class="infobox-section-ns-20240417 splide">
+    <div class="splide__track">
+      <div class="infobox-cards-wrapper-ns-20240417 splide__list">
+        {% for block in section.blocks %}
+          <div class="infobox-card-ns-20240417 splide__slide">
+            <div class="infobox-card-image-ns-20240417"><img width="{{ block.settings.img_width }}" src="{{ block.settings.img | image_url }}"></div>
+            <div class="infobox-card-title-ns-20240417">{{ block.settings.title }}</div>
+            <div class="infobox-card-text-ns-20240417">{{ block.settings.text }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" async></script>
+<script>
+  const init = () => {
+    if (typeof Splide !== "undefined") {
+      let e = new Splide(".infobox-section-ns-20240417", {
+        gap: "24px",
+        perPage: 1,
+        arrows: !1,
+        pagination: !1,
+        snap: !0,
+        drag: "free"
+      });
+      e.mount();
+    } else {
+      setTimeout(init, 100);
+    }
+  }
+  init();
+</script>
+
+{% schema %}
+  {
+    "name": "Info boxes",
+    "class": "index-section info-boxes",
+    "tag": "section",
+    "settings": [
+
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          },
+          {
+            "type": "number",
+            "id": "img_width",
+            "label": "Image Width"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Info boxes"
+      }
+    ]
+  }
+{% endschema %}

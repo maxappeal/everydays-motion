@@ -1,0 +1,103 @@
+<div
+  id="run-2columns"
+  class="index-section page-width run-2columns"
+>
+  <h2>{{ section.settings.section_title }}</h2>
+
+  <div class="columns">
+    <div class="col">
+      <h3>Schluss mit Stress 🙅‍♀️</h3>
+      <p>
+        Oft endet Selbstoptimierung im inneren Konflikt von gut und schlecht. Wahre Veränderung entsteht von innen
+        heraus und darf Spaß machen. Denn worum geht es eigentlich? Wir alle wollen uns wohlfühlen!
+      </p>
+    </div>
+
+    <div class="col">
+      <h3>Alle sind willkommen 🫶🏽</h3>
+      <p>
+        Egal ob Laufanfänger oder -profi, egal welches Geschlecht, Herkunft etc. - in der everydays community sind alle
+        willkommen, die sich ein Leben mit mehr Bewusstein, Freude und Gesundheit wünschen
+      </p>
+    </div>
+  </div>
+
+  <div class="white-wrapper">
+    <h3>Sei dabei! 🎉</h3>
+    <div class="rounded">05.06.2024 | 18 Uhr | 📍Berlin</div>
+  </div>
+
+  <div class="column-wide">
+    <div class="run-badge">{% render 'run-badge' %}</div>
+
+    <strong>Die Teilnahme ist kostenlos, aber begrenzt. 🤍</strong>
+    <p>
+      Melde dich jetzt an und sichere dir einen der Plätze. Egal, ob du vor Ort bist oder virtuell teilnimmst, wir
+      freuen uns auf dich!
+    </p>
+
+    <a href="#registrierung" class="btn" open-modal>Jetzt kostenlos anmelden!</a>
+  </div>
+</div>
+
+<script>
+  window.addEventListener(
+    'scroll',
+    () => {
+      document
+        .querySelector('.run-badge')
+        .style.setProperty('--scroll', (window.pageYOffset * 2) / (document.body.offsetHeight - window.innerHeight));
+    },
+    false
+  );
+</script>
+
+{% schema %}
+{
+  "name": "Run - 2 columns",
+  "class": "index-section run-2columns",
+
+  "settings": [
+    {
+      "type": "html",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Unsere <em>community</em>-values"
+    },
+    {
+      "type": "html",
+      "id": "column1",
+      "label": "Column 1"
+    },
+    {
+      "type": "html",
+      "id": "column2",
+      "label": "Column 2"
+    },
+    {
+      "type": "html",
+      "id": "white_wrapper",
+      "label": "White Wrapper"
+    },
+    {
+      "type": "html",
+      "id": "column_wide",
+      "label": "Column Wide"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column Item",
+      "settings": [
+        {
+          "type": "html",
+          "id": "column_content",
+          "label": "Column HTML"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

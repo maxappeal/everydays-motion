@@ -1,0 +1,146 @@
+{%- style -%}
+  :root {
+  --expertBackgroundColor: {{ section.settings.background_color }};
+  --expertBackgroundButtonColor: {{ section.settings.button_background_color }};
+  }
+{%- endstyle -%}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+{{ 'everydays-experts.css' | asset_url | stylesheet_tag }}
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+
+<div class="everydas-experts">
+  <div class="container">
+    {% if section.blocks.size > 1 %}
+      <div class="everydays-experts-splide splide" aria-label="Experts Carousel">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {%- for block in section.blocks -%}
+              <li class="splide__slide">
+                <div class="expert expert-{{ block.id }}">
+                  {%- style -%}
+                    .expert-{{ block.id }} p {
+                    font-size: {{ block.settings.text_size_mobile }}px;
+                    line-height: {{ block.settings.line_height_mobile }}px;
+                    }
+
+                    @media only screen and (min-width: 990px) {
+                    .expert-{{ block.id }} p {
+                    font-size: {{ block.settings.text_size_desktop }}px;
+                    line-height: {{ block.settings.line_height_desktop }}px;
+                    }
+                    }
+                  {%- endstyle -%}
+                  <img src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image }}">
+                  <p>{{ block.settings.quote }}</p>
+                  <div class="btn">{{ block.settings.expert }}</div>
+                </div>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+    {% else %}
+      bar
+    {% endif %}
+  </div>
+</div>
+
+<script>
+    new Splide('.everydays-experts-splide', {
+        arrowPath: 'M0 9H31M31 9L23.4848 1M31 9L23.4848 17',
+    }).mount();
+</script>
+
+{% schema %}
+{
+  "name": "t:everydays.sections.experts.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#176851"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button background Color",
+      "default": "#008262"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "expert",
+      "name": "Expert",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "quote",
+          "label": "Text",
+          "default": "“Bei Schilddrüsenproblemen sind Verdauungsschwierigkeiten an der Tagesordnung. digest unterstützt wirkungsvoll wie kein anderes Supplement”"
+        },
+        {
+          "type": "number",
+          "id": "text_size_desktop",
+          "label": "Text size desktop in px",
+          "default": 34
+        },
+        {
+          "type": "number",
+          "id": "text_size_mobile",
+          "label": "Text size mobile in px",
+          "default": 21
+        },
+        {
+          "type": "number",
+          "id": "line_height_desktop",
+          "label": "Line height desktop in px",
+          "default": 57
+        },
+        {
+          "type": "number",
+          "id": "line_height_mobile",
+          "label": "Line height mobile in px",
+          "default": 35
+        },
+        {
+          "type": "text",
+          "id": "expert",
+          "label": "Text",
+          "default": "Ann-Katrin Sättele, Hashimoto-Expertin 🩺"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:everydays.sections.experts.name",
+      "blocks": [
+        {
+          "type": "expert"
+        },
+        {
+          "type": "expert"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": [
+      "footer",
+      "header",
+      "custom.popups"
+    ]
+  }
+}
+{% endschema %}

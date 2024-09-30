@@ -1,0 +1,248 @@
+{%- style -%}
+  @media only screen and (min-width: 769px) {
+    .product-info {
+      background-color: {{ section.settings.background_color }};
+      padding: 50px 0;
+    }
+  }
+  .product-info__image {
+    max-width: 400px;
+    margin: 37px auto 0;
+  }
+  .product-info__swipe {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--colorTextHeader);
+  }
+  .product-info__btn {
+    margin-top: 37px;
+  }
+  #shopify-section-{{ section.id }} .h4 {
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    color: {{ section.settings.headings_color }};
+  }
+  #shopify-section-{{ section.id }} .text-box {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-box-first {
+    margin: 30px 0;
+  }
+  @media only screen and (min-width: 769px) {
+    #shopify-section-{{ section.id }} .text-box {
+      max-width: 360px;
+    }
+  }
+  #shopify-section-{{ section.id }} .carousel-cell {
+    min-height: 100%;
+    display: flex;
+  }
+  .product-info__box {
+    background-color: {{ section.settings.background_color }};
+    box-shadow: 0px 2px 5px rgba(53, 59, 124, 0.18);
+    border-radius: 15px;
+    padding: 5px 30px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .product-info__counter {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 13px;
+  }
+  #shopify-section-{{ section.id }} .flickity-button {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .product-info__heading {
+      margin-top: 10px;
+    }
+    .product-info__image,
+    .product-info__swipe,
+    .product-info__btn {
+      margin-top: 30px;
+    }
+    #shopify-section-{{ section.id }} .h2,
+    #shopify-section-{{ section.id }} .h4 {
+      font-size: 23px;
+    }
+  }
+{%- endstyle -%}
+
+{%- capture first_column -%}
+  {%- if section.settings.heading -%}
+    <div class="product-info__heading">
+      {{
+        section.settings.heading
+        | replace: '<h1>', '<h1 class="h h2">'
+        | replace: '<h2>', '<h2 class="h h2">'
+        | replace: '<h3>', '<h3 class="h h2">'
+        | replace: '<h4>', '<h4 class="h h2">'
+        | replace: '<h5>', '<h5 class="h h2">'
+        | replace: '<h6>', '<h6 class="h h2">'
+      }}
+    </div>
+  {%- endif -%}
+  {% if section.settings.image != blank %}
+    <div class="product-info__image">
+      {%- render 'image-element', img: section.settings.image, img_width: 720, loading: true, widths: '360, 720', sizeVariable: '33vw' -%}
+    </div>
+  {% endif %}
+  {%- if section.settings.swipe_info -%}
+    <div class="product-info__swipe medium-up--hide">
+      {{ section.settings.swipe_info }}
+    </div>
+  {%- endif -%}
+  {%- if section.settings.button != blank -%}
+    <div class="product-info__btn">
+      {%- assign check_link = section.settings.button_link | slice: 0 -%}
+      <a href="{{ section.settings.button_link }}" class="btn"{% if check_link == "#" %} open-modal{%  endif %}>
+        {{ section.settings.button }}
+      </a>
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+<div class="product-info" style="color: {{ section.settings.text_color }};">
+  <div class="page-width">
+    <div class="grid small--hide">
+      <div class="grid__item medium-up--one-third">
+        <div class="text-box text-center">
+          {{ first_column }}
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-third">
+        {%- if section.blocks.size -%}
+          {%- for block in section.blocks -%}
+            {%- assign mod = forloop.index | modulo: 2 -%}
+            {%- if mod != 0 -%}
+              {%- render 'text-box', block: block -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+      <div class="grid__item medium-up--one-third">
+        {%- if section.blocks.size -%}
+          {%- for block in section.blocks -%}
+            {%- assign mod = forloop.index | modulo: 2 -%}
+            {%- if mod == 0 -%}
+              {%- render 'text-box', block: block -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="grid grid--small medium-up--hide">
+      <div class="carousel collections__carousel text-center">
+        <div class="carousel-cell grid__item">
+          <div class="product-info__box">
+            <div class="text-box-first">
+              {{ first_column }}
+            </div>
+          </div>
+        </div>
+        {%- for block in section.blocks -%}
+          <div class="carousel-cell grid__item">
+            <div class="product-info__box">
+              {%- render 'text-box', block: block -%}
+              <div class="product-info__counter" style="color: {{ section.settings.counter_color }};">
+                {{ forloop.index }} / {{ section.blocks.size }}
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product info",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#444444"
+    },
+    {
+      "type": "color",
+      "id": "headings_color",
+      "label": "Headings color",
+      "default": "#353B7C"
+    },
+    {
+      "type": "color",
+      "id": "counter_color",
+      "label": "Slider counter color",
+      "default": "#6985E9"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F7F9FF"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "swipe_info",
+      "label": "Swipe info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.countdown.blocks.button.settings.button_link.label"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "t:sections.countdown.blocks.button.settings.button.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "box",
+      "name": "Box",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product info"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["custom.popups"]
+  }
+}
+{% endschema %}

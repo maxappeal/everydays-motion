@@ -1,0 +1,323 @@
+{% style %}
+  #shopify-section-{{ section.id }} .faq-plus-app-container {
+    padding: 0;
+    display: inline-block;
+  }
+  {% if section.settings.color_text != blank and section.settings.color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .grid--bg {
+      color: {{ section.settings.color_text }};
+    }
+  {% endif %}
+  {% if section.settings.color_heading != blank and section.settings.color_heading != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .faq-plus-accordian h2 {
+      color: {{ section.settings.color_heading }};
+    }
+  {% endif %}
+  {% if section.settings.color_background != blank and section.settings.color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .grid--bg,
+    #shopify-section-{{ section.id }} .grid--bg:before {
+      background-color: {{ section.settings.color_background }};
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_trigger_color_text != blank and section.settings.collapsible_trigger_color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .faqPlusAppTitle {
+      color: {{ section.settings.collapsible_trigger_color_text }} !important;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_trigger_color_background != blank and section.settings.collapsible_trigger_color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .faqPlusAppTitle {
+      background-color: {{ section.settings.collapsible_trigger_color_background }} !important;
+      padding-left: 25px !important;
+      padding-right: 50px !important;
+      border-radius: 5px !important;
+    }
+    #shopify-section-{{ section.id }} .faqPlusAppTitle:after {
+      right: 25px !important;
+    }
+  {% endif %}
+  
+  {% if section.settings.collapsible_trigger_color_border != blank and section.settings.collapsible_trigger_color_border != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .faqPlusAppFaq {
+      border-color: {{ section.settings.collapsible_trigger_color_border }} !important;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_content_color_text != blank and section.settings.collapsible_content_color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .faqPlusAppContent {
+      color: {{ section.settings.collapsible_content_color_text }} !important;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_content_color_background != blank and section.settings.collapsible_content_color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .faqPlusAppContent {
+      background-color: {{ section.settings.collapsible_content_color_background }} !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      margin-bottom: 10px !important;
+      border-radius: 0 0 5px 5px !important;
+    }
+    #shopify-section-{{ section.id }} .faqPlusAppAnswer {
+      padding: 20px 0 !important;
+      font-size: calc(var(--typeBaseSize) - 1px) !important;
+    }
+    #shopify-section-{{ section.id }} .faqPlusAppAnswer p {
+      font-size: inherit !important;
+    }
+  {% endif %}
+{% endstyle %}
+
+<div class="grid--bg">
+  <div class="page-width">
+    <div class="custom-faq">
+      <div class="custom-faq__content">
+        <div id="easy-faq-search-bar-section" class="easy-faq-search-bar">
+          <input type="text" onkeyup="easyFaqSearchFaq(event)" placeholder="{{ section.settings.searchbar }}">
+        </div>
+        <div id="ef-faqs-plus-app-content"></div>
+      </div>
+      <div class="custom-faq__sidebar">
+        <div id="faq-plus-app-sidebar" class="faq-plus-app-sidebar">
+          <nav class="faq-sidebar-navigation">
+            <ul id="faq-app-categories" class="faq-app-categories"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  const contentLoaded = setInterval(function() {
+    const FAQheadings = document.querySelectorAll('.faq-plus-accordian > h2');
+    const FAQnav = document.querySelector('.faq-app-categories');
+    const FAQmobileBtn = document.querySelector('.btn--faq');
+    const FAQbg = document.querySelector('.faq-bg');
+    const FAQmobileNav = document.querySelector('.faq-options');
+    
+    if (FAQheadings.length) {
+      clearInterval(contentLoaded);
+      if (FAQnav) {
+        FAQnav.innerHTML = '';
+        FAQheadings.forEach(heading => {
+          FAQnav.innerHTML += `<li><a href="#${heading.getAttribute('id')}" class="faq-app-category-individual js-no-transition">${heading.textContent}</a></li>`;
+          FAQmobileNav.innerHTML += `<a href="#${heading.getAttribute('id')}" class="faq-app-category-individual js-no-transition">${heading.textContent}</a>`;
+        });
+      }
+    }
+    if (FAQbg) {
+      FAQbg.addEventListener('click', () => {
+        FAQbg.classList.remove('open');
+      });
+    }
+    if (FAQmobileBtn) {
+      FAQmobileBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        FAQbg.classList.add('open');
+      });
+    }
+  }, 100);
+
+  let faqsToSearch = '';
+  
+  function displaySearchFAQs(searchResults) {
+    // Get rid of empty objects.
+    var searchResultsWithoutNull = searchResults.filter(value => Object.keys(value).length !== 0);
+  
+    // If search results are empty; Show not found error message
+    if(searchResultsWithoutNull.length === 0) {
+      document.getElementById("easy-faq-app-search-bar").innerHTML = "<div style='text-align: center; padding-top: 50px; padding-bottom: 50px; margin: auto; max-width: 900px'><p>{{ section.settings.no_results }}</p></div>";
+      return;
+    }
+
+    // Build categorized FAQs
+    let constructedFaqs = [];
+    searchResultsWithoutNull.map(faqGroup => {
+      let faqGroupConstruct = {};
+      faqGroupConstruct.category = faqGroup[0].category;
+      faqGroupConstruct.faqs = [...faqGroup];
+      constructedFaqs.push(faqGroupConstruct);
+    });
+  
+    // Build page for search results
+    let searchedFaqsHtml = '';
+    
+    searchedFaqsHtml += '<div class="faq-plus-app-container-search"><div class="faq-plus-accordian">';
+    constructedFaqs.map((faqGroup, indexTop) => {
+      searchedFaqsHtml += '<h2 class="faqPlusAppFaqCategory">' + faqGroup.category + '</h2>';
+      faqGroup.faqs.map((faq, index) => {
+        const answerFromDom = document.querySelectorAll('[data-search-id="' + faq.searchId + '"]');
+        if(answerFromDom.length == 0) {
+          return;
+        }
+        const toggleId = faqGroup.category.replace(/[^a-zA-Z0-9]/g,"") + index + indexTop;
+        searchedFaqsHtml += '<div class="faqPlusAppFaq"><input type="checkbox" class="faqPlusAppToggle" id="' + toggleId + '" /><label for="' + toggleId + '" class="faqPlusAppTitle">' + faq.question + '</label><div class="faqPlusAppContent">' + answerFromDom[0].innerHTML + '</div></div>';
+      });
+    });
+    searchedFaqsHtml += '</div></div>';
+
+    document.getElementById("easy-faq-app-search-bar").innerHTML = searchedFaqsHtml;
+
+    return;
+  }
+
+  // Case insensitive search
+  function easyFaqSearchFaq(ev) {
+
+    var key = ev.target.value;
+    document.getElementById("easy-faq-app-search-bar").innerHTML = null;
+
+    // Show original FAQs if there is nothing in search field.
+    if(!key){
+      document.getElementById("easy-faq-app-default-display").style.display = "inline-block";
+      document.getElementById("faq-plus-app-sidebar").style.display = "inline-block";
+      return;
+    }
+
+    // hide sidebar when search is being performed.
+    document.getElementById("faq-plus-app-sidebar").style.display = "none";
+
+    // Search in question or category name
+    let results = faqsToSearch.map((data) => {
+      return data.faqs.filter((faqs) => {
+        var regex = new RegExp(key, "i");
+        var searchKeywords = "";
+        if(faqs.searchKeywords){
+          searchKeywords = faqs.searchKeywords.join(" ")
+        }
+        return faqs.question.match(regex) || faqs.category.match(regex) || searchKeywords.match(regex);
+      });
+    });
+    
+    // Hide existing faq display
+    document.getElementById("easy-faq-app-default-display").style.display = "none";
+    displaySearchFAQs(results);
+  }
+
+  if(window.location.hash) {
+    const hashInterval = setInterval(() => {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        clearInterval(hashInterval);
+        window.scrollTo({ 
+          top: target.getBoundingClientRect().top + document.documentElement.scrollTop,  
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
+  }
+
+  const searchInterval = setInterval(() => {
+    const target = document.querySelector('.faq-plus-accordian');
+    if (target) {
+      clearInterval(searchInterval);
+      const elements = document.querySelectorAll('.faq-plus-accordian > *');
+      let json = '';
+      let category = '';
+      let categoryJSON = '';
+      elements.forEach((element, index, array) => {
+        if (element.nodeName == 'H2') {
+          category = element.innerText.trim();
+          categoryJSON = JSON.stringify({category}).replace('{', '').replace('}', '');
+          if (index === 0) {
+            json += `[`;
+          } else {
+            json += `},`;
+          }
+          json += `{${categoryJSON},"faqs":[`;
+        }
+        if (element.nodeName == 'DIV') {
+          const question = element.querySelector('.faqPlusAppTitle').innerText.trim();
+          const questionJSON = JSON.stringify({question}).replace('{', '').replace('}', '');
+          const searchId = element.querySelector('.faqPlusAppContent').dataset.searchId;
+  
+          json += `{${categoryJSON},${questionJSON},"searchKeywords":[],"searchId":"${searchId}"}`;
+  
+          if (element.nextElementSibling && element.nextElementSibling.nodeName == 'H2') {
+            json += `]`;
+          } else if (index !== array.length - 1) {
+            json += `,`;
+          }
+        }
+        if (index === array.length - 1) {
+          json += `]}]`;
+        }
+      });
+      faqsToSearch = JSON.parse(json);
+    }
+  }, 100);
+
+</script>
+
+{% schema %}
+{
+  "name": "FAQ All",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "searchbar",
+      "label": "Search placeholder",
+      "default": "Wie können wir dir helfen?"
+    },
+    {
+      "type": "text",
+      "id": "no_results",
+      "label": "Search not found text",
+      "default": "Leider wurden keine passenden Treffer gefunden. Unser Kundenservice hilft dir unter service@everydays.de gerne weiter!"
+    },
+    {
+      "type": "header",
+      "content": "t:settings_schema.colors.name"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.testimonials.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Headings"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.testimonials.settings.color_background.label"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_trigger_color_text",
+      "label": "Collapsible trigger text color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_trigger_color_background",
+      "label": "Collapsible trigger background color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_trigger_color_border",
+      "label": "Collapsible trigger border color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_content_color_text",
+      "label": "Collapsible content text color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_content_color_background",
+      "label": "Collapsible content background color"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ All"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,68 @@
+<script type="text/javascript">
+  {% if cart %}
+    window.pn.cart = {};
+  	window.pn.cart = {{cart | json}}
+    window.pn.cart.items = [];
+
+    {% for item in cart.items %}
+      var cart_item = {{item | json}};
+      cart_item["collection_ids"] = [];
+      {% for c in item.product.collections %}
+        cart_item["collection_ids"].push({{c.id}})
+        {% endfor %}
+      window.pn.cart.items.push(cart_item);
+    {% endfor %}
+
+    if (typeof window.pn.cart.items == "object") {
+      for (var i=0; i<window.pn.cart.items.length; i++) {
+        ["sku", "vendor", "url", "image", "handle", "product_type", "product_description"].map(function(a) {
+          delete window.pn.cart.items[i][a]
+        })
+      }
+    }
+  {% endif %}
+</script>
+
+{% raw %}
+<script>
+if(typeof pn === "undefined"){
+  pn = {};
+}
+if(typeof pn.settings === "undefined"){
+  pn.settings = {};
+}
+pn.settings.defaultSetting={"id":20756672,"a":"Preorder Now","b":true,"c":null,"d":"Out of stock","e":false,"f":"Only {{qty}} remaining","g":"","h":"below","i":false,"j":null,"k":null,"l":null,"m":"default","n":null,"o":true,"handle":null,"p":null,"y":null,"q":false,"r":true,"s":null,"t":null,"u":1,"v":false,"w":"ribbon","tag":null,"x":null,"z":"no_discount","aa":"0.0","ab":0,"price":"0.0","compare_at_price":"0.0","partial_payment_z":"no_partial_discount","partial_payment_aa":"0.0","partial_payment_ab":0,"selling_plan_group_id":null,"selling_plan_group_name":null,"partial_payment_charge_date":null};
+pn.settings.singleProductSettings=[{"id":40082641,"a":"Jetzt vorbestellen","b":true,"c":null,"d":"Out of stock","e":false,"f":"Only {{qty}} remaining","g":"","h":"below","i":false,"j":null,"k":null,"l":null,"m":"variant","n":"39532342673475","o":false,"handle":"bundle-darmgesundheit","p":"6599073693763","y":"https://cdn.shopify.com/s/files/1/0074/1094/1999/files/Darmgesundheit_81aba72d-ee20-4512-9cf6-f48c2c3fada4.jpg?v=1692183049","q":false,"r":false,"s":1473,"t":null,"u":1,"v":false,"w":"ribbon","tag":null,"x":"Versandbereit ab dem 01.11.23","z":"no_discount","aa":"0.0","ab":0,"price":"0.0","compare_at_price":"0.0","partial_payment_z":"no_partial_discount","partial_payment_aa":"0.0","partial_payment_ab":0,"selling_plan_group_id":null,"selling_plan_group_name":null,"partial_payment_charge_date":null},{"id":40082647,"a":"Preorder Now","b":false,"c":null,"d":"Out of stock","e":false,"f":"Only {{qty}} remaining","g":"","h":"below","i":false,"j":null,"k":null,"l":null,"m":"variant","n":"39532342673475","o":true,"handle":"bundle-darmgesundheit","p":"6599073693763","y":"https://cdn.shopify.com/s/files/1/0074/1094/1999/files/Darmgesundheit_81aba72d-ee20-4512-9cf6-f48c2c3fada4.jpg?v=1692183049","q":false,"r":true,"s":1473,"t":null,"u":1,"v":false,"w":"ribbon","tag":null,"x":null,"z":"no_discount","aa":"0.0","ab":0,"price":"0.0","compare_at_price":"0.0","partial_payment_z":"no_partial_discount","partial_payment_aa":"0.0","partial_payment_ab":0,"selling_plan_group_id":null,"selling_plan_group_name":null,"partial_payment_charge_date":null},{"id":40082626,"a":"Jetzt vorbestellen","b":true,"c":null,"d":"Out of stock","e":false,"f":"Only {{qty}} remaining","g":"","h":"below","i":false,"j":null,"k":null,"l":null,"m":"variant","n":"43586090598667","o":false,"handle":"digest","p":"7977726443787","y":"https://cdn.shopify.com/s/files/1/0074/1094/1999/files/digest_neu_1.jpg?v=1700756144","q":false,"r":false,"s":33,"t":null,"u":1,"v":true,"w":"ribbon","tag":null,"x":"Versandbereit ab dem 01.12.23","z":"no_discount","aa":"0.0","ab":0,"price":"0.0","compare_at_price":"0.0","partial_payment_z":"no_partial_discount","partial_payment_aa":"0.0","partial_payment_ab":0,"selling_plan_group_id":null,"selling_plan_group_name":null,"partial_payment_charge_date":null},{"id":40082631,"a":"Jetzt vorbestellen","b":true,"c":null,"d":"Out of stock","e":false,"f":"Only {{qty}} remaining","g":"","h":"below","i":false,"j":null,"k":null,"l":null,"m":"variant","n":"43586090631435","o":false,"handle":"digest","p":"7977726443787","y":"https://cdn.shopify.com/s/files/1/0074/1094/1999/files/digest_neu_1.jpg?v=1700756144","q":false,"r":false,"s":null,"t":null,"u":1,"v":true,"w":"ribbon","tag":null,"x":"Versandbereit ab dem 01.12.23","z":"no_discount","aa":"0.0","ab":0,"price":"0.0","compare_at_price":"0.0","partial_payment_z":"no_partial_discount","partial_payment_aa":"0.0","partial_payment_ab":0,"selling_plan_group_id":null,"selling_plan_group_name":null,"partial_payment_charge_date":null},{"id":40082706,"a":"Jetzt vorbestellen","b":true,"c":null,"d":"Out of stock","e":false,"f":"Only {{qty}} remaining","g":"","h":"below","i":false,"j":null,"k":null,"l":null,"m":"variant","n":"44165587632395","o":false,"handle":"bundle-verdauung","p":"8167565328651","y":"https://cdn.shopify.com/s/files/1/0074/1094/1999/files/Verdauung_1.jpg?v=1700756901","q":false,"r":false,"s":16041371,"t":null,"u":1,"v":true,"w":"ribbon","tag":null,"x":"Lieferung ab dem 08.11.23","z":"no_discount","aa":"0.0","ab":0,"price":"0.0","compare_at_price":"0.0","partial_payment_z":"no_partial_discount","partial_payment_aa":"0.0","partial_payment_ab":0,"selling_plan_group_id":null,"selling_plan_group_name":null,"partial_payment_charge_date":null}];
+pn.settings.tagSettings=[];
+</script>
+<style type="text/css">
+  .pn-original-subtotal{
+    text-decoration: line-through;
+    display:inline-block;
+  }
+  .pn-discounted-subtotal{
+    font-weight:bold;
+    margin-left:20px;
+    display:inline-block;
+    font-size: 1.3em;
+  }
+
+  .pn-line-item-original-price {
+    text-decoration: line-through;
+  }
+
+  .pn-line-item-discounted-price {
+    font-size: 1.2em;
+    margin-left: 8px;
+  }
+</style>
+{% endraw %}
+
+
+<div id="pn-mixed-cart-warning" class="pn-modal">
+  <div id="pn-mixed-cart-warning-content">
+    <span id="pn-modal-close-btn">x</span>
+    <p class="pn-mixed-cart-heading" id="pn-mixed-cart-warning-title"></p>
+    <div id="pn-mixed-cart-warning-text"></div>
+  </div>
+</div>

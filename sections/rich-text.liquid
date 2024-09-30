@@ -1,0 +1,434 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ section.settings.margin_top_px }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+  }
+  @media only screen and (max-width: 768px) {
+    #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.margin_top_px_mobile }}px;
+      margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+    }
+  }
+  {% if section.settings.color_background != blank and section.settings.color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.color_background }};
+    }
+    #shopify-section-{{ section.id }} .feature-row-wrapper {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      overflow: visible;
+    }
+    @media only screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .feature-row-wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+  {% endif %}
+{%- endstyle -%}
+
+<div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %} feature-row-wrapper feature-row--image-on-left">
+  {%- if section.settings.icon != blank -%}
+
+    <script>
+      window.onscroll = function () {
+        scrollRotate();
+      };
+      
+      function scrollRotate() {
+        let image = document.querySelector(".row-animated-icon img");
+        image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+      }
+    </script>
+
+    {%- assign icon = section.settings.icon -%}
+    <div class="row-animated-icon">
+      <img src="{{ icon | image_url }}" width="{{ icon.width }}" height="{{ icon.height }}" loading="lazy" alt="you, just better!">
+    </div>
+  {%- endif -%}
+  {%- for block in section.blocks -%}
+    <div id="shopify-block-{{ block.id }}" class="theme-block" {{ block.shopify_attributes }}>
+      {%- case block.type -%}
+        {%- when 'heading' -%}
+          {% if block.settings.color_heading != blank and block.settings.color_heading != "rgba(0,0,0,0)" %}
+            {%- style -%}
+              #shopify-block-{{ block.id }} h2 {
+                --colorTextBody: {{ block.settings.color_heading }};
+                color: var(--colorTextBody);
+              }
+            {%- endstyle -%}
+          {% endif %}
+          <h2>
+            {%- render 'title', 
+              title: block.settings.title, 
+              title_underline: block.settings.title_underline, 
+              underline_style: block.settings.title_underline_style,
+              title_circle: block.settings.title_circle, 
+              circle_style: block.settings.title_circle_style,
+              title_thinner: section.settings.title_thinner,
+              title_thinner_italic: section.settings.title_thinner_italic,
+              color: block.settings.title_color 
+            -%}
+          </h2>
+        {%- when 'page' -%}
+          <div class="rte">
+            {%- if block.settings.page_text != blank -%}
+              {{ pages[block.settings.page_text].content }}
+            {%- else -%}
+              {{ 'home_page.onboarding.no_content' | t }}
+            {%- endif -%}
+          </div>
+        {%- when 'text' -%}
+          {%- style -%}
+            #shopify-block-{{ block.id }} {
+              color: {{ block.settings.color_text }};
+            }
+          {%- endstyle -%}
+          <div class="rte" style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.text_max_width }}px;">
+            {%- if block.settings.text != blank -%}
+              {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+              {{ block.settings.text }}
+              {%- if block.settings.enlarge_text %}</div>{% endif -%}
+            {%- else -%}
+              {{ 'home_page.onboarding.no_content' | t }}
+            {%- endif -%}
+          </div>
+        {%- when 'read-more' -%}
+          {%- if block.settings.text != blank -%}
+            <div class="rte" style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.text_max_width }}px;">
+              <div id="read-more-{{ block.id }}" class="collapsible-content collapsible-content--all">
+                  <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+                    {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+                      {{ block.settings.text }}
+                    {%- if block.settings.enlarge_text %}</div>{% endif -%}
+                  </div>
+              </div>
+              <p>
+                <button type="button" class="collapsible-trigger collapsible--auto-height btn btn--tertiary tags-toggle" aria-controls="read-more-{{ block.id }}">
+                  <span class="collapsible-label__closed">{{ 'collections.general.see_more' | t }}</span>
+                  <span class="collapsible-label__open">{{ 'collections.general.see_less' | t }}</span>
+                </button>
+              </p>
+            </div>
+          {%- endif -%}
+        {%- when 'html' -%}
+          <div class="rte">
+            {%- if block.settings.html != blank -%}
+              {{ block.settings.html }}
+            {%- else -%}
+              {{ 'home_page.onboarding.no_content' | t }}
+            {%- endif -%}
+          </div>
+        {%- when 'button' -%}
+          <div class="rte">
+            <a href="{{ block.settings.link }}" class="btn">
+              {{ block.settings.link_text }}
+            </a>
+          </div>
+      {%- endcase -%}
+    </div>
+  {%- endfor -%}
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.rich-text.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Animated icon"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background color"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.rich-text.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.rich-text.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.rich-text.settings.align_text.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.rich-text.settings.align_text.options.right.label"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_px",
+      "label": "Top margin",
+      "default": 100,
+      "min": -200,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_px_mobile",
+      "label": "Top margin (mobile)",
+      "default": 50,
+      "min": -200,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom margin",
+      "default": 100,
+      "min": -200,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "label": "Bottom margin (mobile)",
+      "default": 50,
+      "min": -200,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "t:sections.rich-text.settings.narrow_column.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.rich-text.settings.divider.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.rich-text.blocks.heading.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.rich-text.blocks.heading.settings.title.label",
+          "default": "Rich text"
+        },
+        {
+          "type": "text",
+          "id": "title_underline",
+          "label": "Underlined text"
+        },
+        {
+          "type": "select",
+          "id": "title_underline_style",
+          "label": "Underline style",
+          "default": "style1",
+          "options": [
+            {
+              "value": "style1",
+              "label": "Style 1"
+            },
+            {
+              "value": "style2",
+              "label": "Style 2"
+            },
+            {
+              "value": "style3",
+              "label": "Style 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title_circle",
+          "label": "Circled text"
+        },
+        {
+          "type": "select",
+          "id": "title_circle_style",
+          "label": "Circle style",
+          "default": "style1",
+          "options": [
+            {
+              "value": "style1",
+              "label": "Style 1"
+            },
+            {
+              "value": "style2",
+              "label": "Style 2"
+            },
+            {
+              "value": "style3",
+              "label": "Style 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title_thinner",
+          "label": "Thinner text"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_thinner_italic",
+          "label": "Thinner text italic",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "color_heading",
+          "label": "Heading color"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title scheme color"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color_text",
+          "label": "t:sections.testimonials.settings.color_text.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enlarge_text",
+          "label": "t:sections.rich-text.blocks.text.settings.enlarge_text.label",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "text_max_width",
+          "label": "Text max width",
+          "default": 920,
+          "min": 300,
+          "max": 1220,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        }
+      ]
+    },
+    {
+      "type": "read-more",
+      "name": "Read more",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enlarge_text",
+          "label": "t:sections.rich-text.blocks.text.settings.enlarge_text.label",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "text_max_width",
+          "label": "Text max width",
+          "default": 920,
+          "min": 300,
+          "max": 1220,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.rich-text.blocks.button.name",
+      "settings": [
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.rich-text.blocks.button.settings.link.label"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "t:sections.rich-text.blocks.button.settings.link_text.label",
+          "default": "Button"
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "name": "t:sections.rich-text.blocks.page.name",
+      "settings": [
+        {
+          "id": "page_text",
+          "type": "page",
+          "label": "t:sections.rich-text.blocks.page.settings.page_text.label"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "name": "HTML",
+      "settings": [
+        {
+          "id": "html",
+          "type": "html",
+          "label": "HTML"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["custom.popups"]
+  }
+}
+{% endschema %}

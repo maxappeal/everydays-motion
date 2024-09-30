@@ -1,0 +1,648 @@
+{%- liquid
+  assign visible = true
+  if section.settings.disabled_in_countries != blank
+    assign disabled_in_countries = section.settings.disabled_in_countries | upcase
+    assign iso_code = request.locale.iso_code | upcase
+    if disabled_in_countries contains iso_code
+      assign visible = false
+    endif
+  endif
+-%}
+
+{%- if visible -%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .image-wrap {
+    border-radius: 20px;
+  }
+  {% if section.settings.remove_top_margin %}
+    #shopify-section-{{ section.id }}.index-section {
+      margin-top: 0;
+    }
+  {% endif %}
+  {% if section.settings.remove_bottom_margin %}
+    #shopify-section-{{ section.id }}.index-section {
+      margin-bottom: 0;
+    }
+  {% endif %}
+  {% if section.settings.remove_top_margin and section.settings.remove_bottom_margin %}
+    #shopify-section-{{ section.id }}.index-section {
+      margin: 0;
+    }
+  {% endif %}  
+  {% if section.settings.color_text != blank %}
+    #shopify-section-{{ section.id }} {
+      color: {{ section.settings.color_text }};
+    }
+  {% endif %}
+  {% if section.settings.color_heading != blank and section.settings.color_heading != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} h2 {
+      --colorTextBody: {{ section.settings.color_heading }};
+      color: var(--colorTextBody);
+    }
+  {% endif %}
+  {% if section.settings.color_background != blank and section.settings.color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.color_background }};
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+    @media only screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        padding-top: 40px;
+        padding-bottom: 50px;
+      }
+    }
+  {% endif %}
+  {% if section.settings.mobile_slider %}
+    @media only screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .grid {
+        display: flex;
+        overflow-x: auto;
+        margin-right: -20px;
+      }
+      #shopify-section-{{ section.id }} .grid__item {
+        float: none;
+        min-width: 280px;
+        padding-right: 22px;
+      }
+    }
+  {% else %}
+    #shopify-section-{{ section.id }} .grid {
+      margin-bottom: -50px;
+    }
+    #shopify-section-{{ section.id }} .grid__item {
+      margin-bottom: 50px;
+    }
+  {% endif %}
+  
+{%- endstyle -%}
+
+<div class="page-width">
+  {%- if section.settings.title != blank or section.settings.text != blank -%}
+    <div class="section-header text-{{ section.settings.align_text }}">
+      {%- if section.settings.title != blank -%}
+        <h2>
+          {%- render 'title', 
+            title: section.settings.title, 
+            title_underline: section.settings.title_underline, 
+            underline_style: section.settings.title_underline_style,
+            title_circle: section.settings.title_circle, 
+            circle_style: section.settings.title_circle_style,
+            title_thinner: section.settings.title_thinner,
+            title_thinner_italic: section.settings.title_thinner_italic,
+            color: section.settings.title_color 
+          -%}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div>{{ section.settings.text }}</div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="grid {% if section.settings.small_grid %}grid--small{% endif %} {% unless section.blocks.size == 5 %}grid--uniform{% endunless %}">
+    {%- liquid
+      assign grid_item_width = 'medium-up--one-third'
+      case section.blocks.size
+        when 1
+          assign grid_item_width = 'medium-up--one-half'
+        when 2
+          assign grid_item_width = 'medium-up--one-half'
+        when 4
+          assign grid_item_width = 'medium-up--one-quarter'
+        when 5
+          assign grid_item_width = 'medium-up--one-fifth'
+      endcase
+      assign is_popup = false
+    -%}
+    {%- for block in section.blocks -%}
+      {%- if section.blocks.size == 5 and forloop.index <= 3 -%}
+        {%- assign column_width = 'one-third medium-up--one-fifth' -%}
+      {%- elsif section.blocks.size == 5 and forloop.index > 3 -%}
+        {%- assign column_width = 'one-half medium-up--one-fifth' -%}
+      {%- else -%}
+        {%- assign column_width = grid_item_width -%}
+      {%- endif -%}
+      <div class="grid__item {{ column_width }} text-{{ block.settings.align_text }}" {{ block.shopify_attributes }} data-aos="row-of-3">
+        {%- if block.settings.popup_text != blank -%}
+          {%- assign is_popup = true -%}
+          <div popup-trigger="#mt-modal" data-index={{ forloop.index0 }}>
+        {%- elsif block.settings.button_link != blank and block.settings.button_label == blank %}
+          <a href="{{ block.settings.button_link }}">
+        {% endif %}
+        {%- if block.settings.enable_image -%}
+          <style>
+            #block-{{ block.id }}.image-cell {
+              max-width: {{ block.settings.image_width }}px;
+              width: 100%;
+            }
+            @media only screen and (max-width: 768px) {
+              #block-{{ block.id }}.image-cell {
+                max-width: {{ block.settings.mobile_image_width }}px;
+              }
+            }
+          </style>
+          <div class="image-cell" id="block-{{ block.id }}" style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %}">
+            {% if block.settings.image != blank %}
+              <div class="image-wrap {% if block.settings.popup_text != blank %}image-wrap--modal{% endif %} text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
+                {%- render 'image-element',
+                  img: block.settings.image,
+                  sizeVariable: column_width,
+                  widths: '180, 360, 540, 720, 900, 1080',
+                -%}
+              </div>
+            {% else %}
+              <div class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}" style="height: 300px">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+        <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.text_max_width }}px;">
+          {%- if block.settings.title != blank -%}
+            <h3>
+              {%- render 'title', 
+                title: block.settings.title, 
+                title_underline: block.settings.title_underline, 
+                underline_style: block.settings.title_underline_style,
+                title_circle: block.settings.title_circle, 
+                circle_style: block.settings.title_circle_style,
+                title_thinner: block.settings.title_thinner,
+                title_thinner_italic: block.settings.title_thinner_italic,
+                color: block.settings.title_color 
+              -%}
+            </h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+          {% endif %}
+          {% if block.settings.button_label != blank %}
+            <a href="{{ block.settings.button_link }}" class="btn {% if block.settings.button_style == 'secondary' %}btn--secondary{% elsif block.settings.button_style == 'tertiary' %}btn--tertiary{% endif %}">
+              {{ block.settings.button_label }}
+            </a>
+          {% endif %}
+        </div>
+        {%- if block.settings.popup_text != blank -%}
+          </div>
+        {%- elsif block.settings.button_link != blank and block.settings.button_label == blank %}
+          </a>
+        {% endif %}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{%- if is_popup -%}
+  <div id="mt-modal" class="mt-popup">
+    <div class="mt-popup__content">
+      <div class="carousel mt-popup__carousel">
+        {%- for block in section.blocks -%}
+          <div class="carousel-cell mt-popup__cell">
+            {%- if block.settings.popup_text != blank -%}
+              <div class="mt-popup__body">
+                <div class="mt-popup__body__header">
+                  <div class="close" popup-close="#mt-modal">&times;</div>
+                  {% if block.settings.image != blank %}
+                    <div class="image-wrap image-wrap--round" style="width: 100px; height: 100px;">
+                      {%- render 'image-element',
+                        img: block.settings.image,
+                        sizeVariable: column_width,
+                        widths: '180, 360, 540, 720, 900, 1080',
+                      -%}
+                    </div>
+                  {% else %}
+                    <div class="image-wrap text-spacing" style="height: 100px;">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                  {% endif %}
+                  {%- if block.settings.title != blank -%}
+                    <div class="h4" style="font-size: 18px; margin-bottom: 0;">{{ block.settings.title }}</div>
+                  {% endif %}
+                  {% if block.settings.text != blank %}
+                    <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+                  {% endif %}
+                </div>
+                <div class="mt-popup__body__content">
+                  {{ block.settings.popup_text }}
+                </div>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.text-columns.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "disabled_in_countries",
+      "label": "Disabled in countries (ISO codes)",
+      "info": "Add the ISO codes (comma-separated) of the country in which this section will be not visible, e.g. FR, BE, etc."
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_top_margin",
+      "label": "Remove top margin",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_bottom_margin",
+      "label": "Remove bottom margin",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "small_grid",
+      "label": "Small grid",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.testimonials.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.testimonials.settings.color_background.label"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.text-columns.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "title_underline",
+      "label": "Underlined text"
+    },
+    {
+      "type": "select",
+      "id": "title_underline_style",
+      "label": "Underline style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_circle",
+      "label": "Circled text"
+    },
+    {
+      "type": "select",
+      "id": "title_circle_style",
+      "label": "Circle style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_thinner",
+      "label": "Thinner text"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_thinner_italic",
+      "label": "Thinner text italic",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title scheme color"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.text-columns.blocks.column.settings.text.label"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.text-columns.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.text-columns.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.text-columns.settings.align_text.options.center.label"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_slider",
+      "label": "Slider on mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.text-columns.settings.divider.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "t:sections.text-columns.blocks.column.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "align_text",
+          "label": "t:sections.text-columns.settings.align_text.label",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.text-columns.settings.align_text.options.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.text-columns.settings.align_text.options.center.label"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_image",
+          "label": "t:sections.text-columns.blocks.column.settings.enable_image.label",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.text-columns.blocks.column.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "image_mask",
+          "label": "t:common.image_mask.label",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:common.image_mask.options.none.label"
+            },
+            {
+              "value": "portrait",
+              "label": "t:common.image_mask.options.portrait.label"
+            },
+            {
+              "value": "landscape",
+              "label": "t:common.image_mask.options.landscape.label"
+            },
+            {
+              "value": "square",
+              "label": "t:common.image_mask.options.square.label"
+            },
+            {
+              "value": "rounded",
+              "label": "t:common.image_mask.options.rounded.label"
+            },
+            {
+              "value": "rounded-wave",
+              "label": "t:common.image_mask.options.rounded-wave.label"
+            },
+            {
+              "value": "rounded-top",
+              "label": "t:common.image_mask.options.rounded-top.label"
+            },
+            {
+              "value": "star",
+              "label": "t:common.image_mask.options.star.label"
+            },
+            {
+              "value": "splat-1",
+              "label": "t:common.image_mask.options.splat-1.label"
+            },
+            {
+              "value": "splat-2",
+              "label": "t:common.image_mask.options.splat-2.label"
+            },
+            {
+              "value": "splat-3",
+              "label": "t:common.image_mask.options.splat-3.label"
+            },
+            {
+              "value": "splat-4",
+              "label": "t:common.image_mask.options.splat-4.label"
+            },
+            {
+              "value": "shape-1",
+              "label": "t:common.image_mask.options.shape-1.label"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "label": "t:sections.text-columns.blocks.column.settings.image_width.label",
+          "default": 650,
+          "min": 60,
+          "max": 650,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mobile_image_width",
+          "label": "Max image width on mobile",
+          "default": 90,
+          "min": 60,
+          "max": 650,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "text_max_width",
+          "label": "Text max width",
+          "default": 650,
+          "min": 60,
+          "max": 650,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.text-columns.blocks.column.settings.title.label",
+          "default": "Example title"
+        },
+        {
+          "type": "text",
+          "id": "title_underline",
+          "label": "Underlined text"
+        },
+        {
+          "type": "select",
+          "id": "title_underline_style",
+          "label": "Underline style",
+          "default": "style1",
+          "options": [
+            {
+              "value": "style1",
+              "label": "Style 1"
+            },
+            {
+              "value": "style2",
+              "label": "Style 2"
+            },
+            {
+              "value": "style3",
+              "label": "Style 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title_circle",
+          "label": "Circled text"
+        },
+        {
+          "type": "select",
+          "id": "title_circle_style",
+          "label": "Circle style",
+          "default": "style1",
+          "options": [
+            {
+              "value": "style1",
+              "label": "Style 1"
+            },
+            {
+              "value": "style2",
+              "label": "Style 2"
+            },
+            {
+              "value": "style3",
+              "label": "Style 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title_thinner",
+          "label": "Thinner text"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_thinner_italic",
+          "label": "Thinner text italic",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title scheme color"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.text-columns.blocks.column.settings.text.label",
+          "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "popup_text",
+          "label": "Popup text"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.text-columns.blocks.column.settings.button_label.label",
+          "default": "Optional button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.text-columns.blocks.column.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "t:sections.text-and-image.settings.button_style.label",
+          "default": "primary",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.text-and-image.settings.button_style.options.primary.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.text-and-image.settings.button_style.options.secondary.label"
+            },
+            {
+              "value": "tertiary",
+              "label": "t:sections.text-and-image.settings.button_style.options.tertiary.label"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.text-columns.presets.text_columns_with_images.name",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["custom.popups"]
+  }
+}
+{% endschema %}

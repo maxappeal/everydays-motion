@@ -1,0 +1,240 @@
+reviewsio-product-ratings {
+  display: block;
+  margin: 2rem 0 1.5rem 0;
+}
+
+reviewsio-product-ratings .ruk_rating_snippet {
+  display: flex;
+  align-items: baseline;
+}
+
+reviewsio-product-ratings .ruk_rating_snippet i {
+  line-height: 1;
+}
+
+reviewsio-product-ratings .ruk_rating_snippet .ruk-rating-snippet-count {
+  margin-left: 0.5rem;
+  line-height: 1;
+}
+
+reviewsio-product-ratings .ruk_rating_snippet i {
+    font-size: 1.125rem;
+  }
+
+@media (min-width: 768px) {
+  reviewsio-product-ratings {
+    margin: 2.5rem 0 1.5rem 0;
+  }
+  
+}
+
+#reviews_fade #reviews_container {
+  max-width: 87.5rem;
+  margin-top: 10rem;
+  border-radius: 1rem;
+  padding: 5.5rem;
+}
+
+#reviews_fade #reviews_container #reviews_container-close {
+  right: 1.5rem;
+  left: auto;
+  background: none;
+  color: #353b7c;
+  font-size: 3rem;
+  text-align: left;
+  top: 1.5rem;
+  line-height: 0.1;
+  z-index: 10000;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-DropUpDownMenu
+  .R-DropUpDownMenu__item:last-child,
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-DropUpDownMenu
+  .R-DropUpDownMenu__item:nth-child(4) {
+  display: none;
+}
+
+#reviews_fade
+  #reviews_container
+  .header__group.header__group--right.u-textRight--all,
+#reviews_fade #reviews_container .ElementsWidget-prefix .u-textRight--all,
+#reviews_fade #reviews_container .ElementsWidget-prefix .R-AvatarThumbnail {
+  display: none !important;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .ElementsWidget
+  .ElementsWidget__header
+  .header__group--left {
+  width: 100%;
+  display: flex !important;
+  flex-basis: auto;
+  align-items: center;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .header__group--left
+  .R-TextHeading--inline {
+  order: 1;
+  margin-left: 4.5rem;
+  margin-right: 2rem !important;
+  color: #353b7c;
+}
+
+#reviews_fade #reviews_container .ElementsWidget-prefix .R-TextBody--xs {
+  order: 2;
+  margin: 0 !important;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-RatingStars--md
+  .R-RatingStars__stars
+  .stars__icon {
+  font-size: 1.6875rem;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .ElementsWidget
+  .R-ContentList
+  .R-ContentList__item
+  .item__meta {
+  border-right: 0;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-TabControls
+  .R-TabControls__item.c-searchFilters__search {
+  margin-left: 7.5rem;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-TabControls
+  .R-TabControls__item
+  > .R-TextHeading,
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-Field--leftIcon
+  .R-Field__icon,
+#reviews_fade #reviews_container .ElementsWidget-prefix .R-TextHeading,
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .R-BadgeElement
+  .R-BadgeElement__icon
+  .cssVar-badgeElement__icon {
+  color: #353b7c;
+}
+
+#reviews_fade
+  #reviews_container
+  .ElementsWidget-prefix
+  .u-marginBottom--md.c-meta__authorDetails {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (max-width: 767px) {
+  #reviews_fade #reviews_container {
+    margin-top: 3rem;
+    padding: 0.5rem;
+  }
+  #reviews_fade
+    #reviews_container
+    .ElementsWidget-prefix
+    .R-TabControls
+    .R-TabControls__item.c-searchFilters__search {
+    margin-left: 1rem;
+  }
+  #reviews_fade
+    #reviews_container
+    .ElementsWidget-prefix
+    .ElementsWidget
+    .ElementsWidget__header
+    .header__group--left {
+    flex-wrap: wrap;
+    margin-top: 4rem;
+  }
+  #reviews_fade
+    #reviews_container
+    .ElementsWidget-prefix
+    .header__group--left
+    .R-TextHeading--inline {
+    margin-left: 0;
+    margin-right: 1rem !important;
+  }
+  #reviews_fade
+    #reviews_container
+    .R-RatingStars.R-RatingStars--md.u-verticalAlign--middle {
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+reviewsio-product-reviews-widget
+  .subheader__group.subheader__group--tabs.u-textRight--all,
+reviewsio-product-reviews-widget .ElementsWidget__footer.u-textRight--all,
+reviewsio-product-reviews-widget
+  .ElementsWidget-prefix
+  .ElementsWidget
+  .ElementsWidget__header
+  .header__group--right {
+  display: none !important;
+}
+
+reviewsio-product-reviews-widget
+  .ElementsWidget-prefix
+  .R-TabControls
+  .R-TabControls__item
+  > .R-TextHeading,
+reviewsio-product-reviews-widget
+  .ricon-thin-arrow--down.u-verticalAlign--middle,
+reviewsio-product-reviews-widget
+  .ElementsWidget-prefix
+  .R-Field--leftIcon
+  .R-Field__icon {
+  color: #353b7c;
+}
+
+reviewsio-product-reviews-widget .R-TabControls__item.c-searchFilters__search {
+  margin-left: 7.5rem;
+}
+
+reviewsio-product-reviews-widget
+  .ElementsWidget-prefix
+  .ElementsWidget
+  .R-ContentList
+  .R-ContentList__item
+  .item__meta {
+  border-right: 0;
+}
+
+reviewsio-product-reviews-widget .ElementsWidget-prefix .u-marginRight--xs {
+  margin-right: 0.625rem !important;
+}
+
+@media (max-width: 767px) {
+  reviewsio-product-reviews-widget
+    .R-TabControls__item.c-searchFilters__search {
+    margin-left: 1rem;
+  }
+}

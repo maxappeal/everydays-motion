@@ -1,0 +1,197 @@
+<div id="{{ block.id }}" class="tab-content__box text-{{ block.settings.align_text }} {% if index == 1 %}active{% endif %}">
+  {%- if block.settings.show_title and block.settings.title != blank -%}
+    <h3 class="tab-content__title">{{ block.settings.title }}</h3>
+  {% endif %}
+  {%- if block.settings.custom_image != blank -%}
+    {%- liquid
+      assign has_mobile_image = false
+      if block.settings.custom_image_mobile != blank
+        assign has_mobile_image = true
+      endif
+
+      assign sizeVariable = section.settings.image_width | append: 'vw'
+      assign fallback = '100vw'
+
+      assign imageWidth = section.settings.image_width | times: 1
+      if imageWidth >= 50
+        assign loading = section.settings.lazyload_images
+      else
+        assign loading = true
+      endif
+    -%}
+
+    {%- liquid
+      if has_mobile_image
+        assign desktop_classes = 'small--hide hero__image hero__image--' | append: block.id
+      else
+        assign desktop_classes = 'hero__image hero__image--' | append: block.id
+      endif
+    -%}
+
+    {%- render 'image-element',
+      img: block.settings.custom_image,
+      widths: '180, 360, 540, 750, 900, 1080',
+      loading: loading,
+      sizeVariable: sizeVariable,
+      fallback: fallback,
+      classes: desktop_classes,
+    -%}
+
+    {%- if has_mobile_image -%}
+      {% assign mobile_classes = 'medium-up--hide hero__image hero__image--' | append: block.id %}
+
+      {%- render 'image-element',
+        img: block.settings.custom_image_mobile,
+        widths: '180, 360, 540, 750, 900, 1080',
+        loading: loading,
+        sizeVariable: sizeVariable,
+        fallback: fallback,
+        classes: mobile_classes,
+      -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if block.settings.video != blank or block.settings.video_url != blank -%}
+    <div class="feature-row__first-video">
+      {%- if block.settings.video != blank -%}
+        {%- liquid
+          assign videoWidth = block.settings.video_width | times: 1
+          if videoWidth >= 50
+            assign loading = block.settings.lazyload_videos
+          else
+            assign loading = true
+          endif
+        -%}
+        {%- render 'video-element',
+          media: block.settings.video,
+          size: '920x',
+          video_controls: block.settings.video_controls,
+          video_muted: block.settings.video_muted,
+          video_autoplay: block.settings.video_autoplay,
+          video_loop: block.settings.video_loop,
+          loading: loading
+        -%}
+      {%- elsif block.settings.video_url != blank -%}
+
+        {%- liquid
+          assign aspect_ratio = '56.25'
+            if block.settings.video_ratio != blank
+            assign aspect_ratio = block.settings.video_ratio | split: ':'
+            assign float = aspect_ratio[0] | times: 1.0
+            assign aspect_ratio = aspect_ratio[1] | divided_by: float
+            assign aspect_ratio = aspect_ratio | times: 100
+          endif
+        -%}
+
+        <div class="product__video-wrapper" style="padding-bottom: {{ aspect_ratio }}%;">
+
+          {%- if block.settings.video_url contains '.mp4' or block.settings.video_url contains '.MP4' -%}
+            <video
+              playsinline
+              {% if block.settings.video_controls %}controls{% endif %}
+              {% if block.settings.video_muted %}muted{% endif %}
+              {% if block.settings.video_autoplay %}autoplay{% endif %}
+              {% if block.settings.video_loop %}loop{% endif %}
+              loading="lazy"
+              controlsList="nodownload"
+              src="{{ block.settings.video_url }}"
+              class="product__video">
+            </video>
+          {%- else -%}
+            {%- if block.settings.video_url contains 'youtube.com/watch' or block.settings.video_url contains 'youtu.be/' -%}
+              {%- liquid
+                if block.settings.video_url contains 'youtube.com/watch'
+                  assign video_id = block.settings.video_url | split: 'v='
+                  assign video_id = video_id[1] | split: '&' | first
+                endif
+                if block.settings.video_url contains 'youtu.be/'
+                  assign video_id = block.settings.video_url | split: '.be/'
+                  assign video_id = video_id[1] | split: '&' | first
+                endif
+
+                assign video_url = 'https://www.youtube.com/embed/' | append: video_id
+                if block.settings.video_controls
+                  assign video_url = video_url | append: '?controls=1'
+                else
+                  assign video_url = video_url | append: '?controls=0'
+                endif
+                if block.settings.video_muted
+                  assign video_url = video_url | append: '&mute=1'
+                else
+                  assign video_url = video_url | append: '&mute=0'
+                endif
+                if block.settings.video_autoplay
+                  assign video_url = video_url | append: '&autoplay=1'
+                else
+                  assign video_url = video_url | append: '&autoplay=0'
+                endif
+                if block.settings.video_loop
+                  assign video_url = video_url | append: '&loop=1'
+                else
+                  assign video_url = video_url | append: '&loop=0'
+                endif
+                assign video_url = video_url | append: '&modestbranding=1&playsinline=1&rel=0&enablejsapi=1'
+              -%}
+            {%- endif -%}
+            {%- if block.settings.video_url contains 'vimeo.com' -%}
+              {%- liquid
+                assign video_id = block.settings.video_url | split: '.com/'
+                assign video_id = video_id[1] | split: '/' | first
+              
+                assign video_url = 'https://player.vimeo.com/video/' | append: video_id
+                if block.settings.video_controls
+                  assign video_url = video_url | append: '?background=0'
+                else
+                  assign video_url = video_url | append: '?background=1'
+                endif
+                if block.settings.video_muted
+                  assign video_url = video_url | append: '&muted=1'
+                else
+                  assign video_url = video_url | append: '&muted=0'
+                endif
+                if block.settings.video_autoplay
+                  assign video_url = video_url | append: '&autoplay=1&autopause=0'
+                else
+                  assign video_url = video_url | append: '&autoplay=0'
+                endif
+                if block.settings.video_loop
+                  assign video_url = video_url | append: '&loop=1'
+                else
+                  assign video_url = video_url | append: '&loop=0'
+                endif
+              -%}
+            {%- endif -%}
+
+            <iframe 
+              src="{{ video_url }}"
+              class="product__video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+          {%- endif -%}
+
+        </div>
+
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+  {%- if block.settings.content_order == "first_text" -%}
+    {% if block.settings.richtext != blank %}
+      <div class="rte-setting text-spacing--large">{{ block.settings.richtext }}</div>
+    {% endif %}
+  {%- endif -%}
+  {% if block.settings.text != blank %}
+    <div class="rte-setting text-spacing--large">{{ block.settings.text }}</div>
+  {% endif %}
+  {%- if block.settings.content_order == "first_html" -%}
+    {% if block.settings.richtext != blank %}
+      <div class="rte-setting text-spacing--large">{{ block.settings.richtext }}</div>
+    {% endif %}
+  {%- endif -%}
+  {% if block.settings.button_label != blank %}
+    <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+      {{ block.settings.button_label }}
+    </a>
+  {% endif %}
+</div>

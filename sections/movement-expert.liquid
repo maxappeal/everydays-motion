@@ -1,0 +1,121 @@
+{%- style -%}
+  {%- if section.settings.image != blank -%}
+    #shopify-section-{{ section.id }} .movement-expert {
+      background-image: url("{{ section.settings.image.src | img_url: "master" }}");
+    }
+  {%- endif -%}
+  {%- if section.settings.image_mobile != blank -%}
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} .movement-expert {
+        background-image: url("{{ section.settings.image_mobile.src | img_url: "master" }}");
+      }
+    }
+  {%- endif -%}
+  {%- if section.settings.icon_1 != blank -%}
+    #shopify-section-{{ section.id }} .movement-expert .page-width:before {
+      background-image: url("{{ section.settings.icon_1.src | img_url: "master" }}");
+    }
+  {%- endif -%}
+  @media (min-width: 1024px) {
+    {%- if section.settings.bg_1 != blank -%}
+      #shopify-section-{{ section.id }} .movement-expert:before {
+        background-image: url("{{ section.settings.bg_1.src | img_url: "master" }}");
+      }
+    {%- endif -%}
+    {%- if section.settings.bg_2 != blank -%}
+      #shopify-section-{{ section.id }} .movement-expert:after {
+        background-image: url("{{ section.settings.bg_2.src | img_url: "master" }}");
+      }
+    {%- endif -%}
+  }
+{%- endstyle -%}
+
+<div class="movement-expert"{% if section.se %}{% endif %}>
+  <div class="page-width">
+    <div class="header">
+      <h2>
+        {{ section.settings.section_title }}
+      </h2>
+      <p>
+        {{ section.settings.section_text }}
+      </p>
+
+      <div class="img">
+        {%- if section.settings.icon_2 != blank -%}
+          <img src="{{ section.settings.icon_2.src | img_url: "master" }}" alt="{{ section.settings.icon_2.alt }}" width="{{ section.settings.width }}" height="{{ section.settings.height }}">
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="btn">{{ section.settings.button_label }}</div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Movement - Expert",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "html",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Unsere Expert*innen"
+    },
+    {
+      "type": "text",
+      "id": "section_text",
+      "label": "Section Text",
+      "default": "Unsere Expert*innen sind für dich da!"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_1",
+      "label": "Icon 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2",
+      "label": "Icon 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_1",
+      "label": "Desktop background 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_2",
+      "label": "Desktop background 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.advanced-content.blocks.image.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "t:sections.slideshow.blocks.slide.settings.image_mobile.label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Danke für eure Expertise"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Movement - Expert"
+    }
+  ]
+}
+{% endschema %}

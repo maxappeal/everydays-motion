@@ -1,0 +1,8 @@
+{%- capture img_widths -%}
+  {{ img | image_url: width: 360 }} 360w,
+  {{ img | image_url: width: 540 }} 540w,
+  {{ img | image_url: width: 720 }} 720w,
+  {{ img | image_url: width: 900 }} 900w,
+  {{ img | image_url: width: 1080 }} 1080w
+{%- endcapture -%}
+<div class="image-change hide" data-target="{{ target }}" data-src="{{ img | image_url: width: 1080 }}" {% if img_widths != blank %}data-srcset="{{ img_widths }}"{% endif %}></div>

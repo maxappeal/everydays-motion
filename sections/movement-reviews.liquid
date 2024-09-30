@@ -1,0 +1,496 @@
+<div class="movement-reviews">
+  {%- assign blocks_size = 0 -%}
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'review' %}
+        {%- assign blocks_size = blocks_size | plus: 1 -%}
+    {% endcase %}
+  {%- endfor -%}
+
+  {%- if blocks_size > 2 -%}
+    <div class="page-width movement-reviews--wide">
+      <div class="reviews">
+        {% assign review_count = 0 %}
+        {% assign review_wrapper = 1 %}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {% when 'review' %}
+              {% if review_count == 0 %}
+                <div class="reviews-wrapper mySwiper-{{ review_wrapper }}">
+                  <div class="swiper-wrapper">
+              {% endif %}
+
+              <div class="review swiper-slide" id="{{ block.id }}">
+                <div class="review__image">
+                  <img
+                    src="{{ block.settings.photo | image_url: width: 450 }}"
+                    alt="Photo"
+                  >
+                </div>
+                <style>
+                  #shopify-section-{{ section.id }} #{{ block.id }} .review__text > div {
+                    font-size:{{ block.settings.font_size }};
+                    font-weight: {{ block.settings.font_weight }};
+                    {% if block.settings.css != blank %}
+                      {{ block.settings.css }}
+                    {% endif %}
+                  }
+                  @media (max-width: 767px) {
+                    #shopify-section-{{ section.id }} #{{ block.id }} .review__text > div {
+                      font-size:{{ block.settings.mobile_font_size }}; 
+                      font-weight: {{ block.settings.mobile_font_weight }}; 
+                      {% if block.settings.mobile_css != blank %}
+                        {{ block.settings.mobile_css }}
+                      {% endif %}
+                    }
+                  }
+                </style>
+                <div class="review__text" style="background: {{ block.settings.background }};">
+                  <div>
+                    <img
+                      src="{{ 'stars.png' | asset_url }}"
+                      alt="Stars"
+                    >
+                    {{ block.settings.text }}
+                  </div>
+                </div>
+              </div>
+
+              {% assign review_count = review_count | plus: 1 %}
+
+              {% if review_count == 3 %}
+                {% assign review_wrapper = review_wrapper | plus: 1 %}
+
+                </div>
+                </div>
+                {% assign review_count = 0 %}
+              {% endif %}
+          {% endcase %}
+        {%- endfor -%}
+
+        {% if review_count != 0 %}
+          </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="page-width movement-reviews--narrow">
+    <div class="cols">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'column' %}
+            <div class="col">
+              <div>
+                {{ block.settings.content }}
+                {%- if block.settings.link_label != blank -%}
+                  <a href="{{ block.settings.link_url }}" style="white-space: nowrap;">{{ block.settings.link_label }}</a>
+                {%- endif -%}
+              </div>
+            </div>
+        {% endcase %}
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.button1_text != blank or section.settings.button2_text != blank -%}
+      <div class="buttons">
+        {%- if section.settings.button1_text != blank -%}
+          <div>
+            <a
+              href="{{ section.settings.button1_url }}"
+              style="background-color: {{ section.settings.button1_color }}"
+              class="btn"
+            >
+              {{- section.settings.button1_text -}}
+            </a>
+          </div>
+        {%- endif -%}
+        {%- if section.settings.button2_text != blank -%}
+          <div>
+            <a
+              href="{{ section.settings.button2_url }}"
+              style="background-color: {{ section.settings.button2_color }}"
+              class="btn"
+            >
+              {{- section.settings.button2_text -}}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if blocks_size <= 2 -%}
+    <div class="page-width movement-reviews--narrow">
+      <div class="reviews reviews2">
+        {% assign review_count = 0 %}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {% when 'review' %}
+              {% if review_count == 0 %}
+                <div class="reviews-wrapper mySwiper-mobile">
+                  <div class="swiper-wrapper">
+              {% endif %}
+
+              <div class="review2 swiper-slide" id="{{ block.id }}">
+                <div class="review2__image">
+                  <img
+                    src="{{ block.settings.photo | image_url: width: 450 }}"
+                    alt="Photo"
+                  >
+                </div>
+                <style>
+                  #shopify-section-{{ section.id }} #{{ block.id }} .review2__text > div {
+                    font-size:{{ block.settings.font_size }};
+                    font-weight: {{ block.settings.font_weight }};
+                    {% if block.settings.css != blank %}
+                      {{ block.settings.css }}
+                    {% endif %}
+                  }
+                  @media (max-width: 767px) {
+                    #shopify-section-{{ section.id }} #{{ block.id }} .review2__text > div {
+                      font-size:{{ block.settings.mobile_font_size }}; 
+                      font-weight: {{ block.settings.mobile_font_weight }}; 
+                      {% if block.settings.mobile_css != blank %}
+                        {{ block.settings.mobile_css }}
+                      {% endif %}
+                    }
+                  }
+                </style>
+                <div class="review2__text" style="background: {{ block.settings.background }};">
+                  <div>
+                    <img
+                      src="{{ 'stars.png' | asset_url }}"
+                      alt="Stars"
+                    >
+                    {{ block.settings.text }}
+                  </div>
+                </div>
+              </div>
+
+              {% assign review_count = review_count | plus: 1 %}
+          {% endcase %}
+        {%- endfor -%}
+
+        {% if review_count == 2 %}
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+{%- if blocks_size > 2 -%}
+  <script>
+    let swiperOptions = {
+      slidesPerView: 'auto',
+      centeredSlides: false,
+      spaceBetween: 20,
+      grabCursor: true,
+      initialSlide: 0,
+      freeMode: true,
+      breakpoints: {
+        1200: {
+          spaceBetween: 30,
+          grabCursor: false,
+        },
+      },
+    };
+
+    let swiper1 = new Swiper('.mySwiper-1', swiperOptions);
+    let swiper2 = new Swiper('.mySwiper-2', swiperOptions);
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth < 768) {
+        setTimeout(function () {
+          document.querySelector('.mySwiper-1 .swiper-wrapper').style.transform = 'translate3d(-100px, 0px, 0px)';
+          document.querySelector('.mySwiper-2 .swiper-wrapper').style.transform = 'translate3d(-680px, 0px, 0px)';
+        }, 1000);
+      }
+    });
+  </script>
+{%- else -%}
+  <script>
+    let swiperOptions2 = {
+      slidesPerView: 1,
+      centeredSlides: false,
+      spaceBetween: 30,
+      grabCursor: true,
+      initialSlide: 0,
+      freeMode: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 'auto',
+          grabCursor: false,
+          freeMode: true
+        }
+      }
+    };
+
+    let swiperMobile = new Swiper('.mySwiper-mobile', swiperOptions2);
+  </script>
+  <style>
+    .mySwiper-mobile {
+      position: relative;
+    }
+    .mySwiper-mobile .swiper-pagination {
+      bottom: -50px;
+    }
+    .mySwiper-mobile .swiper-pagination-bullet-active {
+      background-color: #353B7C;
+    }
+  </style>
+{%- endif -%}
+
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .swiper-wrapper {
+    transition: transform 0.5s;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Movement - Reviews",
+  "class": "index-section movement-reviews",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Reviews"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "text",
+      "id": "button1_text",
+      "label": "Button 1 text",
+      "default": "Test unsere Produkte"
+    },
+    {
+      "type": "url",
+      "id": "button1_url",
+      "label": "Button 1 URL"
+    },
+    {
+      "type": "color",
+      "id": "button1_color",
+      "label": "Button 1 color"
+    },
+    {
+      "type": "text",
+      "id": "button2_text",
+      "label": "Button 2 text",
+      "default": "everydays Partner werden"
+    },
+    {
+      "type": "url",
+      "id": "button2_url",
+      "label": "Button 2URL"
+    },
+    {
+      "type": "color",
+      "id": "button2_color",
+      "label": "Button 2 color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "html",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Review Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Review background",
+          "default": "#EFFFDE"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font size",
+          "default": "16px",
+          "options": [
+            {
+              "value": "13px",
+              "label": "13px"
+            },
+            {
+              "value": "14px",
+              "label": "14px"
+            },
+            {
+              "value": "15px",
+              "label": "15px"
+            },
+            {
+              "value": "16px",
+              "label": "16px"
+            },
+            {
+              "value": "17px",
+              "label": "17px"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "label": "Font weight",
+          "default": "400",
+          "options": [
+            {
+              "value": "400",
+              "label": "400"
+            },
+            {
+              "value": "500",
+              "label": "500"
+            },
+            {
+              "value": "600",
+              "label": "600"
+            },
+            {
+              "value": "700",
+              "label": "700"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "CSS"
+        },
+        {
+          "type": "select",
+          "id": "mobile_font_size",
+          "label": "Mobile font size",
+          "default": "12px",
+          "options": [
+            {
+              "value": "11px",
+              "label": "11px"
+            },
+            {
+              "value": "12px",
+              "label": "12px"
+            },
+            {
+              "value": "13px",
+              "label": "13px"
+            },
+            {
+              "value": "14px",
+              "label": "14px"
+            },
+            {
+              "value": "15px",
+              "label": "15px"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "mobile_font_weight",
+          "label": "Mobile font weight",
+          "default": "500",
+          "options": [
+            {
+              "value": "400",
+              "label": "400"
+            },
+            {
+              "value": "500",
+              "label": "500"
+            },
+            {
+              "value": "600",
+              "label": "600"
+            },
+            {
+              "value": "700",
+              "label": "700"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "mobile_css",
+          "label": "Mobile CSS"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Movement - Reviews"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,120 @@
+{%- if section.settings.show_label and section.settings.label != blank -%}
+  <a href="#{{ section.settings.html_anchor }}" open-modal>
+    {{ section.settings.label }}
+   </a>
+{%- endif -%}
+
+<div id="{{ section.settings.html_anchor }}" close-modal data-close="#{{ section.settings.html_anchor }}" class="modal{% if content_for_header contains "Shopify.designMode" %} modal--is-preview{% endif %} modal--v3"{% if section.settings.color_text != blank and section.settings.color_text != "rgba(0,0,0,0)" %} style="color: {{ section.settings.color_text }};"{% endif %}>
+  <div class="modal__inner"{% if section.settings.color_background != blank %} style="background-color: {{ section.settings.color_background }};"{% endif %}>
+    <button type="button" class="modal__close text-link" close-modal data-close="#{{ section.settings.html_anchor }}">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="m19 17.61 27.12 27.13m0-27.12L19 44.74"/></svg>
+      <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+    </button>
+    <div class="modal__centered text-{{ section.settings.align_text }}">
+      {%- if section.settings.content_order == "first_text" -%}
+        {% if section.settings.richtext != blank %}
+          <div class="rte-setting text-spacing--large">{{ section.settings.richtext }}</div>
+        {% endif %}
+      {%- endif -%}
+      {% if section.settings.text != blank %}
+        <div class="rte-setting text-spacing--large">{{ section.settings.text }}</div>
+      {% endif %}
+      {%- if section.settings.content_order == "first_html" -%}
+        {% if section.settings.richtext != blank %}
+          <div class="rte-setting text-spacing--large">{{ section.settings.richtext }}</div>
+        {% endif %}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom popup",
+  "settings": [
+    {
+      "type": "text",
+      "id": "html_anchor",
+      "label": "HTML anchor",
+      "info": "This anchor is used to open a popup. It allows you to place a link to a popup anywhere you want. Use a structure like this: <a href=\"#YOUR_HTML_ANCHOR\" open-modal>Open modal</a>"
+    },
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "Open modal"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label",
+      "label": "Show label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Popup"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background color"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.text-columns.settings.align_text.label",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.text-columns.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.text-columns.settings.align_text.options.center.label"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_order",
+      "label": "Content order",
+      "default": "first_html",
+      "options": [
+        {
+          "value": "first_html",
+          "label": "HTML first"
+        },
+        {
+          "value": "first_text",
+          "label": "Text first"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "text",
+      "label": "HTML"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "t:sections.text-columns.blocks.column.settings.text.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom popup"
+    }
+  ]
+}
+{% endschema %}

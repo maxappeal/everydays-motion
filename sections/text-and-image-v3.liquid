@@ -1,0 +1,291 @@
+{% style %}
+  {% if section.settings.color_text != blank and section.settings.color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} {
+      --colorTextBody: {{ section.settings.color_text }};
+      color: var(--colorTextBody);
+    }
+  {% endif %}
+  {% if section.settings.color_background != blank and section.settings.color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .txt-img-3 {
+      background-color: {{ section.settings.color_background }};
+    }
+  {% endif %}
+  {% if section.settings.color_subheading_background != blank and section.settings.color_subheading_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .txt-img-3__bh {
+      background-color: {{ section.settings.color_subheading_background }};
+      color: {{ section.settings.color_background }};
+    }
+  {% endif %}
+  {% if section.settings.color_heading != blank and section.settings.color_heading != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .txt-img-3__h {
+      --colorTextHeader: {{ section.settings.color_heading }};
+      color: var(--colorTextHeader);
+    }
+  {% endif %}
+  {% if section.settings.color_btn_label != blank and section.settings.color_btn_label != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .btn {
+      color: {{ section.settings.color_btn_label }};
+    }
+  {% endif %}
+  {% if section.settings.color_btn_background != blank and section.settings.color_btn_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .btn {
+      background: {{ section.settings.color_btn_background }};
+    }
+  {% endif %}
+  {%- if section.settings.color_btn_label != blank and section.settings.color_btn_label != "rgba(0,0,0,0)" and section.settings.color_btn_background == "rgba(0,0,0,0)" -%}
+    #shopify-section-{{ section.id }} .btn {
+      background: rgba({{ section.settings.color_btn_label.red }}, {{ section.settings.color_btn_label.green }}, {{ section.settings.color_btn_label.blue }}, .4);
+    }
+  {%- endif -%}
+  {% if section.settings.color_btn_border != blank and section.settings.color_btn_border != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .btn {
+      border-color: {{ section.settings.color_btn_border }};
+    }
+  {% endif %}
+{% endstyle %}
+
+<div class="txt-img-3{% if section.settings.layout == 'full' %} txt-img-3--full{% endif %}">
+  <div class="page-width page-width--big">
+    <div class="row row--reverse">
+      <div class="column">
+        <div class="txt-img-3__content">
+          {%- if section.settings.icon != blank and section.settings.subheading == blank -%}
+            <div class="txt-img-3__icon">
+              <img
+                src="{{ section.settings.icon | image_url }}"
+                width="{{ section.settings.icon.width }}"
+                height="{{ section.settings.icon.height }}"
+                loading="lazy"
+                alt="you, just better!"
+              >
+            </div>
+          {%- endif -%}
+          {%- if section.settings.subheading != blank -%}
+            <div class="txt-img-3__bh">
+              {{ section.settings.subheading }}
+              {%- if section.settings.icon != blank -%}
+                <div class="txt-img-3__icon">
+                  <img
+                    src="{{ section.settings.icon | image_url }}"
+                    width="{{ section.settings.icon.width }}"
+                    height="{{ section.settings.icon.height }}"
+                    loading="lazy"
+                    alt="you, just better!"
+                  >
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          {%- if section.settings.heading != blank -%}
+            <div class="txt-img-3__h">{{ section.settings.heading }}</div>
+          {%- endif -%}
+          {%- if section.settings.layout == 'full' and section.settings.image != blank -%}
+            {% if section.settings.image_mobile != blank %}
+              <div class="txt-img-3__img mobile-only">
+                {{
+                  section.settings.image_mobile
+                  | image_url: width: null, height: null
+                  | image_tag:
+                    width: null,
+                    height: null,
+                    sizes: '(max-width:767px) 100vw, 660px',
+                    widths: '400, 660, 740, 1440',
+                    preload: true,
+                    alt: section.settings.image.alt
+                }}
+              </div>
+            {% else %}
+              <div class="txt-img-3__img mobile-only">
+                {{
+                  section.settings.image
+                  | image_url: width: null, height: null
+                  | image_tag:
+                    width: null,
+                    height: null,
+                    sizes: '(max-width:767px) 100vw, 660px',
+                    widths: '400, 660, 740, 1440',
+                    preload: true,
+                    alt: section.settings.image.alt
+                }}
+              </div>
+            {% endif %}
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="txt-img-3__text">{{ section.settings.text }}</div>
+          {%- endif -%}
+          {%- if section.settings.btn_label != blank and section.settings.btn_link != blank -%}
+            <div class="txt-img-3__btn">
+              <a
+                href="{{ section.settings.btn_link }}"
+                class="btn{% if section.settings.btn_size == 'enlarged' %} btn--big{% endif %}"
+              >
+                {{- section.settings.btn_label -}}
+              </a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="column{% if section.settings.layout == 'full' %} desktop-only{% endif %}">
+        {%- if section.settings.image != blank -%}
+          <div class="txt-img-3__img">
+            {{
+              section.settings.image
+              | image_url: width: null, height: null
+              | image_tag:
+                width: null,
+                height: null,
+                sizes: '(max-width:767px) 100vw, 660px',
+                widths: '400, 660, 740, 1440',
+                preload: true,
+                alt: section.settings.image.alt
+            }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image with text v3",
+  "class": "text-and-image--v3",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        {
+          "value": "boxed",
+          "label": "Boxed"
+        },
+        {
+          "value": "full",
+          "label": "Full width"
+        }
+      ],
+      "default": "boxed"
+    },
+    {
+      "type": "header",
+      "content": "t:settings_schema.colors.name"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.testimonials.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_subheading_background",
+      "label": "Subheading background color"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background color"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_label",
+      "label": "Button label"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_border",
+      "label": "Button border"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "select",
+      "id": "btn_size",
+      "label": "Size",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "enlarged",
+          "label": "Enlarged"
+        }
+      ],
+      "default": "enlarged"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-between-text.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text v3"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

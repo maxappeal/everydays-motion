@@ -1,0 +1,138 @@
+{%- style -%}
+  .featured-trustpilot .grid {
+    display: flex;
+  }
+  .featured-trustpilot .grid__item {
+    flex: 0 0 33.3333%;
+    padding-top: 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    .featured-trustpilot .grid__item {
+      flex: 0 0 calc(100% - 70px);
+      padding-left: 20px;
+    }
+  }
+  .featured-trustpilot__box {
+    background: #f3f6ff;
+    border-radius: 17px;
+    height: 100%;
+    padding: 30px 40px;
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .featured-trustpilot__box {
+      padding: 30px;
+    }
+  }
+  .featured-trustpilot__box__icon {
+    width: 100px;
+    line-height: 100px;
+    position: absolute;
+    right: 40px;
+    top: -20px;
+    background: #f9fbff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 47px;
+  }
+  @media only screen and (max-width: 767px) {
+    .featured-trustpilot__box__icon {
+      width: 75px;
+      line-height: 75px;
+      right: 30px;
+    }
+  }
+  .featured-trustpilot__box .trustpilot__widget__summary__starswrap {
+    margin: 0 0 20px;
+    width: 105px;
+    background-size: 105px;
+  }
+  .featured-trustpilot__box .trustpilot__widget__summary__stars {
+    background-size: 105px;
+  }
+  .featured-trustpilot__box__heading {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    .featured-trustpilot__box__heading {
+      font-size: 16px;
+    }
+  }
+  .featured-trustpilot__box__text p {
+    font-size: 15px;
+  }
+{%- endstyle -%}
+
+<div class="featured-trustpilot">
+  <div class="page-width page-width--flush-small">
+    <div class="grid-overflow-wrapper">
+      <div class="grid">
+        {%- for block in section.blocks -%}
+          <div class="grid__item">
+            <div class="featured-trustpilot__box">
+              {%- if block.settings.icon -%}
+                <div class="featured-trustpilot__box__icon">
+                  {{ block.settings.icon }}
+                </div>
+              {%- endif -%}
+              <div class="trustpilot__widget__summary__starswrap">
+                <div class="trustpilot__widget__summary__stars" style="width: 100%"></div>
+              </div>
+              {%- if block.settings.heading -%}
+                <div class="featured-trustpilot__box__heading">
+                  {{ block.settings.heading }}
+                </div>
+              {%- endif -%}
+              {%- if block.settings.text -%}
+                <div class="featured-trustpilot__box__text">
+                  {{ block.settings.text }}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Trustpilot",
+  "class": "index-section",
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Trustpilot"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["custom.popups"]
+  }
+}
+{% endschema %}

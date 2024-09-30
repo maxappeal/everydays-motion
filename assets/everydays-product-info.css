@@ -1,0 +1,229 @@
+.product-info__image {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.product-info__swipe {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--colorTextHeader);
+}
+
+.everydays-product-info.product-info {
+  color: var(--productInfoTextColor);
+}
+
+.everydays-product-info .product-info__btn {
+  margin-top: 4.5rem;
+}
+
+.text-box-first {
+  margin: 30px 0;
+}
+
+.product-info__counter {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.everydays-product-info .product-info__heading h4 {
+  position: relative;
+  color: var(--productInfoHeadlineColor);
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+
+.everydays-product-info .text-box {
+  margin: 0;
+  border-radius: 0.9375rem;
+  padding: 1rem 0 2.625rem 0;
+  background: var(--productInfoBoxBackgroundColor);
+  box-shadow: var(--productInfoBoxShadow);
+}
+
+.everydays-product-info .text-box .number {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.everydays-product-info .text-box h3 {
+  color: var(--productInfoBoxHeadlineColor);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.everydays-product-info .text-box p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.everydays-product-info a.btn {
+  height: 58px;
+  line-height: 1.9;
+  background: var(--productInfoButtonColor);
+}
+
+.everydays-product-info .product-info__heading h4 {
+  font-size: 1.875rem;
+}
+
+product-info__box {
+  background-color: var(--productInfoBackgroundColor);
+  box-shadow: 0 2px 5px rgba(53, 59, 124, 0.18);
+  border-radius: 15px;
+  padding: 5px 30px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.everydays-product-info__grid {
+  display: none;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 6.875rem;
+}
+
+.everydays-product-info .layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
+}
+
+.everydays-product-info .layout .boxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.everydays-product-info__carousel li .box {
+  border-radius: 0.9375rem;
+  background-color: var(--productInfoBackgroundColor);
+  box-shadow: var(--productInfoBoxMobile);
+}
+
+.everydays-product-info__carousel li .box.start {
+  padding: 40px 32px 48px 32px;
+  text-align: center;
+}
+
+.everydays-product-info__carousel li .box.start div {
+  margin-bottom: 23px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.everydays-product-info__carousel li .box.start h3 {
+  margin: -3rem auto 0;
+  max-width: 250px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.everydays-product-info__carousel li .box img {
+  margin: auto;
+  width: 100%;
+}
+
+.everydays-product-info__carousel li .box.block {
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.everydays-product-info__carousel li .box.block .number {
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.everydays-product-info__carousel li .box.block .container {
+  margin: auto;
+}
+
+.everydays-product-info__carousel li .box.block h3 {
+  max-width: 250px;
+  margin: auto auto 24px;
+  color: var(--productInfoBoxHeadlineColor);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.everydays-product-info__carousel li .box.block p {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.everydays-product-info__carousel .splide__pagination {
+  bottom: inherit;
+  margin-top: 1rem;
+}
+
+
+.everydays-product-info__carousel .splide__pagination__page {
+  width: 5px;
+  height: 5px;
+  opacity: 1;
+  background: var(--productInfoBoxBackgroundColor);
+}
+
+.everydays-product-info__carousel .splide__pagination__page.is-active {
+  background: var(--productInfoTextColor);
+  transform: scale(1);
+}
+
+.everydays-product-info__carousel .product-info__btn {
+  text-align: center;
+}
+
+@media only screen and (min-width: 990px) {
+  .everydays-product-info__carousel {
+    display: none;
+  }
+
+  .everydays-product-info {
+    background-color: var(--productInfoBackgroundColor);
+  }
+
+  .everydays-product-info__grid {
+    display: grid;
+  }
+
+  .everydays-product-info .product-info__heading h4 {
+    width: 23.75rem;
+    margin: -3rem auto 0 auto;
+    font-size: 1.875rem;
+  }
+
+  .everydays-product-info.product-info {
+    padding: 7.125rem 0;
+  }
+
+  .everydays-product-info .text-box h3 {
+    padding: 0 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  .everydays-product-info .text-box p {
+    padding: 0 2.5rem;
+  }
+
+  .everydays-product-info .text-box .number {
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+}

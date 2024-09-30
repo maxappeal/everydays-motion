@@ -1,0 +1,506 @@
+{{ 'windi.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width sp-calculator index-section">
+    {%- if section.settings.heading != blank -%}
+        <div class="sp-calculator__heading sp-calculator__heading--step1">
+            {{ section.settings.heading }}
+        </div>
+        {%- for block in section.blocks -%}
+            <div class="sp-calculator__heading sp-calculator__heading--step2" data-id="{{ block.settings.title }}" style="display: none;">
+                {{ block.settings.heading }}
+            </div>
+        {%- endfor -%}
+    {%- endif -%}
+    <section class="section-bg mx-auto lg:grid lg:grid-cols-[1fr,1fr] text-primary new-calculator">
+        <div class="w-full">
+            <div class="sp-calculator__left">
+                <div class="sp-calculator__step1">
+                    <div class="sp-calculator__image">
+                        {%- if section.settings.image != blank -%}
+                            {%- assign alt = section.settings.heading | strip_html -%}
+                            {{ section.settings.image | image_url: width: 1290 | image_tag: widths: '1290', alt: alt  }}
+                        {%- endif -%}
+                        {%- if section.settings.text_1 != blank -%}
+                            <div class="sp-calculator__image__text sp-calculator__image__text--1">
+                                {{ section.settings.text_1 }}
+                            </div>
+                        {%- endif -%}
+                        {%- if section.settings.text_2 != blank -%}
+                            <div class="sp-calculator__image__text sp-calculator__image__text--2">
+                                {{ section.settings.text_2 }}
+                            </div>
+                        {%- endif -%}
+                    </div>
+                </div>
+                {%- for block in section.blocks -%}
+                    <div class="sp-calculator__step2" data-id="{{ block.settings.title }}" style="display: none;">
+                        <div class="sp-calculator__image">
+                            {%- if block.settings.image != blank -%}
+                                {%- assign alt = block.settings.heading | strip_html -%}
+                                {{ block.settings.image | image_url: width: 1290 | image_tag: widths: '1290', alt: alt  }}
+                            {%- endif -%}
+                            {%- if block.settings.text_1 != blank -%}
+                                <div class="sp-calculator__image__text sp-calculator__image__text--3">
+                                    {{ block.settings.text_1 }}
+                                </div>
+                            {%- endif -%}
+                            {%- if block.settings.text_2 != blank -%}
+                                <div class="sp-calculator__image__text sp-calculator__image__text--4">
+                                    {{ block.settings.text_2 }}
+                                </div>
+                            {%- endif -%}
+                        </div>
+                    </div>
+                {%- endfor -%}
+                {% comment %} <div class="sp-calculator__info">
+                    <p>{{ 'sections.calculator.text' | t }}</p>
+                </div> {% endcomment %}
+            </div>
+        </div>
+        <form class="m-0 flex flex-col justify-center" id="proteinForm" action="">
+           
+            <section class="tab second-step">
+                <div class="form-numbers">
+                    <div class="number-container">
+                        <div class="input-container">
+                            <label for="height">{{ 'sections.calculator.height' | t }}</label>
+                            <input id="height" name="height" type="number" onchange="validateInputs()">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <div class="number-container">
+                        <div class="input-container">
+                            <label for="age">{{ 'sections.calculator.age' | t }}</label>
+                            <input id="age" name="age" type="number" onchange="validateInputs()">
+                            <span>{{ 'sections.calculator.years' | t }}</span>
+                        </div>
+                    </div>
+                    <div class="number-container">
+                        <div class="input-container">
+                            <label for="weight">{{ 'sections.calculator.weight' | t }}</label>
+                            <input id="weight" name="weight" type="number" onchange="validateInputs()">
+                            <span>kg</span>
+                        </div>
+                    </div>
+                    <div class="activity-radios">
+                        <div>
+                            <p>{{ 'sections.calculator.overweight_underweight' | t }}</p>
+                            <label class="switch">
+                                <input type="checkbox" id="overweight_underweight">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-activity">
+                    <div class="activity-radios grid-radios">
+
+                        <label for="sport-1"><input type="radio" id="sport-1" name="activity" value="0.9" checked> {{ 'sections.calculator.activity_1' | t }}</label>
+                        <label for="sport-3"><input type="radio" id="sport-3" name="activity" value="1.4"> {{ 'sections.calculator.activity_3' | t }}</label>
+                        <label for="sport-2"><input type="radio" id="sport-2" name="activity" value="1"> {{ 'sections.calculator.activity_2' | t }}</label>
+                        <label for="sport-4"><input type="radio" id="sport-4" name="activity" value="1.5"> {{ 'sections.calculator.activity_4' | t }}</label>
+
+                        <label for="selectRadios2" class="special"></label>
+                        <select class="select-styling" name="selectRadio" id="selectRadios2" onchange="radioClick(this)">
+                            <option value="" disabled selected>{{ 'sections.calculator.select_activity' | t }}</option>
+                            <option value="sport-1">{{ 'sections.calculator.activity_1' | t }}</option>
+                            <option value="sport-2">{{ 'sections.calculator.activity_2' | t }}</option>
+                            <option value="sport-3">{{ 'sections.calculator.activity_3' | t }}</option>
+                            <option value="sport-4">{{ 'sections.calculator.activity_4' | t }}</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="form-others">
+                    <h3 class="text-18px">{{ 'sections.calculator.miscellaneous' | t }}</h3>
+                    <div class="activity-radios">
+                        <div>
+                            <p>{{ 'sections.calculator.miscellaneous_1' | t }}</p>
+                            <label class="switch">
+                                <input type="checkbox" id="pregnant">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                       <div>
+                            <p>{{ 'sections.calculator.miscellaneous_2' | t }}</p>
+                            <label class="switch">
+                                <input type="checkbox" id="thyroid">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <p>{{ 'sections.calculator.miscellaneous_3' | t }}</p>
+                            <label class="switch">
+                                <input type="checkbox" id="vegan">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="tab third-step">
+                <div class="form-numbers">
+                    <div class="number-container">
+                        <label for="gramResult">{{ 'sections.calculator.results_requirement' | t }}</label>
+                        <div class="input-container">
+                            <input id="gramResult" name="gramResult" type="number" readonly>
+                            <span>{{ 'sections.calculator.gram' | t }}</span>
+                        </div>
+                    </div>
+                    <div class="number-container">
+                        <label for="pillResult">{{ 'sections.calculator.results_pressings' | t }}</label>
+                        <div class="input-container">
+                            <input id="pillResult" name="pillResult" type="number" readonly>
+                            <span>{{ 'sections.calculator.unit' | t }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-result">
+                    <div style="max-width: 103px;">
+                        <img src="{{ 'pill.png' | asset_url }}" alt="Pill"/>
+                    </div>
+                    <div>
+                        <span>{{ 'sections.calculator.results_info_html' | t }}</span> <span id="priceResult" class="font-bold">0€ / {{ 'sections.calculator.day' | t }}</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="progress-button text-center !lg:text-left">
+                <button type="button" id="nextBtn"
+                        disabled
+                        class="btn mt-5 lg:mt-10"
+                        onclick="nextPrev(1); proteinCalculation();">Next
+                </button>
+            </div>
+
+            <div class="text-center !lg:text-right lg:mt-4 text-13px leading-30px text-stepGray">
+                {{ 'sections.calculator.step' | t }} <span id="formStep">1</span> {{ 'sections.calculator.of' | t }} 2
+            </div>
+
+        </form>
+        <script>
+            function validateInputs() {
+                const inputs = document.querySelectorAll('#proteinForm input[onchange]');
+                const button = document.querySelector('#proteinForm #nextBtn');
+                if (button && inputs.length) {
+                    let validateInput = true;
+                    inputs.forEach(input => {
+                        if (!input.value) {
+                            validateInput = false;
+                            return;
+                        }
+                    });
+                    if (validateInput) {
+                        button.removeAttribute('disabled');
+                    } else {
+                        button.setAttribute('disabled', true);
+                    }
+                }
+            }
+
+            function jump(h) {
+                var url = location.href; //Save down the URL without hash.
+                location.href = "#" + h; //Go to the target element.
+                history.replaceState(null, null, url); //Don't like hashes. Changing it back.
+            }
+
+            var currentTab = 0; // Current tab is set to be the first tab (0)
+            showTab(currentTab); // Display the current tab
+
+            function radioClick(option) {
+                document.getElementById(option.value).checked = true;
+            }
+
+            function showTab(n) {
+                // This function will display the specified tab of the form ...
+                var x = document.getElementsByClassName("tab");
+                x[n].style.display = "block";
+                // ... and fix the Previous/Next buttons:
+                if (n == (x.length - 1)) {
+                    document.getElementById("nextBtn").innerHTML = "{{ 'sections.calculator.new_input' | t }}";
+                    document.getElementById("nextBtn").setAttribute('onClick', 'clearForm()');
+                } else if (n == (x.length - 2)) {
+                    document.getElementById("nextBtn").innerHTML = "{{ 'sections.calculator.calculate' | t }}";
+
+                } else {
+                    document.getElementById("nextBtn").innerHTML = "Weiter";
+                }
+                // ... and run a function that displays the correct step indicator:
+                fixStepIndicator(n)
+            }
+
+            function clearForm() {
+                const step1 = document.querySelector('.sp-calculator__step1');
+                const step1Heading = document.querySelector('.sp-calculator__heading--step1');
+                const steps2 = document.querySelectorAll('.sp-calculator__step2');
+                const step2Headings = document.querySelectorAll('.sp-calculator__heading--step2');
+                if (step1 && steps2.length) {
+                    steps2.forEach(step2 => {
+                        step2.style.display = 'none';
+                    });
+                    step1.style.display = 'block';
+                }
+                if (step1Heading && step2Headings.length) {
+                    step2Headings.forEach(step2 => {
+                        step2.style.display = 'none';
+                    });
+                    step1Heading.style.display = 'block';
+                }
+                document.getElementById("proteinForm").reset();
+                currentTab = 0;
+                const x = document.querySelectorAll(".tab");
+                x.forEach(tab => {
+                    tab.style.display = "none";
+                });
+                showTab(currentTab);
+                const btn = document.getElementById("nextBtn");
+                btn.setAttribute("onClick", "nextPrev(1); proteinCalculation();");
+                btn.setAttribute('disabled', true);
+            }
+
+            function nextPrev(n) {
+                // This function will figure out which tab to display
+                var x = document.getElementsByClassName("tab");
+                // Exit the function if any field in the current tab is invalid:
+                if (n == 1 && !validateForm()) return false;
+                // Hide the current tab:
+                x[currentTab].style.display = "none";
+                // Increase or decrease the current tab by 1:
+                currentTab = currentTab + n;
+                // if you have reached the end of the form... :
+                if (currentTab >= x.length) {
+                    //...the form gets submitted:
+                    document.getElementById("proteinForm").submit();
+                    return false;
+                }
+                // Otherwise, display the correct tab:
+                showTab(currentTab);
+            }
+
+            function validateForm() {
+                // This function deals with validation of the form fields
+                var x, y, i, valid = true;
+                x = document.getElementsByClassName("tab");
+                y = x[currentTab].getElementsByTagName("input");
+                // A loop that checks every input field in the current tab:
+                for (i = 0; i < y.length; i++) {
+                    // If a field is empty...
+                    if (y[i].value == "") {
+                        // add an "invalid" class to the field:
+                        y[i].className += " invalid";
+                        // and set the current valid status to false:
+                        valid = false;
+                    }
+                }
+
+                return valid; // return the valid status
+            }
+
+            function proteinCalculation() {
+
+                const calc = document.querySelector('.new-calculator');
+                if (calc) {
+                    window.scroll({ top: (calc.offsetTop - 100), left: 0, behavior: 'smooth' });
+                }
+
+                let weight = document.getElementById('weight').value;
+                let height = document.getElementById('height').value / 100;
+                let age = document.getElementById('age').value;
+
+                let calcBmi = false;
+
+                if (document.getElementById('overweight_underweight').checked) {
+                    calcBmi = true;
+                }
+
+                if (calcBmi) {
+                    let bmi = weight / (height * height);
+                    weight = 22 *  weight / bmi;
+                }
+
+                const goalInputs = document.querySelectorAll('input[name="goal"]')
+                let goal;
+                for (const rb of goalInputs) {
+                    if (rb.checked) {
+                        goal = rb.value;
+                        break;
+                    }
+                }
+
+                const activityInputs = document.querySelectorAll('input[name="activity"]')
+                let fitness;
+                for (const rb of activityInputs) {
+                    if (rb.checked) {
+                        fitness = rb.value;
+                        break;
+                    }
+                }
+
+                let gramPerDay = weight * fitness;
+                let extraGramm = 0;
+                let pregnant = 0;
+
+                let vegan = 12;
+
+                if (document.getElementById('pregnant').checked) {
+                    pregnant = 20;
+                }
+
+                if (document.getElementById('vegan').checked) {
+                    vegan = 10;
+                }
+
+                if (age >= 50 || age < 18) {
+                    extraGramm = gramPerDay / 100 * 5;
+                }
+
+                let totalPerDay = gramPerDay + extraGramm + pregnant;
+
+                if (document.getElementById('thyroid').checked) {
+                    totalPerDay *= 1.5;
+                }
+
+                let total = totalPerDay / vegan;
+                let roundTotal = Math.round(total);
+                let price = (roundTotal * 0.165).toFixed(2);
+
+                document.getElementById('pillResult').value = roundTotal;
+                document.getElementById('gramResult').value = totalPerDay.toFixed(2);
+                document.getElementById('priceResult').innerHTML = price + ' € / {{ 'sections.calculator.day' | t }}';
+
+                const step1 = document.querySelector('.sp-calculator__step1');
+                const step1Heading = document.querySelector('.sp-calculator__heading--step1');
+                let step2 = document.querySelector('.sp-calculator__step2');
+                let step2Heading = document.querySelector('.sp-calculator__heading--step2');
+
+                if (pregnant > 0) {
+                    step2 = document.querySelector('.sp-calculator__step2[data-id*="Schwangerschaft / stillende Mutter"]');
+                    step2Heading = document.querySelector('.sp-calculator__heading--step2[data-id*="Schwangerschaft / stillende Mutter"]');
+                } else if (fitness >= 1) {
+                    step2 = document.querySelector('.sp-calculator__step2[data-id*="Intensiver Ausdauersport"]');
+                    step2Heading = document.querySelector('.sp-calculator__heading--step2[data-id*="Intensiver Ausdauersport"]');
+                }
+                
+                if (step1 && step2) {
+                    step1.style.display = 'none';
+                    step1Heading.style.display = 'none';
+                    step2.style.display = 'block';
+                    step2Heading.style.display = 'block';
+                }
+
+                dataLayer.push({
+                    'event': 'calculator',
+                    'data': {
+                        'age': age,
+                        'weight': weight,
+                        'fitness': fitness,
+                        'goal':goal,
+                        'pregnant': (document.getElementById('pregnant').checked) ? 'yes' : 'no',
+                        'vegan': (document.getElementById('vegan').checked) ? 'yes' : 'no',
+                        'pills': roundTotal,
+                        'gram': totalPerDay.toFixed(2) + 'g',
+                        'price': price + '€ / {{ 'sections.calculator.day' | t }}'
+                    }
+                });
+
+            }
+
+            function fixStepIndicator(n) {
+                let x = document.getElementById("formStep");
+
+                x.innerHTML = n + 1;
+            }
+        </script>
+    </section>
+</div>
+
+{% schema %}
+{
+    "name": "Protein Calculator",
+    "class": "index-section protein-calculator",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "html",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "color",
+            "id": "color_background",
+            "label": "t:sections.testimonials.settings.color_background.label"
+        },
+        {
+            "type": "color",
+            "id": "image_color_background",
+            "label": "Image background color"
+        },
+        {
+            "type": "color",
+            "id": "badge_color",
+            "label": "Badge color"
+        },
+        {
+            "type": "color",
+            "id": "badge_background",
+            "label": "Badge background color"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "text_1",
+            "label": "Text (line 1)"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "text_2",
+            "label": "Text (line 2)"
+        }
+    ],
+    "blocks": [
+      {
+        "name": "Result",
+        "type": "result",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "html",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "text_1",
+                "label": "Text (line 1)"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "text_2",
+                "label": "Text (line 2)"
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Protein Calculator"
+        }
+    ]
+}
+{% endschema %}

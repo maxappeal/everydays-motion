@@ -1,0 +1,221 @@
+{%- style -%}
+  .expert-block__bg {
+    padding: 110px 0 12%;
+  }
+  @media only screen and (min-width: 1590px) {
+    .expert-block__bg {
+      padding: 220px 0 12%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .expert-block__bg {
+      padding: 0 0 150px;
+      margin-top: 100px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .expert-block__row {
+      flex-wrap: nowrap !important;
+      justify-content: center;
+    }
+    .expert-block__row__text {
+      padding-left: 165px !important;
+    }
+    .expert-block__row .grid__item {
+      width: auto !important;
+      max-width: 630px;
+    }
+  }
+  .expert-block__bg__image image-element {
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 230px;
+  }
+  @media only screen and (max-width: 767px) {
+    .expert-block__bg__image image-element {
+      max-width: 150px;
+      margin-top: -30px;
+    }
+  }
+  .expert-block__bg__text .h {
+    color: inherit;
+  }
+  @media only screen and (max-width: 767px) {
+    .expert-block__bg__text .h {
+      font-size: 26px;
+      max-width: 400px;
+      margin: 30px auto;
+    }
+  }
+  .expert-block__bg__text .expert-label {
+    font-size: 17px;
+  }
+  @media only screen and (max-width: 767px) {
+    .expert-block__bg__text .expert-label {
+      font-size: 15px;
+    }
+  }
+  .expert-block__grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: -10%;
+  }
+  @media only screen and (max-width: 767px) {
+    .expert-block__grid {
+      margin-top: -120px;
+    }
+  }
+  .expert-block__grid .grid__item {
+    align-self: center;
+  }
+  .expert-block__grid .grid__item .h {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 1589px) {
+    .expert-block__grid image-element {
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .expert-block__grid image-element {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .expert-block__grid image-element {
+      position: relative;
+      padding-bottom: 400px;
+    }
+    .expert-block__grid image-element img {
+      min-width: 400px;
+      position: absolute;
+      right: 0;
+    }
+  }
+{%- endstyle -%}
+
+<div class="expert-block">
+  <div
+    class="expert-block__bg"
+    style="color: {{ section.settings.text_color }}; background-color: {{ section.settings.background_color }};"
+  >
+    <div class="page-width">
+      <div class="grid grid--small expert-block__row">
+        <div class="grid__item text-center expert-block__bg__image">
+          {% if section.settings.expert_image != blank %}
+            {%- render 'image-element', img: section.settings.expert_image, img_width: 540, loading: true -%}
+          {% endif %}
+        </div>
+        <div class="grid__item expert-block__row__text text-center">
+          <div class="expert-block__bg__text">
+            {%- if section.settings.heading -%}
+              {{
+                section.settings.heading
+                | replace: '<h1>', '<h1 class="h h1">'
+                | replace: '<h2>', '<h2 class="h h1">'
+                | replace: '<h3>', '<h3 class="h h1">'
+                | replace: '<h4>', '<h4 class="h h1">'
+                | replace: '<h5>', '<h5 class="h h1">'
+                | replace: '<h6>', '<h6 class="h h1">'
+              }}
+            {%- endif -%}
+            {%- if section.settings.expert_label -%}
+              <p class="expert-label">{{ section.settings.expert_label }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-width">
+    <div class="grid grid--small expert-block__grid">
+      <div class="grid__item medium-up--seven-twelfths text-center expert-block__grid__image">
+        {% if section.settings.image != blank %}
+          {%- render 'image-element', img: section.settings.image, img_width: 1660, loading: true -%}
+        {% endif %}
+      </div>
+      <div class="grid__item medium-up--five-twelfths text-center">
+        {%- if section.settings.text -%}
+          {{
+            section.settings.text
+            | replace: '<h1>', '<h1 class="h h1">'
+            | replace: '<h2>', '<h2 class="h h1">'
+            | replace: '<h3>', '<h3 class="h h1">'
+            | replace: '<h4>', '<h4 class="h h1">'
+            | replace: '<h5>', '<h5 class="h h1">'
+            | replace: '<h6>', '<h6 class="h h1">'
+          }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Expert block",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "First section"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#6985E9"
+    },
+    {
+      "type": "image_picker",
+      "id": "expert_image",
+      "label": "Expert image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "expert_label",
+      "label": "Expert label"
+    },
+    {
+      "type": "header",
+      "content": "Second section"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Expert block"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["custom.popups"]
+  }
+}
+{% endschema %}

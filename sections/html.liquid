@@ -1,0 +1,20 @@
+{{ section.settings.code }}
+
+{% schema %}
+  {
+    "name": "HTML Content",
+    "settings": [
+      {
+        "type": "html",
+        "id": "code",
+        "label": "t:sections.advanced-content.blocks.html.settings.code.label",
+        "default": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML or scripts.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "HTML Content"
+      }
+    ]
+  }
+{% endschema %}

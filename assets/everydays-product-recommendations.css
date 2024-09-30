@@ -1,0 +1,54 @@
+.everydays-product-recommendations .grid-product__title {
+  color: var(--colorTextHeader);
+  margin-bottom: 1rem;
+}
+
+.everydays-product-recommendations .grid-product__short-desc {
+  width: 170px;
+  margin: auto;
+  font-size: 0.8125rem;
+}
+
+.everydays-product-recommendations .product-single__related .grid-product__meta {
+  padding-top: 2rem;
+}
+
+.everydays-product-recommendations .grid-product__price,
+.everydays-product-recommendations ajax-form {
+  display: none;
+}
+
+
+@media screen and (min-width: 990px) {
+  .everydays-product-recommendations .product-single__related .grid-product__meta {
+    padding-top: 3rem;
+  }
+
+  .everydays-product-recommendations .grid-product__title {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  .everydays-product-recommendations .grid-product__short-desc {
+    width: 12.5rem;
+    margin: auto;
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .everydays-product-recommendations .aos-animate[data-aos="overflow__animation"] {
+    transform: translateX(100vw);
+  }
+
+  .everydays-product-recommendations .grid-overflow-wrapper {
+    padding-bottom: 0;
+  }
+
+
+}
+
+@media only screen and (min-width: 769px) {
+  .everydays-product-recommendations .section-header {
+    margin-bottom: 70px;
+  }
+}

@@ -1,0 +1,299 @@
+{%- if template.suffix contains 'v3' or template.suffix contains 'v4' -%}
+  {% if indicator %}
+    {%- render 'product-inventory-v2', product: product, current_variant: current_variant, block: block, indicator: indicator -%}
+  {% endif %}
+{%- endif -%}
+
+{% form 'product', product, id: form_id, class: 'product-single__form' %}
+
+  {%- if is_preorder and product.metafields.custom.availability_date.value != null -%}
+    <input type="hidden" name="properties[{{ 'general.custom.availability_date' | t }}]" value="&nbsp;{{ product.metafields.custom.availability_date.value | date: '%d.%m.%Y' }}">
+  {%- endif -%}
+
+  {%- assign enable_dynamic_buttons = false -%}
+  {% if show_dynamic_checkout and template != 'product.preorder' %}
+    {%- assign enable_dynamic_buttons = true -%}
+  {% endif %}
+
+  {%- if template.suffix contains 'v2' -%}
+    {%- if product.metafields.custom.custom_tags.value.size -%}
+      <div class="meta-custom-tags">
+        {% for field in product.metafields.custom.custom_tags.value %}
+          {%- if field contains '|' -%}
+            {%- assign title = field | split: '|' -%}
+            <div class="meta-custom-tags__tag hidden" data-trigger="{{ title[1] }}">
+              {{ title.last }}
+            </div>
+          {%- else -%}
+            <div class="meta-custom-tags__tag">
+              {{ field }}
+            </div>
+          {%- endif -%}
+        {% endfor %}
+      </div>
+  
+      <script>
+        setTimeout(() => {
+          const slsPlansLabels = document.querySelectorAll('.sls-selling-plan-group-name');
+          const cstMetaTags = document.querySelectorAll('.meta-custom-tags__tag');
+          if (slsPlansLabels.length && cstMetaTags.length) {
+            slsPlansLabels.forEach(label => {
+              label.parentNode.parentNode.addEventListener('click', () => {
+                const title = label.textContent;
+                cstMetaTags.forEach(tag => {
+                  if (tag.dataset.trigger) {
+                    tag.classList.add('hidden');
+                  }
+                });
+                cstMetaTags.forEach(tag => {
+                  if (title == tag.dataset.trigger) {
+                    tag.classList.remove('hidden');
+                  }
+                });
+              });
+            });
+          }
+        }, 1500);
+      </script>
+    {%- endif -%}
+  
+    {% if indicator %}
+      {%- render 'product-inventory-v2', product: product, current_variant: current_variant, block: block, indicator: indicator -%}
+    {% endif %}
+  {%- endif -%}
+
+  {%- if template.suffix contains 'v3a' -%}
+    <script>
+      let slsIsReadySelect = false;
+      const slsSelectMapping = setInterval(() => {
+        const slsPlansLabels = document.querySelectorAll('.sls-selling-plan-group-first-line:not([tabindex])');
+        const slsContainer = document.querySelector('.sealsubs-container');
+        const slsTarget = document.querySelector('.sealsubs-container > div:first-child');
+
+        slsPlansLabels.forEach((label, index) => {
+          if (label.querySelector('.sls-selling-plan-group-name')) {
+            slsIsReadySelect = true;
+          }
+        });
+
+        if (slsIsReadySelect) {
+          clearInterval(slsSelectMapping);
+
+          const slsPlansLabelsTranslate = document.querySelectorAll('.sls-selling-plan-group-name');
+          if (slsPlansLabelsTranslate.length) {
+            slsPlansLabelsTranslate.forEach(label => {
+              if (label.textContent.includes("{{ 'general.custom.one_time_purchase' | t }}") || label.textContent.includes('Einmalige Lieferung') || label.textContent.includes('One-time purchase') || label.textContent.includes('Consegna una tantum')) {
+                label.innerHTML = '<span class="text">' + "{{ 'general.custom.one_time_purchase' | t }}" + '</span>';
+              }
+              if (label.textContent.includes("{{ 'general.custom.repeated_delivery' | t }}") || label.textContent.includes('Wiederholte Lieferung')) {
+                label.innerHTML = '<span class="text">' + "{{ 'general.custom.repeated_delivery' | t }}" + '</span>';
+              }
+            });
+          }
+          const slsPlansOptions = document.querySelectorAll('select[name="subs_interval"] option');
+          if (slsPlansOptions.length) {
+            slsPlansOptions.forEach(option => {
+              if (option.textContent.includes('Monatliche Lieferung')) {
+                option.innerHTML = "{{ 'general.custom.monthly_delivery' | t }}";
+              } else if (option.textContent.includes('2-monatlich')) {
+                option.innerHTML = "{{ 'general.custom.2_monthly_delivery' | t }}";
+              } else if (option.textContent.includes('3-monatlich')) {
+                option.innerHTML = "{{ 'general.custom.3_monthly_delivery' | t }}";
+              }
+            });
+          }
+
+          if (slsPlansLabels.length && slsContainer && slsTarget) {
+            const select = document.createElement('select');
+            select.classList.add('sls-select');
+            select.addEventListener('change', () => {
+              slsPlansLabels[select.value].click();
+            });
+            slsContainer.insertBefore(select, slsTarget);
+            slsPlansLabels.forEach((label, index) => {
+              const text = label.querySelector('.text');
+              select.add(new Option(text.textContent, index));
+            });
+          }
+
+          const slsDateSelect = document.querySelector('.selling-plan-group-options-name-select .sls-select');
+          const mappingNames = JSON.parse('{{ shop.metaobjects.sls_name_mapping.values | json }}');
+          if (slsDateSelect) {
+            const options = slsDateSelect.querySelectorAll('option');
+            if (options.length) {
+              const date = new Date().toLocaleDateString();
+              options.forEach(option => {
+                if (mappingNames.length) {
+                  mappingNames.forEach(name => {
+                    if (option.textContent == name['old_name']) {
+                      option.innerHTML = name['new_name'].replace('(date)', date.replaceAll('/', '.'));
+                    }
+                  });
+                }
+              });
+            }
+          }
+        }
+      }, 500);
+    </script>
+  {%- endif -%}
+
+  {% if enable_dynamic_buttons %}
+    <div class="payment-buttons">
+  {% endif %}
+
+    {%- liquid
+      unless button_text
+        assign default_text = 'products.product.add_to_cart' | t
+        assign button_text = 'products.product.add_to_cart' | t
+        if template contains 'preorder' or is_preorder
+          assign default_text = 'general.custom.preorder_now' | t
+          assign button_text = 'general.custom.preorder_now' | t
+        endif
+        unless current_variant.available
+          assign button_text = 'products.product.sold_out' | t
+        endunless
+      endunless
+    -%}
+
+    {%- unless template.suffix contains 'v3a' -%}
+      <button
+        {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+        name="add"
+        data-add-to-cart
+        class="btn add-to-cart"
+        {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+        <span data-add-to-cart-text data-default-text="{{ default_text }}">
+          {{ button_text }}
+        </span>
+      </button>
+
+      {% if enable_dynamic_buttons %}
+        {{ form | payment_button }}
+      {% endif %}
+    {%- endunless -%}
+
+  {% if enable_dynamic_buttons %}
+    </div>
+  {% endif %}
+
+  <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
+
+  {%- if template.suffix contains 'v3' or template.suffix contains 'v4' -%}
+    {%- if product.metafields.custom.custom_tags.value.size -%}
+      <div class="meta-custom-tags">
+        {% for field in product.metafields.custom.custom_tags.value %}
+          {%- if field contains '|' -%}
+            {%- assign title = field | split: '|' -%}
+            <div class="meta-custom-tags__tag hidden" data-trigger="{{ title[1] }}">
+              {{ title.last }}
+            </div>
+          {%- else -%}
+            <div class="meta-custom-tags__tag">
+              {{ field }}
+            </div>
+          {%- endif -%}
+        {% endfor %}
+      </div>
+  
+      <script>
+        setTimeout(() => {
+          const slsPlansLabels = document.querySelectorAll('.sls-selling-plan-group-name');
+          const cstMetaTags = document.querySelectorAll('.meta-custom-tags__tag');
+          if (slsPlansLabels.length && cstMetaTags.length) {
+            slsPlansLabels.forEach(label => {
+              label.parentNode.parentNode.addEventListener('click', () => {
+                const title = label.textContent;
+                cstMetaTags.forEach(tag => {
+                  if (tag.dataset.trigger) {
+                    tag.classList.add('hidden');
+                  }
+                });
+                cstMetaTags.forEach(tag => {
+                  if (title.includes(tag.dataset.trigger)) {
+                    tag.classList.remove('hidden');
+                  }
+                });
+              });
+            });
+          }
+        }, 1500);
+      </script>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if product.metafields.custom.preorder_shipping_dates != blank -%}
+    {% liquid
+      assign today_date = 'now' | date: '%s'
+      assign pre_date = product.metafields.custom.preorder_shipping_dates.value | last | date: '%s'
+    %}
+    {% if pre_date > today_date %}
+      {% liquid
+        assign final_date = ''
+        for date in product.metafields.custom.preorder_shipping_dates.value
+          assign date_value = date | date: "%d.%m.%Y"
+          if forloop.last == false
+            assign date_value = date | date: "%d.-"
+          endif
+
+          assign final_date = final_date | append: date_value
+        endfor
+
+      %}
+      <input type="hidden" form="{{ form_id }}" value="{{ 'everydays.preorder_date_html' | t: date: final_date }}"
+             name="properties[{{ 'products.product.preorder' | t }}]">
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if template.suffix contains 'v3a' -%}
+    <button
+      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+      name="add"
+      data-add-to-cart
+      class="btn add-to-cart"
+      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+      <span data-add-to-cart-text data-default-text="{{ default_text }}">
+        {{ button_text }}
+      </span>
+    </button>
+
+    {% if enable_dynamic_buttons %}
+      {{ form | payment_button }}
+    {% endif %}
+  {%- endif -%}
+
+  <select name="id" data-product-select class="product-single__variants no-js">
+    {%- for variant in product.variants -%}
+      {% if variant.available %}
+        <option {% if variant == product.selected_or_first_available_variant %}
+          selected="selected" {% endif %}
+          value="{{ variant.id }}">
+          {{ variant.title }} - {{ variant.price | money_with_currency }}
+        </option>
+      {% else %}
+        <option disabled="disabled">
+          {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+        </option>
+      {% endif %}
+    {%- endfor -%}
+  </select>
+  {%- if template.suffix contains 'v2' -%}
+    <script>
+      const formElement = document.querySelector('.product-single__form');
+      const variantSelect = document.querySelector('.variant-picker');
+      const config = { childList: true, subtree: true };
+      const callback = (mutationList, observer) => {
+        for (const mutation of mutationList) {
+          if (mutation.target.classList.contains('sealsubs-target-element')) {
+            formElement.insertBefore(variantSelect, formElement.firstChild);
+          }
+        }
+      }
+
+      if (formElement && variantSelect) {
+        const observer = new MutationObserver(callback);
+        observer.observe(formElement, config);
+      }
+    </script>
+  {%- endif -%}
+{% endform %}

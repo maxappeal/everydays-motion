@@ -1,0 +1,28 @@
+<div class="product__video-wrapper {{ classes }}" style="padding-bottom: {{ 100 | divided_by: media.aspect_ratio }}%;">
+  <video
+    playsinline
+    {% if video_controls %}
+      controls
+    {% endif %}
+    {% if video_muted %}
+      muted
+    {% endif %}
+    {% if video_autoplay %}
+      autoplay
+    {% endif %}
+    {% if video_loop %}
+      loop
+    {% endif %}
+    {% if loading %}
+      loading="lazy"
+    {% endif %}
+    controlsList="nodownload"
+    poster="{{ media.preview_image | img_url: size }}"
+    class="product__video"
+  >
+    {%- for source in media.sources -%}
+      <source src="{{ source.url }}" type="{{ source.mime_type }}" data-src="{{ source.url }}">
+    {%- endfor -%}
+    Your browser does not support the video tag.
+  </video>
+</div>

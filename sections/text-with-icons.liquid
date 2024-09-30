@@ -1,0 +1,460 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{% style %}
+  {% if section.settings.color_background_section != blank and section.settings.color_background_section != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .text-with-icons {
+      padding-top: 120px;
+      padding-bottom: 110px;
+      background-color: {{ section.settings.color_background_section }};
+    }
+    @media only screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .text-with-icons {
+        padding-top: 60px;
+        padding-bottom: 50px;
+      }
+    }
+  {% endif %}
+  {% if section.settings.color_text != blank and section.settings.color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} {
+      --colorTextBody: {{ section.settings.color_text }};
+      color: var(--colorTextBody);
+    }
+    #shopify-section-{{ section.id }} .collapsible-trigger-btn {
+      color: inherit;
+    }
+  {% endif %}
+  {% if section.settings.color_heading != blank and section.settings.color_heading != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .h2 {
+      --colorTextHeader: {{ section.settings.color_heading }};
+      color: var(--colorTextHeader);
+    }
+  {% endif %}
+  {% if section.settings.color_icons != blank and section.settings.color_icons != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} svg path {
+      fill: {{ section.settings.color_icons }};
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .icon {
+    color: {{ section.settings.icon_color }};
+  }
+
+  #shopify-section-{{ section.id }} .icon path,
+  #shopify-section-{{ section.id }} .icon polygon,
+  #shopify-section-{{ section.id }} .icon rect,
+  #shopify-section-{{ section.id }} .icon circle,
+  #shopify-section-{{ section.id }} .icon ellipse,
+  #shopify-section-{{ section.id }} .icon line,
+  #shopify-section-{{ section.id }} .icon polyline,
+  #shopify-section-{{ section.id }} .icon g {
+    stroke-width: {{ settings.icon_weight | replace: 'px', '' | minus: 1 }}px;
+  }
+{% endstyle %}
+
+<div
+  class="text-with-icons"
+  data-section-id="{{ section.id }}"
+  data-section-type="text-with-icons index-section"
+>
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <div
+        class="
+          text-with-icons__title
+          section-header
+        "
+      >
+        <h2 class="text-{{ section.settings.align_text }}">
+          {%- render 'title',
+            title: section.settings.title,
+            title_underline: section.settings.title_underline,
+            underline_style: section.settings.title_underline_style,
+            title_circle: section.settings.title_circle,
+            circle_style: section.settings.title_circle_style,
+            title_thinner: section.settings.title_thinner,
+            title_thinner_italic: section.settings.title_thinner_italic,
+            color: section.settings.title_color
+          -%}
+        </h2>
+      </div>
+    {%- endif -%}
+    <div
+      class="
+        text-with-icons__blocks
+        has-{{ section.settings.desktop_columns_per_row }}-per-row
+      "
+      data-block-count="{{ section.blocks.size }}"
+    >
+      {% for block in section.blocks %}
+        <div
+          class="text-with-icons__block {% if block.settings.icon == 'line' %}text-with-icons__block--line{% endif %} text-{{ block.settings.align_text }}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="text-with-icons__block-icon">
+            {%- if block.settings.icon == 'number' -%}
+              <span class="icon icon--number">{{ forloop.index }}</span>
+            {%- else -%}
+              {%- render 'icons', icon: block.settings.icon -%}
+            {%- endif -%}
+          </div>
+          <div class="text-with-icons__block-content">
+            <div class="text-with-icons__block-title">
+              <h3 class="h4">{{ block.settings.title }}</h3>
+            </div>
+            <div class="text-with-icons__block-text">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="text-with-icons__button {% if section.settings.button_style == "top" %} text-with-icons__button-top{% endif %}">
+        <a
+          href="{{ section.settings.button_link }}"
+          class="btn btn--secondary"
+          style="--background-color:{{section.settings.button_background_color}}"
+        >
+          {{ section.settings.button_label }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "Text columns with icons",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:settings_schema.colors.name"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.testimonials.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_background_section",
+      "label": "Full width background"
+    },
+    {
+      "type": "color",
+      "id": "color_icons",
+      "label": "Icons"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:common.text_with_icons.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "title_underline",
+      "label": "Underlined text"
+    },
+    {
+      "type": "select",
+      "id": "title_underline_style",
+      "label": "Underline style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_circle",
+      "label": "Circled text"
+    },
+    {
+      "type": "select",
+      "id": "title_circle_style",
+      "label": "Circle style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_thinner",
+      "label": "Thinner text"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_thinner_italic",
+      "label": "Thinner text italic",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title scheme color"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:common.text_with_icons.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:common.text_with_icons.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:common.text_with_icons.settings.align_text.options.center.label"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "desktop_columns_per_row",
+      "label": "t:common.text_with_icons.settings.desktop_columns_per_row.label",
+      "default": 3,
+      "min": 2,
+      "max": 6,
+      "step": 1
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "t:common.text_with_icons.settings.icon_color.label",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:common.text_with_icons.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:common.text_with_icons.settings.button_link.label"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button background color"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "top",
+          "label": "top"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:common.text_with_icons.settings.divider.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "t:common.text_with_icons.blocks.column.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "align_text",
+          "label": "t:common.text_with_icons.settings.align_text.label",
+          "default": "center",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:common.text_with_icons.settings.align_text.options.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:common.text_with_icons.settings.align_text.options.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.background-image-text.settings.layout.options.right.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:common.text_with_icons.blocks.column.settings.icon.label",
+          "default": "chat",
+          "options": [
+            {
+              "value": "number",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.number.label"
+            },
+            {
+              "value": "bills",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.bills.label"
+            },
+            {
+              "value": "calendar",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.calendar.label"
+            },
+            {
+              "value": "cart",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.cart.label"
+            },
+            {
+              "value": "charity",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.charity.label"
+            },
+            {
+              "value": "chat",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.chat.label"
+            },
+            {
+              "value": "envelope",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.envelope.label"
+            },
+            {
+              "value": "gears",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.gears.label"
+            },
+            {
+              "value": "gift",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.gift.label"
+            },
+            {
+              "value": "globe",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.globe.label"
+            },
+            {
+              "value": "line",
+              "label": "Line"
+            },
+            {
+              "value": "package",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.package.label"
+            },
+            {
+              "value": "phone",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.phone.label"
+            },
+            {
+              "value": "plant",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.plant.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.recycle.label"
+            },
+            {
+              "value": "ribbon",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.ribbon.label"
+            },
+            {
+              "value": "sales-tag",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.sales-tag.label"
+            },
+            {
+              "value": "shield",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.shield.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.stopwatch.label"
+            },
+            {
+              "value": "store",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.store.label"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.thumbs-up.label"
+            },
+            {
+              "value": "trophy",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.trophy.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.truck.label"
+            },
+            {
+              "value": "wallet",
+              "label": "t:common.text_with_icons.blocks.column.settings.icon.options.wallet.label"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:common.text_with_icons.blocks.column.settings.title.label",
+          "default": "Example title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text_with_icons.blocks.column.settings.text.label",
+          "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

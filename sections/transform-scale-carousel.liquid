@@ -1,0 +1,328 @@
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<style>
+  #shopify-section-{{ section.id }} .scaled-slideshow__desc {
+    min-height: {{ section.settings.desktop_min_size }}px;
+  }
+
+  @media (max-width: 1849px) {
+    #shopify-section-{{ section.id }} .scaled-slideshow__desc {
+      min-height: {{ section.settings.small_desktop_min_size }}px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #shopify-section-{{ section.id }} .scaled-slideshow__desc {
+      min-height: {{ section.settings.mobile_min_size }}px;
+    }
+  }
+</style>
+
+<div id="shopify-section-{{ section.id }}" class="scaled-slideshow--wrapper{% if section.settings.style != blank %} scaled-slideshow--wrapper--{{ section.settings.style }}{% endif %}" style="color: {{ section.settings.color_text }}; position: relative; background-color: {{ section.settings.main_background_color }}">
+  <div class="scale-slideshow__content">    
+    <div class="scaled-slideshow__descriptions">
+      {% for block in section.blocks %}
+        <div class="scaled-slideshow__slide__description{% if forloop.index0 == 0 %} active{% endif %}">
+          <div class="scaled-slideshow__counter">
+            {% assign totalSlides = section.blocks.size %}
+            {% if totalSlides < 10 %}
+              0{{ forloop.index }} / 0{{ totalSlides }}
+            {% else %}
+              {% if forloop.index < 10 %}
+                0{{ forloop.index }} / {{ totalSlides }}
+              {% else %}
+                {{ forloop.index }} / {{ totalSlides }}
+              {% endif %}
+            {% endif %}
+          </div>
+          <div class="scaled-slideshow__desc">
+            {{ block.settings.description }}
+            {%- if block.settings.link_text != blank -%}
+              <div class="rte">
+                <a href="{{ block.settings.link }}" class="btn{% if section.settings.btns_style == 'light' %} btn--light{% endif %}">
+                  {{ block.settings.link_text }}
+                </a>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="swiper-container--wrapper">
+    <div class="swiper-container--container">
+      <swiper-container init="false" class="myCarousel" slides-per-view="auto">
+        {% for block in section.blocks %}
+          <swiper-slide class="scaled-slideshow__slide">
+            <div class="scaled-slideshow__slide__image-wrapper">
+              {%- if block.settings.image != blank -%}
+                {%- liquid
+                  assign classes = 'scaled-slideshow__slide__image'
+                  if block.settings.image_mobile != blank
+                    assign classes = classes | append: ' small--hide'
+                  endif
+                -%}
+                <img class="{{ classes }}" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" width="800" height="880" loading="lazy">
+                {%- if block.settings.image_mobile != blank -%}
+                  {%- assign classes = 'scaled-slideshow__slide__image medium-up--hide' -%}
+                  <img class="{{ classes }}" src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt }}" width="800" height="880" loading="lazy">
+                {%- endif -%}
+              {%- else -%}
+                {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: true }}
+              {%- endif -%}
+            </div>
+          </swiper-slide>
+        {% endfor %}
+      </swiper-container>
+    </div>
+  </div>
+  <button aria-label="Next Slide" class="swiper-next swiper-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" viewBox="0 0 32 18" fill="none">
+      <path d="M0 9H31M31 9L23.4848 1M31 9L23.4848 17" stroke="{% if section.settings.style == 'style2' %}{{ section.settings.color_text }}{% else %}white{% endif %}" stroke-width="1.8" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <button aria-label="Previous Slide" class="swiper-prev swiper-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" viewBox="0 0 32 18" fill="none">
+      <path d="M32 9H1M1 9L8.51515 1M1 9L8.51515 17" stroke="{% if section.settings.style == 'style2' %}white{% else %}{{ section.settings.color_text }}{% endif %}" stroke-width="1.8" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</div>
+<script>
+  function initCarousel() {
+    // swiper element
+    const swiperEl = document.querySelector('#shopify-section-{{ section.id }} swiper-container');
+    const descriptions = document.querySelectorAll('#shopify-section-{{ section.id }} .scaled-slideshow__slide__description');
+    // swiper parameters
+    const swiperParams = {
+      breakpoints: {
+        768: {
+          creativeEffect: {
+            prev: {
+              translate: [0, 0, -50],
+              opacity: 0,
+            },
+            next: {
+              translate: ['100%', 0, 0],
+              opacity: 1
+            },
+          },
+        },
+      },
+      effect: 'creative',
+      loop: true,
+      slidesPerView: "auto",
+      injectStyles: ['.swiper-creative {overflow:visible;}'],
+      creativeEffect: {
+        prev: {
+          translate: ['-100%', 0, 0],
+        },
+        next: {
+          translate: ['100%', 0, 0],
+        },
+      },
+      on: {
+        init: function () {
+          setTimeout(() => {
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            if (mediaQuery.matches) {
+              swiperEl.swiper.setProgress(0.05, 200);
+            }
+          }, 300);
+        },
+        transitionEnd: function(swiper, p) {
+          if (descriptions.length > 0) {
+            // fade out current description
+            Array.from(descriptions).forEach((description, index) => {
+              if (index !== swiper.realIndex) {
+                description.classList.remove('active');
+              } else {
+                descriptions[swiper.realIndex].classList.add('active');
+              }
+            });
+          }
+        }
+        {%- if section.settings.style == 'style1' -%}
+          ,
+          slideNextTransitionEnd: function(swiper) {
+            swiper.slideNext(0, false);
+            swiper.slidePrev(0, false);
+          }
+        {%- endif -%}
+      }
+    };
+  
+    // now we need to assign all parameters to Swiper element
+    Object.assign(swiperEl, swiperParams);
+  
+    // and now initialize it
+    swiperEl.initialize();
+
+    const nextBtn = document.querySelector('#shopify-section-{{ section.id }} .swiper-next');
+    const prevBtn = document.querySelector('#shopify-section-{{ section.id }} .swiper-prev');
+
+    nextBtn.addEventListener('click', () => {
+      swiperEl.swiper.slideNext();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      swiperEl.swiper.slidePrev();
+    });
+  }
+  document.addEventListener("DOMContentLoaded", initCarousel);
+
+</script>
+
+
+<div class="scaled-slideshow--bg" style="height: {{ section.settings.bg_size }}vw; background-color: {{ section.settings.background_color }}">
+</div>
+
+{% schema %}
+{
+  "name": "Image or video carousel",
+  "class": "scaled-slideshow--section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "t:settings_schema.animations.settings.animate_page_transition_style.label",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "main_background_color",
+      "label": "Main Background Color",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.testimonials.settings.color_text.label",
+      "default": "#000"
+    },
+    {
+      "type": "select",
+      "id": "btns_style",
+      "label": "Button style",
+      "default": "light",
+      "options": [
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "dark",
+          "label": "Dark"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "bg_size",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Background height",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "desktop_min_size",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Desktop min height",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "small_desktop_min_size",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Small desktop min height",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "mobile_min_size",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile min height",
+      "default": 300
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Slide Image (mobile)"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Slide Video"
+        },
+        {
+          "type": "html",
+          "id": "description",
+          "label": "Description",
+          "default": "<p></p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.rich-text.blocks.button.settings.link.label"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "t:sections.rich-text.blocks.button.settings.link_text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image or video carousel",
+      "blocks": [
+        {
+          "type": "slide",
+          "settings": {
+            "description": "<p>Bring your brand to life</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

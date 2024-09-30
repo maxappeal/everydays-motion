@@ -1,0 +1,67 @@
+{%- form 'localization' -%}
+  <input type="hidden" name="country_code" data-geolocation-redirect>
+{%- endform -%}
+
+<script>
+  class Geolocation {
+    constructor() {
+      this.browserLanguage = navigator.language || navigator.userLanguage;
+      this.browserLanguage = this.browserLanguage.split('-')[1];
+      this.localization = false;
+      this.input = document.querySelector('[data-geolocation-redirect]');
+      this.available_countries = '{{ settings.country_selector }}';
+      this.form = this.input.closest('form');
+      this.searchParams = new URLSearchParams(window.location.search);
+      this.redirectProp = sessionStorage.getItem('redirect');
+
+      if (!this.redirectProp) {
+        console.log(this.redirectProp);
+        if (this.searchParams.has('no_redirect')) {
+          sessionStorage.setItem('redirect', false);
+        } else {
+          sessionStorage.setItem('redirect', true);
+        }
+        // TODO: in language selector set sessionStorage redirect key
+      }
+
+      if (this.browserLanguage == 'GB' || this.browserLanguage == 'US') {
+        let redirect = sessionStorage.getItem('redirect');
+        if (redirect == 'true') {
+          fetch(`${window.Shopify.routes.root}browsing_context_suggestions.json`, {
+            method: 'GET',
+          })
+            .then((response) => response.json())
+            .then((response) => {
+              if (response.detected_values) {
+                this.localization = response.detected_values.country.handle;
+                this.redirect();
+              }
+            });
+        }
+      } else {
+        this.localization = this.browserLanguage;
+        let redirect = sessionStorage.getItem('redirect');
+        if (redirect == 'true') {
+          this.redirect();
+        }
+      }
+    }
+
+    redirect() {
+      if (this.available_countries.indexOf(this.localization) != -1) {
+        console.log(this.localization + ' available');
+
+        if (this.localization != '{{ localization.country.iso_code }}') {
+          this.input.value = this.localization;
+          this.form.submit();
+        }
+      } else {
+        console.log(this.localization + ' not available');
+      }
+    }
+  }
+
+  if (!window.Shopify.designMode) {
+    new Geolocation();
+  }
+</script>

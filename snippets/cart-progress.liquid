@@ -1,0 +1,30 @@
+{% comment %}
+  Variables:
+    cart
+{% endcomment %}
+
+<div class="cart-progress" style="display:none;" data-target="{{ settings.cart_progress_target }}">
+  <div class="cart-progress__header" style="background-color:{{ settings.cart_progress_color_message_bg }}">
+    <p data-header-message style="color:{{ settings.cart_progress_color_message }}"></p>
+  </div>
+  
+  <div class="cart-progress__wrapper">
+    <div class="cart-progress__bar" style="background-color:{{ settings.cart_progress_color_bar_empty }}">
+      <div class="cart-progress__bar-inner" data-progress-bar style="background-color:{{ settings.cart_progress_color_bar }}"></div>
+    </div>
+  </div>
+</div>
+
+<script src={{ 'cart-progress.js' | asset_url }} defer></script>
+
+<script>
+  window.onCartProgressLoad = function () {
+    const progress = new CartProgress(document.body.querySelector('.cart-progress'), {
+      success: '{{ settings.cart_progress_message_success | replace: "'", '"' }}',
+      progress: '{{ settings.cart_progress_message | replace: "'", '"' }}',
+    });
+
+    window.onCartUpdate = progress.update;
+    progress.update({{ cart.total_price }}, {{ cart.items.size }});
+  }
+</script>

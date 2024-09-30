@@ -1,0 +1,198 @@
+/* PageFly Element Styles */
+						.lcHmGL { word-break: break-word; }
+.lcHmGL span { font-weight: inherit; text-decoration: inherit; }
+.lcHmGL i { margin-right: 0.3em; }
+.bgMQOP { position: relative; }
+.jklmHY { padding: var(--pf-s-lg); }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .jklmHY { padding: var(--pf-s-md); }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .jklmHY { padding: var(--pf-s-sm); }
+}
+@media (max-width: 767px) {
+  .jklmHY { padding: var(--pf-s-xs); }
+}
+.fTyjzF { position: relative; }
+.eYzxUD { margin: 0 calc(-1 * var(--pf-s-lg)); }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .eYzxUD { margin: 0 calc(-1 * var(--pf-s-md)); }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .eYzxUD { margin: 0 calc(-1 * var(--pf-s-sm)); }
+}
+@media (max-width: 767px) {
+  .eYzxUD { margin: 0 calc(-1 * var(--pf-s-xs)); }
+}
+.bjKdkd__parallax { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.bjKdkd { padding: 15px 0px; position: relative; }
+.cbrLgP > span:last-child { line-height: inherit; display: block; margin-right: 0px !important; }
+#editor-dnd-wrapper .cbrLgP span + span[contenteditable] { display: block; }
+#editor-dnd-wrapper .cbrLgP span + span[contenteditable]:empty::after { display: inline; }
+.cbrLgP ol, .cbrLgP ul { list-style-position: inside; }
+.cbrLgP blockquote { font-size: inherit; }
+.fnmilh { display: inline-block; }
+.fnmilh[contenteditable="true"] { user-select: text; }
+.fnmilh { vertical-align: baseline; word-break: break-word; }
+.fnmilh:focus { outline: none; }
+.fnmilh::after { display: inline; }
+						/* PageFly Styles */
+						
+@media all {
+	.__pf .pf-aba9cfa0 {
+		font-size: 30px;
+	}
+	.__pf .pf-0d1b8366 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-8366ea40 {
+		text-align: center;
+		 margin-top: 30px;
+	}
+	.__pf .pf-157b0264 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-50eca4a1 {
+		font-size: 25px;
+	}
+	.__pf .pf-d9d5ded9 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-12dfaaa8 {
+		font-size: 25px;
+	}
+	.__pf .pf-230f2e61 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-fa46c51a {
+		font-size: 25px;
+	}
+	.__pf .pf-d235cc48 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-cc489f26 {
+		display: flex;
+		 place-content: center;
+	}
+	.__pf .pf-9f26cf0f {
+		display: flex;
+		 justify-content: center;
+	}
+	.__pf .pf-fde101d1 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-74f6aae6 {
+		font-size: 20px;
+	}
+	.__pf .pf-dde8590a {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-2754331f {
+		font-size: 20px;
+	}
+	.__pf .pf-827a52c5 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-52c54dd7 {
+		display: flex;
+		 place-content: center;
+	}
+	.__pf .pf-4dd79540 {
+		display: flex;
+		 justify-content: center;
+	}
+	.__pf .pf-7f3c6143 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-3399d70c {
+		font-size: 25px;
+	}
+	.__pf .pf-50acbd51 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-bd518f75 {
+		display: flex;
+		 place-content: center;
+	}
+	.__pf .pf-8f751dc5 {
+		display: flex;
+		 justify-content: center;
+	}
+	.__pf .pf-8c02f32c {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-169c349a {
+		font-size: 20px;
+	}
+	.__pf .pf-ee3c4208 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-069c8a40 {
+		font-size: 25px;
+	}
+	.__pf .pf-d38635cb {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-c5dc2a08 {
+		font-size: 20px;
+	}
+	.__pf .pf-b096f138 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-f138fd39 {
+		display: flex;
+		 place-content: center;
+	}
+	.__pf .pf-fd39eefb {
+		display: flex;
+		 justify-content: center;
+	}
+	.__pf .pf-eb439bed {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-33144ffd {
+		font-size: 20px;
+	}
+	.__pf .pf-b33048e2 {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-b882311e {
+		font-size: 25px;
+	}
+	.__pf .pf-a053ea3d {
+		font-size: 18px;
+		 font-family: Sintony;
+	}
+	.__pf .pf-ea3d8f53 {
+		display: inline-block;
+	}
+	.__pf .pf-872980ba {
+		display: flex;
+		 place-content: center;
+	}
+	.__pf .pf-bacd138e {
+		display: flex;
+		 place-content: center;
+	}
+	.__pf .pf-138e26fd {
+		display: flex;
+		 justify-content: center;
+	}
+}
+						

@@ -1,0 +1,76 @@
+<div class="run-experts">
+  <div class="page-width">
+    <h2>{{ section.settings.section_title }}</h2>
+
+    <div class="experts">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'expert' %}
+            <div class="expert__wrapper">
+              <div class="expert">
+                <div class="expert__image">
+                  <img
+                    src="{{ block.settings.photo | image_url: width: 450 }}"
+                    alt="Photo - {{ block.settings.name }}"
+                  >
+                </div>
+
+                <div class="expert__text">
+                  <p>
+                    <strong>{{ block.settings.name }}</strong>
+                  </p>
+                  <p>{{ block.settings.position }}</p>
+                  <p>{{ block.settings.description }}</p>
+                </div>
+              </div>
+            </div>
+        {% endcase %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Run - Experts",
+  "class": "index-section run-experts",
+
+  "settings": [
+    {
+      "type": "html",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Unsere <em>community</em>-values"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "expert",
+      "name": "Expert",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

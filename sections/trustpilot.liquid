@@ -1,0 +1,163 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{% assign variants_sku = '' | split: '' %}
+{% for variant in product.variants %}
+    {% assign variant_sku = variant.sku | split: ',' %}
+    {% assign variants_sku = variants_sku | concat: variant_sku %}
+{% endfor %}
+
+{%- for product in product.metafields.custom.bundled_products.value -%}
+  {% for variant in product.variants %}
+    {% assign variant_sku = variant.sku | split: ',' %}
+    {% assign variants_sku = variants_sku | concat: variant_sku %}
+  {% endfor %}
+{%- endfor -%}
+
+{% if variants_sku != null and variants_sku != '' %}
+    {{ 'trustpilot.min.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'trustpilot.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'trustpilot-carousel.min.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+<div
+  id="trustpilot-widget" 
+  class="trustpilot"
+  data-section-id="{{ section.id }}"
+  data-section-type="trustpilot"
+>
+  <div class="trustpilot__container page-width">
+    {%- if section.settings.title != blank -%}
+      <div class="trustpilot__title section-heading">
+        <h2 class="text-{{ section.settings.align_text }}">
+          {%- render 'title', 
+            title: section.settings.title, 
+            title_underline: section.settings.title_underline, 
+            underline_style: section.settings.title_underline_style,
+            title_circle: section.settings.title_circle, 
+            circle_style: section.settings.title_circle_style,
+            title_thinner: section.settings.title_thinner,
+            title_thinner_italic: section.settings.title_thinner_italic,
+            color: section.settings.title_color 
+          -%}
+        </h2>
+      </div>
+    {%- endif -%}
+
+    {% if variants_sku != null and variants_sku != '' %}
+      <div class="trustpilot__widget" data-businessunit="5cdcf2c3571fed000123a41f" data-sku="{{ variants_sku | join: ',' }}" data-strings='{"reviews":"{{ 'general.trustpilot.reviews' | t }}", "value_money": "{{ 'general.trustpilot.value_money' | t }}", "quality": "{{ 'general.trustpilot.quality' | t }}", "excellent": "{{ 'general.trustpilot.excellent' | t }}", "great": "{{ 'general.trustpilot.great' | t }}", "average": "{{ 'general.trustpilot.average' | t }}", "poor": "{{ 'general.trustpilot.poor' | t }}", "bad": "{{ 'general.trustpilot.bad' | t }}", "more_details": "{{ 'general.trustpilot.more_details' | t }}", "verified": "{{ 'general.trustpilot.verified' | t }}", "info": "{{ 'general.trustpilot.info' | t }}", "list_1": "{{ 'general.trustpilot.list_1' | t }}", "list_2": "{{ 'general.trustpilot.list_2' | t }}", "label": "{{ 'general.trustpilot.label' | t }}", "load_more": "{{ 'general.trustpilot.load_more' | t }}"}'></div>
+    {% endif %}
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "Trustpilot",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.text-and-image.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.text-and-image.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.text-and-image.settings.align_text.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.text-and-image.settings.align_text.options.right.label"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:common.text_with_icons.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:common.text_with_icons.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "title_underline",
+      "label": "Underlined text"
+    },
+    {
+      "type": "select",
+      "id": "title_underline_style",
+      "label": "Underline style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_circle",
+      "label": "Circled text"
+    },
+    {
+      "type": "select",
+      "id": "title_circle_style",
+      "label": "Circle style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_thinner",
+      "label": "Thinner text"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_thinner_italic",
+      "label": "Thinner text italic",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title scheme color"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trustpilot"
+    }
+  ]
+}
+{% endschema %}

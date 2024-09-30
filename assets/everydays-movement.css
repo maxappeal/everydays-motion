@@ -1,0 +1,130 @@
+.everydays-movement {
+  color: var(--colorTextHeader);
+  padding-bottom: 100px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.everydays-movement .intro .box {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.everydays-movement .intro .box p {
+  margin: 40px 0 0 0;
+  font-weight: bold;
+}
+
+.everydays-movement .emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: var(--emojiBackground);
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+}
+
+.everydays-movement .testimonials {
+  display: none;
+}
+
+.everydays-movement .testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.everydays-movement .testimonial img {
+  width: 175px;
+  max-width: 175px;
+  border-radius: 15px;
+  transform: rotate(-9deg);
+}
+
+.everydays-movement .testimonial .testimonial__text-box {
+  width: 175px;
+  max-width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 175px;
+  margin-left: -40px;
+  border-radius: 15px;
+  transform: rotate(9deg);
+}
+
+.everydays-movement .testimonial .testimonial__text-box p {
+  margin: 1rem 0 0 0;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.everydays-movement .splide__pagination {
+  bottom: -2rem;
+}
+
+.everydays-movement .splide__pagination__page.is-active {
+  background: #353B7C;
+  transform: none;
+}
+
+@media only screen and (min-width: 990px) {
+  .everydays-movement .intro {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .everydays-movement .intro .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .everydays-movement .intro .box p {
+    margin: 0 0 0 32px;
+  }
+
+  .everydays-movement .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8.125rem;
+    max-width: 1160px;
+    margin: 150px auto;
+  }
+
+  .everydays-movement .testimonial {
+    margin-top: 0;
+  }
+
+  .everydays-movement .testimonial img {
+    width: 250px;
+    max-width: 250px;
+  }
+
+  .everydays-movement .testimonial .testimonial__text-box {
+    max-width: 250px;
+    width: 250px;
+    margin-left: -40px;
+  }
+
+  .everydays-movement .testimonial .testimonial__text-box p {
+    margin: 1.5rem 0 0 0;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .everydays-testimonial-splide {
+    display: none;
+  }
+}

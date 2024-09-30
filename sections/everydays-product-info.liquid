@@ -1,0 +1,275 @@
+{%- liquid
+  assign alpha = section.settings.box_shadow_transparency | divided_by: 100.0
+  assign mobile_alpha = section.settings.mobile_box_shadow_transparency | divided_by: 100.0
+-%}
+
+{%- style -%}
+  :root {
+  --productInfoTextColor: {{ section.settings.text_color }};
+  --productInfoHeadlineColor: {{ section.settings.headings_color }};
+  --productInfoBackgroundColor: {{ section.settings.background_color }};
+  --productInfoButtonColor: {{ section.settings.button_color }};
+  --productInfoBoxBackgroundColor: {{ section.settings.box_background_color }};
+  --productInfoBoxHeadlineColor: {{ section.settings.box_headline_color }};
+  --productInfoBoxShadow: 0 2px 10px 0 {{ section.settings.box_shadow_color | color_modify: 'alpha', alpha }};
+  --productInfoBoxMobile: 0 2px 5px 0 {{ section.settings.mobile_box_shadow_color | color_modify: 'alpha', mobile_alpha }};
+  }
+{%- endstyle -%}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+{{ 'everydays-product-info.css' | asset_url | stylesheet_tag }}
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+
+<div class="everydays-product-info product-info">
+  <div class="page-width">
+    <div class="everydays-product-info__grid">
+      <div class="text-center">
+        {% if section.settings.image != blank %}
+          <div class="product-info__image">
+            {%- render 'image-element', img: section.settings.image, img_width: 720, loading: true, widths: '360, 720', sizeVariable: '33vw' -%}
+          </div>
+        {% endif %}
+        {%- if section.settings.heading -%}
+          <div class="product-info__heading">
+            <h4 class="h h2">{{
+              section.settings.heading
+              }}</h4>
+          </div>
+        {%- endif -%}
+        {%- if section.settings.swipe_info -%}
+          <div class="product-info__swipe medium-up--hide">
+            {{ section.settings.swipe_info }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.button != blank -%}
+          <div class="product-info__btn">
+            <a href="#anwendung-inhalt" class="btn js-no-transition" open-modal>
+              {{ section.settings.button }}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="layout">
+      <div class="boxes">
+        {%- for block in section.blocks -%}
+          {%- if forloop.index < 4 -%}
+            <div class="text-box text-{{ block.settings.align_text }}">
+              <div class="number">0{{ forloop.index }}</div>
+              {%- if block.settings.title != blank -%}
+                <h3 class="h4 appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">{{ block.settings.title | escape }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="rte appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">{{ block.settings.text }}</div>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <div class="appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">
+                  <a href="{{ block.settings.button_link }}"
+                     class="btn{% if block.settings.button_style == 'secondary' %} btn--secondary{% endif %}">
+                    {{ block.settings.button_label }}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+      <div class="boxes">
+        {%- for block in section.blocks -%}
+          {%- if forloop.index > 3 -%}
+            <div class="text-box text-{{ block.settings.align_text }}">
+              <div class="number">0{{ forloop.index }}</div>
+              {%- if block.settings.title != blank -%}
+                <h3 class="h4 appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">{{ block.settings.title | escape }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="rte appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">{{ block.settings.text }}</div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      </div>
+    </div>
+    <div class="everydays-product-info__carousel">
+      <div class="everydays-product-info-splide splide" aria-label="Product Info Mobile Carousel">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="box start">
+                <div>Swipen & Inhalte erkunden  👉🏼</div>
+                <img  width="{{ section.settings.image.width }}" src="{{ section.settings.image | img_url: '500x'  }}" alt="{{ section.settings.image.alt }}">
+                <h3>{{
+                  section.settings.heading
+                  }}</h3>
+              </div>
+            </li>
+            {%- for block in section.blocks -%}
+              <li class="splide__slide">
+                <div class="box block">
+                  <div class="number">0{{ forloop.index }} / 0{{ section.blocks.size }}</div>
+                  <div class="container">
+                    {%- if block.settings.title != blank -%}
+                      <h3 class="h4 appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">{{ block.settings.title | escape }}</h3>
+                    {%- endif -%}
+                    {%- if block.settings.text != blank -%}
+                      <div class="rte appear-delay{% cycle '', '-1', '-2', '-3', '-4' %}">{{ block.settings.text }}</div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+      {%- if section.settings.button != blank -%}
+        <div class="product-info__btn">
+          <a href="#anwendung-inhalt" class="btn js-no-transition" open-modal>
+            {{ section.settings.button }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<script>
+    new Splide( '.everydays-product-info-splide', {
+        arrows: false,
+        gap: 20
+    } ).mount();
+</script>
+
+{% schema %}
+{
+  "name": "t:everydays.sections.product-info.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#444444"
+    },
+    {
+      "type": "color",
+      "id": "headings_color",
+      "label": "Headings color",
+      "default": "#353B7C"
+    },
+    {
+      "type": "color",
+      "id": "counter_color",
+      "label": "Slider counter color",
+      "default": "#6985E9"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F7F9FF"
+    },
+    {
+      "type": "color",
+      "id": "box_shadow_color",
+      "label": "Box shadow color",
+      "default": "#DADAE8"
+    },
+    {
+      "type": "range",
+      "id": "box_shadow_transparency",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Mobile box shadow transparency",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "mobile_box_shadow_color",
+      "label": "Box shadow color",
+      "default": "#353B7C"
+    },
+    {
+      "type": "range",
+      "id": "mobile_box_shadow_transparency",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Mobile box shadow transparency",
+      "default": 18
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "swipe_info",
+      "label": "Swipe info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.countdown.blocks.button.settings.button_link.label"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "t:sections.countdown.blocks.button.settings.button.label"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Background color of Button",
+      "default": "#176851"
+    },
+    {
+      "type": "color",
+      "id": "box_background_color",
+      "label": "Background color of Boxes",
+      "default": "#FBFBFF"
+    },
+    {
+      "type": "color",
+      "id": "box_headline_color",
+      "label": "Color of Headline from Boxes",
+      "default": "#176851"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "box",
+      "name": "Box",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:everydays.sections.product-info.name"
+    }
+  ],
+  "disabled_on": {
+    "groups": [
+      "custom.popups"
+    ]
+  }
+}
+{% endschema %}

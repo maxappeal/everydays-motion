@@ -1,0 +1,19 @@
+{% assign variants_sku = '' | split: '' %}
+{% for variant in product.variants %}
+  {% assign variant_sku = variant.sku | split: ',' %}
+  {% assign variants_sku = variants_sku | concat: variant_sku %}
+{% endfor %}
+        {%- for product in product.metafields.custom.bundled_products.value -%}
+  {% for variant in product.variants %}
+    {% assign variant_sku = variant.sku | split: ',' %}
+    {% assign variants_sku = variants_sku | concat: variant_sku %}
+  {% endfor %}
+{%- endfor -%}  
+
+{% if variants_sku != null and variants_sku != '' %}
+  <!-- TrustBox widget - Product Mini -->
+    <div style="display:none;" class="trustpilot-widget collections-trustpilot-stars-ev013" data-locale="de-DE" data-font-family="Dosis" data-text-color="#FFFFFF00" data-template-id="54d39695764ea907c0f34825" data-businessunit-id="5cdcf2c3571fed000123a41f" data-style-height="24px" data-style-width="100%" data-theme="light" data-sku="{{ variants_sku | join: ',' }}" data-no-reviews="hide" data-scroll-to-list="false" data-style-alignment="left">
+      <a href="https://de.trustpilot.com/review/everydays.de" target="_blank" rel="noopener"></a>
+    </div>
+    <!-- End TrustBox widget -->   
+{% endif %}

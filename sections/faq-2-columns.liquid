@@ -1,0 +1,384 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{% style %}
+  {% if section.settings.color_text != blank and section.settings.color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .grid--bg {
+      color: {{ section.settings.color_text }};
+    }
+  {% endif %}
+  {% if section.settings.color_background != blank and section.settings.color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .grid--bg,
+    #shopify-section-{{ section.id }} .grid--bg:before {
+      background-color: {{ section.settings.color_background }};
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_trigger_color_text != blank and section.settings.collapsible_trigger_color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .collapsible-trigger,
+    #shopify-section-{{ section.id }} .faqPlusAppTitle {
+      color: {{ section.settings.collapsible_trigger_color_text }} !important;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_trigger_color_background != blank and section.settings.collapsible_trigger_color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .collapsible-trigger,
+    #shopify-section-{{ section.id }} .faqPlusAppTitle {
+      background-color: {{ section.settings.collapsible_trigger_color_background }} !important;
+      padding-left: 25px !important;
+      padding-right: 50px !important;
+      border-radius: 5px !important;
+    }
+    #shopify-section-{{ section.id }} .collapsible-trigger__icon,
+    #shopify-section-{{ section.id }} .faqPlusAppTitle:after {
+      right: 25px !important;
+    }
+  {% endif %}
+
+  {% if section.settings.collapsible_trigger_color_border != blank and section.settings.collapsible_trigger_color_border != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .collapsibles-wrapper--border-top,
+    #shopify-section-{{ section.id }} .faqPlusAppFaq {
+      border-color: {{ section.settings.collapsible_trigger_color_border }} !important;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_content_color_text != blank and section.settings.collapsible_content_color_text != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .collapsible-content,
+    #shopify-section-{{ section.id }} .faqPlusAppContent {
+      color: {{ section.settings.collapsible_content_color_text }} !important;
+    }
+  {% endif %}
+  {% if section.settings.collapsible_content_color_background != blank and section.settings.collapsible_content_color_background != "rgba(0,0,0,0)" %}
+    #shopify-section-{{ section.id }} .collapsible-content,
+    #shopify-section-{{ section.id }} .faqPlusAppContent {
+      background-color: {{ section.settings.collapsible_content_color_background }} !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      margin-bottom: 10px !important;
+      border-radius: 0 0 5px 5px !important;
+    }
+    #shopify-section-{{ section.id }} .collapsible-content__inner,
+    #shopify-section-{{ section.id }} .faqPlusAppAnswer {
+      padding: 20px 0 !important;
+      font-size: calc(var(--typeBaseSize) - 1px) !important;
+    }
+    #shopify-section-{{ section.id }} .collapsible-content__inner p,
+    #shopify-section-{{ section.id }} .faqPlusAppAnswer p {
+      font-size: inherit !important;
+    }
+  {% endif %}
+{% endstyle %}
+
+<div
+  id="product-faq"
+  class="page-width {% if section.settings.layout == 'column1' %}page-width--ultra-narrow{% endif %} faq--{{ section.settings.layout }}"
+>
+  {%- if section.settings.title != blank -%}
+    <header class="section-heading">
+      <h2 class="section-header__title">
+        {%- render 'title',
+          title: section.settings.title,
+          title_underline: section.settings.title_underline,
+          underline_style: section.settings.title_underline_style,
+          title_circle: section.settings.title_circle,
+          circle_style: section.settings.title_circle_style,
+          title_thinner: section.settings.title_thinner,
+          title_thinner_italic: section.settings.title_thinner_italic,
+          color: section.settings.title_color
+        -%}
+      </h2>
+    </header>
+  {%- endif -%}
+
+  {%- if section.settings.html != blank -%}
+    <div class="section-heading">
+      {{ section.settings.html }}
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 or section.settings.faq_code != blank -%}
+    <div class="grid--bg">
+      {%- if section.settings.faq_code != blank -%}
+        {{ section.settings.faq_code }}
+      {%- endif -%}
+      {%- for block in section.blocks -%}
+        <div {{ block.shopify_attributes }}>
+          {% case block.type %}
+            {% when 'rich-text' %}
+              <div class="index-section index-section--faq">
+                <div class="text-{{ block.settings.align_text }}">
+                  <div class="grid">
+                    <div class="grid__item{% if block.settings.narrow_column %} medium-up--three-quarters medium-up--push-one-eighth{% endif %}">
+                      {%- if block.settings.title != blank -%}
+                        <p class="h2">
+                          {{ block.settings.title | escape }}
+                        </p>
+                      {% endif %}
+                      {% if block.settings.text != blank %}
+                        <div class="rte">
+                          {% if block.settings.enlarge_text %}<div class="enlarge-text">{% endif %}
+                          {{ block.settings.text }}
+                          {% if block.settings.enlarge_text %}</div>{% endif %}
+                        </div>
+                      {% endif %}
+                      {%- if block.settings.link_text != blank -%}
+                        <div class="rte">
+                          <a href="{{ block.settings.link }}" class="btn">
+                            {{ block.settings.link_text }}
+                          </a>
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            {% when 'question' %}
+              <div class="faq-collapsible">
+                <button
+                  type="button"
+                  class="collapsible-trigger collapsible-trigger-btn collapsible--auto-height text-left"
+                  aria-controls="FAQ-content-{{ block.id }}"
+                >
+                  <span>{{ block.settings.title }}</span>
+                  {%- render 'collapsible-icons' -%}
+                </button>
+                <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all">
+                  <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+                    {{ block.settings.text }}
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size == 0 and section.settings.faq_code == blank -%}
+    <div class="placeholder-noblocks">
+      {{ 'home_page.onboarding.no_content' | t }}
+    </div>
+  {%- endif -%}
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.faq.name",
+  "class": "index-section faq-2columns",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "column1",
+      "options": [
+        {
+          "value": "column1",
+          "label": "1 column"
+        },
+        {
+          "value": "column2",
+          "label": "2 columns"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "Custom HTML"
+    },
+    {
+      "type": "html",
+      "id": "faq_code",
+      "label": "Helphub FAQ Page code",
+      "info": "To automatically load FAQs from the Helphub FAQ Page app"
+    },
+    {
+      "type": "header",
+      "content": "t:settings_schema.colors.name"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.testimonials.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.testimonials.settings.color_background.label"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_trigger_color_text",
+      "label": "Collapsible trigger text color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_trigger_color_background",
+      "label": "Collapsible trigger background color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_trigger_color_border",
+      "label": "Collapsible trigger border color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_content_color_text",
+      "label": "Collapsible content text color"
+    },
+    {
+      "type": "color",
+      "id": "collapsible_content_color_background",
+      "label": "Collapsible content background color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.faq.settings.title.label",
+      "default": "FAQs"
+    },
+    {
+      "type": "text",
+      "id": "title_underline",
+      "label": "Underlined text"
+    },
+    {
+      "type": "select",
+      "id": "title_underline_style",
+      "label": "Underline style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_circle",
+      "label": "Circled text"
+    },
+    {
+      "type": "select",
+      "id": "title_circle_style",
+      "label": "Circle style",
+      "default": "style1",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style3",
+          "label": "Style 3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title_thinner",
+      "label": "Thinner text"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_thinner_italic",
+      "label": "Thinner text italic",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title scheme color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "rich-text",
+      "name": "t:sections.faq.blocks.rich_text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.faq.blocks.rich_text.settings.title.label",
+          "default": "Rich text"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.rich_text.settings.text.label",
+          "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+        },
+        {
+          "type": "select",
+          "id": "align_text",
+          "label": "t:sections.faq.blocks.rich_text.settings.align_text.label",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.right.label"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.faq.blocks.question.settings.title.label",
+          "default": "Frequently asked question"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.question.settings.text.label",
+          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ - 2 columns",
+      "blocks": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "question"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

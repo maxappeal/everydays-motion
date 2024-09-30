@@ -1,0 +1,68 @@
+{%- if title_underline != blank and title_circle != blank -%}
+  {%- assign titles_underline = title | split: title_underline -%}
+  {%- assign underline_size = titles_underline[0] | size -%}
+  {%- assign titles_circle = title | split: title_circle -%}
+  {%- assign circle_size = titles_circle[0] | size -%}
+  {%- if underline_size < circle_size -%}
+    {%- assign titles_underline = title | split: title_underline -%}
+    {%- if titles_underline[1] contains title_circle -%}
+      {%- assign titles_circle = titles_underline[1] | split: title_circle -%}
+    {%- else -%}
+      {%- assign titles_circle = blank -%}
+    {%- endif -%}
+    {{ titles_underline[0] }} <span class="underline underline--{{ underline_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_underline }}</span></span> 
+    {%- if titles_circle != blank -%}
+      {{ titles_circle[0] }} <span class="circle circle--{{ circle_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_circle }}</span></span> {{ titles_circle[1] }}
+    {%- else -%}
+      {{ titles_underline[1] }}
+    {%- endif -%}
+  {%- elsif underline_size > circle_size -%}
+    {%- assign titles_circle = title | split: title_circle -%}
+    {%- if titles_underline[1] contains title_circle -%}
+      {%- assign titles_underline = titles_circle[1] | split: title_underline -%}
+    {%- else -%}
+      {%- assign titles_underline = blank -%}
+    {%- endif -%}
+    {{ titles_circle[0] }} <span class="circle circle--{{ circle_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_circle }}</span></span> 
+    {%- if titles_underline != blank -%}
+      {{ titles_underline[0] }} <span class="underline underline--{{ underline_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_underline }}</span></span> {{ titles_underline[1] }}
+    {%- else -%}
+      {{ titles_circle[1] }}
+    {%- endif -%}
+  {%- endif -%}
+{%- elsif title_underline != blank -%}
+  {%- assign titles_underline = title | split: title_underline -%}
+  {%- if titles_underline == blank -%}
+    <span class="underline underline--{{ underline_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_underline }}</span></span>
+  {%- elsif titles_underline[1] != blank -%}
+    {{ titles_underline[0] }} <span class="underline underline--{{ underline_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_underline }}</span></span> {{ titles_underline[1] }}
+  {%- elsif title contains title_underline -%}
+    {{ titles_underline[0] }} <span class="underline underline--{{ underline_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_underline }}</span></span>
+  {%- else -%}
+    {{ titles_underline[0] }}
+  {%- endif -%}
+{%- elsif title_circle != blank -%}
+  {%- assign titles_circle = title | split: title_circle -%}
+  {%- if titles_circle == blank -%}
+    <span class="circle circle--{{ circle_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_circle }}</span></span>
+  {%- elsif titles_circle[1] != blank -%}
+    {{ titles_circle[0] }} <span class="circle circle--{{ circle_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_circle }}</span></span> {{ titles_circle[1] }}
+  {%- elsif title contains title_circle -%}
+    {{ titles_circle[0] }} <span class="circle circle--{{ circle_style }}" style="color: {{ color }};"><span style="color: var(--colorTextHeader);">{{ title_circle }}</span></span>
+  {%- else -%}
+    {{ titles_circle[0] }}
+  {%- endif -%}
+{%- elsif title_thinner != blank -%}
+  {%- assign titles_thinner = title | split: title_thinner -%}
+  {%- if titles_thinner == blank -%}
+    <span class="thinner{% if title_thinner_italic %} thinner--italic{% endif %}">{{ title_thinner }}</span>
+  {%- elsif titles_thinner[1] != blank -%}
+    {{ titles_thinner[0] }} <span class="thinner{% if title_thinner_italic %} thinner--italic{% endif %}">{{ title_thinner }}</span> {{ titles_thinner[1] }}
+  {%- elsif title contains title_thinner -%}
+    {{ titles_thinner[0] }} <span class="thinner{% if title_thinner_italic %} thinner--italic{% endif %}">{{ title_thinner }}</span>
+  {%- else -%}
+    {{ titles_circle[0] }}
+  {%- endif -%}
+{%- else -%}
+  {{ title }}
+{%- endif -%}

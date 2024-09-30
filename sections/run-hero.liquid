@@ -1,0 +1,38 @@
+<div class="run-hero">
+  <div class="page-width">
+    <div class="text">
+      <div>
+        <div class="rounded">05.06.2024 | 📍 Berlin</div>
+        <h2>
+          <i>run</i> with us.<br>
+          run with <br class="mobile">
+          <i>everydays.</i>🏃
+        </h2>
+        <p>
+          Sei dabei, in bester<br class="mobile">
+          Gesellschaft!
+        </p>
+        <a href="#registrierung" class="btn js-no-transition open-modal" open-modal>#bettertogether</a>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="{{ section.settings.photo | image_url }}" alt="Run with us. Run with everydays.">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Run - Hero",
+  "class": "index-section run-hero-wrapper",
+
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "photo",
+      "label": "Photo"
+    }
+  ]
+}
+{% endschema %}
