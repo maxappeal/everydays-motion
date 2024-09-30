@@ -604,10 +604,10 @@
         "emoji_text": "+100.000 zufriedene Kund*Innen",
         "cards_background_color": "#f5f5fc",
         "stars_text": "Hervorragende Bewertung",
-        "padding_top_desktop": 172,
-        "padding_bottom_desktop": 172,
+        "padding_top_desktop": 140,
+        "padding_bottom_desktop": 0,
         "padding_top_mobile": 100,
-        "padding_bottom_mobile": 100
+        "padding_bottom_mobile": 0
       }
     },
     "eae4f890-270c-4197-96a7-c6f24f385cca": {
