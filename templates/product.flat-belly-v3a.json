@@ -480,9 +480,9 @@
         "headings_color": "#353b7c",
         "counter_color": "#6985e9",
         "background_color": "#f5f5fc",
-        "box_shadow_color": "#DADAE8",
+        "box_shadow_color": "#dadae8",
         "box_shadow_transparency": 60,
-        "mobile_box_shadow_color": "#353B7C",
+        "mobile_box_shadow_color": "#353b7c",
         "mobile_box_shadow_transparency": 18,
         "heading": "Nur drin, was es braucht, vor allem, <em>was wirkt</em>",
         "image": "shopify://shop_images/test-product-info.png",
@@ -492,10 +492,10 @@
         "button_color": "#176851",
         "box_background_color": "#fbfbff",
         "box_headline_color": "#176851",
-        "padding_top_desktop": 172,
-        "padding_bottom_desktop": 172,
-        "padding_top_mobile": 100,
-        "padding_bottom_mobile": 100
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     },
     "8555e8d1-fb79-422d-b121-2e95738507bf": {
@@ -576,7 +576,9 @@
           "settings": {
             "image": "shopify://shop_images/testi-1.png",
             "text": "“Ein unglaubliches Produkt, ich bin dankbar dafür, ich fühle mich viel besser.”",
-            "testimonial_background_color": "#F5F5FC"
+            "testimonial_background_color": "#f5f5fc",
+            "font_size_desktop": 16,
+            "font_size_mobile": 16
           }
         },
         "expert_RrLgmY": {
@@ -584,7 +586,9 @@
           "settings": {
             "image": "shopify://shop_images/testi-2.png",
             "text": "“Ein unglaubliches Produkt, ich bin dankbar dafür, ich fühle mich viel besser.”",
-            "testimonial_background_color": "#F5F5FC"
+            "testimonial_background_color": "#f5f5fc",
+            "font_size_desktop": 16,
+            "font_size_mobile": 16
           }
         }
       },
