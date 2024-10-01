@@ -139,6 +139,7 @@ product-info__box {
   min-height: 490px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   padding: 0 2rem;
   text-align: center;
 }
