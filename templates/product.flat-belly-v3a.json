@@ -406,7 +406,7 @@
         "bg_size": 50,
         "desktop_min_size": 300,
         "small_desktop_min_size": 300,
-        "mobile_min_size": 300
+        "mobile_min_size": 230
       }
     },
     "everydays-product-recommendations": {
