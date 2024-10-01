@@ -35,24 +35,23 @@
 .everydays-movement .testimonial {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .everydays-movement .testimonial img {
-  width: 175px;
-  max-width: 175px;
+  width: 50vw;
+  max-width: 50vw;
   border-radius: 15px;
   transform: rotate(-9deg);
 }
 
 .everydays-movement .testimonial .testimonial__text-box {
-  width: 175px;
-  max-width: 175px;
+  width: 50vw;
+  max-width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 175px;
   margin-left: -40px;
   border-radius: 15px;
   transform: rotate(9deg);
@@ -69,6 +68,13 @@
 
 .everydays-movement .splide__pagination {
   bottom: -2rem;
+}
+
+.everydays-movement .splide__pagination__page {
+  width: 5px;
+  height: 5px;
+  opacity: 1;
+  background: #E3E6FD;
 }
 
 .everydays-movement .splide__pagination__page.is-active {
