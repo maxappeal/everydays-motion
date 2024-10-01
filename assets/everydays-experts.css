@@ -10,7 +10,7 @@
 }
 
 .everydas-experts .expert img {
-  width: 174px;
+  width: 58vw;
   margin: 0 auto 55px;
   border-radius: 50%;
 }
@@ -23,7 +23,7 @@
 }
 
 .everydas-experts .expert .btn {
-  padding: 14px;
+  padding: 14px 22px;
   background: var(--expertBackgroundButtonColor);
   font-weight: 500;
 }
@@ -50,7 +50,7 @@
 }
 
 .everydas-experts .splide__track {
-  transform: translateY(-58px);
+  transform: translateY(-22vw);
 }
 
 .everydas-experts .splide__pagination__page {
@@ -63,6 +63,10 @@
 .everydas-experts .splide__pagination__page.is-active {
   transform: none;
   opacity: 1;
+}
+
+.everydas-experts .splide__pagination {
+  bottom: 1rem;
 }
 
 @media only screen and (min-width: 990px) {

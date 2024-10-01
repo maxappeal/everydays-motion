@@ -99,7 +99,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 8.125rem;
     max-width: 1160px;
-    margin: 150px auto;
+    margin: 150px auto 0 auto;
   }
 
   .everydays-movement .testimonial {

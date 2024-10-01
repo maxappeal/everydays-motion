@@ -13,7 +13,7 @@
 
 .main-content .everydays-faq .faqPlusAppTitle {
   border-radius: 2.375rem;
-  padding: 1rem 2.5rem 1rem 1.5rem !important;
+  padding: 1rem 10.667vw 1rem 1.5rem !important;
   background: var(--faqBackgroundColorQuestions);
   font-weight: bold!important;
   font-size: 15px!important;
@@ -59,7 +59,7 @@
 
 .everydays-faq .section-header__title svg {
   position: absolute;
-  bottom: -20px;
+  bottom: -10px;
   transform: translateX(-100px);
 }
 
@@ -92,6 +92,7 @@
   }
 
   .main-content .everydays-faq .faqPlusAppTitle {
+    padding: 1rem 2.5rem 1rem 1.5rem !important;
     font-size: 16px!important;
   }
 }
