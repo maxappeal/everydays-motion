@@ -605,7 +605,7 @@
         "cards_background_color": "#f5f5fc",
         "stars_text": "Hervorragende Bewertung",
         "padding_top_desktop": 140,
-        "padding_bottom_desktop": 120,
+        "padding_bottom_desktop": 60,
         "padding_top_mobile": 100,
         "padding_bottom_mobile": 72
       }
