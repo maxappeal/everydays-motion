@@ -533,7 +533,7 @@
         "expert_DgRW7E": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/Group_1436.jpg",
+            "image": "shopify://shop_images/Group_1959.jpg",
             "quote": "“Bei Schilddrüsenproblemen sind Verdauungsschwierigkeiten an der Tagesordnung. digest unterstützt wirkungsvoll wie kein anderes Supplement”",
             "text_size_desktop": 34,
             "text_size_mobile": 21,
@@ -545,13 +545,13 @@
         "expert_JQhwxc": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/Group_1436_1.jpg",
-            "quote": "“Bei Schilddrüsenproblemen sind Verdauungsschwierigkeiten an der Tagesordnung. digest unterstützt wirkungsvoll wie kein anderes Supplement”",
-            "text_size_desktop": 34,
+            "image": "shopify://shop_images/Group_1960.jpg",
+            "quote": "“everydays baut Produkte, die für meine  community ein echter game changer sind.”",
+            "text_size_desktop": 36,
             "text_size_mobile": 21,
-            "line_height_desktop": 57,
+            "line_height_desktop": 59,
             "line_height_mobile": 35,
-            "expert": "Ann-Katrin Sättele, Hashimoto-Expertin 🩺"
+            "expert": "Dr. Dorothea Leinung, Medizinerin 🩺"
           }
         }
       },
