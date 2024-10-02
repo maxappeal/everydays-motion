@@ -39,15 +39,15 @@
 }
 
 .everydays-movement .testimonial img {
-  width: 50vw;
-  max-width: 50vw;
+  width: 47vw;
+  max-width: 47vw;
   border-radius: 15px;
   transform: rotate(-9deg);
 }
 
 .everydays-movement .testimonial .testimonial__text-box {
-  width: 50vw;
-  max-width: 50vw;
+  width: 47vw;
+  max-width: 47vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +83,10 @@
 }
 
 @media only screen and (min-width: 990px) {
+  .everydays-movement {
+    padding-bottom: 200px;
+  }
+
   .everydays-movement .intro {
     display: flex;
     justify-content: space-between;
