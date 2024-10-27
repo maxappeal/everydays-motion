@@ -249,7 +249,7 @@
 
     {%- capture video_layout -%}
       <div class="feature-row__item feature-row__images" data-aos>
-          {%- if section.settings.video != blank or section.settings.video_url != blank -%}
+          {%- if section.settings.video != blank and localization.language.iso_code == 'de' or section.settings.video_url != blank and localization.language.iso_code == 'de' -%}
             <div class="feature-row__first-video">
               {%- if section.settings.video != blank -%}
                 {%- liquid
@@ -360,7 +360,7 @@
                       {%- liquid
                         assign video_id = section.settings.video_url | split: '.com/'
                         assign video_id = video_id[1] | split: '/' | first
-                      
+
                         assign video_url = 'https://player.vimeo.com/video/' | append: video_id
                         if section.settings.video_controls
                           assign video_url = video_url | append: '?background=0'
@@ -385,7 +385,7 @@
                       -%}
                     {%- endif -%}
 
-                    <iframe 
+                    <iframe
                       src="{{ video_url }}"
                       class="product__video"
                       frameborder="0"
@@ -440,7 +440,7 @@
                     assign sizeVariable = 'calc(0.4 * 50vw)'
                     assign fallback = '40vw'
                   endif
-  
+
                   assign imageWidth = section.settings.image_width | times: 1
                   if imageWidth >= 50
                     assign loading = section.settings.lazyload_images
