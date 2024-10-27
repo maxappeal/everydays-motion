@@ -1,1 +1,923 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"9e47aece-35d5-487e-b69b-494569fad996":{"type":"advanced-content","blocks":{"658c15f7-172e-400c-beed-483456908240":{"type":"liquid","settings":{"text_align":"left","color_background":"","color_heading":"","color_text":"","title":"Optimale Regeneration und Leistungsfähigkeit ✨ mit recover","title_underline":"","title_underline_style":"style2","title_circle":"","title_circle_style":"style1","title_thinner":"✨ mit recover","title_thinner_italic":true,"title_color":"","code":"<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">🤸🏻‍♂️<\/span>balanciert deinen Elektrolythaushalt\n<\/div>\n<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">🫶🏻<\/span>mehr Kraft in stressigen Zeiten\n<\/div>\n<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">🌱<\/span>Anti-Hangover Formel\n<\/div>\n<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">💛<\/span>stärkt das Immunsystem\n<\/div>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":true,"button_label":"","button_link":"","button_style":"primary","width":"40%","alignment":"top-middle"}},"template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/recover.jpg","link":"","width":"50%","alignment":"top-middle"}}},"block_order":["658c15f7-172e-400c-beed-483456908240","template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1"],"custom_css":[".index-section--three-quarters-bg {padding-top: 65px; background-color: #eef7ff;}","h2 {margin: 65px 0; font-size: 50px;}","h2 span {display: block;}",".text-emoji {margin: 0 0 10px; background: #fff172; color: #353b7c; width: fit-content; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 14px;}","@media (min-width: 769px) {.two-fifths {width: 45%; } .image-wrap {min-height: 750px; }}","@media (max-width: 768px) {.index-section--three-quarters-bg {padding-top: 22px; } h2 {margin: 20px 0; font-size: 28px; line-height: 40px; text-align: center; }}"],"settings":{"two_backgrounds":false,"reverse_row":true,"small_bg":false,"three_quarters_bg":true,"full_width":false,"space_around":false,"lazyload_images":true}},"d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7":{"type":"advanced-content","blocks":{"template--18008394858763__d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7-liquid-1":{"type":"liquid","settings":{"text_align":"left","color_background":"","color_heading":"#353b7c","color_text":"#4fbfeb","title":"recover\u2028rehydration electrolyte drink - fresh lemon 🍋","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"rehydration electrolyte drink - fresh lemon 🍋","title_thinner_italic":false,"title_color":"","code":"<p>Erhältlich ab dem <strong>28.10.23<\/strong><\/p>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"100%","alignment":"top-middle"}}},"block_order":["template--18008394858763__d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7-liquid-1"],"custom_css":[".index-section {margin-bottom: 0;}",".custom__item {max-width: 480px; margin-left: auto; margin-right: auto;}","h2 {font-size: 22px; line-height: 32px; text-align: center;}","h2 span {display: block;}","p {text-align: center;}","@media screen and (min-width: 769px) {h2 {font-size: 35px; line-height: 46px; } p {font-size: 20px; }}","@media screen and (max-width: 768px) {.index-section {margin-top: 110px; }}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":true,"lazyload_images":true}},"a451d047-5cde-4ef8-a208-db5c211dce04":{"type":"countdown","blocks":{"template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-content-1":{"type":"content","disabled":true,"settings":{"heading":"Countdown","heading_size":"h2","text":"<p>Use this timer to create urgency and boost sales.<\/p>","content_alignment":"left"}},"template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-timer-1":{"type":"timer","settings":{"year":"2023","month":"10","day":"28","hour":"09","minute":"00","hide_timer":true,"text":""}}},"block_order":["template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-content-1","template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-timer-1"],"custom_css":[".index-section {margin-top: 0;}",".countdown__content {padding: 0;}"],"settings":{"layout":"banner","full_width":false,"text_color":"#353b7c","background_color":"#ffffff","overlay_color":"#000000","overlay_opacity":0,"lazyload_images":true}},"03771f73-e92b-458a-b2db-b69ec167e50f":{"type":"advanced-content","blocks":{"template--18021081219339__03771f73-e92b-458a-b2db-b69ec167e50f-liquid-1":{"type":"liquid","settings":{"text_align":"center","color_background":"#77c5e4","color_heading":"#ffffff","color_text":"#ffffff","title":"Jetzt anmelden & \u2028Launch-Angebote sichern","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<p>Nach erfolgreicher Anmeldung erhältst du deinen persönlichen Gutscheincode als einer der ersten, direkt am 28.10.23 um 09 Uhr.<\/p>\n<div class=\"klaviyo-form-SGDvtD\"><\/div>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"50%","alignment":"center"}},"8f605dc8-b21c-4b4d-9d6d-70a96cef74bc":{"type":"liquid","settings":{"text_align":"left","color_background":"#eef7ff","color_heading":"","color_text":"#353b7c","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<div>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>20% Start-Rabatt<\/strong> für die ersten 200 Anmeldungen<\/div> \n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>15% Start-Rabatt<\/strong> auf alle weiteren Anmeldungen<\/div>\n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>10% Start-Rabatt<\/strong> ab 28.10.23 für 48h<\/div>\n  <\/div>\n<\/div>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"50%","alignment":"center"}}},"block_order":["template--18021081219339__03771f73-e92b-458a-b2db-b69ec167e50f-liquid-1","8f605dc8-b21c-4b4d-9d6d-70a96cef74bc"],"custom_css":[".custom__item-inner {max-width: 435px; margin-left: auto; margin-right: auto;}",".klaviyo-form {margin-bottom: -20px;}","input[type=\"email\"] {padding: 5px 25px !important;}","button {padding: 0 50px !important;}",".text-emoji {font-weight: 500;}","hr {border-color: #353b7c; margin: 25px 0;}","@media only screen and (min-width: 769px) {hr {margin: 40px 0; }}","@media only screen and (max-width: 768px) {.text-emoji {max-width: 80%; margin: 10px auto; text-align: center; } .text-emoji > div {width: 100%; } .custom-content > .custom__item:nth-child(2) {padding-bottom: 90px; }}"],"settings":{"two_backgrounds":true,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":true,"lazyload_images":true}},"eebda75b-d399-46cc-ab32-fb0e26544696":{"type":"advanced-content","blocks":{"3c26b888-328e-461b-9e3f-2ea1f8abda85":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/recover-2_64df3799-94ce-4cfd-a616-1ff089ef1e7d.png","link":"","width":"100%","alignment":"center"}}},"block_order":["3c26b888-328e-461b-9e3f-2ea1f8abda85"],"custom_css":[".custom-content {margin-bottom: -80px;}",".custom__item-inner--image {max-width: 570px; margin: 0 auto 40px; position: relative; z-index: 9; margin-top: -120px;}","@media (min-width: 769px) {.custom-content {margin-bottom: -140px; } .custom__item-inner--image {margin-top: -160px; transform: translateX(-36px); }}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":true,"lazyload_images":true}},"4e2e07b2-8374-43fc-96bc-c07ca7e2ac94":{"type":"advanced-content","blocks":{"template--18128543219979__4e2e07b2-8374-43fc-96bc-c07ca7e2ac94-liquid-1":{"type":"liquid","settings":{"text_align":"center","color_background":"","color_heading":"","color_text":"","title":"Dein 🤩\u2028Power-Paket","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"Power-Paket","title_thinner_italic":true,"title_color":"","code":"","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"100%","alignment":"center"}},"290590ab-3586-43f8-b0c1-4269bb1d17b5":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Group_254.svg","link":"","width":"100%","alignment":"center"}}},"block_order":["template--18128543219979__4e2e07b2-8374-43fc-96bc-c07ca7e2ac94-liquid-1","290590ab-3586-43f8-b0c1-4269bb1d17b5"],"custom_css":[".custom-content {position: relative; margin-bottom: -65px;}","h2 span {display: block;}",".custom-content > div:nth-child(2) > div {position: absolute; width: 90px; left: 50%; transform: translate(30%, -90px);}","@media (max-width: 768px) {.custom-content > div:nth-child(2) > div {transform: scaleX(-1) rotate(106deg) translate(-138px, 96px); }}","@media (min-width: 769px) {.custom-content {margin-bottom: -100px; } h2 {position: absolute; left: 50%; transform: translate(55%, -200px); }}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":true,"lazyload_images":true}},"66102063-7634-46bb-98c1-875be3501e1d":{"type":"advanced-content","blocks":{"34e72a8f-06ea-400e-8421-d03619e86950":{"type":"liquid","settings":{"text_align":"center","color_background":"","color_heading":"","color_text":"","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<h3>Einfach schneller wieder fit 🫶🏻<\/h3>\n<p>recover verkürzt deine Regenerationszeit spürbar,\nsei es nach dem Sport, körperlicher Anstrengung\noder stressigen Tagen. Es minimiert schnell Muskelkater, Erschöpfung und Hangover Symptome.<\/p>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"33%","alignment":"top-middle"}},"5dd4f613-d400-48b1-b8c9-6dae239d49bb":{"type":"liquid","settings":{"text_align":"center","color_background":"","color_heading":"","color_text":"","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<h3>Erhöht deine Leistungsfähigkeit 🤸🏻‍♂️<\/h3>\n<p>recover optimiert deinen Energiestoffwechsel,\nsodass du sowohl körperlich als auch geistig leistungsfähiger bist.<\/p>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"33%","alignment":"top-middle"}},"111a64b3-410e-40b8-a5f6-40f5f2c0233d":{"type":"liquid","settings":{"text_align":"center","color_background":"","color_heading":"","color_text":"","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<h3>Balance im \u2028Elektrolythaushalt ⚡<\/h3>\n<p>recover versorgt deinen Körper gezielt mit essentiellen Mineralstoffen wie Natrium, Kalium, Magnesium und Calcium, für optimale Zellfunktion, Flüssigkeitsbalance und einem gut funktionierenden Nervensystem.<\/p>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"33%","alignment":"top-middle"}}},"block_order":["34e72a8f-06ea-400e-8421-d03619e86950","5dd4f613-d400-48b1-b8c9-6dae239d49bb","111a64b3-410e-40b8-a5f6-40f5f2c0233d"],"custom_css":["@media only screen and (min-width: 769px) {.custom__item.one-third {padding-right: 30px; } .custom-content > .custom__item:nth-child(2), .custom-content > .custom__item:nth-child(3) {border-left: 1px solid #fff172; }}","@media only screen and (max-width: 768px) {.custom-content > .custom__item:nth-child(2) .rte, .custom-content > .custom__item:nth-child(3) .rte {border-top: 1px solid #fff172; padding-top: 20px; }}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":true,"lazyload_images":true}},"52ebfc47-2fb0-476d-ab71-900b3a092c5e":{"type":"advanced-content","blocks":{"template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-image-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/lean-bg.jpg","image_mobile":"shopify:\/\/shop_images\/lean-bg-mobile.jpg","link":"","width":"100%","alignment":"center"}},"template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-liquid-1":{"type":"liquid","settings":{"text_align":"center","color_background":"#eef7ff","color_heading":"#4fbfeb","color_text":"","title":"Was ist drin?","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"ist drin?","title_thinner_italic":true,"title_color":"","code":"","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"100%","alignment":"center"}}},"block_order":["template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-image-1","template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-liquid-1"],"custom_css":[".image-wrap {border-radius: 0;}",".custom-content {position: relative;}",".custom__item {margin: 0;}",".custom-content > .custom__item:nth-child(2) {position: absolute; left: 50%; top: 50%; display: inline-block; width: auto; padding: 10px 40px; margin: 0; transform: translate(-50%, -50%); border-radius: 40px; min-width: 260px;}",".custom-content > .custom__item:nth-child(2) h2 {margin: 0;}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":true,"space_around":true,"lazyload_images":true}},"7866aa99-8742-43f0-9863-0ec243f97bce":{"type":"rich-text","blocks":{"template--18128543219979__7866aa99-8742-43f0-9863-0ec243f97bce-text-1":{"type":"text","settings":{"color_text":"","enlarge_text":false,"text_max_width":1220,"text":"<p><strong>Zutaten:<\/strong> L-Glutamin, Glycin, L-Citrullin-DL-malat, Inulin (Zichorie), Kaliumcitrat (Kalium) Magnesiumsalze der Citronensäure (Magnesium), Säuerungsmittel: Citronensäure, Taurin, natürliches Aroma, Papain, Grüner Teeextrakt 8:1 (Camellia sinensis, enthält 50 % Polyphenole, 15 % Epigallocatechingallat und 7 % Koffein), Ashwagandhawurzelextrakt 6:1 (Withania somnifera, enthält 7 % Withanolide) (Ashwagandha), Süßungsmittel: Steviolglycoside aus Stevia, Zink-gluconat(Zink), Farbstoff: Beta-Carotin, Natriumselenit (Selen), Pyridoxinhydrochlorid (Vitamin B6),Thiaminhydrochlorid (Vitamin B1) Riboflavin (Vitamin B2)<\/p>"}}},"block_order":["template--18128543219979__7866aa99-8742-43f0-9863-0ec243f97bce-text-1"],"settings":{"color_background":"","align_text":"center","margin_top_px":100,"margin_top_px_mobile":50,"margin_bottom":100,"margin_bottom_mobile":50,"narrow_column":false,"divider":false}},"71619a15-554f-4283-b36e-e14d54294db4":{"type":"text-columns","blocks":{"template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-1":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/recover-icon-1.svg","image_mask":"none","image_width":140,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-2":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/recover-icon-2.svg","image_mask":"none","image_width":140,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-3":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/recover-icon-3.svg","image_mask":"none","image_width":140,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"664d085b-82d4-4429-91c2-51544576e490":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/recover-icon-4.svg","image_mask":"none","image_width":140,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"77d7d98a-73b1-4727-98f3-ef8ae0a54ff8":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/recover-icon-5.svg","image_mask":"none","image_width":140,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}}},"block_order":["template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-1","template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-2","template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-3","664d085b-82d4-4429-91c2-51544576e490","77d7d98a-73b1-4727-98f3-ef8ae0a54ff8"],"custom_css":["@media only screen and (max-width: 768px) {.grid {display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 0; } .one-half {width: 33.333%; } .grid__item {margin-bottom: 20px; }}"],"settings":{"disabled_in_countries":"","remove_top_margin":false,"remove_bottom_margin":false,"small_grid":true,"color_text":"","color_heading":"","color_background":"","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"center","mobile_slider":false,"divider":false}},"de56e68d-6a81-42a5-b9e3-06ba48923cda":{"type":"text-and-image","custom_css":[".feature-row-wrapper .row-animated-icon {left: 50%; top: auto; bottom: -260px; transform: translate(-50%, -50%);}","@media (max-width: 1300px) {.feature-row-wrapper .row-animated-icon {bottom: -210px; }}","@media (max-width: 768px) {.feature-row {flex-direction: column-reverse; } .feature-row__text {padding-top: 100px; text-align: center !important; } .feature-row-wrapper .row-animated-icon {display: none; } .feature-row__first-image {padding: 20px; } .image-wrap {margin-bottom: -50%; margin-top: 18%; transform: scale(1.5); left: -26%; }}"],"settings":{"color_text":"#353b7c","color_heading":"","color_background_section":"#fffce0","color_background":"","color_collapsible_border":"","icon":"shopify:\/\/shop_images\/recover-icon-svg.svg","image_full_width":false,"image":"shopify:\/\/shop_images\/recover-1.png","image_mask":"none","image2_mask":"none","subtitle":"","title":"everydays lädt dich ein, Teil einer Bewegung zu werden, die dein Wohlbefinden in den Fokus stellt. 💛","title2":"","title_underline":"","title_underline_style":"style2","title_circle":"","title_circle_style":"style1","title_thinner":"einer Bewegung","title_thinner_italic":true,"title_color":"","heading_position":"side","text":"<p>Wir glauben daran, dass wahre Veränderung durch Einfachheit erreicht wird. Lass uns gemeinsam das Unbekannte zur neuen Normalität werden lassen. <br\/><strong>Starte jetzt durch, mit recover.<\/strong><\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left","image_width":"50","layout":"right","divider":false,"top_padding":false,"bottom_padding":false,"lazyload_images":true}},"c6e31fb1-80eb-4289-b8e0-c8a624c2b31c":{"type":"images-carousel","blocks":{"48f291b9-af85-4ff9-9281-29c47ac5fa38":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_01.jpg"}},"6d198ac5-91b5-4c25-ba71-8852683f84ba":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_02.jpg"}},"20a76f4c-ebe4-4531-b37f-eed60cd6770a":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_07.jpg"}},"ef364e90-e131-459a-8e9f-ac2e2637d2d2":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_04.jpg"}},"16aee7d3-0118-414c-89f2-3258d55591b3":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_06.jpg"}},"9ce10888-5fe5-45a9-a51c-438d32943a49":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_03.jpg"}},"da3f1b59-b596-49a7-b6bc-dd6fc36bc9c5":{"type":"collection","settings":{"image":"shopify:\/\/shop_images\/Partnerseite_05.jpg"}}},"block_order":["48f291b9-af85-4ff9-9281-29c47ac5fa38","6d198ac5-91b5-4c25-ba71-8852683f84ba","20a76f4c-ebe4-4531-b37f-eed60cd6770a","ef364e90-e131-459a-8e9f-ac2e2637d2d2","16aee7d3-0118-414c-89f2-3258d55591b3","9ce10888-5fe5-45a9-a51c-438d32943a49","da3f1b59-b596-49a7-b6bc-dd6fc36bc9c5"],"custom_css":["@media only screen and (max-width: 768px) {.collections {padding-top: 33vw; }}"],"settings":{"divider":false,"title":"Komm ins Team #wejustbetter","title_underline":"","title_underline_style":"style3","title_circle":"","title_circle_style":"style1","title_thinner":"#wejustbetter","title_thinner_italic":false,"title_color":""}},"62ffc185-7dd5-47fc-b364-4e598d2ad905":{"type":"advanced-content","blocks":{"template--18021081219339__62ffc185-7dd5-47fc-b364-4e598d2ad905-liquid-1":{"type":"liquid","settings":{"text_align":"left","color_background":"","color_heading":"","color_text":"","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<!-- TrustBox script -->\n<script type=\"text\/javascript\" src=\"\/\/widget.trustpilot.com\/bootstrap\/v5\/tp.widget.bootstrap.min.js\" async><\/script>\n<!-- End TrustBox script -->\n\n<!-- TrustBox widget - Micro Star -->\n<div class=\"trustpilot-widget\" data-locale=\"de-DE\" data-template-id=\"5419b732fbfb950b10de65e5\" data-businessunit-id=\"5cdcf2c3571fed000123a41f\" data-style-height=\"24px\" data-style-width=\"100%\" data-theme=\"light\">\n  <a href=\"https:\/\/de.trustpilot.com\/review\/everydays.de\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>\n<!-- End TrustBox widget -->","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"100%","alignment":"center"}}},"block_order":["template--18021081219339__62ffc185-7dd5-47fc-b364-4e598d2ad905-liquid-1"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":true,"lazyload_images":true}},"933c133d-d147-4755-8874-dcd2a247e27b":{"type":"advanced-content","blocks":{"template--18023512047883__933c133d-d147-4755-8874-dcd2a247e27b-liquid-1":{"type":"liquid","settings":{"text_align":"center","color_background":"#77c5e4","color_heading":"#ffffff","color_text":"#ffffff","title":"Registriere dich jetzt und sichere dir eines der zum Start limitiert verfügbaren Launch-Angebote.","title_underline":"","title_underline_style":"style2","title_circle":"","title_circle_style":"style1","title_thinner":"zum Start limitiert","title_thinner_italic":true,"title_color":"","code":"<p><\/p>\n<div class=\"klaviyo-form-SGDvtD\"><\/div>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"50%","alignment":"center"}},"d445824d-e1c9-4a7f-a44e-f6f2a96c9de5":{"type":"liquid","settings":{"text_align":"left","color_background":"#eef7ff","color_heading":"","color_text":"#353b7c","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<div>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>20% Start-Rabatt<\/strong> für die ersten 200 Anmeldungen<\/div> \n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>15% Start-Rabatt<\/strong> auf alle weiteren Anmeldungen<\/div>\n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>10% Start-Rabatt<\/strong> ab 28.10. für 48h<\/div>\n  <\/div>\n<\/div>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"50%","alignment":"center"}}},"block_order":["template--18023512047883__933c133d-d147-4755-8874-dcd2a247e27b-liquid-1","d445824d-e1c9-4a7f-a44e-f6f2a96c9de5"],"custom_css":[".custom__item-inner {max-width: 435px; margin-left: auto; margin-right: auto;}",".klaviyo-form {margin-bottom: -20px;}","input[type=\"email\"] {padding: 5px 25px !important;}","button {padding: 0 50px !important;}",".text-emoji {font-weight: 500;}","hr {border-color: #353b7c; margin: 25px 0;}","@media only screen and (min-width: 769px) {hr {margin: 40px 0; }}","@media only screen and (max-width: 768px) {.text-emoji {max-width: 80%; margin: 10px auto; text-align: center; } .text-emoji > div {width: 100%; }}"],"settings":{"two_backgrounds":true,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":false,"lazyload_images":true}}},"order":["main","9e47aece-35d5-487e-b69b-494569fad996","d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7","a451d047-5cde-4ef8-a208-db5c211dce04","03771f73-e92b-458a-b2db-b69ec167e50f","eebda75b-d399-46cc-ab32-fb0e26544696","4e2e07b2-8374-43fc-96bc-c07ca7e2ac94","66102063-7634-46bb-98c1-875be3501e1d","52ebfc47-2fb0-476d-ab71-900b3a092c5e","7866aa99-8742-43f0-9863-0ec243f97bce","71619a15-554f-4283-b36e-e14d54294db4","de56e68d-6a81-42a5-b9e3-06ba48923cda","c6e31fb1-80eb-4289-b8e0-c8a624c2b31c","62ffc185-7dd5-47fc-b364-4e598d2ad905","933c133d-d147-4755-8874-dcd2a247e27b"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "9e47aece-35d5-487e-b69b-494569fad996": {
+      "type": "advanced-content",
+      "blocks": {
+        "658c15f7-172e-400c-beed-483456908240": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "Optimale Regeneration und Leistungsfähigkeit ✨ mit recover",
+            "title_underline": "",
+            "title_underline_style": "style2",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "✨ mit recover",
+            "title_thinner_italic": true,
+            "title_color": "",
+            "code": "<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">🤸🏻‍♂️<\/span>balanciert deinen Elektrolythaushalt\n<\/div>\n<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">🫶🏻<\/span>mehr Kraft in stressigen Zeiten\n<\/div>\n<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">🌱<\/span>Anti-Hangover Formel\n<\/div>\n<div class=\"text-emoji\" style=\"white-space: nowrap;\">\n  <span style=\"margin-right: 15px;\">💛<\/span>stärkt das Immunsystem\n<\/div>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": true,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "40%",
+            "alignment": "top-middle"
+          }
+        },
+        "template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/recover.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "658c15f7-172e-400c-beed-483456908240",
+        "template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1"
+      ],
+      "custom_css": [
+        ".index-section--three-quarters-bg {padding-top: 65px; background-color: #eef7ff;}",
+        "h2 {margin: 65px 0; font-size: 50px;}",
+        "h2 span {display: block;}",
+        ".text-emoji {margin: 0 0 10px; background: #fff172; color: #353b7c; width: fit-content; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 14px;}",
+        "@media (min-width: 769px) {.two-fifths {width: 45%; } .image-wrap {min-height: 750px; }}",
+        "@media (max-width: 768px) {.index-section--three-quarters-bg {padding-top: 22px; } h2 {margin: 20px 0; font-size: 28px; line-height: 40px; text-align: center; }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": true,
+        "small_bg": false,
+        "three_quarters_bg": true,
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
+    "d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18008394858763__d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "",
+            "color_heading": "#353b7c",
+            "color_text": "#4fbfeb",
+            "title": "recover\u2028rehydration electrolyte drink - fresh lemon 🍋",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "rehydration electrolyte drink - fresh lemon 🍋",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<p>Erhältlich ab dem <strong>28.10.23<\/strong><\/p>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--18008394858763__d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7-liquid-1"
+      ],
+      "custom_css": [
+        ".index-section {margin-bottom: 0;}",
+        ".custom__item {max-width: 480px; margin-left: auto; margin-right: auto;}",
+        "h2 {font-size: 22px; line-height: 32px; text-align: center;}",
+        "h2 span {display: block;}",
+        "p {text-align: center;}",
+        "@media screen and (min-width: 769px) {h2 {font-size: 35px; line-height: 46px; } p {font-size: 20px; }}",
+        "@media screen and (max-width: 768px) {.index-section {margin-top: 110px; }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "a451d047-5cde-4ef8-a208-db5c211dce04": {
+      "type": "countdown",
+      "blocks": {
+        "template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-content-1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "heading": "Countdown",
+            "heading_size": "h2",
+            "text": "<p>Use this timer to create urgency and boost sales.<\/p>",
+            "content_alignment": "left"
+          }
+        },
+        "template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-timer-1": {
+          "type": "timer",
+          "settings": {
+            "year": "2023",
+            "month": "10",
+            "day": "28",
+            "hour": "09",
+            "minute": "00",
+            "hide_timer": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-content-1",
+        "template--18023512047883__a451d047-5cde-4ef8-a208-db5c211dce04-timer-1"
+      ],
+      "custom_css": [
+        ".index-section {margin-top: 0;}",
+        ".countdown__content {padding: 0;}"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": false,
+        "text_color": "#353b7c",
+        "background_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "lazyload_images": true
+      }
+    },
+    "03771f73-e92b-458a-b2db-b69ec167e50f": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18021081219339__03771f73-e92b-458a-b2db-b69ec167e50f-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "#77c5e4",
+            "color_heading": "#ffffff",
+            "color_text": "#ffffff",
+            "title": "Jetzt anmelden & \u2028Launch-Angebote sichern",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<p>Nach erfolgreicher Anmeldung erhältst du deinen persönlichen Gutscheincode als einer der ersten, direkt am 28.10.23 um 09 Uhr.<\/p>\n<div class=\"klaviyo-form-SGDvtD\"><\/div>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "8f605dc8-b21c-4b4d-9d6d-70a96cef74bc": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "#eef7ff",
+            "color_heading": "",
+            "color_text": "#353b7c",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<div>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>20% Start-Rabatt<\/strong> für die ersten 200 Anmeldungen<\/div> \n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>15% Start-Rabatt<\/strong> auf alle weiteren Anmeldungen<\/div>\n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>10% Start-Rabatt<\/strong> ab 28.10.23 für 48h<\/div>\n  <\/div>\n<\/div>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18021081219339__03771f73-e92b-458a-b2db-b69ec167e50f-liquid-1",
+        "8f605dc8-b21c-4b4d-9d6d-70a96cef74bc"
+      ],
+      "custom_css": [
+        ".custom__item-inner {max-width: 435px; margin-left: auto; margin-right: auto;}",
+        ".klaviyo-form {margin-bottom: -20px;}",
+        "input[type=\"email\"] {padding: 5px 25px !important;}",
+        "button {padding: 0 50px !important;}",
+        ".text-emoji {font-weight: 500;}",
+        "hr {border-color: #353b7c; margin: 25px 0;}",
+        "@media only screen and (min-width: 769px) {hr {margin: 40px 0; }}",
+        "@media only screen and (max-width: 768px) {.text-emoji {max-width: 80%; margin: 10px auto; text-align: center; } .text-emoji > div {width: 100%; } .custom-content > .custom__item:nth-child(2) {padding-bottom: 90px; }}"
+      ],
+      "settings": {
+        "two_backgrounds": true,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "eebda75b-d399-46cc-ab32-fb0e26544696": {
+      "type": "advanced-content",
+      "blocks": {
+        "3c26b888-328e-461b-9e3f-2ea1f8abda85": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/recover-2_64df3799-94ce-4cfd-a616-1ff089ef1e7d.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "3c26b888-328e-461b-9e3f-2ea1f8abda85"
+      ],
+      "custom_css": [
+        ".custom-content {margin-bottom: -80px;}",
+        ".custom__item-inner--image {max-width: 570px; margin: 0 auto 40px; position: relative; z-index: 9; margin-top: -120px;}",
+        "@media (min-width: 769px) {.custom-content {margin-bottom: -140px; } .custom__item-inner--image {margin-top: -160px; transform: translateX(-36px); }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "4e2e07b2-8374-43fc-96bc-c07ca7e2ac94": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18128543219979__4e2e07b2-8374-43fc-96bc-c07ca7e2ac94-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "Dein 🤩\u2028Power-Paket",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "Power-Paket",
+            "title_thinner_italic": true,
+            "title_color": "",
+            "code": "",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "290590ab-3586-43f8-b0c1-4269bb1d17b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_254.svg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18128543219979__4e2e07b2-8374-43fc-96bc-c07ca7e2ac94-liquid-1",
+        "290590ab-3586-43f8-b0c1-4269bb1d17b5"
+      ],
+      "custom_css": [
+        ".custom-content {position: relative; margin-bottom: -65px;}",
+        "h2 span {display: block;}",
+        ".custom-content > div:nth-child(2) > div {position: absolute; width: 90px; left: 50%; transform: translate(30%, -90px);}",
+        "@media (max-width: 768px) {.custom-content > div:nth-child(2) > div {transform: scaleX(-1) rotate(106deg) translate(-138px, 96px); }}",
+        "@media (min-width: 769px) {.custom-content {margin-bottom: -100px; } h2 {position: absolute; left: 50%; transform: translate(55%, -200px); }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "66102063-7634-46bb-98c1-875be3501e1d": {
+      "type": "advanced-content",
+      "blocks": {
+        "34e72a8f-06ea-400e-8421-d03619e86950": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<h3>Einfach schneller wieder fit 🫶🏻<\/h3>\n<p>recover verkürzt deine Regenerationszeit spürbar,\nsei es nach dem Sport, körperlicher Anstrengung\noder stressigen Tagen. Es minimiert schnell Muskelkater, Erschöpfung und Hangover Symptome.<\/p>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "5dd4f613-d400-48b1-b8c9-6dae239d49bb": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<h3>Erhöht deine Leistungsfähigkeit 🤸🏻‍♂️<\/h3>\n<p>recover optimiert deinen Energiestoffwechsel,\nsodass du sowohl körperlich als auch geistig leistungsfähiger bist.<\/p>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "111a64b3-410e-40b8-a5f6-40f5f2c0233d": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<h3>Balance im \u2028Elektrolythaushalt ⚡<\/h3>\n<p>recover versorgt deinen Körper gezielt mit essentiellen Mineralstoffen wie Natrium, Kalium, Magnesium und Calcium, für optimale Zellfunktion, Flüssigkeitsbalance und einem gut funktionierenden Nervensystem.<\/p>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "34e72a8f-06ea-400e-8421-d03619e86950",
+        "5dd4f613-d400-48b1-b8c9-6dae239d49bb",
+        "111a64b3-410e-40b8-a5f6-40f5f2c0233d"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {.custom__item.one-third {padding-right: 30px; } .custom-content > .custom__item:nth-child(2), .custom-content > .custom__item:nth-child(3) {border-left: 1px solid #fff172; }}",
+        "@media only screen and (max-width: 768px) {.custom-content > .custom__item:nth-child(2) .rte, .custom-content > .custom__item:nth-child(3) .rte {border-top: 1px solid #fff172; padding-top: 20px; }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "52ebfc47-2fb0-476d-ab71-900b3a092c5e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lean-bg.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/lean-bg-mobile.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "#eef7ff",
+            "color_heading": "#4fbfeb",
+            "color_text": "",
+            "title": "Was ist drin?",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "ist drin?",
+            "title_thinner_italic": true,
+            "title_color": "",
+            "code": "",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-image-1",
+        "template--18128543219979__52ebfc47-2fb0-476d-ab71-900b3a092c5e-liquid-1"
+      ],
+      "custom_css": [
+        ".image-wrap {border-radius: 0;}",
+        ".custom-content {position: relative;}",
+        ".custom__item {margin: 0;}",
+        ".custom-content > .custom__item:nth-child(2) {position: absolute; left: 50%; top: 50%; display: inline-block; width: auto; padding: 10px 40px; margin: 0; transform: translate(-50%, -50%); border-radius: 40px; min-width: 260px;}",
+        ".custom-content > .custom__item:nth-child(2) h2 {margin: 0;}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": true,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "7866aa99-8742-43f0-9863-0ec243f97bce": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18128543219979__7866aa99-8742-43f0-9863-0ec243f97bce-text-1": {
+          "type": "text",
+          "settings": {
+            "color_text": "",
+            "enlarge_text": false,
+            "text_max_width": 1220,
+            "text": "<p><strong>Zutaten:<\/strong> L-Glutamin, Glycin, L-Citrullin-DL-malat, Inulin (Zichorie), Kaliumcitrat (Kalium) Magnesiumsalze der Citronensäure (Magnesium), Säuerungsmittel: Citronensäure, Taurin, natürliches Aroma, Papain, Grüner Teeextrakt 8:1 (Camellia sinensis, enthält 50 % Polyphenole, 15 % Epigallocatechingallat und 7 % Koffein), Ashwagandhawurzelextrakt 6:1 (Withania somnifera, enthält 7 % Withanolide) (Ashwagandha), Süßungsmittel: Steviolglycoside aus Stevia, Zink-gluconat(Zink), Farbstoff: Beta-Carotin, Natriumselenit (Selen), Pyridoxinhydrochlorid (Vitamin B6),Thiaminhydrochlorid (Vitamin B1) Riboflavin (Vitamin B2)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18128543219979__7866aa99-8742-43f0-9863-0ec243f97bce-text-1"
+      ],
+      "settings": {
+        "color_background": "",
+        "align_text": "center",
+        "margin_top_px": 100,
+        "margin_top_px_mobile": 50,
+        "margin_bottom": 100,
+        "margin_bottom_mobile": 50,
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "71619a15-554f-4283-b36e-e14d54294db4": {
+      "type": "text-columns",
+      "blocks": {
+        "template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/recover-icon-1.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/recover-icon-2.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/recover-icon-3.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "664d085b-82d4-4429-91c2-51544576e490": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/recover-icon-4.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "77d7d98a-73b1-4727-98f3-ef8ae0a54ff8": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/recover-icon-5.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-1",
+        "template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-2",
+        "template--18128543219979__71619a15-554f-4283-b36e-e14d54294db4-text_block-3",
+        "664d085b-82d4-4429-91c2-51544576e490",
+        "77d7d98a-73b1-4727-98f3-ef8ae0a54ff8"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {.grid {display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 0; } .one-half {width: 33.333%; } .grid__item {margin-bottom: 20px; }}"
+      ],
+      "settings": {
+        "disabled_in_countries": "",
+        "remove_top_margin": false,
+        "remove_bottom_margin": false,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "",
+        "title": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": false,
+        "divider": false
+      }
+    },
+    "de56e68d-6a81-42a5-b9e3-06ba48923cda": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".feature-row-wrapper .row-animated-icon {left: 50%; top: auto; bottom: -260px; transform: translate(-50%, -50%);}",
+        "@media (max-width: 1300px) {.feature-row-wrapper .row-animated-icon {bottom: -210px; }}",
+        "@media (max-width: 768px) {.feature-row {flex-direction: column-reverse; } .feature-row__text {padding-top: 100px; text-align: center !important; } .feature-row-wrapper .row-animated-icon {display: none; } .feature-row__first-image {padding: 20px; } .image-wrap {margin-bottom: -50%; margin-top: 18%; transform: scale(1.5); left: -26%; }}"
+      ],
+      "settings": {
+        "color_text": "#353b7c",
+        "color_heading": "",
+        "color_background_section": "#fffce0",
+        "color_background": "",
+        "color_collapsible_border": "",
+        "icon": "shopify:\/\/shop_images\/recover-icon-svg.svg",
+        "image_full_width": false,
+        "image": "shopify:\/\/shop_images\/recover-1.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "everydays lädt dich ein, Teil einer Bewegung zu werden, die dein Wohlbefinden in den Fokus stellt. 💛",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style2",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "einer Bewegung",
+        "title_thinner_italic": true,
+        "title_color": "",
+        "heading_position": "side",
+        "text": "<p>Wir glauben daran, dass wahre Veränderung durch Einfachheit erreicht wird. Lass uns gemeinsam das Unbekannte zur neuen Normalität werden lassen. <br\/><strong>Starte jetzt durch, mit recover.<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      }
+    },
+    "c6e31fb1-80eb-4289-b8e0-c8a624c2b31c": {
+      "type": "images-carousel",
+      "blocks": {
+        "48f291b9-af85-4ff9-9281-29c47ac5fa38": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_01.jpg"
+          }
+        },
+        "6d198ac5-91b5-4c25-ba71-8852683f84ba": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_02.jpg"
+          }
+        },
+        "20a76f4c-ebe4-4531-b37f-eed60cd6770a": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_07.jpg"
+          }
+        },
+        "ef364e90-e131-459a-8e9f-ac2e2637d2d2": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_04.jpg"
+          }
+        },
+        "16aee7d3-0118-414c-89f2-3258d55591b3": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_06.jpg"
+          }
+        },
+        "9ce10888-5fe5-45a9-a51c-438d32943a49": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_03.jpg"
+          }
+        },
+        "da3f1b59-b596-49a7-b6bc-dd6fc36bc9c5": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Partnerseite_05.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "48f291b9-af85-4ff9-9281-29c47ac5fa38",
+        "6d198ac5-91b5-4c25-ba71-8852683f84ba",
+        "20a76f4c-ebe4-4531-b37f-eed60cd6770a",
+        "ef364e90-e131-459a-8e9f-ac2e2637d2d2",
+        "16aee7d3-0118-414c-89f2-3258d55591b3",
+        "9ce10888-5fe5-45a9-a51c-438d32943a49",
+        "da3f1b59-b596-49a7-b6bc-dd6fc36bc9c5"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {.collections {padding-top: 33vw; }}"
+      ],
+      "settings": {
+        "divider": false,
+        "title": "Komm ins Team #wejustbetter",
+        "title_underline": "",
+        "title_underline_style": "style3",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "#wejustbetter",
+        "title_thinner_italic": false,
+        "title_color": ""
+      }
+    },
+    "62ffc185-7dd5-47fc-b364-4e598d2ad905": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18021081219339__62ffc185-7dd5-47fc-b364-4e598d2ad905-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<!-- TrustBox script -->\n<script type=\"text\/javascript\" src=\"\/\/widget.trustpilot.com\/bootstrap\/v5\/tp.widget.bootstrap.min.js\" async><\/script>\n<!-- End TrustBox script -->\n\n<!-- TrustBox widget - Micro Star -->\n<div class=\"trustpilot-widget\" data-locale=\"de-DE\" data-template-id=\"5419b732fbfb950b10de65e5\" data-businessunit-id=\"5cdcf2c3571fed000123a41f\" data-style-height=\"24px\" data-style-width=\"100%\" data-theme=\"light\">\n  <a href=\"https:\/\/de.trustpilot.com\/review\/everydays.de\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>\n<!-- End TrustBox widget -->",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18021081219339__62ffc185-7dd5-47fc-b364-4e598d2ad905-liquid-1"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "933c133d-d147-4755-8874-dcd2a247e27b": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18023512047883__933c133d-d147-4755-8874-dcd2a247e27b-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "center",
+            "color_background": "#77c5e4",
+            "color_heading": "#ffffff",
+            "color_text": "#ffffff",
+            "title": "Registriere dich jetzt und sichere dir eines der zum Start limitiert verfügbaren Launch-Angebote.",
+            "title_underline": "",
+            "title_underline_style": "style2",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "zum Start limitiert",
+            "title_thinner_italic": true,
+            "title_color": "",
+            "code": "<p><\/p>\n<div class=\"klaviyo-form-SGDvtD\"><\/div>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "d445824d-e1c9-4a7f-a44e-f6f2a96c9de5": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "#eef7ff",
+            "color_heading": "",
+            "color_text": "#353b7c",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<div>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>20% Start-Rabatt<\/strong> für die ersten 200 Anmeldungen<\/div> \n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>15% Start-Rabatt<\/strong> auf alle weiteren Anmeldungen<\/div>\n  <\/div>\n  <hr>\n  <div class=\"text-emoji\">\n    <span style=\"margin-right: 15px;\">💛<\/span> <div>\n<strong>10% Start-Rabatt<\/strong> ab 28.10. für 48h<\/div>\n  <\/div>\n<\/div>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18023512047883__933c133d-d147-4755-8874-dcd2a247e27b-liquid-1",
+        "d445824d-e1c9-4a7f-a44e-f6f2a96c9de5"
+      ],
+      "custom_css": [
+        ".custom__item-inner {max-width: 435px; margin-left: auto; margin-right: auto;}",
+        ".klaviyo-form {margin-bottom: -20px;}",
+        "input[type=\"email\"] {padding: 5px 25px !important;}",
+        "button {padding: 0 50px !important;}",
+        ".text-emoji {font-weight: 500;}",
+        "hr {border-color: #353b7c; margin: 25px 0;}",
+        "@media only screen and (min-width: 769px) {hr {margin: 40px 0; }}",
+        "@media only screen and (max-width: 768px) {.text-emoji {max-width: 80%; margin: 10px auto; text-align: center; } .text-emoji > div {width: 100%; }}"
+      ],
+      "settings": {
+        "two_backgrounds": true,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9e47aece-35d5-487e-b69b-494569fad996",
+    "d7a5b84b-7c1c-4e8b-bdc0-f1326ac70ad7",
+    "a451d047-5cde-4ef8-a208-db5c211dce04",
+    "03771f73-e92b-458a-b2db-b69ec167e50f",
+    "eebda75b-d399-46cc-ab32-fb0e26544696",
+    "4e2e07b2-8374-43fc-96bc-c07ca7e2ac94",
+    "66102063-7634-46bb-98c1-875be3501e1d",
+    "52ebfc47-2fb0-476d-ab71-900b3a092c5e",
+    "7866aa99-8742-43f0-9863-0ec243f97bce",
+    "71619a15-554f-4283-b36e-e14d54294db4",
+    "de56e68d-6a81-42a5-b9e3-06ba48923cda",
+    "c6e31fb1-80eb-4289-b8e0-c8a624c2b31c",
+    "62ffc185-7dd5-47fc-b364-4e598d2ad905",
+    "933c133d-d147-4755-8874-dcd2a247e27b"
+  ]
+}

@@ -321,6 +321,7 @@
     data-type_header_text_alignment="{{ settings.type_headers_align_text }}"
     data-animate_images_style="{{ settings.animate_images_style | default: "zoom-fade" }}"
   >
+    {% render 'utm_checkout' %}
     {%- render 'geolocation-redirect' -%}
 
     {%- if settings.after_body != '' -%}

@@ -1,1 +1,716 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"slideshow":{"type":"slideshow","blocks":{"slideshow-0":{"type":"image","settings":{"title":"einfach wohlfühlen\n<i>- everydays<\/i>","title_size":53,"subheading":"Entdecke in dir, was schon immer da war. \nMit everydays zu einem glücklichen, gesunden Du. \nYou just better!","link":"","link_text":"","button_style":"primary","button2_link":"","button2_label":"","button2_style":"primary","text_align":"vertical-center horizontal-right","image":"shopify:\/\/shop_images\/lean_unterwegs_16_8fcd74a0-3ab3-4a09-9586-6472aab886d0.jpg","image_mobile":"shopify:\/\/shop_images\/lean_unterwegs_16_00d9ecfd-6169-4ffb-8e21-6e9f3d67f486.jpg","image_option":"performance","parallax_direction":"top","overlay_color":"#000000","overlay_opacity":10}}},"block_order":["slideshow-0"],"custom_css":[".hero__title {font-size: 55px; line-height: 70px;}",".hero__subtitle {margin: 30px 0px 0px 0px; letter-spacing: 0; text-transform: none; font-size: 20px; line-height: 30px; font-weight: 600;}","@media only screen and (max-width: 1024px) {.hero__title {text-align: center; font-size: 55px; line-height: 65px; }}","@media only screen and (max-width: 768px) {.hero__title {text-align: left; font-size: 40px; line-height: 50px; max-width: 80%; margin-left: auto; margin-right: auto; } .hero__subtitle {display: none; }}"],"settings":{"section_height":"750px","mobile_height":"500px","parallax":false,"style":"arrows","autoplay":true,"autoplay_speed":5,"lazyload_images":true}},"rich-text":{"type":"rich-text","blocks":{"1c64152a-383b-44df-a054-8607267d2223":{"type":"heading","settings":{"title":"Unser Ziel: Ein gesundes Normal! Mit leeren Krankenhäusern, glücklichen Menschen und einem Leben, das uns wirklich erfüllt.","title_underline":"gesundes","title_underline_style":"style2","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"color_heading":"#353b7c","title_color":"#353b7c"}}},"block_order":["1c64152a-383b-44df-a054-8607267d2223"],"custom_css":["h2 {font-size: 35px; line-height: 55px; font-family: lingua franca; font-weight: 400;}","@media screen and (max-width: 768px) {h2 {font-size: 28px; line-height: 38px; }}"],"settings":{"color_background":"","align_text":"center","margin_top_px":100,"margin_top_px_mobile":50,"margin_bottom":100,"margin_bottom_mobile":50,"narrow_column":false,"divider":false}},"df9031cb-0129-4e84-8e89-cc8cf9718de0":{"type":"text-and-image","custom_css":["@media screen and (min-width: 769px) {h2 {font-size: 36px; } p {font-size: 18px; font-weight: 500; }}","@media screen and (max-width: 768px) {.feature-row__text {text-align: center !important; }}"],"settings":{"color_text":"#ffffff","color_heading":"#ffffff","color_background_section":"#9bc86e","color_background":"","color_collapsible_border":"","icon":"shopify:\/\/shop_images\/badge-you-just-better.svg","image_full_width":true,"image":"shopify:\/\/shop_images\/smartprotein_cafe_10_0a92a141-9b31-4bda-952b-d4e78c892b9e.jpg","image_mask":"none","image2_mask":"none","subtitle":"","title":"Schluss mit Stress","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"Stress","title_circle_style":"style2","title_thinner":"","title_thinner_italic":false,"title_color":"","heading_position":"side","text":"<p>Oft endet Selbstoptimierung im inneren Konflikt von gut und schlecht. Dabei haben Verbote und Perfektionismus noch niemanden wirklich ans Ziel gebracht.<br\/><br\/>Wahre Veränderung entsteht von innen heraus und darf Spaß machen. Denn worum geht es eigentlich? Wir alle wollen uns wohlfühlen!<\/p>","html":"","button_label":"","button_link":"","button_style":"primary","align_text":"left","image_width":"50","layout":"left","divider":false,"top_padding":true,"bottom_padding":true,"lazyload_images":true}},"e2cb3e23-95f5-437f-85dc-716baffc4b0d":{"type":"scrolling-text","custom_css":[".scrolling-text__inner {font-family: Lingua Franca; color: #353b7c;}","@media screen and (max-width: 768px) {.scrolling-text__inner span {font-size: 40px; }}"],"settings":{"text":"you, just better ·","link":"","text_size":70,"text_spacing":false,"direction":"right","speed":300}},"3db8b2fd-a330-48c9-9cf8-637813137166":{"type":"advanced-content","blocks":{"template--17945026887947__3db8b2fd-a330-48c9-9cf8-637813137166-liquid-1":{"type":"liquid","settings":{"text_align":"left","color_background":"","color_heading":"","color_text":"","title":"","title_underline":"gestalten","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<h4>Bereit für's Leben!<\/h4>\n<h2>Gewohnheiten <span class=\"underline underline--style2\">gestalten<\/span> deine\nZukunft<\/h2>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"50%","alignment":"top-middle","icon_position":"left_top","icon_position_mobile":"right_top"}},"a56d0cd5-e7ca-487f-b0d5-805dce5fbf84":{"type":"liquid","settings":{"text_align":"left","color_background":"","color_heading":"","color_text":"","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","code":"<p>Unser holistisches Wellbeing- und Gesundheitsprogramm vereint attraktive Gewohnheiten und Alltagshelfer, die sich nahtlos in deinen Lebensstil einfügen lassen und Spaß machen. So kommst du von innen heraus an dein Ziel - und das ohne restriktive Verbote oder kurzfristige Lösungen.\n<br><br>\nDas Leben hat seine Höhen und Tiefen. Das können wir nicht ändern, aber mit everydays bist du stark und flexibel genug, um ausgeglichen durch dein Leben zu gehen!<\/p>","enable_content_on_image_mobile":false,"enable_content_on_image_mobile_bottom":false,"button_label":"","button_link":"","button_style":"primary","width":"40%","alignment":"center","icon_position":"left_top","icon_position_mobile":"right_top"}}},"block_order":["template--17945026887947__3db8b2fd-a330-48c9-9cf8-637813137166-liquid-1","a56d0cd5-e7ca-487f-b0d5-805dce5fbf84"],"custom_css":["h4 {margin-bottom: -1em; font-size: 15px; line-height: 21px; font-weight: 600; color: #444444;}","h2 {color: #353b7c; margin-bottom: 0; font-size: 27.5px; line-height: 38px;}",".index-section--bg {padding-top: 60px; background-color: #f8f8f2;}",".custom-content {margin-bottom: 0;}","p {margin: 0px 0px 30px 0px;}","@media screen and (min-width: 769px) {h4 {margin-bottom: -1.5em; font-size: 20px; } h2 {font-size: 45px; line-height: 55px; } .index-section {padding-top: 100px; } p {font-size: 18px; font-weight: 500; }}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":false,"lazyload_images":true}},"9e47aece-35d5-487e-b69b-494569fad996":{"type":"advanced-content","blocks":{"template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/smartprotein_wohnung_11.jpg","link":"","width":"100%","alignment":"center"}}},"block_order":["template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1"],"custom_css":[".index-section--half-bg {background-color: #f8f8f2;}",".custom-content,.custom__item {margin-bottom: 0;}","@media only screen and (min-width: 769px) {.index-section--half-bg {margin-bottom: 140px; }}"],"settings":{"two_backgrounds":false,"reverse_row":false,"small_bg":false,"three_quarters_bg":false,"full_width":false,"space_around":false,"lazyload_images":true}},"1fb33ef1-6f9c-456c-a3ff-2bf026f7a341":{"type":"text-and-image","custom_css":[".index-section {margin-bottom: 0;}","@media screen and (min-width: 769px) {h2 {font-size: 36px; } p {font-size: 18px; font-weight: 500; }}","@media screen and (max-width: 768px) {.feature-row__text {text-align: center !important; } .feature-row__text.feature-row__text--right {order: 0; }}"],"settings":{"color_text":"#ffffff","color_heading":"#ffffff","color_background_section":"#f48b3e","color_background":"","color_collapsible_border":"","image_full_width":true,"image":"shopify:\/\/shop_images\/happy_unterwegs_09.jpg","image_mask":"none","image2_mask":"none","subtitle":"","title":"Kein Hype, nur Wirkung","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"Wirkung","title_circle_style":"style2","title_thinner":"","title_thinner_italic":false,"title_color":"","heading_position":"side","text":"<p>Wir bieten dir evidenzbasierte Premiumprodukte, die gemeinsam mit Experten: \u2028Innen entwickelt wurden, damit du dich rundum wohlfühlen kannst.<br\/><br\/><strong>Vertrauen ist gut, Qualität ist besser<\/strong><\/p><p>Jedes Produkt wird im Labor in Deutschland entwickelt, hergestellt und getestet. Wir verwenden ausschließlich 100% reine Zutaten in all unseren Premiumprodukten.<\/p>","html":"","button_label":"","button_link":"","button_style":"primary","align_text":"left","image_width":"50","layout":"right","divider":false,"top_padding":true,"bottom_padding":true,"lazyload_images":true}},"4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e":{"type":"text-columns","blocks":{"template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-1":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/Icon_wohlfuehlgarantie_a6cbb0df-e864-4bf0-9ec1-f87d7434ddef.svg","image_mask":"none","image_width":100,"mobile_image_width":90,"text_max_width":160,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>wohlfühlgarantie<\/h4>","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-2":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/Icon_sauber_und_sicher.svg","image_mask":"none","image_width":100,"mobile_image_width":90,"text_max_width":160,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>sauber und<br\/>sicher<\/h4>","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-3":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/Icon_studienbasiert.svg","image_mask":"none","image_width":100,"mobile_image_width":90,"text_max_width":160,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>studienbasiert<\/h4>","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"beed3ead-033a-4498-a825-0700c08f6541":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/Icon_mit_Expertinnen_entwickelt.svg","image_mask":"none","image_width":100,"mobile_image_width":90,"text_max_width":160,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>mit Experten<\/h4><h4>entwickelt<\/h4>","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"2bc02c06-7832-4029-8eb9-0a5848e71040":{"type":"text_block","settings":{"align_text":"center","enable_image":true,"image":"shopify:\/\/shop_images\/Icon_laborgeprueft_aus_Deutschland.svg","image_mask":"none","image_width":100,"mobile_image_width":90,"text_max_width":160,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>laborgeprüft aus Deutschland<\/h4>","popup_text":"","button_label":"","button_link":"","button_style":"primary"}}},"block_order":["template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-1","template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-2","template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-3","beed3ead-033a-4498-a825-0700c08f6541","2bc02c06-7832-4029-8eb9-0a5848e71040"],"custom_css":["h4 {color: #353b7c; font-size: 18px;}","@media screen and (max-width: 768px) {h4 {font-size: 12.5px; }}"],"settings":{"disabled_in_countries":"","remove_top_margin":true,"remove_bottom_margin":false,"small_grid":true,"color_text":"","color_heading":"","color_background":"#f7f7ff","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"center","mobile_slider":false,"divider":false}},"f4f29268-ec86-40d7-87ca-e6bd58491db6":{"type":"text-columns","blocks":{"template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/simonekoch-1645782147343.webp","image_mask":"none","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Dr. Simone Koch<\/h4><p>Darmexpertin<\/p>","popup_text":"<p>Dr. Simone Koch ist Autorin von 5 Bestsellern zu den Themen Darmgesundheit, Schilddrüsenerkrankungen, Stoffwechselgesundheit und Prävention von Zivilisationserkrankungen. Auf ihrem Instagramaccount stellt sie ihr großes Wissen in spannenden Beiträgen zur Verfügung<\/p>","button_label":"","button_link":"","button_style":"primary"}},"template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Dr_Anne_Latz_everydays.png","image_mask":"none","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Dr. Anne Latz<\/h4><p>Harvard Medical School<\/p>","popup_text":"<p>Dr. Anne Latz ist u.a. Unternehmerin im Bereich Prävention und digitale Gesundheit. Sie ist Expertin für Innovation im Gesundheitswesen & Lebensstilfragen (Harvard Medical School, British Society of Lifestyle Medicine und DGEM) und tritt als Speakerin zu den Themen ganzheitliche Gesundheit mit besonderem Schwerpunkt auf metabolische Gesundheit (Blutzuckermanagement für Gesunde) auf. Als Autorin und Multiplikatorin setzt sie sich für neue Wege innerhalb des Gesundheitssystems ein.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/auerswald-1645780331401.webp","image_mask":"none","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Martin Auerswald<\/h4><p>Biochemiker<\/p>","popup_text":"<p>Martin Auerswald ist studierter Biochemiker. Er entschied sich gegen eine Karriere in der Forschung, um stattdessen lieber Wissen zu vermitteln – heute erreicht er mit seinen Beiträgen und Kongressen mehrere Millionen Menschen jährlich und zeigt, wie jeder seine Gesundheit selbst in die Hand nehmen, vorbeugen und auch bei chronischen Erkrankungen zur Besserung beitragen kann.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"4f119b32-1b1c-4a4c-859a-5a44fe6f61bc":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Leinung2.jpg","image_mask":"square","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Dr. Dorothea Leinung<\/h4><p>Hashimoto-Expertin<\/p>","popup_text":"<p>Dr. Dorothea Leinung ist ganzheitliche Gesundheitsexpertin, Bestsellerautorin, erfolgreiche Podcasterin und Mentaltrainerin. Ihr Spezialgebiet ist die Hashimoto Thyreoiditis, eine autoimmune Erkrankung der Schilddrüse, von der schätzungsweise 8 Mio. Menschen allein in Deutschland betroffen sind. In den sozialen Medien gehören bereits über 60.000 Menschen zu ihren begeisterten Followern, die ihrer Expertise vertrauen.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"text_block_BXMdTi":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Julia_Czinna.jpg","image_mask":"square","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4><strong>Julia Czinna<\/strong><\/h4><p>Zahngesundheits-Expertin<\/p>","popup_text":"<p>Durch ihre mehrjährige Praxiserfahrung als Zahnärztin erkannte Julia Czinna, dass Füllungen keine langfristige Zahngesundheit gewährleisten. Entschlossen teilt sie nun ihr Expertenwissen und unterstützt aktiv dabei, die Ursachen von Zahnproblemen anzugehen. Ihre Arbeit enthüllt faszinierende Zusammenhänge zwischen Ernährung, Mundflora und Zähnen. Heute inspiriert sie über 20.000 Menschen auf Social Media mit ihrer Expertise für starke Zähne.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"text_block_QLKemw":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Frauenglueck_Bild646web__JudithPulg-NEU_4781ba1e-633f-4264-9983-e3cf849de7ea.jpg","image_mask":"square","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Eva Petermann-Schnitzer<\/h4><p>Heilpraktikerin, KPNI<\/p>","popup_text":"<p>Eva Petermann-Schnitzer ist Heilpraktikerin, Sportwissenschaftlerin, systemischer Coach und Therapeutin der klinischen Psycho-Neuro-Immunologie. Sie arbeitet in ihrer Praxis für Naturheilkunde und als Speakerin zu verschiedenen Gesundheitsthemen. Ihre Schwerpunkte sind die Darmgesundheit, das Hormongleichgewicht, das intakte Immunsystem und die mentale Balance.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"text_block_j9dWKT":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Untitled.jpg","image_mask":"square","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Hannah Willemsen<\/h4><p>Ernährungscoach<\/p>","popup_text":"<p>Hannah Willemsen, ausgebildete und zertifizierte Ernährungsberaterin, Autorin und Podcastern. Hannah hat sich auf ganzheitliche Darmgesundheit, Hormongesundheit und Sportlerernährung spezialisiert<\/p>","button_label":"","button_link":"","button_style":"primary"}},"text_block_zJimd7":{"type":"text_block","disabled":true,"settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Dr._Sandra_Weber_rechteckig.jpg","image_mask":"square","image_width":650,"mobile_image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"<h4>Dr. Sandra Weber<\/h4><p>Darm- & Ernährungsexpertin<\/p>","popup_text":"<p>Dr. Sandra Weber ist Expertin für ganzheitliche Darmgesundheit, Ernährung und Stressmanagement. Mit Ihrer Aufklärungsarbeit in den sozialen Medien und ihren erfolgreichen Online-Kursen zur Linderung von Verdauungsbeschwerden, Unverträglichkeiten und zur Regulation des Nervensystems begleitet sie Menschen auf ihrem Weg zu einem gesunden Leben.<\/p>","button_label":"","button_link":"","button_style":"primary"}}},"block_order":["template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2","template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1","template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0","4f119b32-1b1c-4a4c-859a-5a44fe6f61bc","text_block_BXMdTi","text_block_QLKemw","text_block_j9dWKT","text_block_zJimd7"],"custom_css":["@media screen and (min-width: 769px) {.grid--small {display: flex; flex-wrap: wrap; } .grid--small .grid__item {flex: 0 0 25%; max-width: 25%; }}","h2 {font-size: 36px;}","h4 {color: #444444;}"],"settings":{"disabled_in_countries":"","remove_top_margin":false,"remove_bottom_margin":false,"small_grid":true,"color_text":"","color_heading":"","color_background":"","title":"Unsere Experten","title_underline":"Experten","title_underline_style":"style2","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"center","mobile_slider":true,"divider":false}}},"order":["main","slideshow","rich-text","df9031cb-0129-4e84-8e89-cc8cf9718de0","e2cb3e23-95f5-437f-85dc-716baffc4b0d","3db8b2fd-a330-48c9-9cf8-637813137166","9e47aece-35d5-487e-b69b-494569fad996","1fb33ef1-6f9c-456c-a3ff-2bf026f7a341","4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e","f4f29268-ec86-40d7-87ca-e6bd58491db6"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "title": "einfach wohlfühlen\n<i>- everydays<\/i>",
+            "title_size": 53,
+            "subheading": "Entdecke in dir, was schon immer da war. \nMit everydays zu einem glücklichen, gesunden Du. \nYou just better!",
+            "link": "",
+            "link_text": "",
+            "button_style": "primary",
+            "button2_link": "",
+            "button2_label": "",
+            "button2_style": "primary",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify:\/\/shop_images\/lean_unterwegs_16_8fcd74a0-3ab3-4a09-9586-6472aab886d0.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/lean_unterwegs_16_00d9ecfd-6169-4ffb-8e21-6e9f3d67f486.jpg",
+            "image_option": "performance",
+            "parallax_direction": "top",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "custom_css": [
+        ".hero__title {font-size: 55px; line-height: 70px;}",
+        ".hero__subtitle {margin: 30px 0px 0px 0px; letter-spacing: 0; text-transform: none; font-size: 20px; line-height: 30px; font-weight: 600;}",
+        "@media only screen and (max-width: 1024px) {.hero__title {text-align: center; font-size: 55px; line-height: 65px; }}",
+        "@media only screen and (max-width: 768px) {.hero__title {text-align: left; font-size: 40px; line-height: 50px; max-width: 80%; margin-left: auto; margin-right: auto; } .hero__subtitle {display: none; }}"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "500px",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "1c64152a-383b-44df-a054-8607267d2223": {
+          "type": "heading",
+          "settings": {
+            "title": "Unser Ziel: Ein gesundes Normal! Mit leeren Krankenhäusern, glücklichen Menschen und einem Leben, das uns wirklich erfüllt.",
+            "title_underline": "gesundes",
+            "title_underline_style": "style2",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "color_heading": "#353b7c",
+            "title_color": "#353b7c"
+          }
+        }
+      },
+      "block_order": [
+        "1c64152a-383b-44df-a054-8607267d2223"
+      ],
+      "custom_css": [
+        "h2 {font-size: 35px; line-height: 55px; font-family: lingua franca; font-weight: 400;}",
+        "@media screen and (max-width: 768px) {h2 {font-size: 28px; line-height: 38px; }}"
+      ],
+      "settings": {
+        "color_background": "",
+        "align_text": "center",
+        "margin_top_px": 100,
+        "margin_top_px_mobile": 50,
+        "margin_bottom": 100,
+        "margin_bottom_mobile": 50,
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "df9031cb-0129-4e84-8e89-cc8cf9718de0": {
+      "type": "text-and-image",
+      "custom_css": [
+        "@media screen and (min-width: 769px) {h2 {font-size: 36px; } p {font-size: 18px; font-weight: 500; }}",
+        "@media screen and (max-width: 768px) {.feature-row__text {text-align: center !important; }}"
+      ],
+      "settings": {
+        "color_text": "#ffffff",
+        "color_heading": "#ffffff",
+        "color_background_section": "#9bc86e",
+        "color_background": "",
+        "color_collapsible_border": "",
+        "icon": "shopify:\/\/shop_images\/badge-you-just-better.svg",
+        "image_full_width": true,
+        "image": "shopify:\/\/shop_images\/smartprotein_cafe_10_0a92a141-9b31-4bda-952b-d4e78c892b9e.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Schluss mit Stress",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "Stress",
+        "title_circle_style": "style2",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "heading_position": "side",
+        "text": "<p>Oft endet Selbstoptimierung im inneren Konflikt von gut und schlecht. Dabei haben Verbote und Perfektionismus noch niemanden wirklich ans Ziel gebracht.<br\/><br\/>Wahre Veränderung entsteht von innen heraus und darf Spaß machen. Denn worum geht es eigentlich? Wir alle wollen uns wohlfühlen!<\/p>",
+        "html": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "e2cb3e23-95f5-437f-85dc-716baffc4b0d": {
+      "type": "scrolling-text",
+      "custom_css": [
+        ".scrolling-text__inner {font-family: Lingua Franca; color: #353b7c;}",
+        "@media screen and (max-width: 768px) {.scrolling-text__inner span {font-size: 40px; }}"
+      ],
+      "settings": {
+        "text": "you, just better ·",
+        "link": "",
+        "text_size": 70,
+        "text_spacing": false,
+        "direction": "right",
+        "speed": 300
+      }
+    },
+    "3db8b2fd-a330-48c9-9cf8-637813137166": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--17945026887947__3db8b2fd-a330-48c9-9cf8-637813137166-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "",
+            "title_underline": "gestalten",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<h4>Bereit für's Leben!<\/h4>\n<h2>Gewohnheiten <span class=\"underline underline--style2\">gestalten<\/span> deine\nZukunft<\/h2>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "50%",
+            "alignment": "top-middle",
+            "icon_position": "left_top",
+            "icon_position_mobile": "right_top"
+          }
+        },
+        "a56d0cd5-e7ca-487f-b0d5-805dce5fbf84": {
+          "type": "liquid",
+          "settings": {
+            "text_align": "left",
+            "color_background": "",
+            "color_heading": "",
+            "color_text": "",
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "code": "<p>Unser holistisches Wellbeing- und Gesundheitsprogramm vereint attraktive Gewohnheiten und Alltagshelfer, die sich nahtlos in deinen Lebensstil einfügen lassen und Spaß machen. So kommst du von innen heraus an dein Ziel - und das ohne restriktive Verbote oder kurzfristige Lösungen.\n<br><br>\nDas Leben hat seine Höhen und Tiefen. Das können wir nicht ändern, aber mit everydays bist du stark und flexibel genug, um ausgeglichen durch dein Leben zu gehen!<\/p>",
+            "enable_content_on_image_mobile": false,
+            "enable_content_on_image_mobile_bottom": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "width": "40%",
+            "alignment": "center",
+            "icon_position": "left_top",
+            "icon_position_mobile": "right_top"
+          }
+        }
+      },
+      "block_order": [
+        "template--17945026887947__3db8b2fd-a330-48c9-9cf8-637813137166-liquid-1",
+        "a56d0cd5-e7ca-487f-b0d5-805dce5fbf84"
+      ],
+      "custom_css": [
+        "h4 {margin-bottom: -1em; font-size: 15px; line-height: 21px; font-weight: 600; color: #444444;}",
+        "h2 {color: #353b7c; margin-bottom: 0; font-size: 27.5px; line-height: 38px;}",
+        ".index-section--bg {padding-top: 60px; background-color: #f8f8f2;}",
+        ".custom-content {margin-bottom: 0;}",
+        "p {margin: 0px 0px 30px 0px;}",
+        "@media screen and (min-width: 769px) {h4 {margin-bottom: -1.5em; font-size: 20px; } h2 {font-size: 45px; line-height: 55px; } .index-section {padding-top: 100px; } p {font-size: 18px; font-weight: 500; }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
+    "9e47aece-35d5-487e-b69b-494569fad996": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/smartprotein_wohnung_11.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--17984535429387__9e47aece-35d5-487e-b69b-494569fad996-image-1"
+      ],
+      "custom_css": [
+        ".index-section--half-bg {background-color: #f8f8f2;}",
+        ".custom-content,.custom__item {margin-bottom: 0;}",
+        "@media only screen and (min-width: 769px) {.index-section--half-bg {margin-bottom: 140px; }}"
+      ],
+      "settings": {
+        "two_backgrounds": false,
+        "reverse_row": false,
+        "small_bg": false,
+        "three_quarters_bg": false,
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
+    "1fb33ef1-6f9c-456c-a3ff-2bf026f7a341": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin-bottom: 0;}",
+        "@media screen and (min-width: 769px) {h2 {font-size: 36px; } p {font-size: 18px; font-weight: 500; }}",
+        "@media screen and (max-width: 768px) {.feature-row__text {text-align: center !important; } .feature-row__text.feature-row__text--right {order: 0; }}"
+      ],
+      "settings": {
+        "color_text": "#ffffff",
+        "color_heading": "#ffffff",
+        "color_background_section": "#f48b3e",
+        "color_background": "",
+        "color_collapsible_border": "",
+        "image_full_width": true,
+        "image": "shopify:\/\/shop_images\/happy_unterwegs_09.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Kein Hype, nur Wirkung",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "Wirkung",
+        "title_circle_style": "style2",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "heading_position": "side",
+        "text": "<p>Wir bieten dir evidenzbasierte Premiumprodukte, die gemeinsam mit Experten: \u2028Innen entwickelt wurden, damit du dich rundum wohlfühlen kannst.<br\/><br\/><strong>Vertrauen ist gut, Qualität ist besser<\/strong><\/p><p>Jedes Produkt wird im Labor in Deutschland entwickelt, hergestellt und getestet. Wir verwenden ausschließlich 100% reine Zutaten in all unseren Premiumprodukten.<\/p>",
+        "html": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e": {
+      "type": "text-columns",
+      "blocks": {
+        "template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Icon_wohlfuehlgarantie_a6cbb0df-e864-4bf0-9ec1-f87d7434ddef.svg",
+            "image_mask": "none",
+            "image_width": 100,
+            "mobile_image_width": 90,
+            "text_max_width": 160,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>wohlfühlgarantie<\/h4>",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Icon_sauber_und_sicher.svg",
+            "image_mask": "none",
+            "image_width": 100,
+            "mobile_image_width": 90,
+            "text_max_width": 160,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>sauber und<br\/>sicher<\/h4>",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Icon_studienbasiert.svg",
+            "image_mask": "none",
+            "image_width": 100,
+            "mobile_image_width": 90,
+            "text_max_width": 160,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>studienbasiert<\/h4>",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "beed3ead-033a-4498-a825-0700c08f6541": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Icon_mit_Expertinnen_entwickelt.svg",
+            "image_mask": "none",
+            "image_width": 100,
+            "mobile_image_width": 90,
+            "text_max_width": 160,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>mit Experten<\/h4><h4>entwickelt<\/h4>",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "2bc02c06-7832-4029-8eb9-0a5848e71040": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "center",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Icon_laborgeprueft_aus_Deutschland.svg",
+            "image_mask": "none",
+            "image_width": 100,
+            "mobile_image_width": 90,
+            "text_max_width": 160,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>laborgeprüft aus Deutschland<\/h4>",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-1",
+        "template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-2",
+        "template--17945026887947__4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e-text_block-3",
+        "beed3ead-033a-4498-a825-0700c08f6541",
+        "2bc02c06-7832-4029-8eb9-0a5848e71040"
+      ],
+      "custom_css": [
+        "h4 {color: #353b7c; font-size: 18px;}",
+        "@media screen and (max-width: 768px) {h4 {font-size: 12.5px; }}"
+      ],
+      "settings": {
+        "disabled_in_countries": "",
+        "remove_top_margin": true,
+        "remove_bottom_margin": false,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "#f7f7ff",
+        "title": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": false,
+        "divider": false
+      }
+    },
+    "f4f29268-ec86-40d7-87ca-e6bd58491db6": {
+      "type": "text-columns",
+      "blocks": {
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/simonekoch-1645782147343.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Simone Koch<\/h4><p>Darmexpertin<\/p>",
+            "popup_text": "<p>Dr. Simone Koch ist Autorin von 5 Bestsellern zu den Themen Darmgesundheit, Schilddrüsenerkrankungen, Stoffwechselgesundheit und Prävention von Zivilisationserkrankungen. Auf ihrem Instagramaccount stellt sie ihr großes Wissen in spannenden Beiträgen zur Verfügung<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Dr_Anne_Latz_everydays.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Anne Latz<\/h4><p>Harvard Medical School<\/p>",
+            "popup_text": "<p>Dr. Anne Latz ist u.a. Unternehmerin im Bereich Prävention und digitale Gesundheit. Sie ist Expertin für Innovation im Gesundheitswesen & Lebensstilfragen (Harvard Medical School, British Society of Lifestyle Medicine und DGEM) und tritt als Speakerin zu den Themen ganzheitliche Gesundheit mit besonderem Schwerpunkt auf metabolische Gesundheit (Blutzuckermanagement für Gesunde) auf. Als Autorin und Multiplikatorin setzt sie sich für neue Wege innerhalb des Gesundheitssystems ein.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/auerswald-1645780331401.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Martin Auerswald<\/h4><p>Biochemiker<\/p>",
+            "popup_text": "<p>Martin Auerswald ist studierter Biochemiker. Er entschied sich gegen eine Karriere in der Forschung, um stattdessen lieber Wissen zu vermitteln – heute erreicht er mit seinen Beiträgen und Kongressen mehrere Millionen Menschen jährlich und zeigt, wie jeder seine Gesundheit selbst in die Hand nehmen, vorbeugen und auch bei chronischen Erkrankungen zur Besserung beitragen kann.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "4f119b32-1b1c-4a4c-859a-5a44fe6f61bc": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Leinung2.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Dorothea Leinung<\/h4><p>Hashimoto-Expertin<\/p>",
+            "popup_text": "<p>Dr. Dorothea Leinung ist ganzheitliche Gesundheitsexpertin, Bestsellerautorin, erfolgreiche Podcasterin und Mentaltrainerin. Ihr Spezialgebiet ist die Hashimoto Thyreoiditis, eine autoimmune Erkrankung der Schilddrüse, von der schätzungsweise 8 Mio. Menschen allein in Deutschland betroffen sind. In den sozialen Medien gehören bereits über 60.000 Menschen zu ihren begeisterten Followern, die ihrer Expertise vertrauen.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "text_block_BXMdTi": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Julia_Czinna.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4><strong>Julia Czinna<\/strong><\/h4><p>Zahngesundheits-Expertin<\/p>",
+            "popup_text": "<p>Durch ihre mehrjährige Praxiserfahrung als Zahnärztin erkannte Julia Czinna, dass Füllungen keine langfristige Zahngesundheit gewährleisten. Entschlossen teilt sie nun ihr Expertenwissen und unterstützt aktiv dabei, die Ursachen von Zahnproblemen anzugehen. Ihre Arbeit enthüllt faszinierende Zusammenhänge zwischen Ernährung, Mundflora und Zähnen. Heute inspiriert sie über 20.000 Menschen auf Social Media mit ihrer Expertise für starke Zähne.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "text_block_QLKemw": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Frauenglueck_Bild646web__JudithPulg-NEU_4781ba1e-633f-4264-9983-e3cf849de7ea.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Eva Petermann-Schnitzer<\/h4><p>Heilpraktikerin, KPNI<\/p>",
+            "popup_text": "<p>Eva Petermann-Schnitzer ist Heilpraktikerin, Sportwissenschaftlerin, systemischer Coach und Therapeutin der klinischen Psycho-Neuro-Immunologie. Sie arbeitet in ihrer Praxis für Naturheilkunde und als Speakerin zu verschiedenen Gesundheitsthemen. Ihre Schwerpunkte sind die Darmgesundheit, das Hormongleichgewicht, das intakte Immunsystem und die mentale Balance.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "text_block_j9dWKT": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Untitled.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Hannah Willemsen<\/h4><p>Ernährungscoach<\/p>",
+            "popup_text": "<p>Hannah Willemsen, ausgebildete und zertifizierte Ernährungsberaterin, Autorin und Podcastern. Hannah hat sich auf ganzheitliche Darmgesundheit, Hormongesundheit und Sportlerernährung spezialisiert<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "text_block_zJimd7": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Dr._Sandra_Weber_rechteckig.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Sandra Weber<\/h4><p>Darm- & Ernährungsexpertin<\/p>",
+            "popup_text": "<p>Dr. Sandra Weber ist Expertin für ganzheitliche Darmgesundheit, Ernährung und Stressmanagement. Mit Ihrer Aufklärungsarbeit in den sozialen Medien und ihren erfolgreichen Online-Kursen zur Linderung von Verdauungsbeschwerden, Unverträglichkeiten und zur Regulation des Nervensystems begleitet sie Menschen auf ihrem Weg zu einem gesunden Leben.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2",
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1",
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0",
+        "4f119b32-1b1c-4a4c-859a-5a44fe6f61bc",
+        "text_block_BXMdTi",
+        "text_block_QLKemw",
+        "text_block_j9dWKT",
+        "text_block_zJimd7"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 769px) {.grid--small {display: flex; flex-wrap: wrap; } .grid--small .grid__item {flex: 0 0 25%; max-width: 25%; }}",
+        "h2 {font-size: 36px;}",
+        "h4 {color: #444444;}"
+      ],
+      "settings": {
+        "disabled_in_countries": "",
+        "remove_top_margin": false,
+        "remove_bottom_margin": false,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "",
+        "title": "Unsere Experten",
+        "title_underline": "Experten",
+        "title_underline_style": "style2",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "rich-text",
+    "df9031cb-0129-4e84-8e89-cc8cf9718de0",
+    "e2cb3e23-95f5-437f-85dc-716baffc4b0d",
+    "3db8b2fd-a330-48c9-9cf8-637813137166",
+    "9e47aece-35d5-487e-b69b-494569fad996",
+    "1fb33ef1-6f9c-456c-a3ff-2bf026f7a341",
+    "4f3aacdc-ca8c-4c62-a1e2-e59b53d5743e",
+    "f4f29268-ec86-40d7-87ca-e6bd58491db6"
+  ]
+}

@@ -1,5 +1,21 @@
 {{ 'windi.css' | asset_url | stylesheet_tag }}
 
+{% style %}
+  {% if section.settings.color_background != blank and section.settings.color_background != "rgba(0,0,0,0)" and section.settings.color_background != "#ffffff" %}
+    #shopify-section-{{ section.id }} {
+      background: {{ section.settings.color_background }};
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+        #shopify-section-{{ section.id }} {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+  {% endif %}
+{% endstyle %}
+
 <div class="page-width sp-calculator index-section">
     {%- if section.settings.heading != blank -%}
         <div class="sp-calculator__heading sp-calculator__heading--step1">

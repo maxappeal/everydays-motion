@@ -1,1 +1,567 @@
-{"sections":{"main":{"type":"main-product","blocks":{"9c6046e8-06b5-49d6-ab57-98b72dcf8e90":{"type":"text","settings":{"text":"<h1>{{ product.metafields.custom.custom_title.value }}<\/h1><h4>{{ product.metafields.custom.short_description | metafield_tag }}<\/h4>","enlarge_text":false,"color_text":false}},"0991f51c-6688-4a99-9d28-d8386c0215ef":{"type":"trustpilot","settings":{"trustpilot_enable":true,"faq_link":"Häufig gestellte Fragen  🤔"}},"76d8b74e-0856-4a07-abee-4fdb878af890":{"type":"text","settings":{"text":"<ul><li>zur Linderung von Entzündungen im Körper<\/li><li>natürliche Lösung bei Gelenkbeschwerden<\/li><li>Must-Have für Sportler und Menschen ab 40 Jahren<\/li><li>fitter und beschwerdefrei mit protect<\/li><li>ausdauernde Bewegungsfreiheit<\/li><li>in Deutschland hergestellt<\/li><\/ul>","enlarge_text":false,"color_text":false}},"46b24e06-04e3-436c-9031-de32905f00a9":{"type":"text","settings":{"text":"<p><strong>everydays Garantie:<\/strong> Zufrieden oder Geld zurück.\u2028<br\/><strong>Inhalt:<\/strong> 180g - hält ca. 30 Tage<\/p>","enlarge_text":false,"color_text":true}},"variant_picker":{"type":"variant_picker","settings":{"variant_labels":true,"picker_type":"button","product_dynamic_variants_enable":true,"color_swatches":false}},"price":{"type":"price","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"surface_pickup_enable":false}},"3f624c97-bd90-4cd5-8090-33084d338efc":{"type":"text","settings":{"text":"{{ product.metafields.custom.extra_content | metafield_tag }}","enlarge_text":false,"color_text":false}}},"block_order":["9c6046e8-06b5-49d6-ab57-98b72dcf8e90","0991f51c-6688-4a99-9d28-d8386c0215ef","76d8b74e-0856-4a07-abee-4fdb878af890","46b24e06-04e3-436c-9031-de32905f00a9","variant_picker","price","buy_buttons","3f624c97-bd90-4cd5-8090-33084d338efc"],"settings":{"show_title":false,"sku_enable":false,"image_size":"medium","product_zoom_enable":true,"thumbnail_position":"below","thumbnail_height":"fixed","thumbnail_arrows":false,"enable_video_looping":true,"indicator":"{{ product.metafields.custom.delivery_estimation | metafield_tag }}","product_video_style":"muted"}},"product-recommendations":{"type":"product-recommendations","settings":{"product_recommendations_heading":"Häufig zusammen gekauft","related_count":5,"products_per_row":5}},"text-and-image":{"type":"text-and-image","blocks":{"36ee3e40-c87c-4157-a694-6da729438498":{"type":"question","settings":{"title":"Gym, Radfahren, Joggen, Kampfsport: Deine Gelenke schützen mit protect.","text":"<p>Sportler aller Art und Menschen im fortgeschrittenen Alter, leiden immer häufiger an Gelenkbeschwerden. Die regelmäßige Ursache: Gelenkentzündungen. Statt Schmerzmittel zur Behandlung der Symptome, lassen sich mit Naturmitteln die Ursachen angehen.<br\/><br\/>✔ Linderung von Gelenkschmerzen<br\/>✔ hemmt Entzündungen in Gelenken<br\/>✔ sehr wichtig für Sportler und ältere Menschen<\/p>"}},"c3555302-7ecb-441c-b0d2-6c7e907f1f4e":{"type":"question","settings":{"title":"Einfache und unkomplizierte Vorsorge gegen innere Entzündungen und Schmerzen an den Gelenken.","text":"<p>Unsere Gesellschaft tendiert dazu, Symptome im Keim ersticken zu wollen. Vorsorge und Ursachenbekämpfung kommen häufig zu kurz. Mit protect bieten wir eine rein pflanzliche Lösung, zur Linderung von Gelenkentzündungen und Schmerzen beim Sport.<br\/><br\/>✔ zur täglichen Einnahme geeignet<br\/>✔ einfache und wirkungsvolle Vorsorge<br\/>✔ frei von Zusatzstoffen<\/p>"}},"97d6d75a-2761-45e9-80fa-93dbc319bdce":{"type":"question","settings":{"title":"Schmerzfreiheit ist nicht selbstverständlich, sollte aber selbstverständlich sein.","text":"<p>everydays protect wurde so konzipiert, dass alle wichtigen bioaktiven Substanzen für deinen Schutz in einer Kapsel enthalten sind.<br\/>So kannst du dich voll und ganz auf die Dinge konzentrieren, die dir wichtig sind. Dein Leben gehört dir!<\/p>"}}},"block_order":["36ee3e40-c87c-4157-a694-6da729438498","c3555302-7ecb-441c-b0d2-6c7e907f1f4e","97d6d75a-2761-45e9-80fa-93dbc319bdce"],"settings":{"color_text":"","color_heading":"","color_background_section":"#f0fbf6","color_background":"","color_collapsible_border":"#444444","image_full_width":false,"image":"shopify:\/\/shop_images\/Infobox_protect.jpg","image_mask":"none","image2_mask":"none","subtitle":"","title":"everydays protect","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_color":"","heading_position":"side","text":"","button_label":"","button_link":"","button_style":"primary","align_text":"left","image_width":"66","layout":"right","divider":false,"top_padding":true,"bottom_padding":true,"lazyload_images":true}},"eae4f890-270c-4197-96a7-c6f24f385cca":{"type":"image-between-text","blocks":{"368c2dfd-d9d5-4f67-931e-51793ab330ee":{"type":"text","settings":{"title":"Essenz der Kurkuma-Wurzel","text":"<p>In everydays PROTECT steckt die volle Kraft der Kurkuma-Wurzel. Die positiven Wirkungen von Curcumin sind schon seit Jahrhunderten sowohl in der ayurvedischen Lehre als auch in der Traditionellen chinesischen Medizin (TCM) bekannt. <\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left"}},"3b427477-5b03-483d-a623-677a9c24d491":{"type":"text","settings":{"title":"Reinheit im Körper","text":"<p>everydays PROTECT kann zur Entgiftung deines Körpers beitragen und somit für eine bessere Funktion aller Organe sorgen.<\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left"}},"7c9d7184-f84c-491d-b308-23f486552e6c":{"type":"text","settings":{"title":"Hochdosierte, extra starke Formel","text":"<p>In everydays PROTECT ist das Curcumin in stark extrahierter und konzentrierter Form enthalten – bei gleichzeitigem Erhalt aller anderen Bestandteile der Kurkuma-Wurzel.<\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left"}},"06139157-d072-4441-9d48-ec5ff7c1670d":{"type":"text","settings":{"title":"Entzündungshemmende Wirkung","text":"<p>everydays PROTECT trägt sowohl zur Verringerung von Ermüdung als auch zur Regeneration und einer normalen psychischen Funktion bei.<\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left"}},"87b58dcd-202f-4584-8713-7577673868c0":{"type":"text","settings":{"title":"Frei von Oxalsäure","text":"<p>Normales Kurkuma enthält ca. 2 % Oxalsäure. Wie Studien zeigen, kann eine zu hohe Aufnahme von Oxalsäure zu Nieren­steinen führen. Nicht so mit everydays PROTECT: Unsere Softgel-Kapseln sind frei von Oxalsäure.<\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left"}},"8baf6c29-c608-4ab1-9422-d0466d1533dc":{"type":"text","settings":{"title":"Von Lebensmittelbehörden empfohlen","text":"<p>Die Europäische Lebensmittelbehörde empfiehlt pro Kilogramm Körpergewicht eine tägliche Aufnahme von bis zu drei Milligramm Curcumin. Einnahme und Dosierung sind mit everydays PROTECT dank der leicht zu schluckenden Softgel-Kapseln praktisch und einfach.<\/p>","button_label":"","button_link":"","button_style":"primary","align_text":"left"}}},"block_order":["368c2dfd-d9d5-4f67-931e-51793ab330ee","3b427477-5b03-483d-a623-677a9c24d491","7c9d7184-f84c-491d-b308-23f486552e6c","06139157-d072-4441-9d48-ec5ff7c1670d","87b58dcd-202f-4584-8713-7577673868c0","8baf6c29-c608-4ab1-9422-d0466d1533dc"],"settings":{"color_text":"","color_background":"","title":"Widerstandsfähigkeit im Alltag und im Sport: protect.","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style2","title_color":"","text":"<p>Werde mit everydays protect widerstandsfähiger im Alltag und im Sport. Der bioaktive Komplex aus über 200 wertvollen Substanzen ist perfekt aufeinander abgestimmt. Durch die auf wissenschaftlicher Basis optimierte Kombination der Inhaltsstoffe Curcumin, Resveratrol, Quercentin und bioaktivem Vitamin C sowie dem Wirkungsverstärker Peperin können synergistische Effekte entstehen, die dir sowohl körperlich als auch mental gut tun werden. <\/p>","image":"shopify:\/\/shop_images\/protect_freisteller.jpg","image_mask":"none","image_width":"33","divider":false,"top_padding":true,"bottom_padding":true,"lazyload_images":true}},"3a1dc6a0-cc81-42bd-ac0c-cf3476136104":{"type":"text-with-icons","blocks":{"template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-0":{"type":"text_block","settings":{"align_text":"left","icon":"line","title":"Bestellen","text":"<p>Nach deiner Bestellung ist das Produkt in nur 1-2 Tagen bei dir. Einfach und unkompliziert.<\/p>"}},"template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-1":{"type":"text_block","settings":{"align_text":"left","icon":"line","title":"Einnahme","text":"<p>Du nimmst täglich oder bei Bedarf 1 Kapsel mit einem Glas Wasser ein. <\/p>"}},"template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-2":{"type":"text_block","settings":{"align_text":"left","icon":"line","title":"Wirkung genießen oder Geld zurück","text":"<p>Überzeuge dich selbst. Wir wollen echte Wirkung, statt leere Versprechen. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück.<\/p>"}}},"block_order":["template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-0","template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-1","template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-2"],"settings":{"color_text":"","color_heading":"","color_background_section":"#f0fbf6","color_icons":"#67b592","title":"So einfach geht's","title_underline":"einfach","title_underline_style":"style3","title_circle":"","title_circle_style":"style1","title_color":"","align_text":"center","desktop_columns_per_row":3,"icon_color":"#000000","button_label":"","button_link":"","divider":false}},"8555e8d1-fb79-422d-b121-2e95738507bf":{"type":"faq","disabled":true,"settings":{"faq_code":"<div class=\"ef-faqs-plus-app-cats-content\" data-category=\"protect\" id=\"ef-faqs-64d1ee1ac928ec3aabbeaa8b\"><\/div>","color_text":"","color_background":"","collapsible_trigger_color_text":"","collapsible_trigger_color_background":"","collapsible_trigger_color_border":"#67b592","collapsible_content_color_text":"","collapsible_content_color_background":"","title":"FAQ","title_underline":"","title_underline_style":"style1","title_circle":"FAQ","title_circle_style":"style3","title_color":""}},"f4f29268-ec86-40d7-87ca-e6bd58491db6":{"type":"text-columns","blocks":{"template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/simonekoch-1645782147343.webp","image_mask":"none","image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_color":"","text":"<h4>Dr. Simone Koch<\/h4><p>Darmexpertin<\/p>","popup_text":"<p>Dr. Simone Koch ist Autorin von 5 Bestsellern zu den Themen Darmgesundheit, Schilddrüsenerkrankungen, Stoffwechselgesundheit und Prävention von Zivilisationserkrankungen. Auf ihrem Instagramaccount stellt sie ihr großes Wissen in spannenden Beiträgen zur Verfügung.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Dr_Anne_Latz_everydays.png","image_mask":"none","image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_color":"","text":"<h4>Dr. Anne Latz<\/h4><p>Harvard Medical School<\/p>","popup_text":"<p>Dr. Anne Latz ist u.a. Unternehmerin im Bereich Prävention und digitale Gesundheit. Sie ist Expertin für Innovation im Gesundheitswesen & Lebensstilfragen (Harvard Medical School, British Society of Lifestyle Medicine und DGEM) und tritt als Speakerin zu den Themen ganzheitliche Gesundheit mit besonderem Schwerpunkt auf metabolische Gesundheit (Blutzuckermanagement für Gesunde) auf. Als Autorin und Multiplikatorin setzt sie sich für neue Wege innerhalb des Gesundheitssystems ein.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/auerswald-1645780331401.webp","image_mask":"none","image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_color":"","text":"<h4>Martin Auerswald<\/h4><p>Biochemiker<\/p>","popup_text":"<p>Martin Auerswald ist studierter Biochemiker. Er entschied sich gegen eine Karriere in der Forschung, um stattdessen lieber Wissen zu vermitteln – heute erreicht er mit seinen Beiträgen und Kongressen mehrere Millionen Menschen jährlich und zeigt, wie jeder seine Gesundheit selbst in die Hand nehmen, vorbeugen und auch bei chronischen Erkrankungen zur Besserung beitragen kann.<\/p>","button_label":"","button_link":"","button_style":"primary"}},"4f119b32-1b1c-4a4c-859a-5a44fe6f61bc":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/pf-d3f362d1--dittekotziansmartprotein.webp","image_mask":"none","image_width":650,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_color":"","text":"<h4>Ditte Kotzian<\/h4><p>Ernährungsberaterin<\/p>","popup_text":"<p>Mein Name ist Ditte Kotzian, in meinem ersten Leben war ich Kunst- und Turmspringerin in der Nationalmannschaft. Mein größter Erfolg ist die Bronzemedaille bei den Olympischen Spielen. Nach Beendigung meiner Karriere & meines Studiums, beschäftigte ich mich intensiv mit verschiedenen Ernährungsformen und mit dem menschlichen Geist. Ich bin Referentin für Ayurvedische Heilkunde & Stressmanagement, berate Menschen in Selbstfindungsprozessen & verstehe mich als Body & Energy-Workerin.<\/p>","button_label":"","button_link":"","button_style":"primary"}}},"block_order":["template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2","template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1","template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0","4f119b32-1b1c-4a4c-859a-5a44fe6f61bc"],"settings":{"remove_top_margin":false,"remove_bottom_margin":false,"small_grid":true,"color_text":"","color_heading":"","color_background":"#f8f8f2","title":"Unsere Experten","title_underline":"Experten","title_underline_style":"style2","title_circle":"","title_circle_style":"style1","title_color":"","text":"","align_text":"center","mobile_slider":true,"divider":false}},"39e6e136-47cd-4b57-a317-0061216a3ee7":{"type":"tabs","blocks":{"template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0":{"type":"tab","settings":{"align_text":"left","title":"Anwendung & inhalt","show_title":false,"video_url":"","video_ratio":"16:9","video_controls":false,"video_muted":true,"video_autoplay":true,"video_loop":true,"content_order":"first_html","text":"<table><tbody>\n<tr>\n<th class=\"A1\"><span>Bezeichnung<\/span><\/th>\n<th class=\"B1\"><span>Menge Tagesdosis (1 Kapsel)<\/span><\/th>\n<th class=\"C1\"><span>Wirkstoff<\/span><\/th>\n<th class=\"D1\"><span>Menge<\/span><\/th>\n<\/tr>\n<tr>\n<td class=\"A2\"><span>Kurkuma-Extrakt(95%Curcuminoide)granules<\/span><\/td>\n<td class=\"B2\"><span>400.00mg<\/span><\/td>\n<td class=\"C2\"><span>Curcuminoide<\/span><\/td>\n<td class=\"D2\"><span>380.00mg<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A3\"><span>Curcumin C3 Complex® (95% Curcuminoide)<\/span><\/td>\n<td class=\"B3\"><span>100.00mg<\/span><\/td>\n<td class=\"C3\"><span><\/span><\/td>\n<td class=\"D3\"><span><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A4\"><span>Japanischer Schnurbaum Pulver 15:1 min. 98% Quercetin Sophora japonica L<\/span><\/td>\n<td class=\"B4\"><span>67.35mg<\/span><\/td>\n<td class=\"C4\"><span>Quercentin<\/span><\/td>\n<td class=\"D4\"><span>66.00mg<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A5\"><span>Staudenknöterich-Extrakt <\/span><\/td>\n<td class=\"B5\"><span>3.83mg<\/span><\/td>\n<td class=\"C5\"><span>Resveratrol<\/span><\/td>\n<td class=\"D5\"><span>3.75mg<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A6\"><span>Schwarzer-Pfeffer-Extrakt (95% Piperin)<\/span><\/td>\n<td class=\"B6\"><span>1.1mg<\/span><\/td>\n<td class=\"C6\"><span>Piperin<\/span><\/td>\n<td class=\"D6\"><span>1.99mg<\/span><\/td>\n<\/tr>\n<\/tbody><\/table>","richtext":"<p>Entwickelt, getestet und hergestellt in Deutschland. Zertifizierte pharmazeutischen Qualität. Für die tägliche Einnahme geeignet.<br\/><br\/><strong>Zutaten:<br\/><\/strong>Kurkuma Extrakt (Curcuminoide), Hydro- xypropylmethylcellulose (Kapselhülle), Curcumin C3 Complex®(Curcuminoide), Japanischer Schnurbaum (Quercetin), Staudenknöterich Extrakt (Resveratrol), Schwarzer Pfeffer Extrakt (Piperin)<br\/><br\/><strong>Inhalt:<br\/><\/strong>120 Kapseln<br\/><br\/><strong>Gebrauchsanweisung:<br\/><\/strong>Erwachsenen wird empfohlen, 1 Kapsel , 1 mal täglich unzerkaut mit einem Glas Wasser einzunehmen.<br\/>Für schwangere und stillende Frauen und Allergiker geeignet.<br\/><br\/>Rechtlicher Hinweis:<br\/>Maximal empfohlene Einnahmenmenge sind 1 Kapsel pro Tag.<br\/>Höhere Dosierungen nach Maßgabe des Ernährungsberaters, Heilpraktikers oder Arztes.<\/p>","button_label":"","button_link":""}},"template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1":{"type":"tab","settings":{"align_text":"center","title":"Zusatzinformationen","show_title":false,"video_url":"","video_ratio":"16:9","video_controls":false,"video_muted":true,"video_autoplay":true,"video_loop":true,"content_order":"first_html","text":"<table><tbody>\n<tr>\n<th class=\"A1\"><span>Produktdetails<\/span><\/th>\n<th class=\"B1\"><span><\/span><\/th>\n<\/tr>\n<tr>\n<td class=\"A2\"><span>Verpackungsmaterial<\/span><\/td>\n<td class=\"B2\"><span>Glas + Umkarton<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A3\"><span>Herkunft<\/span><\/td>\n<td class=\"B3\"><span>Deutschland<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A4\"><span>Gewicht<\/span><\/td>\n<td class=\"B4\"><span>84.39g<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A5\"><span>Darreichungsform<\/span><\/td>\n<td class=\"B5\"><span>Kapseln<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A6\"><span>Bestandteile<\/span><\/td>\n<td class=\"B6\"><span>Kurkuma Extrakt (Curcuminoide), Hydro- xypropylmethylcellulose (Kapselhülle), Curcumin C3 Complex®(Curcuminoide), Japanischer Schnurbaum (Quercetin), Staudenknöterich Extrakt (Resveratrol), Schwarzer Pfeffer Extrakt (Piperin)<\/span><\/td>\n<\/tr>\n<\/tbody><\/table>","richtext":"","button_label":"","button_link":""}}},"block_order":["template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0","template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1"],"custom_css":["h2 {font-size: 30px;}","@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"],"settings":{"active_tab_color":"","title":"Du hast Fragen? Wir helfen dir gerne weiter!","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"Fragen","title_circle_style":"style1","title_color":"","text":"<p>Schreib uns einfach eine Email unter <a href=\"mailto:service@everydays.de\" title=\"mailto:service@everydays.de\"><strong>service@everydays.de<\/strong><\/a> oder nutze <a href=\"\/pages\/kundenservice\" title=\"Kundenservice\"><strong>dieses Kontaktformular<\/strong><\/a>. Du erhältst innerhalb von 12 Stunden eine Antwort.<\/p>","align_text":"center","divider":false}},"f5bc1a0a-1322-4856-b5f7-733c6150fca5":{"type":"rich-text","blocks":{"template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1":{"type":"text","settings":{"color_text":"","enlarge_text":false,"text_max_width":920,"text":"<p><strong>Pflichtangaben nach Lebensmittel-Informationsverordnung<\/strong><em><strong><br\/><\/strong><\/em><strong><br\/><\/strong>Protect ist ein Nahrungsergänzungsmittel <br\/>Die angegebene empfohlene tägliche Verzehrmenge darf nicht überschritten werden.<br\/>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.<br\/>Außerhalb der Reichweite von Kindern aufbewahren.<\/p>"}}},"block_order":["template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1"],"settings":{"color_background":"","align_text":"left","margin_top_px":-100,"margin_top_px_mobile":-50,"margin_bottom":100,"margin_bottom_mobile":50,"narrow_column":false,"divider":false}},"1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac":{"type":"trustpilot","settings":{"align_text":"center","divider":false,"title":"Bewertungen","title_underline":"","title_underline_style":"style1","title_circle":"Bewertungen","title_circle_style":"style1","title_color":""}}},"order":["main","product-recommendations","text-and-image","eae4f890-270c-4197-96a7-c6f24f385cca","3a1dc6a0-cc81-42bd-ac0c-cf3476136104","8555e8d1-fb79-422d-b121-2e95738507bf","f4f29268-ec86-40d7-87ca-e6bd58491db6","39e6e136-47cd-4b57-a317-0061216a3ee7","f5bc1a0a-1322-4856-b5f7-733c6150fca5","1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "9c6046e8-06b5-49d6-ab57-98b72dcf8e90": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>{{ product.metafields.custom.custom_title.value }}<\/h1><h4>{{ product.metafields.custom.short_description | metafield_tag }}<\/h4>",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "0991f51c-6688-4a99-9d28-d8386c0215ef": {
+          "type": "trustpilot",
+          "settings": {
+            "trustpilot_enable": true,
+            "faq_link": "Häufig gestellte Fragen  🤔"
+          }
+        },
+        "76d8b74e-0856-4a07-abee-4fdb878af890": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>zur Linderung von Entzündungen im Körper<\/li><li>natürliche Lösung bei Gelenkbeschwerden<\/li><li>Must-Have für Sportler und Menschen ab 40 Jahren<\/li><li>fitter und beschwerdefrei mit protect<\/li><li>ausdauernde Bewegungsfreiheit<\/li><li>in Deutschland hergestellt<\/li><\/ul>",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "46b24e06-04e3-436c-9031-de32905f00a9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>everydays Garantie:<\/strong> Zufrieden oder Geld zurück.\u2028<br\/><strong>Inhalt:<\/strong> 180g - hält ca. 30 Tage<\/p>",
+            "enlarge_text": false,
+            "color_text": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "3f624c97-bd90-4cd5-8090-33084d338efc": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.extra_content | metafield_tag }}",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        }
+      },
+      "block_order": [
+        "9c6046e8-06b5-49d6-ab57-98b72dcf8e90",
+        "0991f51c-6688-4a99-9d28-d8386c0215ef",
+        "76d8b74e-0856-4a07-abee-4fdb878af890",
+        "46b24e06-04e3-436c-9031-de32905f00a9",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "3f624c97-bd90-4cd5-8090-33084d338efc"
+      ],
+      "settings": {
+        "show_title": false,
+        "sku_enable": false,
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": false,
+        "enable_video_looping": true,
+        "indicator": "{{ product.metafields.custom.delivery_estimation | metafield_tag }}",
+        "product_video_style": "muted"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Häufig zusammen gekauft",
+        "related_count": 5,
+        "products_per_row": 5
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "blocks": {
+        "36ee3e40-c87c-4157-a694-6da729438498": {
+          "type": "question",
+          "settings": {
+            "title": "Gym, Radfahren, Joggen, Kampfsport: Deine Gelenke schützen mit protect.",
+            "text": "<p>Sportler aller Art und Menschen im fortgeschrittenen Alter, leiden immer häufiger an Gelenkbeschwerden. Die regelmäßige Ursache: Gelenkentzündungen. Statt Schmerzmittel zur Behandlung der Symptome, lassen sich mit Naturmitteln die Ursachen angehen.<br\/><br\/>✔ Linderung von Gelenkschmerzen<br\/>✔ hemmt Entzündungen in Gelenken<br\/>✔ sehr wichtig für Sportler und ältere Menschen<\/p>"
+          }
+        },
+        "c3555302-7ecb-441c-b0d2-6c7e907f1f4e": {
+          "type": "question",
+          "settings": {
+            "title": "Einfache und unkomplizierte Vorsorge gegen innere Entzündungen und Schmerzen an den Gelenken.",
+            "text": "<p>Unsere Gesellschaft tendiert dazu, Symptome im Keim ersticken zu wollen. Vorsorge und Ursachenbekämpfung kommen häufig zu kurz. Mit protect bieten wir eine rein pflanzliche Lösung, zur Linderung von Gelenkentzündungen und Schmerzen beim Sport.<br\/><br\/>✔ zur täglichen Einnahme geeignet<br\/>✔ einfache und wirkungsvolle Vorsorge<br\/>✔ frei von Zusatzstoffen<\/p>"
+          }
+        },
+        "97d6d75a-2761-45e9-80fa-93dbc319bdce": {
+          "type": "question",
+          "settings": {
+            "title": "Schmerzfreiheit ist nicht selbstverständlich, sollte aber selbstverständlich sein.",
+            "text": "<p>everydays protect wurde so konzipiert, dass alle wichtigen bioaktiven Substanzen für deinen Schutz in einer Kapsel enthalten sind.<br\/>So kannst du dich voll und ganz auf die Dinge konzentrieren, die dir wichtig sind. Dein Leben gehört dir!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "36ee3e40-c87c-4157-a694-6da729438498",
+        "c3555302-7ecb-441c-b0d2-6c7e907f1f4e",
+        "97d6d75a-2761-45e9-80fa-93dbc319bdce"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_heading": "",
+        "color_background_section": "#f0fbf6",
+        "color_background": "",
+        "color_collapsible_border": "#444444",
+        "image_full_width": false,
+        "image": "shopify:\/\/shop_images\/Infobox_protect.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "everydays protect",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_color": "",
+        "heading_position": "side",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "eae4f890-270c-4197-96a7-c6f24f385cca": {
+      "type": "image-between-text",
+      "blocks": {
+        "368c2dfd-d9d5-4f67-931e-51793ab330ee": {
+          "type": "text",
+          "settings": {
+            "title": "Essenz der Kurkuma-Wurzel",
+            "text": "<p>In everydays PROTECT steckt die volle Kraft der Kurkuma-Wurzel. Die positiven Wirkungen von Curcumin sind schon seit Jahrhunderten sowohl in der ayurvedischen Lehre als auch in der Traditionellen chinesischen Medizin (TCM) bekannt. <\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "3b427477-5b03-483d-a623-677a9c24d491": {
+          "type": "text",
+          "settings": {
+            "title": "Reinheit im Körper",
+            "text": "<p>everydays PROTECT kann zur Entgiftung deines Körpers beitragen und somit für eine bessere Funktion aller Organe sorgen.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "7c9d7184-f84c-491d-b308-23f486552e6c": {
+          "type": "text",
+          "settings": {
+            "title": "Hochdosierte, extra starke Formel",
+            "text": "<p>In everydays PROTECT ist das Curcumin in stark extrahierter und konzentrierter Form enthalten – bei gleichzeitigem Erhalt aller anderen Bestandteile der Kurkuma-Wurzel.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "06139157-d072-4441-9d48-ec5ff7c1670d": {
+          "type": "text",
+          "settings": {
+            "title": "Entzündungshemmende Wirkung",
+            "text": "<p>everydays PROTECT trägt sowohl zur Verringerung von Ermüdung als auch zur Regeneration und einer normalen psychischen Funktion bei.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "87b58dcd-202f-4584-8713-7577673868c0": {
+          "type": "text",
+          "settings": {
+            "title": "Frei von Oxalsäure",
+            "text": "<p>Normales Kurkuma enthält ca. 2 % Oxalsäure. Wie Studien zeigen, kann eine zu hohe Aufnahme von Oxalsäure zu Nieren­steinen führen. Nicht so mit everydays PROTECT: Unsere Softgel-Kapseln sind frei von Oxalsäure.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "8baf6c29-c608-4ab1-9422-d0466d1533dc": {
+          "type": "text",
+          "settings": {
+            "title": "Von Lebensmittelbehörden empfohlen",
+            "text": "<p>Die Europäische Lebensmittelbehörde empfiehlt pro Kilogramm Körpergewicht eine tägliche Aufnahme von bis zu drei Milligramm Curcumin. Einnahme und Dosierung sind mit everydays PROTECT dank der leicht zu schluckenden Softgel-Kapseln praktisch und einfach.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "368c2dfd-d9d5-4f67-931e-51793ab330ee",
+        "3b427477-5b03-483d-a623-677a9c24d491",
+        "7c9d7184-f84c-491d-b308-23f486552e6c",
+        "06139157-d072-4441-9d48-ec5ff7c1670d",
+        "87b58dcd-202f-4584-8713-7577673868c0",
+        "8baf6c29-c608-4ab1-9422-d0466d1533dc"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "title": "Widerstandsfähigkeit im Alltag und im Sport: protect.",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style2",
+        "title_color": "",
+        "text": "<p>Werde mit everydays protect widerstandsfähiger im Alltag und im Sport. Der bioaktive Komplex aus über 200 wertvollen Substanzen ist perfekt aufeinander abgestimmt. Durch die auf wissenschaftlicher Basis optimierte Kombination der Inhaltsstoffe Curcumin, Resveratrol, Quercentin und bioaktivem Vitamin C sowie dem Wirkungsverstärker Peperin können synergistische Effekte entstehen, die dir sowohl körperlich als auch mental gut tun werden. <\/p>",
+        "image": "shopify:\/\/shop_images\/protect_freisteller.jpg",
+        "image_mask": "none",
+        "image_width": "33",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "3a1dc6a0-cc81-42bd-ac0c-cf3476136104": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-0": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "icon": "line",
+            "title": "Bestellen",
+            "text": "<p>Nach deiner Bestellung ist das Produkt in nur 1-2 Tagen bei dir. Einfach und unkompliziert.<\/p>"
+          }
+        },
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "icon": "line",
+            "title": "Einnahme",
+            "text": "<p>Du nimmst täglich oder bei Bedarf 1 Kapsel mit einem Glas Wasser ein. <\/p>"
+          }
+        },
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "icon": "line",
+            "title": "Wirkung genießen oder Geld zurück",
+            "text": "<p>Überzeuge dich selbst. Wir wollen echte Wirkung, statt leere Versprechen. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-0",
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-1",
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-2"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_heading": "",
+        "color_background_section": "#f0fbf6",
+        "color_icons": "#67b592",
+        "title": "So einfach geht's",
+        "title_underline": "einfach",
+        "title_underline_style": "style3",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_color": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "8555e8d1-fb79-422d-b121-2e95738507bf": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {
+        "faq_code": "<div class=\"ef-faqs-plus-app-cats-content\" data-category=\"protect\" id=\"ef-faqs-64d1ee1ac928ec3aabbeaa8b\"><\/div>",
+        "color_text": "",
+        "color_background": "",
+        "collapsible_trigger_color_text": "",
+        "collapsible_trigger_color_background": "",
+        "collapsible_trigger_color_border": "#67b592",
+        "collapsible_content_color_text": "",
+        "collapsible_content_color_background": "",
+        "title": "FAQ",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "FAQ",
+        "title_circle_style": "style3",
+        "title_color": ""
+      }
+    },
+    "f4f29268-ec86-40d7-87ca-e6bd58491db6": {
+      "type": "text-columns",
+      "blocks": {
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/simonekoch-1645782147343.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_color": "",
+            "text": "<h4>Dr. Simone Koch<\/h4><p>Darmexpertin<\/p>",
+            "popup_text": "<p>Dr. Simone Koch ist Autorin von 5 Bestsellern zu den Themen Darmgesundheit, Schilddrüsenerkrankungen, Stoffwechselgesundheit und Prävention von Zivilisationserkrankungen. Auf ihrem Instagramaccount stellt sie ihr großes Wissen in spannenden Beiträgen zur Verfügung.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Dr_Anne_Latz_everydays.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_color": "",
+            "text": "<h4>Dr. Anne Latz<\/h4><p>Harvard Medical School<\/p>",
+            "popup_text": "<p>Dr. Anne Latz ist u.a. Unternehmerin im Bereich Prävention und digitale Gesundheit. Sie ist Expertin für Innovation im Gesundheitswesen & Lebensstilfragen (Harvard Medical School, British Society of Lifestyle Medicine und DGEM) und tritt als Speakerin zu den Themen ganzheitliche Gesundheit mit besonderem Schwerpunkt auf metabolische Gesundheit (Blutzuckermanagement für Gesunde) auf. Als Autorin und Multiplikatorin setzt sie sich für neue Wege innerhalb des Gesundheitssystems ein.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/auerswald-1645780331401.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_color": "",
+            "text": "<h4>Martin Auerswald<\/h4><p>Biochemiker<\/p>",
+            "popup_text": "<p>Martin Auerswald ist studierter Biochemiker. Er entschied sich gegen eine Karriere in der Forschung, um stattdessen lieber Wissen zu vermitteln – heute erreicht er mit seinen Beiträgen und Kongressen mehrere Millionen Menschen jährlich und zeigt, wie jeder seine Gesundheit selbst in die Hand nehmen, vorbeugen und auch bei chronischen Erkrankungen zur Besserung beitragen kann.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "4f119b32-1b1c-4a4c-859a-5a44fe6f61bc": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/pf-d3f362d1--dittekotziansmartprotein.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_color": "",
+            "text": "<h4>Ditte Kotzian<\/h4><p>Ernährungsberaterin<\/p>",
+            "popup_text": "<p>Mein Name ist Ditte Kotzian, in meinem ersten Leben war ich Kunst- und Turmspringerin in der Nationalmannschaft. Mein größter Erfolg ist die Bronzemedaille bei den Olympischen Spielen. Nach Beendigung meiner Karriere & meines Studiums, beschäftigte ich mich intensiv mit verschiedenen Ernährungsformen und mit dem menschlichen Geist. Ich bin Referentin für Ayurvedische Heilkunde & Stressmanagement, berate Menschen in Selbstfindungsprozessen & verstehe mich als Body & Energy-Workerin.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2",
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1",
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0",
+        "4f119b32-1b1c-4a4c-859a-5a44fe6f61bc"
+      ],
+      "settings": {
+        "remove_top_margin": false,
+        "remove_bottom_margin": false,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "#f8f8f2",
+        "title": "Unsere Experten",
+        "title_underline": "Experten",
+        "title_underline_style": "style2",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": true,
+        "divider": false
+      }
+    },
+    "39e6e136-47cd-4b57-a317-0061216a3ee7": {
+      "type": "tabs",
+      "blocks": {
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0": {
+          "type": "tab",
+          "settings": {
+            "align_text": "left",
+            "title": "Anwendung & inhalt",
+            "show_title": false,
+            "video_url": "",
+            "video_ratio": "16:9",
+            "video_controls": false,
+            "video_muted": true,
+            "video_autoplay": true,
+            "video_loop": true,
+            "content_order": "first_html",
+            "text": "<table><tbody>\n<tr>\n<th class=\"A1\"><span>Bezeichnung<\/span><\/th>\n<th class=\"B1\"><span>Menge Tagesdosis (1 Kapsel)<\/span><\/th>\n<th class=\"C1\"><span>Wirkstoff<\/span><\/th>\n<th class=\"D1\"><span>Menge<\/span><\/th>\n<\/tr>\n<tr>\n<td class=\"A2\"><span>Kurkuma-Extrakt(95%Curcuminoide)granules<\/span><\/td>\n<td class=\"B2\"><span>400.00mg<\/span><\/td>\n<td class=\"C2\"><span>Curcuminoide<\/span><\/td>\n<td class=\"D2\"><span>380.00mg<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A3\"><span>Curcumin C3 Complex® (95% Curcuminoide)<\/span><\/td>\n<td class=\"B3\"><span>100.00mg<\/span><\/td>\n<td class=\"C3\"><span><\/span><\/td>\n<td class=\"D3\"><span><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A4\"><span>Japanischer Schnurbaum Pulver 15:1 min. 98% Quercetin Sophora japonica L<\/span><\/td>\n<td class=\"B4\"><span>67.35mg<\/span><\/td>\n<td class=\"C4\"><span>Quercentin<\/span><\/td>\n<td class=\"D4\"><span>66.00mg<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A5\"><span>Staudenknöterich-Extrakt <\/span><\/td>\n<td class=\"B5\"><span>3.83mg<\/span><\/td>\n<td class=\"C5\"><span>Resveratrol<\/span><\/td>\n<td class=\"D5\"><span>3.75mg<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A6\"><span>Schwarzer-Pfeffer-Extrakt (95% Piperin)<\/span><\/td>\n<td class=\"B6\"><span>1.1mg<\/span><\/td>\n<td class=\"C6\"><span>Piperin<\/span><\/td>\n<td class=\"D6\"><span>1.99mg<\/span><\/td>\n<\/tr>\n<\/tbody><\/table>",
+            "richtext": "<p>Entwickelt, getestet und hergestellt in Deutschland. Zertifizierte pharmazeutischen Qualität. Für die tägliche Einnahme geeignet.<br\/><br\/><strong>Zutaten:<br\/><\/strong>Kurkuma Extrakt (Curcuminoide), Hydro- xypropylmethylcellulose (Kapselhülle), Curcumin C3 Complex®(Curcuminoide), Japanischer Schnurbaum (Quercetin), Staudenknöterich Extrakt (Resveratrol), Schwarzer Pfeffer Extrakt (Piperin)<br\/><br\/><strong>Inhalt:<br\/><\/strong>120 Kapseln<br\/><br\/><strong>Gebrauchsanweisung:<br\/><\/strong>Erwachsenen wird empfohlen, 1 Kapsel , 1 mal täglich unzerkaut mit einem Glas Wasser einzunehmen.<br\/>Für schwangere und stillende Frauen und Allergiker geeignet.<br\/><br\/>Rechtlicher Hinweis:<br\/>Maximal empfohlene Einnahmenmenge sind 1 Kapsel pro Tag.<br\/>Höhere Dosierungen nach Maßgabe des Ernährungsberaters, Heilpraktikers oder Arztes.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1": {
+          "type": "tab",
+          "settings": {
+            "align_text": "center",
+            "title": "Zusatzinformationen",
+            "show_title": false,
+            "video_url": "",
+            "video_ratio": "16:9",
+            "video_controls": false,
+            "video_muted": true,
+            "video_autoplay": true,
+            "video_loop": true,
+            "content_order": "first_html",
+            "text": "<table><tbody>\n<tr>\n<th class=\"A1\"><span>Produktdetails<\/span><\/th>\n<th class=\"B1\"><span><\/span><\/th>\n<\/tr>\n<tr>\n<td class=\"A2\"><span>Verpackungsmaterial<\/span><\/td>\n<td class=\"B2\"><span>Glas + Umkarton<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A3\"><span>Herkunft<\/span><\/td>\n<td class=\"B3\"><span>Deutschland<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A4\"><span>Gewicht<\/span><\/td>\n<td class=\"B4\"><span>84.39g<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A5\"><span>Darreichungsform<\/span><\/td>\n<td class=\"B5\"><span>Kapseln<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A6\"><span>Bestandteile<\/span><\/td>\n<td class=\"B6\"><span>Kurkuma Extrakt (Curcuminoide), Hydro- xypropylmethylcellulose (Kapselhülle), Curcumin C3 Complex®(Curcuminoide), Japanischer Schnurbaum (Quercetin), Staudenknöterich Extrakt (Resveratrol), Schwarzer Pfeffer Extrakt (Piperin)<\/span><\/td>\n<\/tr>\n<\/tbody><\/table>",
+            "richtext": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0",
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "active_tab_color": "",
+        "title": "Du hast Fragen? Wir helfen dir gerne weiter!",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "Fragen",
+        "title_circle_style": "style1",
+        "title_color": "",
+        "text": "<p>Schreib uns einfach eine Email unter <a href=\"mailto:service@everydays.de\" title=\"mailto:service@everydays.de\"><strong>service@everydays.de<\/strong><\/a> oder nutze <a href=\"\/pages\/kundenservice\" title=\"Kundenservice\"><strong>dieses Kontaktformular<\/strong><\/a>. Du erhältst innerhalb von 12 Stunden eine Antwort.<\/p>",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "f5bc1a0a-1322-4856-b5f7-733c6150fca5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1": {
+          "type": "text",
+          "settings": {
+            "color_text": "",
+            "enlarge_text": false,
+            "text_max_width": 920,
+            "text": "<p><strong>Pflichtangaben nach Lebensmittel-Informationsverordnung<\/strong><em><strong><br\/><\/strong><\/em><strong><br\/><\/strong>Protect ist ein Nahrungsergänzungsmittel <br\/>Die angegebene empfohlene tägliche Verzehrmenge darf nicht überschritten werden.<br\/>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.<br\/>Außerhalb der Reichweite von Kindern aufbewahren.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1"
+      ],
+      "settings": {
+        "color_background": "",
+        "align_text": "left",
+        "margin_top_px": -100,
+        "margin_top_px_mobile": -50,
+        "margin_bottom": 100,
+        "margin_bottom_mobile": 50,
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac": {
+      "type": "trustpilot",
+      "settings": {
+        "align_text": "center",
+        "divider": false,
+        "title": "Bewertungen",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "Bewertungen",
+        "title_circle_style": "style1",
+        "title_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "text-and-image",
+    "eae4f890-270c-4197-96a7-c6f24f385cca",
+    "3a1dc6a0-cc81-42bd-ac0c-cf3476136104",
+    "8555e8d1-fb79-422d-b121-2e95738507bf",
+    "f4f29268-ec86-40d7-87ca-e6bd58491db6",
+    "39e6e136-47cd-4b57-a317-0061216a3ee7",
+    "f5bc1a0a-1322-4856-b5f7-733c6150fca5",
+    "1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac"
+  ]
+}

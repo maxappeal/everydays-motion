@@ -1,1 +1,1112 @@
-{"sections":{"main":{"type":"main-product","blocks":{"9c6046e8-06b5-49d6-ab57-98b72dcf8e90":{"type":"text","settings":{"text":"<h1>{{ product.metafields.custom.custom_title.value }}<\/h1><h4>{{ product.metafields.custom.short_description | metafield_tag }}<\/h4>","enlarge_text":false,"color_text":false}},"0991f51c-6688-4a99-9d28-d8386c0215ef":{"type":"trustpilot","settings":{"trustpilot_enable":true,"faq_link":"Häufig gestellte Fragen  🤔"}},"76d8b74e-0856-4a07-abee-4fdb878af890":{"type":"text","settings":{"text":"<ul><li>Premium Komplex aus 11 Enzymen<\/li><li>inkl. Betaine-HCL (Magensäure)<\/li><li>verdaut Protein, Kohlenhydrate, Eiweiße, Zucker<\/li><li>in Deutschland hergestellt und kontrolliert<\/li><\/ul>","enlarge_text":false,"color_text":false}},"custom_7ytR9R":{"type":"custom","settings":{"code":"<div class=\"color-text\">\n<p><a href=\"https:\/\/www.everydays.de\/community\/faq#Zufriedenheitsgarantie\" target=\"_blank\" title=\"https:\/\/www.everydays.de\/community\/faq#Zufriedenheitsgarantie\"><strong>everydays Garantie:<\/strong> Zufrieden oder Geld zurück.<br><\/a><strong><br>60 vegane Kapseln<\/strong>  <a href=\"#anwendung-inhalt\" title=\"Alle Inhaltsstoffe anzeigen\" open-modal=\"\">Alle Inhaltsstoffe anzeigen<\/a><\/p>\n<\/div>"}},"variant_picker":{"type":"variant_picker","settings":{"variant_labels":true,"picker_type":"button","product_dynamic_variants_enable":true,"color_swatches":false}},"price":{"type":"price","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"surface_pickup_enable":false}},"3f624c97-bd90-4cd5-8090-33084d338efc":{"type":"text","settings":{"text":"{{ product.metafields.custom.extra_content | metafield_tag }}","enlarge_text":false,"color_text":false}}},"block_order":["9c6046e8-06b5-49d6-ab57-98b72dcf8e90","0991f51c-6688-4a99-9d28-d8386c0215ef","76d8b74e-0856-4a07-abee-4fdb878af890","custom_7ytR9R","variant_picker","price","buy_buttons","3f624c97-bd90-4cd5-8090-33084d338efc"],"settings":{"show_title":false,"sku_enable":false,"image_size":"medium","product_zoom_enable":true,"thumbnail_position":"below","thumbnail_height":"fixed","thumbnail_arrows":false,"enable_video_looping":true,"indicator":"{{ product.metafields.custom.delivery_estimation | metafield_tag }}","product_video_style":"muted"}},"3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e":{"type":"text-and-video-v2","custom_css":["h2 {max-width: 480px; margin: 0 auto; font-size: 47px;}",".product__video-wrapper,.vid-media {border-radius: 15px;}","@media (min-width: 769px) {.feature-row__first-video {transform: translate(20px, -55px); margin: 0 auto -55px; max-width: 700px; }}","@media (max-width: 1849px) {h2 {font-size: 45px; } .feature-row__first-video {max-width: 650px; }}","@media (max-width: 768px) {.feature-row__first-video {padding: 0 20px; transform: translate(0, -44px); margin-bottom: -44px; max-width: 100%; } h2 {font-size: 29px; }}"],"settings":{"color_text":"#ffffff","color_heading":"#ffffff","color_background_section":"#176851","color_background":"","color_collapsible_border":"","image_full_width":false,"video_full_width":true,"video":"shopify:\/\/files\/videos\/digest.mp4","video_mobile":"shopify:\/\/files\/videos\/digest_mobile.mp4","video_url":"","video_ratio":"16:9","video_controls":false,"video_muted":true,"video_autoplay":true,"video_loop":true,"title":"<h2 class=\"h2\">Für alle, <em>denen 🥙 Essen schwer im Magen<\/em> 💚 <em>liegt.<\/em>\n<\/h2>","heading_position":"side","text":"","button_label":"","button_link":"","button_style":"primary","align_text":"center","video_width":"66","layout":"right","divider":false,"top_padding":true,"bottom_padding":false,"lazyload_videos":true}},"8182e480-8e81-4685-916f-bf8e7fefd16d":{"type":"space","settings":{"background":"#176851","height":20,"height_mobile":0}},"e04acb62-841b-4728-aa43-1c0a33afefc1":{"type":"text-columns-v2","blocks":{"template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_385.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_384.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_383.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"288227f4-5967-41b8-ac46-b7468532483f":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_382.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"8dc1627f-7a3d-4613-8507-0c98c7e550bc":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_381.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}}},"block_order":["template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1","template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2","template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3","288227f4-5967-41b8-ac46-b7468532483f","8dc1627f-7a3d-4613-8507-0c98c7e550bc"],"custom_css":["@media (max-width: 768px) {.grid {margin-bottom: -50px; }}"],"settings":{"disabled_in_countries":"","remove_top_margin":true,"remove_bottom_margin":true,"small_grid":true,"color_text":"","color_heading":"","color_background":"#176851","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"center","mobile_slider":false,"divider":false}},"35a7ffe8-c6c4-4764-8cb4-be77b45352b7":{"type":"space","settings":{"background":"#176851","height":20,"height_mobile":0}},"5a490565-f0fe-4a90-824f-e87a9b22d097":{"type":"transform-scale-carousel","blocks":{"64d85c73-60ab-43f7-8077-bb6428e8543e":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/digest_sliderbox_01_desktop.jpg","image_mobile":"shopify:\/\/shop_images\/digest_sliderbox_01_mobile.jpg","description":"<h2>Rohkost, Eiweiße, Gluten, Fett:  <em>Fühl dich wohl mit digest.<\/em>\n<\/h2>\n<p>Dein Helfer, vor jeder Mahlzeit.\n<\/p>","link":"","link_text":""}},"template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/digest_sliderbox_02_desktop.jpg","image_mobile":"shopify:\/\/shop_images\/digest_sliderbox_02_mobile.jpg","description":"<h2>Einzigartiges Spektrum<em> veganer Enzyme<\/em>\n<\/h2>\n<p>\nEnthält ausschließlich vegane Enzyme, darunter Bromelain aus Ananas und Papain aus Papaya. \n<\/p>","link":"","link_text":""}},"f38d6f34-002a-4f73-8b16-327443abcd1d":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/digest_sliderbox_03_desktop.jpg","image_mobile":"shopify:\/\/shop_images\/digest_sliderbox_03_mobile.jpg","description":"<h2>Enzyme <em>für Ballaststoffe und Laktose<\/em>\n<\/h2>\n<p>Ballaststoffe sind überaus gesund, für einen empfindlichen oder ungeübten Darm jedoch manchmal zu viel des Guten. Gerade die Umstellung auf eine ballaststoffreiche Ernährung bringt oft Verdauungsprobleme mit sich. \n<\/p>","link":"","link_text":""}},"adca5270-30a5-4cc0-af15-bc0126fb7c46":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/digest_sliderbox_04_desktop.jpg","image_mobile":"shopify:\/\/shop_images\/digest_sliderbox_04_mobile.jpg","description":"<h2>Enzyme als Teil der <em>Nährstoffaufnahme.<\/em>\n<\/h2>\n<p>Enzyme spielen eine wichtige Rolle bei der Nährstoffaufnahme, da sie für die Spaltung von Proteinen, Kohlenhydraten und Fetten in kleinere Bestandteile verantwortlich sind.\n<\/p>","link":"","link_text":""}}},"block_order":["64d85c73-60ab-43f7-8077-bb6428e8543e","template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1","f38d6f34-002a-4f73-8b16-327443abcd1d","adca5270-30a5-4cc0-af15-bc0126fb7c46"],"custom_css":["h2 {font-size: 32px;}","@media (min-width: 769px) {h2 {margin-bottom: 42px; }}","@media (min-width: 1850px) {h2 {font-size: 38px; }}","@media (max-width: 768px) {h2 {font-size: 30px; }}"],"settings":{"style":"style1","background_color":"#176851","main_background_color":"#e7eaff","color_text":"#176851","btns_style":"light","bg_size":50,"desktop_min_size":300,"small_desktop_min_size":300,"mobile_min_size":300}},"product-recommendations":{"type":"product-recommendations","settings":{"product_recommendations_heading":"Häufig zusammen gekauft","related_count":5,"products_per_row":5}},"product_info_Yh7qyA":{"type":"product-info","blocks":{"box_3NnREh":{"type":"box","settings":{"title":"Stark und langlebig","text":"<p>Wir garantieren höchste Effektivität und Qualität der freundlichen Bakterien für deinen Darm bis zum Ende des Mindesthaltbarkeitsdatums, durch Premium-Ballaststoffe in der Kapsel und einer doppelt abgesicherten Aktivitätsrate.<\/p>"}},"box_bNB38G":{"type":"box","settings":{"title":"Resilienter im Alltag","text":"<p>Vitamin B2 schützt vor oxidativem Stress im Alltag und trägt zur Verringerung von Müdigkeit bei. Vitamin B6 fördert die normale psychische Funktion sowie eine normale Funktion des Immunsystems.<\/p>"}},"box_ynLnBD":{"type":"box","settings":{"title":"Premium Qualität aus Deutschland - laborgeprüft","text":"<p>Die Premium-Bakterienstämme werden in Deutschland kultiviert und mikroskopischen Untersuchungen unterzogen, um höchste Reinheit zu gewährleisten.<\/p>"}},"box_VLaWYA":{"type":"box","settings":{"title":"Einfache Anwendung","text":"<p>Nimm daily biotic einfach 20 Minuten vor deinen Mahlzeiten ein. Wir empfehlen zwei Kapseln pro Tag mit mindestens zwei Stunden Abstand. Am besten vor dem Frühstück und dem Abendessen.<\/p>"}},"box_dQAPmR":{"type":"box","settings":{"title":"Magensaftresistente DRCaps® Hartkapseln","text":"<p>Für Wirkung, die ankommt: Die patentierten DR Caps® Hartkapseln öffnen sich erst dort, wo sie wirklich gebraucht werden: In deinem Darm.<\/p>"}},"box_Y773kG":{"type":"box","settings":{"title":"Unterstützt die Darmschleimhaut insbesondere bei Leaky Gut","text":"<p>Vitamin B3 trägt zur Erhaltung normaler Schleimhäute bei, wichtig bei Leaky Gut.<\/p>"}}},"block_order":["box_3NnREh","box_bNB38G","box_ynLnBD","box_VLaWYA","box_dQAPmR","box_Y773kG"],"settings":{"text_color":"#444444","headings_color":"#353b7c","counter_color":"#6985e9","background_color":"#f7f9ff","heading":"<h2>Nur drin, was es \u2028braucht - vor allem, \u2028was wirkt  🌱<\/h2>","image":"shopify:\/\/shop_images\/test_1.jpg","swipe_info":"Swipen & Inhalte erkunden 👉🏼","button_link":"#anwendung-inhalt","button":"Alle Inhaltsstoffe anzeigen"}},"8555e8d1-fb79-422d-b121-2e95738507bf":{"type":"faq","custom_css":["#product-faq {scroll-margin-top: 120px;}",".faq-plus-app-container {padding: 0;}",".section-heading {max-width: 640px; margin: 0 auto 100px;}","h2 {font-size: 30px; line-height: 2;}","h2 em {font-weight: 400;}",".text-in-box {color: #6985e9; margin-right: 10px;}",".faqPlusAppTitle {border-radius: 50px !important;}","@media (max-width: 767px) {.section-heading {margin-bottom: 50px; } h2 {font-size: 22px; line-height: 1.4; } .text-in-box {line-height: 2; color: #6985e9; margin: 0 auto 20px; }}"],"settings":{"layout":"column2","html":"<h2>\n<span class=\"text-in-box\">🤔 <em>Noch Fragen?<\/em><\/span> <br class=\"mobile-only\">Mehr Antworten bekommst du <em class=\"underline underline--style3\">hier<\/em>\n<\/h2>","faq_code":"<div class=\"ef-faqs-plus-app-cats-content\" data-category=\"flat belly\" id=\"ef-faqs-63ce71e95c36b740ccc10bc5\"><\/div>","color_text":"","color_background":"","collapsible_trigger_color_text":"#353b7c","collapsible_trigger_color_background":"#f7f9ff","collapsible_trigger_color_border":"#ffffff","collapsible_content_color_text":"#6985e9","collapsible_content_color_background":"#ffffff","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":""}},"expert_block_WeLWhC":{"type":"expert-block","custom_css":[".expert-block__bg .grid--small {margin-left: -20px; display: flex; flex-wrap: wrap; align-items: center;}"],"settings":{"text_color":"#ffffff","background_color":"#6985e9","expert_image":"shopify:\/\/shop_images\/Group_1039.png","heading":"<h3>Empfohlen von<br\/> Dr. Simone Koch<\/h3>","expert_label":"👩🏼‍⚕️<strong> Dr. Simone Koch<\/strong>, Medizinerin","text":"<h3>Du bist in <em>bester \u2028Gesellschaft<\/em>  👥<\/h3>","image":"shopify:\/\/shop_images\/team-1.png"}},"featured_trustpilot_qPRpj7":{"type":"featured-trustpilot","blocks":{"review_kLiD4E":{"type":"review","settings":{"icon":"👏🏼","heading":"Sonja","text":"<p>Ich nehme das Produkt seit einer Woche und spüre eine deutlich positive Veränderung. Ich werde es dauerhaft integrieren. Bestellvorgang war sehr angenehm. Alles top<\/p>"}},"review_kGn9Wp":{"type":"review","settings":{"icon":"😍","heading":"Headline","text":"<p>Mir hat das Produkt schon nach kurzer Einnahme-Zeit super geholfen, kann ich nur weiterempfehlen.<\/p>"}},"review_J6xeFJ":{"type":"review","settings":{"icon":"🧘🏽‍♀️","heading":"Headline","text":"<p>Mir hat das Produkt schon nach kurzer Einnahme-Zeit super geholfen, kann ich nur weiterempfehlen.<\/p>"}}},"block_order":["review_kLiD4E","review_kGn9Wp","review_J6xeFJ"],"settings":{}},"1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac":{"type":"trustpilot","settings":{"align_text":"center","divider":false,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":""}},"39e6e136-47cd-4b57-a317-0061216a3ee7":{"type":"tabs","blocks":{"template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1":{"type":"tab","settings":{"align_text":"left","title":"Zusatzinformationen","show_title":false,"video_url":"","video_ratio":"16:9","video_controls":false,"video_muted":true,"video_autoplay":true,"video_loop":true,"content_order":"first_html","text":"<table><tbody>\n<tr>\n<th class=\"A1\"><span>Produktdetails<\/span><\/th>\n<th class=\"B1\"><span><\/span><\/th>\n<\/tr>\n<tr>\n<td class=\"A2\"><span>Verpackungsmaterial<\/span><\/td>\n<td class=\"B2\"><span>Glas + Umkarton<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A3\"><span>Herkunft<\/span><\/td>\n<td class=\"B3\"><span>Deutschland<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A4\"><span>Gewicht<\/span><\/td>\n<td class=\"B4\"><span>25,5 g<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A5\"><span>Verzehrempfehlung<\/span><\/td>\n<td class=\"B5\"><span>Täglich 1 Kapsel vor dem Essen von schwerverdaulicher Kost (z.B. Rohkost, Gluten etc.) mit einem Glas Wasser einnehmen. <\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A6\"><span>Darreichungsform<\/span><\/td>\n<td class=\"B6\"><span>Kapseln<\/span><\/td>\n<\/tr>\n<\/tbody><\/table>","richtext":"","button_label":"","button_link":""}}},"block_order":["template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1"],"custom_css":["h2 {font-size: 30px;}","@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"],"settings":{"active_tab_color":"","title":"","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"left","divider":true}},"f5bc1a0a-1322-4856-b5f7-733c6150fca5":{"type":"rich-text","blocks":{"template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1":{"type":"text","settings":{"color_text":"","enlarge_text":false,"text_max_width":920,"text":"<p><strong>Pflichtangaben nach Lebensmittel-Informationsverordnung<\/strong><em><strong><br\/><\/strong><\/em><strong><br\/><\/strong>digest ist ein Nahrungsergänzungsmittel <br\/>Die angegebene empfohlene tägliche Verzehrmenge darf nicht überschritten werden.<br\/>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.<br\/>Außerhalb der Reichweite von Kindern aufbewahren.<\/p>"}}},"block_order":["template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1"],"settings":{"color_background":"","align_text":"left","margin_top_px":-100,"margin_top_px_mobile":-50,"margin_bottom":100,"margin_bottom_mobile":50,"narrow_column":false,"divider":false}},"custom_popup_GxFVMz":{"type":"custom-popup","custom_css":[],"settings":{"html_anchor":"anwendung-inhalt","label":"Open modal","show_label":false,"color_text":"#353b7c","color_background":"#f7f9ff","align_text":"left","content_order":"first_html","text":"<table><tbody>\n<tr>\n<th class=\"A1\" style=\"min-width: 220px;\">Bezeichnung<\/th>\n<th class=\"B1\"><span>Menge Tagesdosis (1 Kapsel)<\/span><\/th>\n<th class=\"C1\"><span>Wirkstoff<\/span><\/th>\n<\/tr>\n<tr>\n<td class=\"A2\"><span>Betaine HCL<\/span><\/td>\n<td class=\"B2\"><span>60mg<\/span><\/td>\n<td class=\"C2\"><span>Betain<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A3\"><span>Enzymmischung mit Full Spectrum Protease: <i><br>Protease 1.000 HUT <br>Protease 3.0 25 SAPU <br>Cellulase blend 2000 CU <br>Beta Glucanase 4 BGU <br>Glucoamylase 1835 DU <br>Diastase 2500DP <br>Lactase 950 ALU <br>Lipase Blend 2385 FIP <br>Bromelain 100 GDU <br>Papain 1650 TU <br>Pectinase 50-ende PGU <br>Xylanase 600XU <br>Alpha Galactosidose 100 GALU <br>Peptidase 25DPPIV <br>Phytase 10FTU <br>Hemicellulase 1500 HCU<\/i><\/span><\/td>\n<td class=\"B3\"><span>50mg<\/span><\/td>\n<td class=\"C3\"><span><\/span><\/td>\n<\/tr>\n\n<tr>\n<td class=\"A4\"><span>Fenchel Extrakt (4:1) <\/span><\/td>\n<td class=\"B4\"><span>40mg<\/span><\/td>\n<td class=\"C4\"><span><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A5\"><span>Hericium Erinaceus Extrakt<\/span><\/td>\n<td class=\"B5\"><span>40mg<\/span><\/td>\n<td class=\"C5\"><span>Polysaccharide<br>Beta-Glucane<br><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A6\"><span>Bromelain 600gdu\/g<\/span><\/td>\n<td class=\"B6\"><span>40mg<\/span><\/td>\n<td class=\"C6\"><span><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A7\"><span>Papain 6000 USP-U\/mg<\/span><\/td>\n<td class=\"B7\"><span>40mg<\/span><\/td>\n<td class=\"C7\"><span><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A8\"><span>Ingwer Extrakt (5% Gingerole; Zingiber Officinale; Wurzel)<\/span><\/td>\n<td class=\"B8\"><span>40mg<\/span><\/td>\n<td class=\"C8\"><span>Ingwerol<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A9\"><span>Saccharomyces Boulardii 20B cfu\/g<\/span><\/td>\n<td class=\"B9\"><span>20mg<\/span><\/td>\n<td class=\"C9\"><span><\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"A10\"><span><span style=\"font-weight: bold;\">Gesamtfüllmenge pro Kapsel<\/span><\/span><\/td>\n<td class=\"B10\"><span><span style=\"font-weight: bold;\">330mg<\/span><\/span><\/td>\n<td class=\"C10\"><span><\/span><\/td>\n<\/tr>\n<\/tbody><\/table>","richtext":"<p><strong>Inhalt: <\/strong>60 vegane Kapseln <\/p>"}}},"order":["main","3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e","8182e480-8e81-4685-916f-bf8e7fefd16d","e04acb62-841b-4728-aa43-1c0a33afefc1","35a7ffe8-c6c4-4764-8cb4-be77b45352b7","5a490565-f0fe-4a90-824f-e87a9b22d097","product-recommendations","product_info_Yh7qyA","8555e8d1-fb79-422d-b121-2e95738507bf","expert_block_WeLWhC","featured_trustpilot_qPRpj7","1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac","39e6e136-47cd-4b57-a317-0061216a3ee7","f5bc1a0a-1322-4856-b5f7-733c6150fca5","custom_popup_GxFVMz"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "9c6046e8-06b5-49d6-ab57-98b72dcf8e90": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>{{ product.metafields.custom.custom_title.value }}</h1><h4>{{ product.metafields.custom.short_description | metafield_tag }}</h4>",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "custom_UJJYr9": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"pdp-box\">Inhalt: 60 Kapseln <span>|</span> <a href=\"#anwendung-inhalt\" open-modal=\"\">Inhaltsstoffe anzeigen</a>\n</div>"
+          }
+        },
+        "0991f51c-6688-4a99-9d28-d8386c0215ef": {
+          "type": "trustpilot",
+          "disabled": true,
+          "settings": {
+            "trustpilot_enable": true,
+            "faq_link": ""
+          }
+        },
+        "reviews_io_reviewsio_rating_output_Q6LneV": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "76d8b74e-0856-4a07-abee-4fdb878af890": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Premium Komplex aus 11 Enzymen</li><li>inkl. Betaine-HCL (Magensäure)</li><li>verdaut Protein, Kohlenhydrate, Eiweiße, Zucker</li><li>in Deutschland hergestellt und kontrolliert</li></ul>",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "46b24e06-04e3-436c-9031-de32905f00a9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><a href=\"https://www.everydays.de/community/faq#Zufriedenheitsgarantie\" target=\"_blank\" title=\"https://www.everydays.de/community/faq#Zufriedenheitsgarantie\"><strong>everydays Garantie:</strong> Zufrieden oder Geld zurück.<br/></a><strong><br/>Inhalt:</strong> 60 Kapseln</p>",
+            "enlarge_text": false,
+            "color_text": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "3f624c97-bd90-4cd5-8090-33084d338efc": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.extra_content | metafield_tag }}",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "tab_BmnMdT": {
+          "type": "tab",
+          "settings": {
+            "title": "90-Tage-Zufriedenheitsgarantie  ✅",
+            "content": "<p>Sorgenfrei testen, mit der <a href=\"https://www.everydays.de/community/faq?_gl=1*si4a23*_up*MQ..&gclid=CjwKCAiAp4KCBhB6EiwAxRxbpMFVczuhgVbkAF5k6FmUsvEkMHdDokySuB6MtPLka9Gmw3CwQRAr3hoCHnYQAvD_BwE#Zufriedenheitsgarantie\" target=\"_blank\" title=\"Zufriedenheitsgarantie\">everydays Garantie</a>. <br/>Nicht zufrieden? Du bekommst dein Geld zurück. <br/>Einfach & unkompliziert.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "9c6046e8-06b5-49d6-ab57-98b72dcf8e90",
+        "custom_UJJYr9",
+        "0991f51c-6688-4a99-9d28-d8386c0215ef",
+        "reviews_io_reviewsio_rating_output_Q6LneV",
+        "price",
+        "76d8b74e-0856-4a07-abee-4fdb878af890",
+        "46b24e06-04e3-436c-9031-de32905f00a9",
+        "variant_picker",
+        "buy_buttons",
+        "3f624c97-bd90-4cd5-8090-33084d338efc",
+        "tab_BmnMdT"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "show_title": false,
+        "sku_enable": false,
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": false,
+        "enable_video_looping": true,
+        "indicator": "{{ product.metafields.custom.delivery_estimation | metafield_tag }}",
+        "product_video_style": "muted"
+      }
+    },
+    "3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e": {
+      "type": "text-and-video-v2",
+      "custom_css": [
+        "h2 {max-width: 480px; margin: 0 auto; font-size: 47px;}",
+        ".product__video-wrapper,.vid-media {border-radius: 15px;}",
+        "@media (min-width: 769px) {.feature-row__first-video {transform: translate(20px, -55px); margin: 0 auto -55px; max-width: 700px; }}",
+        "@media (max-width: 1849px) {h2 {font-size: 45px; } .feature-row__first-video {max-width: 650px; }}",
+        "@media (max-width: 768px) {.feature-row__first-video {padding: 0 20px; transform: translate(0, -44px); margin-bottom: -44px; max-width: 100%; } h2 {font-size: 29px; }}"
+      ],
+      "settings": {
+        "color_text": "#ffffff",
+        "color_heading": "#ffffff",
+        "color_background_section": "#176851",
+        "color_background": "",
+        "color_collapsible_border": "",
+        "image_full_width": false,
+        "video_full_width": true,
+        "video": "shopify://files/videos/digest.mp4",
+        "video_mobile": "shopify://files/videos/digest_mobile.mp4",
+        "video_url": "",
+        "video_ratio": "16:9",
+        "video_controls": false,
+        "video_muted": true,
+        "video_autoplay": true,
+        "video_loop": true,
+        "title": "<h2 class=\"h2\">Für alle, <em>denen 🥙 Essen schwer im Magen</em> 💚 <em>liegt.</em>\n</h2>",
+        "heading_position": "side",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "video_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": false,
+        "lazyload_videos": true,
+        "fancy_background": false
+      }
+    },
+    "8182e480-8e81-4685-916f-bf8e7fefd16d": {
+      "type": "space",
+      "settings": {
+        "background": "#176851",
+        "height": 20,
+        "height_mobile": 0
+      }
+    },
+    "e04acb62-841b-4728-aa43-1c0a33afefc1": {
+      "type": "text-columns-v2",
+      "blocks": {
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/Group_385.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/Group_384.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/Group_383.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "288227f4-5967-41b8-ac46-b7468532483f": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/Group_382.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "8dc1627f-7a3d-4613-8507-0c98c7e550bc": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/Group_381.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1",
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2",
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3",
+        "288227f4-5967-41b8-ac46-b7468532483f",
+        "8dc1627f-7a3d-4613-8507-0c98c7e550bc"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.grid {margin-bottom: -50px; }}"
+      ],
+      "settings": {
+        "disabled_in_countries": "",
+        "remove_top_margin": true,
+        "remove_bottom_margin": true,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "#176851",
+        "title": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": false,
+        "divider": false
+      }
+    },
+    "35a7ffe8-c6c4-4764-8cb4-be77b45352b7": {
+      "type": "space",
+      "settings": {
+        "background": "#176851",
+        "height": 20,
+        "height_mobile": 0
+      }
+    },
+    "5a490565-f0fe-4a90-824f-e87a9b22d097": {
+      "type": "transform-scale-carousel",
+      "blocks": {
+        "64d85c73-60ab-43f7-8077-bb6428e8543e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/digest_sliderbox_01_desktop.jpg",
+            "image_mobile": "shopify://shop_images/digest_sliderbox_01_mobile.jpg",
+            "description": "<h2>Rohkost, Eiweiße, Gluten, Fett:  <em>Fühl dich wohl mit digest.</em>\n</h2>\n<p>Dein Helfer, vor jeder Mahlzeit.\n</p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/digest_sliderbox_02_desktop.jpg",
+            "image_mobile": "shopify://shop_images/digest_sliderbox_02_mobile.jpg",
+            "description": "<h2>Einzigartiges Spektrum<em> veganer Enzyme</em>\n</h2>\n<p>\nEnthält ausschließlich vegane Enzyme, darunter Bromelain aus Ananas und Papain aus Papaya. \n</p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "f38d6f34-002a-4f73-8b16-327443abcd1d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/digest_sliderbox_03_desktop.jpg",
+            "image_mobile": "shopify://shop_images/digest_sliderbox_03_mobile.jpg",
+            "description": "<h2>Enzyme <em>für Ballaststoffe und Laktose</em>\n</h2>\n<p>Ballaststoffe sind überaus gesund, für einen empfindlichen oder ungeübten Darm jedoch manchmal zu viel des Guten. Gerade die Umstellung auf eine ballaststoffreiche Ernährung bringt oft Verdauungsprobleme mit sich. \n</p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "adca5270-30a5-4cc0-af15-bc0126fb7c46": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/digest_sliderbox_04_desktop.jpg",
+            "image_mobile": "shopify://shop_images/digest_sliderbox_04_mobile.jpg",
+            "description": "<h2>Enzyme als Teil der <em>Nährstoffaufnahme.</em>\n</h2>\n<p>Enzyme spielen eine wichtige Rolle bei der Nährstoffaufnahme, da sie für die Spaltung von Proteinen, Kohlenhydraten und Fetten in kleinere Bestandteile verantwortlich sind.\n</p>",
+            "link": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "64d85c73-60ab-43f7-8077-bb6428e8543e",
+        "template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1",
+        "f38d6f34-002a-4f73-8b16-327443abcd1d",
+        "adca5270-30a5-4cc0-af15-bc0126fb7c46"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        "@media (min-width: 769px) {h2 {margin-bottom: 42px; }}",
+        "@media (min-width: 1850px) {h2 {font-size: 38px; }}",
+        "@media (max-width: 768px) {h2 {font-size: 30px; }}"
+      ],
+      "settings": {
+        "style": "style1",
+        "background_color": "#176851",
+        "main_background_color": "#e7eaff",
+        "color_text": "#176851",
+        "btns_style": "light",
+        "bg_size": 50,
+        "desktop_min_size": 300,
+        "small_desktop_min_size": 300,
+        "mobile_min_size": 230
+      }
+    },
+    "everydays-product-recommendations": {
+      "type": "everydays-product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Häufig zusammen gekauft",
+        "related_count": 5,
+        "products_per_row": 5,
+        "padding_top_desktop": 172,
+        "padding_bottom_desktop": 172,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
+    "everydays_product_info_APgVHU": {
+      "type": "everydays-product-info",
+      "blocks": {
+        "box_ecWxNp": {
+          "type": "box",
+          "settings": {
+            "title": "Hochwertiger Enzym-Komplex  🥇",
+            "text": "<p>Ob Bromelain, Protease und Papain, Amylase  oder Laktase zur Aufspaltung von Milchprodukten: ssdigest enthält die 11 wichtigsten Enzyme im idealen Verhältnis (+ Ingwer und Fenchel).</p>"
+          }
+        },
+        "box_LmyiRB": {
+          "type": "box",
+          "settings": {
+            "title": "Einzigartige Wirkung  ✨",
+            "text": "<p>So wie bei allen unseren Produkten, setzen wir bei digest ausschließlich auf Premium-Rohstoffe, die dir einen nachweisbaren Mehrwert liefern.</p>"
+          }
+        },
+        "box_UpB9GV": {
+          "type": "box",
+          "settings": {
+            "title": "100% Made in Germany  🇩🇪",
+            "text": "<p>Alle Produkte von everydays werden in Deutschland produziert. Weil unsere Produktionsstätten nach GMP, ISO 9001 und HACCP zertifiziert sind, kannst du dir sicher sein, dass digest alle Hygienevorschriften erfüllt.</p>"
+          }
+        },
+        "box_yKULHM": {
+          "type": "box",
+          "settings": {
+            "title": "Natürlich vegan  🌱",
+            "text": "<p>Entscheide dich für unverfälschte Pflanzenpower ohne Zusatzstoffe. digest ist vegan und frei von Farbstoffen, Gelatine, Magnesiumstearat, Laktose, Gluten oder gentechnisch veränderten Organismen (GMO).</p>"
+          }
+        },
+        "box_KC7b8X": {
+          "type": "box",
+          "settings": {
+            "title": "Einfache Anwendung  👏🏽",
+            "text": "<p>Es kann so einfach sein: Einfach 2 Kapseln digest vor deinen Mahlzeiten mit etwas Wasser einnehmen.</p>"
+          }
+        },
+        "box_XLbBEg": {
+          "type": "box",
+          "settings": {
+            "title": "Hilft dir ab der ersten Einnahme  🤗",
+            "text": "<p>digest ist dafür gemacht adhoc einsatzfähig zu sein. Für ein leichteres Gefühl nach dem Essen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "box_ecWxNp",
+        "box_LmyiRB",
+        "box_UpB9GV",
+        "box_yKULHM",
+        "box_KC7b8X",
+        "box_XLbBEg"
+      ],
+      "settings": {
+        "text_color": "#353b7c",
+        "headings_color": "#353b7c",
+        "counter_color": "#6985e9",
+        "background_color": "#f5f5fc",
+        "box_shadow_color": "#dadae8",
+        "box_shadow_transparency": 60,
+        "mobile_box_shadow_color": "#353b7c",
+        "mobile_box_shadow_transparency": 18,
+        "heading": "Nur drin, was es braucht, vor allem, <em>was wirkt</em>",
+        "image": "shopify://shop_images/Group_1609.jpg",
+        "swipe_info": "",
+        "button_link": "shopify://collections",
+        "button": "Alle Inhaltsstoffe anzeigen",
+        "button_color": "#176851",
+        "box_background_color": "#fbfbff",
+        "box_headline_color": "#176851",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "8555e8d1-fb79-422d-b121-2e95738507bf": {
+      "type": "everydays-faq",
+      "settings": {
+        "color_title_line": "#176851",
+        "background_color_questions": "#f8f8ff",
+        "color_answers": "#176851",
+        "layout": "column1",
+        "html": "",
+        "faq_code": "<div class=\"ef-faqs-plus-app-cats-content\" data-category=\"flat belly\" id=\"ef-faqs-63ce71e95c36b740ccc10bc5\"></div>",
+        "color_text": "",
+        "color_background": "",
+        "collapsible_trigger_color_text": "",
+        "collapsible_trigger_color_background": "",
+        "collapsible_content_color_text": "",
+        "collapsible_content_color_background": "",
+        "title": "Noch Fragen? 💭 Mehr Antworten  bekommst du <span>hier</span>",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "FAQ",
+        "title_circle_style": "style3",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "padding_top_desktop": 164,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "everydays_experts_kCzCtU": {
+      "type": "everydays-experts",
+      "blocks": {
+        "expert_DgRW7E": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/Group_1959.jpg",
+            "quote": "“Bei Schilddrüsenproblemen sind Verdauungsschwierigkeiten an der Tagesordnung. digest unterstützt wirkungsvoll wie kein anderes Supplement”",
+            "text_size_desktop": 34,
+            "text_size_mobile": 21,
+            "line_height_desktop": 57,
+            "line_height_mobile": 35,
+            "expert": "Ann-Katrin Sättele, Hashimoto-Expertin 🩺"
+          }
+        },
+        "expert_JQhwxc": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/Group_1960.jpg",
+            "quote": "“everydays baut Produkte, die für meine  community ein echter game changer sind.”",
+            "text_size_desktop": 36,
+            "text_size_mobile": 21,
+            "line_height_desktop": 59,
+            "line_height_mobile": 35,
+            "expert": "Dr. Dorothea Leinung, Medizinerin 🩺"
+          }
+        }
+      },
+      "block_order": [
+        "expert_DgRW7E",
+        "expert_JQhwxc"
+      ],
+      "settings": {
+        "background_color": "#176851",
+        "button_background_color": "#008262",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "everydays_movement_FxqNgK": {
+      "type": "everydays-movement",
+      "blocks": {
+        "expert_zihfDk": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2023-09-25_um_14.12_39.jpg",
+            "text": "“Ein unglaubliches Produkt, ich bin dankbar dafür, ich fühle mich viel besser.”",
+            "testimonial_background_color": "#f5f5fc",
+            "font_size_desktop": 15,
+            "font_size_mobile": 15
+          }
+        },
+        "expert_RrLgmY": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2023-09-25_um_14.12_43.jpg",
+            "text": "“Die Kapseln zeigen bereits nach kurzer Verwendung Wirkung und das ganz ohne Nebenwirkungen. Sehr zu empfehlen.”",
+            "testimonial_background_color": "#f5f5fc",
+            "font_size_desktop": 15,
+            "font_size_mobile": 14
+          }
+        }
+      },
+      "block_order": [
+        "expert_zihfDk",
+        "expert_RrLgmY"
+      ],
+      "settings": {
+        "arrow_color": "#176851",
+        "arrow_text": "Zahlen sprechen für sich:",
+        "background_color_circle": "#f5f5fc",
+        "emoji": "👏🏽",
+        "emoji_text": "+100.000 zufriedene Kund*Innen",
+        "cards_background_color": "#f5f5fc",
+        "stars_text": "Hervorragende Bewertung",
+        "padding_top_desktop": 140,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 72
+      }
+    },
+    "eae4f890-270c-4197-96a7-c6f24f385cca": {
+      "type": "image-between-text",
+      "blocks": {
+        "368c2dfd-d9d5-4f67-931e-51793ab330ee": {
+          "type": "text",
+          "settings": {
+            "title": "Hochwertiger Enzym-Komplex",
+            "text": "<p>Ob Bromelain, Protease und Papain, Amylase oder Laktase zur Aufspaltung von Milchprodukten: digest enthält die 11 wichtigsten Enzyme im idealen Verhältnis (+ Ingwer und Fenchel).</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "3b427477-5b03-483d-a623-677a9c24d491": {
+          "type": "text",
+          "settings": {
+            "title": "Natürlich vegan",
+            "text": "<p>Entscheide dich für unverfälschte Pflanzenpower ohne Zusatzstoffe. digest ist vegan und frei von Farbstoffen, Gelatine, Magnesiumstearat, Laktose, Gluten oder gentechnisch veränderten Organismen (GMO).</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "7c9d7184-f84c-491d-b308-23f486552e6c": {
+          "type": "text",
+          "settings": {
+            "title": "Einzigartige Wirkung ",
+            "text": "<p>So wie bei allen unseren Produkten, setzen wir bei digest ausschließlich auf Premium-Rohstoffe, die dir einen nachweisbaren Mehrwert liefern.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "06139157-d072-4441-9d48-ec5ff7c1670d": {
+          "type": "text",
+          "settings": {
+            "title": "Einfache Anwendung",
+            "text": "<p>Es kann so einfach sein: Einfach 2 Kapseln digest vor deinen Mahlzeiten mit etwas Wasser einnehmen.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "87b58dcd-202f-4584-8713-7577673868c0": {
+          "type": "text",
+          "settings": {
+            "title": "100% Made in Germany",
+            "text": "<p>Alle Produkte von everydays werden in Deutschland produziert. Weil unsere Produktionsstätten nach GMP, ISO 9001 und HACCP zertifiziert sind, kannst du dir sicher sein, dass digest alle Hygienevorschriften erfüllt.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        },
+        "8baf6c29-c608-4ab1-9422-d0466d1533dc": {
+          "type": "text",
+          "settings": {
+            "title": "Hilft dir ab der ersten Einnahme",
+            "text": "<p>digest ist dafür gemacht adhoc einsatzfähig zu sein. Für ein leichteres Gefühl nach dem Essen.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "368c2dfd-d9d5-4f67-931e-51793ab330ee",
+        "3b427477-5b03-483d-a623-677a9c24d491",
+        "7c9d7184-f84c-491d-b308-23f486552e6c",
+        "06139157-d072-4441-9d48-ec5ff7c1670d",
+        "87b58dcd-202f-4584-8713-7577673868c0",
+        "8baf6c29-c608-4ab1-9422-d0466d1533dc"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "title": "enzymatischer complex",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "du willst",
+        "title_circle_style": "style2",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "<p>digest bietet dir ein hochwertiges Enzymprodukt inkl. Beatine HCL (Magensäure).</p>",
+        "image": "shopify://shop_images/Bulletpoints_698ff66c-f7da-42f1-aea9-1dbb473d55a1.jpg",
+        "image_mask": "none",
+        "image_width": "33",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "3a1dc6a0-cc81-42bd-ac0c-cf3476136104": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-0": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "icon": "line",
+            "title": "Bestellen",
+            "text": "<p>Nach deiner Bestellung ist das Produkt in nur 1-2 Tagen bei dir. Einfach und unkompliziert.</p>"
+          }
+        },
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "icon": "line",
+            "title": "Einnahme",
+            "text": "<p>Du nimmst täglich oder bei Bedarf 1 Kapsel mit einem Glas Wasser ein. Idealerweise 20 Minuten vor dem Essen oder bis spätestens eine Stunde danach.</p>"
+          }
+        },
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "icon": "line",
+            "title": "Wirkung genießen oder Geld zurück",
+            "text": "<p>Überzeuge dich selbst. Wir wollen echte Wirkung, statt leere Versprechen. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-0",
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-1",
+        "template--17948412018955__3a1dc6a0-cc81-42bd-ac0c-cf3476136104-1686918243912c4042-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_text": "",
+        "color_heading": "",
+        "color_background_section": "#f4f5ff",
+        "color_icons": "#247a62",
+        "title": "So einfach geht's",
+        "title_underline": "einfach",
+        "title_underline_style": "style3",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "button_background_color": "",
+        "button_style": "none",
+        "divider": false
+      }
+    },
+    "f4f29268-ec86-40d7-87ca-e6bd58491db6": {
+      "type": "text-columns",
+      "blocks": {
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/simonekoch-1645782147343.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Simone Koch</h4><p>Darmexpertin</p>",
+            "popup_text": "<p>Dr. Simone Koch ist Autorin von 5 Bestsellern zu den Themen Darmgesundheit, Schilddrüsenerkrankungen, Stoffwechselgesundheit und Prävention von Zivilisationserkrankungen. Auf ihrem Instagramaccount stellt sie ihr großes Wissen in spannenden Beiträgen zur Verfügung.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/Dr_Anne_Latz_everydays.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Anne Latz</h4><p>Harvard Medical School</p>",
+            "popup_text": "<p>Dr. Anne Latz ist u.a. Unternehmerin im Bereich Prävention und digitale Gesundheit. Sie ist Expertin für Innovation im Gesundheitswesen & Lebensstilfragen (Harvard Medical School, British Society of Lifestyle Medicine und DGEM) und tritt als Speakerin zu den Themen ganzheitliche Gesundheit mit besonderem Schwerpunkt auf metabolische Gesundheit (Blutzuckermanagement für Gesunde) auf. Als Autorin und Multiplikatorin setzt sie sich für neue Wege innerhalb des Gesundheitssystems ein.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/auerswald-1645780331401.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Martin Auerswald</h4><p>Biochemiker</p>",
+            "popup_text": "<p>Martin Auerswald ist studierter Biochemiker. Er entschied sich gegen eine Karriere in der Forschung, um stattdessen lieber Wissen zu vermitteln – heute erreicht er mit seinen Beiträgen und Kongressen mehrere Millionen Menschen jährlich und zeigt, wie jeder seine Gesundheit selbst in die Hand nehmen, vorbeugen und auch bei chronischen Erkrankungen zur Besserung beitragen kann.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "4f119b32-1b1c-4a4c-859a-5a44fe6f61bc": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify://shop_images/dr-dorothea-leinung.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "mobile_image_width": 650,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "<h4>Dr. Dorothea Leinung</h4><p>Hashimoto-Expertin</p>",
+            "popup_text": "<p>Dr. Dorothea Leinung ist ganzheitliche Gesundheitsexpertin, Bestsellerautorin, erfolgreiche Podcasterin und Mentaltrainerin. Ihr Spezialgebiet ist die Hashimoto Thyreoiditis, eine autoimmune Erkrankung der Schilddrüse, von der schätzungsweise 8 Mio Menschen allein in Deutschland betroffen sind. In den sozialen Medien gehören bereits über 60.000 Menschen zu ihren begeisterten Followern, die ihrer Expertise vertrauen.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-2",
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-1",
+        "template--17948412018955__f4f29268-ec86-40d7-87ca-e6bd58491db6-1686918732ca355f55-0",
+        "4f119b32-1b1c-4a4c-859a-5a44fe6f61bc"
+      ],
+      "disabled": true,
+      "settings": {
+        "disabled_in_countries": "",
+        "remove_top_margin": false,
+        "remove_bottom_margin": false,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "#f8f8f2",
+        "title": "Unsere Experten",
+        "title_underline": "Experten",
+        "title_underline_style": "style2",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": true,
+        "divider": false
+      }
+    },
+    "1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac": {
+      "type": "trustpilot",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "divider": false,
+        "title": "Bewertungen",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "Bewertungen",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": ""
+      }
+    },
+    "17231284326093e953": {
+      "type": "everydays-apps",
+      "blocks": {
+        "reviews_io_reviewsio_polaris_DwCWRL": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#009c75",
+            "review_type": "product_review,questions",
+            "per_page": 3,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#dddddd",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#dddddd",
+            "secondary_btn_text_color": "#353b7c",
+            "border_color": "#dddddd",
+            "heading_text_color": "#353b7c",
+            "heading_font": "helvetica_n4",
+            "body_text_color": "#353b7c",
+            "badge_icon_color": "#353b7c",
+            "badge_text_color": "#000000",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": false,
+            "enable_replies": false,
+            "widget_spacing": 0,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_polaris_DwCWRL"
+      ],
+      "settings": {
+        "full_width": false,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "everydays_divider_GjMCk9": {
+      "type": "everydays-divider",
+      "settings": {
+        "full_width": true,
+        "padding_top_desktop": 52,
+        "padding_bottom_desktop": 52,
+        "padding_top_mobile": 56,
+        "padding_bottom_mobile": 52
+      }
+    },
+    "custom_popup_GxFVMz": {
+      "type": "custom-popup",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "html_anchor": "anwendung-inhalt",
+        "label": "Open modal",
+        "show_label": false,
+        "color_text": "#353b7c",
+        "color_background": "#f7f9ff",
+        "align_text": "left",
+        "content_order": "first_html",
+        "text": "<table><tbody>\n<tr>\n<th class=\"A1\" style=\"min-width: 220px;\">Bezeichnung</th>\n<th class=\"B1\"><span>Menge Tagesdosis (1 Kapsel)</span></th>\n<th class=\"C1\"><span>Wirkstoff</span></th>\n</tr>\n<tr>\n<td class=\"A2\"><span>Betaine HCL</span></td>\n<td class=\"B2\"><span>60mg</span></td>\n<td class=\"C2\"><span>Betain</span></td>\n</tr>\n<tr>\n<td class=\"A3\"><span>Enzymmischung mit Full Spectrum Protease: <i><br>Protease 1.000 HUT <br>Protease 3.0 25 SAPU <br>Cellulase blend 2000 CU <br>Beta Glucanase 4 BGU <br>Glucoamylase 1835 DU <br>Diastase 2500DP <br>Lactase 950 ALU <br>Lipase Blend 2385 FIP <br>Bromelain 100 GDU <br>Papain 1650 TU <br>Pectinase 50-ende PGU <br>Xylanase 600XU <br>Alpha Galactosidose 100 GALU <br>Peptidase 25DPPIV <br>Phytase 10FTU <br>Hemicellulase 1500 HCU</i></span></td>\n<td class=\"B3\"><span>50mg</span></td>\n<td class=\"C3\"><span></span></td>\n</tr>\n\n<tr>\n<td class=\"A4\"><span>Fenchel Extrakt (4:1) </span></td>\n<td class=\"B4\"><span>40mg</span></td>\n<td class=\"C4\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A5\"><span>Hericium Erinaceus Extrakt</span></td>\n<td class=\"B5\"><span>40mg</span></td>\n<td class=\"C5\"><span>Polysaccharide<br>Beta-Glucane<br></span></td>\n</tr>\n<tr>\n<td class=\"A6\"><span>Bromelain 600gdu/g</span></td>\n<td class=\"B6\"><span>40mg</span></td>\n<td class=\"C6\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A7\"><span>Papain 6000 USP-U/mg</span></td>\n<td class=\"B7\"><span>40mg</span></td>\n<td class=\"C7\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A8\"><span>Ingwer Extrakt (5% Gingerole; Zingiber Officinale; Wurzel)</span></td>\n<td class=\"B8\"><span>40mg</span></td>\n<td class=\"C8\"><span>Ingwerol</span></td>\n</tr>\n<tr>\n<td class=\"A9\"><span>Saccharomyces Boulardii 20B cfu/g</span></td>\n<td class=\"B9\"><span>20mg</span></td>\n<td class=\"C9\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A10\"><span><span style=\"font-weight: bold;\">Gesamtfüllmenge pro Kapsel</span></span></td>\n<td class=\"B10\"><span><span style=\"font-weight: bold;\">330mg</span></span></td>\n<td class=\"C10\"><span></span></td>\n</tr>\n</tbody></table>",
+        "richtext": "<p><strong>Inhalt: </strong>60 vegane Kapseln </p>"
+      }
+    },
+    "39e6e136-47cd-4b57-a317-0061216a3ee7": {
+      "type": "tabs",
+      "blocks": {
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0": {
+          "type": "tab",
+          "settings": {
+            "align_text": "left",
+            "title": "Anwendung & Inhalt",
+            "show_title": false,
+            "video_url": "",
+            "video_ratio": "16:9",
+            "video_controls": false,
+            "video_muted": true,
+            "video_autoplay": true,
+            "video_loop": true,
+            "content_order": "first_html",
+            "text": "<table><tbody>\n<tr>\n<th class=\"A1\" style=\"min-width: 220px;\">Bezeichnung</th>\n<th class=\"B1\"><span>Menge Tagesdosis (1 Kapsel)</span></th>\n<th class=\"C1\"><span>Wirkstoff</span></th>\n</tr>\n<tr>\n<td class=\"A2\"><span>Betaine HCL</span></td>\n<td class=\"B2\"><span>60mg</span></td>\n<td class=\"C2\"><span>Betain</span></td>\n</tr>\n<tr>\n<td class=\"A3\"><span>Enzymmischung mit Full Spectrum Protease: <i><br>Protease 1.000 HUT <br>Protease 3.0 25 SAPU <br>Cellulase blend 2000 CU <br>Beta Glucanase 4 BGU <br>Glucoamylase 1835 DU <br>Diastase 2500DP <br>Lactase 950 ALU <br>Lipase Blend 2385 FIP <br>Bromelain 100 GDU <br>Papain 1650 TU <br>Pectinase 50-ende PGU <br>Xylanase 600XU <br>Alpha Galactosidose 100 GALU <br>Peptidase 25DPPIV <br>Phytase 10FTU <br>Hemicellulase 1500 HCU</i></span></td>\n<td class=\"B3\"><span>50mg</span></td>\n<td class=\"C3\"><span></span></td>\n</tr>\n\n<tr>\n<td class=\"A4\"><span>Fenchel Extrakt (4:1) </span></td>\n<td class=\"B4\"><span>40mg</span></td>\n<td class=\"C4\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A5\"><span>Hericium Erinaceus Extrakt</span></td>\n<td class=\"B5\"><span>40mg</span></td>\n<td class=\"C5\"><span>Polysaccharide<br>Beta-Glucane<br></span></td>\n</tr>\n<tr>\n<td class=\"A6\"><span>Bromelain 600gdu/g</span></td>\n<td class=\"B6\"><span>40mg</span></td>\n<td class=\"C6\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A7\"><span>Papain 6000 USP-U/mg</span></td>\n<td class=\"B7\"><span>40mg</span></td>\n<td class=\"C7\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A8\"><span>Ingwer Extrakt (5% Gingerole; Zingiber Officinale; Wurzel)</span></td>\n<td class=\"B8\"><span>40mg</span></td>\n<td class=\"C8\"><span>Ingwerol</span></td>\n</tr>\n<tr>\n<td class=\"A9\"><span>Saccharomyces Boulardii 20B cfu/g</span></td>\n<td class=\"B9\"><span>20mg</span></td>\n<td class=\"C9\"><span></span></td>\n</tr>\n<tr>\n<td class=\"A10\"><span><span style=\"font-weight: bold;\">Gesamtfüllmenge pro Kapsel</span></span></td>\n<td class=\"B10\"><span><span style=\"font-weight: bold;\">330mg</span></span></td>\n<td class=\"C10\"><span></span></td>\n</tr>\n</tbody></table>",
+            "richtext": "<p><strong>Inhalt: </strong>60 vegane Kapseln </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1": {
+          "type": "tab",
+          "settings": {
+            "align_text": "center",
+            "title": "Zusatzinformationen",
+            "show_title": false,
+            "video_url": "",
+            "video_ratio": "16:9",
+            "video_controls": false,
+            "video_muted": true,
+            "video_autoplay": true,
+            "video_loop": true,
+            "content_order": "first_html",
+            "text": "<table><tbody>\n<tr>\n<th class=\"A1\"><span>Produktdetails</span></th>\n<th class=\"B1\"><span></span></th>\n</tr>\n<tr>\n<td class=\"A2\"><span>Verpackungsmaterial</span></td>\n<td class=\"B2\"><span>Glas + Umkarton</span></td>\n</tr>\n<tr>\n<td class=\"A3\"><span>Herkunft</span></td>\n<td class=\"B3\"><span>Deutschland</span></td>\n</tr>\n<tr>\n<td class=\"A4\"><span>Gewicht</span></td>\n<td class=\"B4\"><span>25,5 g</span></td>\n</tr>\n<tr>\n<td class=\"A5\"><span>Verzehrempfehlung</span></td>\n<td class=\"B5\"><span>Täglich 1 Kapsel vor dem Essen von schwerverdaulicher Kost (z.B. Rohkost, Gluten etc.) mit einem Glas Wasser einnehmen. </span></td>\n</tr>\n<tr>\n<td class=\"A6\"><span>Darreichungsform</span></td>\n<td class=\"B6\"><span>Kapseln</span></td>\n</tr>\n</tbody></table>",
+            "richtext": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0",
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 30px;}",
+        ".index-section {margin: 0;}",
+        "@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "active_tab_color": "",
+        "title": "",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "Fragen",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "f5bc1a0a-1322-4856-b5f7-733c6150fca5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1": {
+          "type": "text",
+          "settings": {
+            "color_text": "",
+            "enlarge_text": false,
+            "text_max_width": 920,
+            "text": "<p><strong>Pflichtangaben nach Lebensmittel-Informationsverordnung</strong><em><strong><br/></strong></em><strong><br/></strong>digest ist ein Nahrungsergänzungsmittel <br/>Die angegebene empfohlene tägliche Verzehrmenge darf nicht überschritten werden.<br/>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.<br/>Außerhalb der Reichweite von Kindern aufbewahren.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1"
+      ],
+      "settings": {
+        "color_background": "",
+        "align_text": "left",
+        "margin_top_px": 0,
+        "margin_top_px_mobile": 0,
+        "margin_bottom": 100,
+        "margin_bottom_mobile": 50,
+        "narrow_column": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e",
+    "8182e480-8e81-4685-916f-bf8e7fefd16d",
+    "e04acb62-841b-4728-aa43-1c0a33afefc1",
+    "35a7ffe8-c6c4-4764-8cb4-be77b45352b7",
+    "5a490565-f0fe-4a90-824f-e87a9b22d097",
+    "everydays-product-recommendations",
+    "everydays_product_info_APgVHU",
+    "8555e8d1-fb79-422d-b121-2e95738507bf",
+    "everydays_experts_kCzCtU",
+    "everydays_movement_FxqNgK",
+    "eae4f890-270c-4197-96a7-c6f24f385cca",
+    "3a1dc6a0-cc81-42bd-ac0c-cf3476136104",
+    "f4f29268-ec86-40d7-87ca-e6bd58491db6",
+    "1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac",
+    "17231284326093e953",
+    "everydays_divider_GjMCk9",
+    "custom_popup_GxFVMz",
+    "39e6e136-47cd-4b57-a317-0061216a3ee7",
+    "f5bc1a0a-1322-4856-b5f7-733c6150fca5"
+  ]
+}

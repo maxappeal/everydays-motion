@@ -1,1 +1,22 @@
-{"parent":"product.function-v3a.json","context":{"market":"de"},"sections":{"custom_popup_GxFVMz":{"settings":{"richtext":"<p>Die Einnahme von everydays function per Softgel-Kapseln ist praktisch – geruchsneutral und mundgerecht sowie ohne Fettflecken und ohne aufwendige Dosierung.<br\/><br\/><strong>Zutaten:<\/strong> DHA- und EPA-reiches Öl aus der Mikroalge Schizochytrium sp. (life ́s Omega), Überzugsmittel: Seagel®, Glycerol, Antioxidationsmittel: Rosmarinextrakt, stark tocopherolhaltige Extrakte und Ascorbylpalmitat<br\/><br\/>DHA = Docosahexaensäure<br\/>EPA = Eicosapentaensäure<br\/><br\/><strong>Inhalt: <\/strong>90 Kapseln (vegan, ketogen, allergenfrei)<\/p>"}},"39e6e136-47cd-4b57-a317-0061216a3ee7":{"blocks":{"template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0":{"settings":{"richtext":"<p>Die Einnahme von everydays function per Softgel-Kapseln ist praktisch – geruchsneutral und mundgerecht sowie ohne Fettflecken und ohne aufwendige Dosierung.<br\/><br\/><strong>Zutaten:<\/strong> DHA- und EPA-reiches Öl aus der Mikroalge Schizochytrium sp. (life ́s Omega), Überzugsmittel: Seagel®, Glycerol, Antioxidationsmittel: Rosmarinextrakt, stark tocopherolhaltige Extrakte und Ascorbylpalmitat<\/p><p>DHA = Docosahexaensäure<br\/>EPA = Eicosapentaensäure<br\/><br\/><strong>Inhalt: <\/strong>90 Kapseln (vegan, ketogen, allergenfrei)<\/p>"}}}}}}
+{
+  "parent": "product.function-v3a.json",
+  "context": {
+    "market": "de"
+  },
+  "sections": {
+    "custom_popup_GxFVMz": {
+      "settings": {
+        "richtext": "<p>Die Einnahme von everydays function per Softgel-Kapseln ist praktisch – geruchsneutral und mundgerecht sowie ohne Fettflecken und ohne aufwendige Dosierung.<br\/><br\/><strong>Zutaten:<\/strong> DHA- und EPA-reiches Öl aus der Mikroalge Schizochytrium sp. (life ́s Omega), Überzugsmittel: Seagel®, Glycerol, Antioxidationsmittel: Rosmarinextrakt, stark tocopherolhaltige Extrakte und Ascorbylpalmitat<br\/><br\/>DHA = Docosahexaensäure<br\/>EPA = Eicosapentaensäure<br\/><br\/><strong>Inhalt: <\/strong>90 Kapseln (vegan, ketogen, allergenfrei)<\/p>"
+      }
+    },
+    "39e6e136-47cd-4b57-a317-0061216a3ee7": {
+      "blocks": {
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-0": {
+          "settings": {
+            "richtext": "<p>Die Einnahme von everydays function per Softgel-Kapseln ist praktisch – geruchsneutral und mundgerecht sowie ohne Fettflecken und ohne aufwendige Dosierung.<br\/><br\/><strong>Zutaten:<\/strong> DHA- und EPA-reiches Öl aus der Mikroalge Schizochytrium sp. (life ́s Omega), Überzugsmittel: Seagel®, Glycerol, Antioxidationsmittel: Rosmarinextrakt, stark tocopherolhaltige Extrakte und Ascorbylpalmitat<\/p><p>DHA = Docosahexaensäure<br\/>EPA = Eicosapentaensäure<br\/><br\/><strong>Inhalt: <\/strong>90 Kapseln (vegan, ketogen, allergenfrei)<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

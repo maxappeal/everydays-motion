@@ -1,0 +1,36 @@
+{% if template == 'page.checkout' %}
+  <script>
+    let params = new URLSearchParams(document.location.search);
+    let discount = params.get("discount");
+    let id = params.get("id");
+    let qty = params.get("qty");
+    if(id && qty){
+
+      const div = document.createElement('div');
+      div.classList.add('page-loader');
+      document.body.style.position = 'relative';
+      document.body.insertAdjacentElement('afterbegin', div);
+
+      let utm = {};
+      if(params.get("utm_source")) utm['utm_source'] = params.get("utm_source");
+      if(params.get("utm_medium")) utm['utm_medium'] = params.get("utm_medium");
+      if(params.get("utm_campaign")) utm['utm_campaign'] = params.get("utm_campaign");
+      if(params.get("utm_content")) utm['utm_content'] = params.get("utm_content");
+      if(params.get("utm_term")) utm['utm_term'] = params.get("utm_term");
+
+
+
+      fetch('/cart/update.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ updates: {[id]: qty}, ...(Object.values(utm).length ? {attributes: utm} : {}) })
+      })
+        .then(response => response.json())
+        .then(data => {
+          window.location.replace(`/checkout?${discount ? `discount=${discount}` : ''}`)
+        });
+    }
+  </script>
+{% endif %}

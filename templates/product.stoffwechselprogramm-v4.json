@@ -1,1 +1,655 @@
-{"sections":{"main":{"type":"main-product","blocks":{"9c6046e8-06b5-49d6-ab57-98b72dcf8e90":{"type":"text","settings":{"text":"<h1>{{ product.metafields.custom.custom_title.value }}<\/h1><h4>{{ product.metafields.custom.short_description | metafield_tag }}<\/h4>","enlarge_text":false,"color_text":false}},"0991f51c-6688-4a99-9d28-d8386c0215ef":{"type":"trustpilot","settings":{"trustpilot_enable":true,"faq_link":"Häufig gestellte Fragen  🤔"}},"76d8b74e-0856-4a07-abee-4fdb878af890":{"type":"text","settings":{"text":"<ul><li>Effektive Methode für dein Gewichtsmanagement<\/li><li>Steigerung des Grundumsatzes durch Stoffwechselboost.<\/li><li>ohne strenge Diätregeln, perfekt für jeden Alltag.<\/li><li>2x lean, 2x smart im Wert von 139,80€<\/li><li>Email Coach und Begleit-PDF für 28 Tage <\/li><li>einfach anwendbar, keine strenge Diät nötig<\/li><\/ul>","enlarge_text":false,"color_text":false}},"custom_7ytR9R":{"type":"custom","settings":{"code":"<div class=\"color-text\">\n<p><a href=\"https:\/\/www.everydays.de\/community\/faq#Zufriedenheitsgarantie\" target=\"_blank\" title=\"https:\/\/www.everydays.de\/community\/faq#Zufriedenheitsgarantie\"><strong>everydays Garantie:<\/strong> Zufrieden oder Geld zurück.<br><\/a><strong><br>2x lean, 2x smart protein + PDF + Email Begleitung<\/strong>  <a href=\"#anwendung-inhalt\" title=\"Alle Inhaltsstoffe anzeigen\" open-modal=\"\">Alle Inhaltsstoffe anzeigen<\/a><\/p>\n<\/div>"}},"variant_picker":{"type":"variant_picker","settings":{"variant_labels":true,"picker_type":"button","product_dynamic_variants_enable":true,"color_swatches":false}},"price":{"type":"price","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"surface_pickup_enable":false}},"3f624c97-bd90-4cd5-8090-33084d338efc":{"type":"text","settings":{"text":"{{ product.metafields.custom.extra_content | metafield_tag }}","enlarge_text":false,"color_text":false}}},"block_order":["9c6046e8-06b5-49d6-ab57-98b72dcf8e90","0991f51c-6688-4a99-9d28-d8386c0215ef","76d8b74e-0856-4a07-abee-4fdb878af890","custom_7ytR9R","variant_picker","price","buy_buttons","3f624c97-bd90-4cd5-8090-33084d338efc"],"settings":{"show_title":false,"sku_enable":false,"image_size":"medium","product_zoom_enable":true,"thumbnail_position":"below","thumbnail_height":"fixed","thumbnail_arrows":false,"enable_video_looping":true,"indicator":"{{ product.metafields.custom.delivery_estimation | metafield_tag }}","product_video_style":"muted"}},"3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e":{"type":"text-and-video-v2","disabled":true,"custom_css":["h2 {max-width: 480px; margin: 0 auto; font-size: 47px;}",".product__video-wrapper,.vid-media {border-radius: 15px;}","@media (min-width: 769px) {.feature-row__first-video {transform: translate(20px, -55px); margin: 0 auto -55px; max-width: 700px; }}","@media (max-width: 1849px) {h2 {font-size: 45px; } .feature-row__first-video {max-width: 650px; }}","@media (max-width: 768px) {.feature-row__first-video {padding: 0 20px; transform: translate(0, -44px); margin-bottom: -44px; max-width: 100%; } h2 {font-size: 29px; }}"],"settings":{"color_text":"#ffffff","color_heading":"#ffffff","color_background_section":"#006d74","color_background":"","color_collapsible_border":"","image_full_width":false,"video_full_width":true,"video":"shopify:\/\/files\/videos\/smart protein_desktop.mp4","video_mobile":"shopify:\/\/files\/videos\/Smart protein_mobile.mp4","video_url":"","video_ratio":"16:9","video_controls":false,"video_muted":true,"video_autoplay":true,"video_loop":true,"title":"<h2 class=\"h2\">Die Essenz aus Protein. Deine tägliche Versorgung <br class=\"mobile-only\"><em>einfach wie nie.<\/em>\n<\/h2>","heading_position":"side","text":"","button_label":"","button_link":"","button_style":"primary","align_text":"center","video_width":"66","layout":"right","divider":false,"top_padding":true,"bottom_padding":false,"lazyload_videos":true}},"8182e480-8e81-4685-916f-bf8e7fefd16d":{"type":"space","disabled":true,"settings":{"background":"#006d74","height":20,"height_mobile":0}},"e04acb62-841b-4728-aa43-1c0a33afefc1":{"type":"text-columns-v2","blocks":{"template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_354.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_355.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_356.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"288227f4-5967-41b8-ac46-b7468532483f":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_357.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}},"8dc1627f-7a3d-4613-8507-0c98c7e550bc":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"shopify:\/\/shop_images\/Group_358.svg","image_mask":"none","image_width":140,"mobile_image_width":100,"text_max_width":650,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","popup_text":"","button_label":"","button_link":"","button_style":"primary"}}},"block_order":["template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1","template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2","template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3","288227f4-5967-41b8-ac46-b7468532483f","8dc1627f-7a3d-4613-8507-0c98c7e550bc"],"disabled":true,"custom_css":["@media (max-width: 768px) {.grid {margin-bottom: -50px; }}"],"settings":{"disabled_in_countries":"","remove_top_margin":true,"remove_bottom_margin":true,"small_grid":true,"color_text":"","color_heading":"","color_background":"#006d74","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"center","mobile_slider":false,"divider":false}},"35a7ffe8-c6c4-4764-8cb4-be77b45352b7":{"type":"space","disabled":true,"settings":{"background":"#006d74","height":20,"height_mobile":0}},"5a490565-f0fe-4a90-824f-e87a9b22d097":{"type":"transform-scale-carousel","blocks":{"template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_01_025456e9-75da-44d1-8312-4c33870cb0d7.jpg","description":"<h2>Dein Lifestyle. Dein Körper. <em>Dein Wohlbefinden.<\/em>\n<\/h2>\n<p>Stoffwechsel hochfahren, Fettverbrennung beschleunigen. Mit lean als Hauptwerkzeug und weiteren, einfachen Tipps im Alltag, kurbelst du deinen Stoffwechsel spürbar an und beschleunigst den Abbau von Fettpolstern. \n<\/p>","link":"","link_text":""}},"f38d6f34-002a-4f73-8b16-327443abcd1d":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_02_ed402ecc-23be-4f48-8930-98a099029022.jpg","description":"<h2>Erhöhe deinen täglichen, kalorischen Grundumsatz <em>kinderleicht.<\/em>\n<\/h2>\n<p>Die Inhaltsstoffe in lean sind darauf ausgelegt, deinen Stoffwechsel so sehr anzukurbeln, dass sich dein kalorischer Grundbedarf deutlich erhöht. Selbst wenn du nichts weiter ändern würdest, verbesserst du allein auf diese Weise deine Kalorienbilanz deutlich.\n<\/p>","link":"","link_text":""}},"adca5270-30a5-4cc0-af15-bc0126fb7c46":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_03_4ada965e-5faf-4ced-8c9c-8747fa5919d0.jpg","description":"<h2>Heißhunger und  <em>Essattacken verhindern.<\/em>\n<\/h2>\n<p>lean stabilisiert deinen Blutzucker, welcher normalerweise durch zu starke Schwankungen nach Mahlzeiten Heißhungerattacken auslöst. Mit smart protein führst du deinem Körper in eine kaloriensparende Proteinsättigung, was wiederum den Appetit spürbar minimiert.\n<\/p>","link":"","link_text":""}},"469d8f55-d836-4c7c-adc2-7df276b5759f":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_04_d95d4939-1640-45b1-a4c5-31d1edecbbfb.jpg","description":"<h2>Kalorische Proteinquellen austauschen.\n<\/h2>\n<p>Protein ist ohne Frage eines der wichtigsten Makronährstoffe für den Körper. Mit smart protein lieferst du deinem Körper Aminosäurekristalle in reiner Form, welche im Körper zu Protein umgewandelt werden. So sparst du ungewünschte Kalorien ein, schützt deine Muskeln und fühlst dich spürbar fitter.\n<\/p>","link":"","link_text":""}}},"block_order":["template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1","f38d6f34-002a-4f73-8b16-327443abcd1d","adca5270-30a5-4cc0-af15-bc0126fb7c46","469d8f55-d836-4c7c-adc2-7df276b5759f"],"custom_css":["h2 {font-size: 32px;}","@media (min-width: 769px) {h2 {margin-bottom: 42px; }}","@media (min-width: 1850px) {h2 {font-size: 38px; }}","@media (max-width: 768px) {h2 {font-size: 26px; }}"],"settings":{"style":"style1","background_color":"#ebecfe","main_background_color":"#ebecfe","color_text":"#353b7c","btns_style":"light","bg_size":50,"desktop_min_size":300,"small_desktop_min_size":300,"mobile_min_size":300}},"product-recommendations":{"type":"product-recommendations","settings":{"product_recommendations_heading":"Häufig zusammen gekauft","related_count":5,"products_per_row":5}},"product_info_Yh7qyA":{"type":"product-info","blocks":{"box_3NnREh":{"type":"box","settings":{"title":"Stark und langlebig","text":"<p>Wir garantieren höchste Effektivität und Qualität der freundlichen Bakterien für deinen Darm bis zum Ende des Mindesthaltbarkeitsdatums, durch Premium-Ballaststoffe in der Kapsel und einer doppelt abgesicherten Aktivitätsrate.<\/p>"}},"box_bNB38G":{"type":"box","settings":{"title":"Resilienter im Alltag","text":"<p>Vitamin B2 schützt vor oxidativem Stress im Alltag und trägt zur Verringerung von Müdigkeit bei. Vitamin B6 fördert die normale psychische Funktion sowie eine normale Funktion des Immunsystems.<\/p>"}},"box_ynLnBD":{"type":"box","settings":{"title":"Premium Qualität aus Deutschland - laborgeprüft","text":"<p>Die Premium-Bakterienstämme werden in Deutschland kultiviert und mikroskopischen Untersuchungen unterzogen, um höchste Reinheit zu gewährleisten.<\/p>"}},"box_VLaWYA":{"type":"box","settings":{"title":"Einfache Anwendung","text":"<p>Nimm daily biotic einfach 20 Minuten vor deinen Mahlzeiten ein. Wir empfehlen zwei Kapseln pro Tag mit mindestens zwei Stunden Abstand. Am besten vor dem Frühstück und dem Abendessen.<\/p>"}},"box_dQAPmR":{"type":"box","settings":{"title":"Magensaftresistente DRCaps® Hartkapseln","text":"<p>Für Wirkung, die ankommt: Die patentierten DR Caps® Hartkapseln öffnen sich erst dort, wo sie wirklich gebraucht werden: In deinem Darm.<\/p>"}},"box_Y773kG":{"type":"box","settings":{"title":"Unterstützt die Darmschleimhaut insbesondere bei Leaky Gut","text":"<p>Vitamin B3 trägt zur Erhaltung normaler Schleimhäute bei, wichtig bei Leaky Gut.<\/p>"}}},"block_order":["box_3NnREh","box_bNB38G","box_ynLnBD","box_VLaWYA","box_dQAPmR","box_Y773kG"],"settings":{"text_color":"#444444","headings_color":"#353b7c","counter_color":"#6985e9","background_color":"#f7f9ff","heading":"<h2>Nur drin, was es \u2028braucht - vor allem, \u2028was wirkt  🌱<\/h2>","image":"shopify:\/\/shop_images\/test_1.jpg","swipe_info":"Swipen & Inhalte erkunden 👉🏼","button_link":"#anwendung-inhalt","button":"Alle Inhaltsstoffe anzeigen"}},"8555e8d1-fb79-422d-b121-2e95738507bf":{"type":"faq","custom_css":["#product-faq {scroll-margin-top: 120px;}",".faq-plus-app-container {padding: 0;}",".section-heading {max-width: 640px; margin: 0 auto 100px;}","h2 {font-size: 30px; line-height: 2;}","h2 em {font-weight: 400;}",".text-in-box {color: #6985e9; margin-right: 10px;}",".faqPlusAppTitle {border-radius: 50px !important;}","@media (max-width: 767px) {.section-heading {margin-bottom: 50px; } h2 {font-size: 22px; line-height: 1.4; } .text-in-box {line-height: 2; color: #6985e9; margin: 0 auto 20px; }}"],"settings":{"layout":"column2","html":"<h2>\n<span class=\"text-in-box\">🤔 <em>Noch Fragen?<\/em><\/span> <br class=\"mobile-only\">Mehr Antworten bekommst du <em class=\"underline underline--style3\">hier<\/em>\n<\/h2>","faq_code":"<div class=\"ef-faqs-plus-app-cats-content\" data-category=\"Stoffwechselprogramm\" id=\"ef-faqs-64fc2211cb86af78002b6f77\"><\/div>","color_text":"","color_background":"","collapsible_trigger_color_text":"#353b7c","collapsible_trigger_color_background":"#f7f9ff","collapsible_trigger_color_border":"#ffffff","collapsible_content_color_text":"#6985e9","collapsible_content_color_background":"#ffffff","title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":""}},"expert_block_WeLWhC":{"type":"expert-block","custom_css":[".expert-block__bg .grid--small {margin-left: -20px; display: flex; flex-wrap: wrap; align-items: center;}"],"settings":{"text_color":"#ffffff","background_color":"#6985e9","expert_image":"shopify:\/\/shop_images\/Group_1039.png","heading":"<h3>Empfohlen von<br\/> Dr. Simone Koch<\/h3>","expert_label":"👩🏼‍⚕️<strong> Dr. Simone Koch<\/strong>, Medizinerin","text":"<h3>Du bist in <em>bester \u2028Gesellschaft<\/em>  👥<\/h3>","image":"shopify:\/\/shop_images\/team-1.png"}},"featured_trustpilot_qPRpj7":{"type":"featured-trustpilot","blocks":{"review_kLiD4E":{"type":"review","settings":{"icon":"👏🏼","heading":"Sonja","text":"<p>Ich nehme das Produkt seit einer Woche und spüre eine deutlich positive Veränderung. Ich werde es dauerhaft integrieren. Bestellvorgang war sehr angenehm. Alles top<\/p>"}},"review_kGn9Wp":{"type":"review","settings":{"icon":"😍","heading":"Headline","text":"<p>Mir hat das Produkt schon nach kurzer Einnahme-Zeit super geholfen, kann ich nur weiterempfehlen.<\/p>"}},"review_J6xeFJ":{"type":"review","settings":{"icon":"🧘🏽‍♀️","heading":"Headline","text":"<p>Mir hat das Produkt schon nach kurzer Einnahme-Zeit super geholfen, kann ich nur weiterempfehlen.<\/p>"}}},"block_order":["review_kLiD4E","review_kGn9Wp","review_J6xeFJ"],"settings":{}},"1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac":{"type":"trustpilot","settings":{"align_text":"center","divider":false,"title":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":""}},"39e6e136-47cd-4b57-a317-0061216a3ee7":{"type":"tabs","blocks":{"template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1":{"type":"tab","settings":{"align_text":"center","title":"Zusatzinformationen","show_title":false,"video_url":"","video_ratio":"16:9","video_controls":false,"video_muted":true,"video_autoplay":true,"video_loop":true,"content_order":"first_html","text":"","richtext":"","button_label":"","button_link":""}}},"block_order":["template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1"],"disabled":true,"custom_css":["h2 {font-size: 30px;}","@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"],"settings":{"active_tab_color":"","title":"","title2":"","title_underline":"","title_underline_style":"style1","title_circle":"","title_circle_style":"style1","title_thinner":"","title_thinner_italic":false,"title_color":"","text":"","align_text":"left","divider":true}},"f5bc1a0a-1322-4856-b5f7-733c6150fca5":{"type":"rich-text","blocks":{"template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1":{"type":"text","settings":{"color_text":"","enlarge_text":false,"text_max_width":920,"text":"<p><strong>Pflichtangaben nach Lebensmittel-Informationsverordnung<\/strong><em><strong><br\/><\/strong><\/em><strong><br\/><\/strong>lean und smart protein sind Nahrungsergänzungsmittel <br\/>Die angegebene empfohlene tägliche Verzehrmenge darf nicht überschritten werden.<br\/>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.<br\/>Außerhalb der Reichweite von Kindern aufbewahren.<\/p>"}}},"block_order":["template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1"],"settings":{"color_background":"","align_text":"left","margin_top_px":-100,"margin_top_px_mobile":-50,"margin_bottom":100,"margin_bottom_mobile":50,"narrow_column":false,"divider":false}},"custom_popup_GxFVMz":{"type":"custom-popup","custom_css":[],"settings":{"html_anchor":"anwendung-inhalt","label":"Open modal","show_label":false,"color_text":"#353b7c","color_background":"#f7f9ff","align_text":"left","content_order":"first_html","text":"","richtext":"<p><strong>Zutaten lean (pro 1 Kapsel):<\/strong> Bittermelone Extrakt, Berberitzen Extrakt, Kapselhülle: Hydroxypropylmethylcellulose, Zitronensaft Pulver, Grüner Tee Extrakt, Chili Cayenne Pepper Extrakt, Oliven Extrakt, Kaliumiodid, Natriumselenit, Chrompicolinat<br\/><br\/><strong>Zutaten smart protein (pro 1 Pressling)<\/strong>: L-Leucin 196,40mg, L-Valin 165,70mg, L-Isoleucin 148,30mg, L-Lysin 142,90mg, L-Phenylalanin 128,90mg, L-Threonin 111,10mg, L-Methionin 69,90mg, L-Tryptophan 36,8mg<br\/><br\/>Alle Aminosäuren in smart protein wurden durch ein Fermentationsverfahren aus Gemüse gewonnen und liegen in reiner, kristalliner Form vor.<\/p>"}}},"order":["main","3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e","8182e480-8e81-4685-916f-bf8e7fefd16d","e04acb62-841b-4728-aa43-1c0a33afefc1","35a7ffe8-c6c4-4764-8cb4-be77b45352b7","5a490565-f0fe-4a90-824f-e87a9b22d097","product-recommendations","product_info_Yh7qyA","8555e8d1-fb79-422d-b121-2e95738507bf","expert_block_WeLWhC","featured_trustpilot_qPRpj7","1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac","39e6e136-47cd-4b57-a317-0061216a3ee7","f5bc1a0a-1322-4856-b5f7-733c6150fca5","custom_popup_GxFVMz"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "9c6046e8-06b5-49d6-ab57-98b72dcf8e90": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>{{ product.metafields.custom.custom_title.value }}<\/h1><h4>{{ product.metafields.custom.short_description | metafield_tag }}<\/h4>",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "0991f51c-6688-4a99-9d28-d8386c0215ef": {
+          "type": "trustpilot",
+          "settings": {
+            "trustpilot_enable": true,
+            "faq_link": "Häufig gestellte Fragen  🤔"
+          }
+        },
+        "76d8b74e-0856-4a07-abee-4fdb878af890": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Effektive Methode für dein Gewichtsmanagement<\/li><li>Steigerung des Grundumsatzes durch Stoffwechselboost.<\/li><li>ohne strenge Diätregeln, perfekt für jeden Alltag.<\/li><li>2x lean, 2x smart im Wert von 139,80€<\/li><li>Email Coach und Begleit-PDF für 28 Tage <\/li><li>einfach anwendbar, keine strenge Diät nötig<\/li><\/ul>",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        },
+        "custom_7ytR9R": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"color-text\">\n<p><a href=\"https:\/\/www.everydays.de\/community\/faq#Zufriedenheitsgarantie\" target=\"_blank\" title=\"https:\/\/www.everydays.de\/community\/faq#Zufriedenheitsgarantie\"><strong>everydays Garantie:<\/strong> Zufrieden oder Geld zurück.<br><\/a><strong><br>2x lean, 2x smart protein + PDF + Email Begleitung<\/strong>  <a href=\"#anwendung-inhalt\" title=\"Alle Inhaltsstoffe anzeigen\" open-modal=\"\">Alle Inhaltsstoffe anzeigen<\/a><\/p>\n<\/div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "3f624c97-bd90-4cd5-8090-33084d338efc": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.extra_content | metafield_tag }}",
+            "enlarge_text": false,
+            "color_text": false
+          }
+        }
+      },
+      "block_order": [
+        "9c6046e8-06b5-49d6-ab57-98b72dcf8e90",
+        "0991f51c-6688-4a99-9d28-d8386c0215ef",
+        "76d8b74e-0856-4a07-abee-4fdb878af890",
+        "custom_7ytR9R",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "3f624c97-bd90-4cd5-8090-33084d338efc"
+      ],
+      "settings": {
+        "show_title": false,
+        "sku_enable": false,
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": false,
+        "enable_video_looping": true,
+        "indicator": "{{ product.metafields.custom.delivery_estimation | metafield_tag }}",
+        "product_video_style": "muted"
+      }
+    },
+    "3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e": {
+      "type": "text-and-video-v2",
+      "disabled": true,
+      "custom_css": [
+        "h2 {max-width: 480px; margin: 0 auto; font-size: 47px;}",
+        ".product__video-wrapper,.vid-media {border-radius: 15px;}",
+        "@media (min-width: 769px) {.feature-row__first-video {transform: translate(20px, -55px); margin: 0 auto -55px; max-width: 700px; }}",
+        "@media (max-width: 1849px) {h2 {font-size: 45px; } .feature-row__first-video {max-width: 650px; }}",
+        "@media (max-width: 768px) {.feature-row__first-video {padding: 0 20px; transform: translate(0, -44px); margin-bottom: -44px; max-width: 100%; } h2 {font-size: 29px; }}"
+      ],
+      "settings": {
+        "color_text": "#ffffff",
+        "color_heading": "#ffffff",
+        "color_background_section": "#006d74",
+        "color_background": "",
+        "color_collapsible_border": "",
+        "image_full_width": false,
+        "video_full_width": true,
+        "video": "shopify:\/\/files\/videos\/smart protein_desktop.mp4",
+        "video_mobile": "shopify:\/\/files\/videos\/Smart protein_mobile.mp4",
+        "video_url": "",
+        "video_ratio": "16:9",
+        "video_controls": false,
+        "video_muted": true,
+        "video_autoplay": true,
+        "video_loop": true,
+        "title": "<h2 class=\"h2\">Die Essenz aus Protein. Deine tägliche Versorgung <br class=\"mobile-only\"><em>einfach wie nie.<\/em>\n<\/h2>",
+        "heading_position": "side",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "video_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": false,
+        "lazyload_videos": true
+      }
+    },
+    "8182e480-8e81-4685-916f-bf8e7fefd16d": {
+      "type": "space",
+      "disabled": true,
+      "settings": {
+        "background": "#006d74",
+        "height": 20,
+        "height_mobile": 0
+      }
+    },
+    "e04acb62-841b-4728-aa43-1c0a33afefc1": {
+      "type": "text-columns-v2",
+      "blocks": {
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Group_354.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Group_355.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Group_356.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "288227f4-5967-41b8-ac46-b7468532483f": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Group_357.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "8dc1627f-7a3d-4613-8507-0c98c7e550bc": {
+          "type": "text_block",
+          "settings": {
+            "align_text": "left",
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Group_358.svg",
+            "image_mask": "none",
+            "image_width": 140,
+            "mobile_image_width": 100,
+            "text_max_width": 650,
+            "title": "",
+            "title_underline": "",
+            "title_underline_style": "style1",
+            "title_circle": "",
+            "title_circle_style": "style1",
+            "title_thinner": "",
+            "title_thinner_italic": false,
+            "title_color": "",
+            "text": "",
+            "popup_text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-1",
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-2",
+        "template--18177537868043__e04acb62-841b-4728-aa43-1c0a33afefc1-text_block-3",
+        "288227f4-5967-41b8-ac46-b7468532483f",
+        "8dc1627f-7a3d-4613-8507-0c98c7e550bc"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 768px) {.grid {margin-bottom: -50px; }}"
+      ],
+      "settings": {
+        "disabled_in_countries": "",
+        "remove_top_margin": true,
+        "remove_bottom_margin": true,
+        "small_grid": true,
+        "color_text": "",
+        "color_heading": "",
+        "color_background": "#006d74",
+        "title": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "center",
+        "mobile_slider": false,
+        "divider": false
+      }
+    },
+    "35a7ffe8-c6c4-4764-8cb4-be77b45352b7": {
+      "type": "space",
+      "disabled": true,
+      "settings": {
+        "background": "#006d74",
+        "height": 20,
+        "height_mobile": 0
+      }
+    },
+    "5a490565-f0fe-4a90-824f-e87a9b22d097": {
+      "type": "transform-scale-carousel",
+      "blocks": {
+        "template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_01_025456e9-75da-44d1-8312-4c33870cb0d7.jpg",
+            "description": "<h2>Dein Lifestyle. Dein Körper. <em>Dein Wohlbefinden.<\/em>\n<\/h2>\n<p>Stoffwechsel hochfahren, Fettverbrennung beschleunigen. Mit lean als Hauptwerkzeug und weiteren, einfachen Tipps im Alltag, kurbelst du deinen Stoffwechsel spürbar an und beschleunigst den Abbau von Fettpolstern. \n<\/p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "f38d6f34-002a-4f73-8b16-327443abcd1d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_02_ed402ecc-23be-4f48-8930-98a099029022.jpg",
+            "description": "<h2>Erhöhe deinen täglichen, kalorischen Grundumsatz <em>kinderleicht.<\/em>\n<\/h2>\n<p>Die Inhaltsstoffe in lean sind darauf ausgelegt, deinen Stoffwechsel so sehr anzukurbeln, dass sich dein kalorischer Grundbedarf deutlich erhöht. Selbst wenn du nichts weiter ändern würdest, verbesserst du allein auf diese Weise deine Kalorienbilanz deutlich.\n<\/p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "adca5270-30a5-4cc0-af15-bc0126fb7c46": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_03_4ada965e-5faf-4ced-8c9c-8747fa5919d0.jpg",
+            "description": "<h2>Heißhunger und  <em>Essattacken verhindern.<\/em>\n<\/h2>\n<p>lean stabilisiert deinen Blutzucker, welcher normalerweise durch zu starke Schwankungen nach Mahlzeiten Heißhungerattacken auslöst. Mit smart protein führst du deinem Körper in eine kaloriensparende Proteinsättigung, was wiederum den Appetit spürbar minimiert.\n<\/p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "469d8f55-d836-4c7c-adc2-7df276b5759f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lean-stoffwechselprogramm_sliderbox_04_d95d4939-1640-45b1-a4c5-31d1edecbbfb.jpg",
+            "description": "<h2>Kalorische Proteinquellen austauschen.\n<\/h2>\n<p>Protein ist ohne Frage eines der wichtigsten Makronährstoffe für den Körper. Mit smart protein lieferst du deinem Körper Aminosäurekristalle in reiner Form, welche im Körper zu Protein umgewandelt werden. So sparst du ungewünschte Kalorien ein, schützt deine Muskeln und fühlst dich spürbar fitter.\n<\/p>",
+            "link": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18177537868043__5a490565-f0fe-4a90-824f-e87a9b22d097-slide-1",
+        "f38d6f34-002a-4f73-8b16-327443abcd1d",
+        "adca5270-30a5-4cc0-af15-bc0126fb7c46",
+        "469d8f55-d836-4c7c-adc2-7df276b5759f"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        "@media (min-width: 769px) {h2 {margin-bottom: 42px; }}",
+        "@media (min-width: 1850px) {h2 {font-size: 38px; }}",
+        "@media (max-width: 768px) {h2 {font-size: 26px; }}"
+      ],
+      "settings": {
+        "style": "style1",
+        "background_color": "#ebecfe",
+        "main_background_color": "#ebecfe",
+        "color_text": "#353b7c",
+        "btns_style": "light",
+        "bg_size": 50,
+        "desktop_min_size": 300,
+        "small_desktop_min_size": 300,
+        "mobile_min_size": 300
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Häufig zusammen gekauft",
+        "related_count": 5,
+        "products_per_row": 5
+      }
+    },
+    "product_info_Yh7qyA": {
+      "type": "product-info",
+      "blocks": {
+        "box_3NnREh": {
+          "type": "box",
+          "settings": {
+            "title": "Stark und langlebig",
+            "text": "<p>Wir garantieren höchste Effektivität und Qualität der freundlichen Bakterien für deinen Darm bis zum Ende des Mindesthaltbarkeitsdatums, durch Premium-Ballaststoffe in der Kapsel und einer doppelt abgesicherten Aktivitätsrate.<\/p>"
+          }
+        },
+        "box_bNB38G": {
+          "type": "box",
+          "settings": {
+            "title": "Resilienter im Alltag",
+            "text": "<p>Vitamin B2 schützt vor oxidativem Stress im Alltag und trägt zur Verringerung von Müdigkeit bei. Vitamin B6 fördert die normale psychische Funktion sowie eine normale Funktion des Immunsystems.<\/p>"
+          }
+        },
+        "box_ynLnBD": {
+          "type": "box",
+          "settings": {
+            "title": "Premium Qualität aus Deutschland - laborgeprüft",
+            "text": "<p>Die Premium-Bakterienstämme werden in Deutschland kultiviert und mikroskopischen Untersuchungen unterzogen, um höchste Reinheit zu gewährleisten.<\/p>"
+          }
+        },
+        "box_VLaWYA": {
+          "type": "box",
+          "settings": {
+            "title": "Einfache Anwendung",
+            "text": "<p>Nimm daily biotic einfach 20 Minuten vor deinen Mahlzeiten ein. Wir empfehlen zwei Kapseln pro Tag mit mindestens zwei Stunden Abstand. Am besten vor dem Frühstück und dem Abendessen.<\/p>"
+          }
+        },
+        "box_dQAPmR": {
+          "type": "box",
+          "settings": {
+            "title": "Magensaftresistente DRCaps® Hartkapseln",
+            "text": "<p>Für Wirkung, die ankommt: Die patentierten DR Caps® Hartkapseln öffnen sich erst dort, wo sie wirklich gebraucht werden: In deinem Darm.<\/p>"
+          }
+        },
+        "box_Y773kG": {
+          "type": "box",
+          "settings": {
+            "title": "Unterstützt die Darmschleimhaut insbesondere bei Leaky Gut",
+            "text": "<p>Vitamin B3 trägt zur Erhaltung normaler Schleimhäute bei, wichtig bei Leaky Gut.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "box_3NnREh",
+        "box_bNB38G",
+        "box_ynLnBD",
+        "box_VLaWYA",
+        "box_dQAPmR",
+        "box_Y773kG"
+      ],
+      "settings": {
+        "text_color": "#444444",
+        "headings_color": "#353b7c",
+        "counter_color": "#6985e9",
+        "background_color": "#f7f9ff",
+        "heading": "<h2>Nur drin, was es \u2028braucht - vor allem, \u2028was wirkt  🌱<\/h2>",
+        "image": "shopify:\/\/shop_images\/test_1.jpg",
+        "swipe_info": "Swipen & Inhalte erkunden 👉🏼",
+        "button_link": "#anwendung-inhalt",
+        "button": "Alle Inhaltsstoffe anzeigen"
+      }
+    },
+    "8555e8d1-fb79-422d-b121-2e95738507bf": {
+      "type": "faq",
+      "custom_css": [
+        "#product-faq {scroll-margin-top: 120px;}",
+        ".faq-plus-app-container {padding: 0;}",
+        ".section-heading {max-width: 640px; margin: 0 auto 100px;}",
+        "h2 {font-size: 30px; line-height: 2;}",
+        "h2 em {font-weight: 400;}",
+        ".text-in-box {color: #6985e9; margin-right: 10px;}",
+        ".faqPlusAppTitle {border-radius: 50px !important;}",
+        "@media (max-width: 767px) {.section-heading {margin-bottom: 50px; } h2 {font-size: 22px; line-height: 1.4; } .text-in-box {line-height: 2; color: #6985e9; margin: 0 auto 20px; }}"
+      ],
+      "settings": {
+        "layout": "column2",
+        "html": "<h2>\n<span class=\"text-in-box\">🤔 <em>Noch Fragen?<\/em><\/span> <br class=\"mobile-only\">Mehr Antworten bekommst du <em class=\"underline underline--style3\">hier<\/em>\n<\/h2>",
+        "faq_code": "<div class=\"ef-faqs-plus-app-cats-content\" data-category=\"Stoffwechselprogramm\" id=\"ef-faqs-64fc2211cb86af78002b6f77\"><\/div>",
+        "color_text": "",
+        "color_background": "",
+        "collapsible_trigger_color_text": "#353b7c",
+        "collapsible_trigger_color_background": "#f7f9ff",
+        "collapsible_trigger_color_border": "#ffffff",
+        "collapsible_content_color_text": "#6985e9",
+        "collapsible_content_color_background": "#ffffff",
+        "title": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": ""
+      }
+    },
+    "expert_block_WeLWhC": {
+      "type": "expert-block",
+      "custom_css": [
+        ".expert-block__bg .grid--small {margin-left: -20px; display: flex; flex-wrap: wrap; align-items: center;}"
+      ],
+      "settings": {
+        "text_color": "#ffffff",
+        "background_color": "#6985e9",
+        "expert_image": "shopify:\/\/shop_images\/Group_1039.png",
+        "heading": "<h3>Empfohlen von<br\/> Dr. Simone Koch<\/h3>",
+        "expert_label": "👩🏼‍⚕️<strong> Dr. Simone Koch<\/strong>, Medizinerin",
+        "text": "<h3>Du bist in <em>bester \u2028Gesellschaft<\/em>  👥<\/h3>",
+        "image": "shopify:\/\/shop_images\/team-1.png"
+      }
+    },
+    "featured_trustpilot_qPRpj7": {
+      "type": "featured-trustpilot",
+      "blocks": {
+        "review_kLiD4E": {
+          "type": "review",
+          "settings": {
+            "icon": "👏🏼",
+            "heading": "Sonja",
+            "text": "<p>Ich nehme das Produkt seit einer Woche und spüre eine deutlich positive Veränderung. Ich werde es dauerhaft integrieren. Bestellvorgang war sehr angenehm. Alles top<\/p>"
+          }
+        },
+        "review_kGn9Wp": {
+          "type": "review",
+          "settings": {
+            "icon": "😍",
+            "heading": "Headline",
+            "text": "<p>Mir hat das Produkt schon nach kurzer Einnahme-Zeit super geholfen, kann ich nur weiterempfehlen.<\/p>"
+          }
+        },
+        "review_J6xeFJ": {
+          "type": "review",
+          "settings": {
+            "icon": "🧘🏽‍♀️",
+            "heading": "Headline",
+            "text": "<p>Mir hat das Produkt schon nach kurzer Einnahme-Zeit super geholfen, kann ich nur weiterempfehlen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_kLiD4E",
+        "review_kGn9Wp",
+        "review_J6xeFJ"
+      ],
+      "settings": {
+      }
+    },
+    "1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac": {
+      "type": "trustpilot",
+      "settings": {
+        "align_text": "center",
+        "divider": false,
+        "title": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": ""
+      }
+    },
+    "39e6e136-47cd-4b57-a317-0061216a3ee7": {
+      "type": "tabs",
+      "blocks": {
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1": {
+          "type": "tab",
+          "settings": {
+            "align_text": "center",
+            "title": "Zusatzinformationen",
+            "show_title": false,
+            "video_url": "",
+            "video_ratio": "16:9",
+            "video_controls": false,
+            "video_muted": true,
+            "video_autoplay": true,
+            "video_loop": true,
+            "content_order": "first_html",
+            "text": "",
+            "richtext": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17954738733323__39e6e136-47cd-4b57-a317-0061216a3ee7-16873351870bc8ae8d-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 768px) {h2 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "active_tab_color": "",
+        "title": "",
+        "title2": "",
+        "title_underline": "",
+        "title_underline_style": "style1",
+        "title_circle": "",
+        "title_circle_style": "style1",
+        "title_thinner": "",
+        "title_thinner_italic": false,
+        "title_color": "",
+        "text": "",
+        "align_text": "left",
+        "divider": true
+      }
+    },
+    "f5bc1a0a-1322-4856-b5f7-733c6150fca5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1": {
+          "type": "text",
+          "settings": {
+            "color_text": "",
+            "enlarge_text": false,
+            "text_max_width": 920,
+            "text": "<p><strong>Pflichtangaben nach Lebensmittel-Informationsverordnung<\/strong><em><strong><br\/><\/strong><\/em><strong><br\/><\/strong>lean und smart protein sind Nahrungsergänzungsmittel <br\/>Die angegebene empfohlene tägliche Verzehrmenge darf nicht überschritten werden.<br\/>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.<br\/>Außerhalb der Reichweite von Kindern aufbewahren.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17954738733323__f5bc1a0a-1322-4856-b5f7-733c6150fca5-168733173163671428-1"
+      ],
+      "settings": {
+        "color_background": "",
+        "align_text": "left",
+        "margin_top_px": -100,
+        "margin_top_px_mobile": -50,
+        "margin_bottom": 100,
+        "margin_bottom_mobile": 50,
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "custom_popup_GxFVMz": {
+      "type": "custom-popup",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "html_anchor": "anwendung-inhalt",
+        "label": "Open modal",
+        "show_label": false,
+        "color_text": "#353b7c",
+        "color_background": "#f7f9ff",
+        "align_text": "left",
+        "content_order": "first_html",
+        "text": "",
+        "richtext": "<p><strong>Zutaten lean (pro 1 Kapsel):<\/strong> Bittermelone Extrakt, Berberitzen Extrakt, Kapselhülle: Hydroxypropylmethylcellulose, Zitronensaft Pulver, Grüner Tee Extrakt, Chili Cayenne Pepper Extrakt, Oliven Extrakt, Kaliumiodid, Natriumselenit, Chrompicolinat<br\/><br\/><strong>Zutaten smart protein (pro 1 Pressling)<\/strong>: L-Leucin 196,40mg, L-Valin 165,70mg, L-Isoleucin 148,30mg, L-Lysin 142,90mg, L-Phenylalanin 128,90mg, L-Threonin 111,10mg, L-Methionin 69,90mg, L-Tryptophan 36,8mg<br\/><br\/>Alle Aminosäuren in smart protein wurden durch ein Fermentationsverfahren aus Gemüse gewonnen und liegen in reiner, kristalliner Form vor.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3a5b18de-1a56-4e7c-81a5-a1b9bfeb1a0e",
+    "8182e480-8e81-4685-916f-bf8e7fefd16d",
+    "e04acb62-841b-4728-aa43-1c0a33afefc1",
+    "35a7ffe8-c6c4-4764-8cb4-be77b45352b7",
+    "5a490565-f0fe-4a90-824f-e87a9b22d097",
+    "product-recommendations",
+    "product_info_Yh7qyA",
+    "8555e8d1-fb79-422d-b121-2e95738507bf",
+    "expert_block_WeLWhC",
+    "featured_trustpilot_qPRpj7",
+    "1c99948f-4a4b-4481-9d5b-0bc8d1aaf2ac",
+    "39e6e136-47cd-4b57-a317-0061216a3ee7",
+    "f5bc1a0a-1322-4856-b5f7-733c6150fca5",
+    "custom_popup_GxFVMz"
+  ]
+}

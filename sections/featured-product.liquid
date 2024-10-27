@@ -22,6 +22,7 @@
 {% if section.settings.divider %}<div class="section--divider">{% endif %}
 
 <div id="ProductSection-{{ section.id }}"
+  class="product-section product-section--v3 product-section--v3a"
   data-section-id="{{ section.id }}"
   data-section-type="product"
   {% if settings.product_zoom_enable %}
@@ -52,7 +53,7 @@
       </div>
 
       <div class="grid__item medium-up--one-half">
-        <div class="product-single__meta">
+        <div class="product-single__meta product-single__meta--v3">
           {% unless product.empty? %}
             {%- assign compare_at_price = current_variant.compare_at_price -%}
             {%- assign price = current_variant.price -%}
@@ -230,6 +231,38 @@
   </div>
 
 </div>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    fetch('/products/smart-protein?variant=32114388729923&section_id=template--19908101865739__main')
+    .then((response) => response.text())
+    .then((responseText) => {
+      const html = new DOMParser().parseFromString(responseText, 'text/html');
+      const sourceContent = html.querySelector('.product-single__meta');
+      const targetContent = document.querySelector('.product-single__meta');
+      targetContent.innerHTML = sourceContent.innerHTML;
+      ratingSnippet("ruk_rating_snippet",{
+        store: "www.everydays.de",
+        mode: "default",
+        color: "#009C75",
+        linebreak: true,
+        lang: "{{ shop.locale }}",
+        text: "{{ 'everydays.reviews' | t }}",
+        singularText: "{{ 'everydays.review' | t }}",
+        usePolaris: true,
+        showEmptyStars: false,
+      });
+    });
+  });
+</script>
+
+<style>
+  .product-block:has(#calculator-ankerlink),
+  .product-block--price + .product-block,
+  .meta-custom-tags {
+    display: none;
+  }
+</style>
 
 {% if section.settings.divider %}</div>{% endif %}
 
