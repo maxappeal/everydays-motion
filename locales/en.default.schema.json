@@ -4370,22 +4370,22 @@
       "reviews_io": {
         "product_reviews_widget": {
           "name": "everydays reviews.io product reviews widget"
-        },
-        "product-recommendations": {
-          "name": "everydays Related products"
-        },
-        "product-info": {
-          "name": "everydays Product info"
-        },
-        "faq": {
-          "name": "everydays FAQ"
-        },
-        "experts": {
-          "name": "everydays Experts"
-        },
-        "movement": {
-          "name": "everydays Movement"
         }
+      },
+      "product-recommendations": {
+        "name": "everydays Related products"
+      },
+      "product-info": {
+        "name": "everydays Product info"
+      },
+      "faq": {
+        "name": "everydays FAQ"
+      },
+      "experts": {
+        "name": "everydays Experts"
+      },
+      "movement": {
+        "name": "everydays Movement"
       }
     }
   }
