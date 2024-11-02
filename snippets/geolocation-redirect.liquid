@@ -38,7 +38,8 @@
             });
         }
       } else {
-          if (sessionStorage.getItem('footer_lang_click') && sessionStorage.getItem('redirect') === false) {
+          let redirect = sessionStorage.getItem('redirect');
+          if (sessionStorage.getItem('footer_lang_click') && redirect === false) {
               console.log('yay');
               sessionStorage.setItem('redirect', true);
               this.input.value = sessionStorage.getItem('footer_lang_click');
@@ -46,7 +47,6 @@
 
           } else {
               this.localization = this.browserLanguage;
-              let redirect = sessionStorage.getItem('redirect');
               if (redirect == 'true') {
                   this.redirect();
               }
