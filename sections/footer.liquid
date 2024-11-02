@@ -18,6 +18,21 @@
 
 <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer">
 
+  <div id="LanguageSwitch">
+    <div>DE</div>
+    <div>FR</div>
+    <div>IT</div>
+  </div>
+  <script>
+      const languages = document.querySelectorAll('#LanguageSwitch div');
+      languages.forEach((language) => {
+        language.addEventListener('click', ()=> {
+            sessionStorage.setItem('footer_lang_click', language.innerHTML);
+            new Geolocation();
+        });
+      });
+      document.querySelector('[data-geolocation-redirect]')
+  </script>
    {% comment %} Trustpilot Hide PDP start {% endcomment %}
 <script>
 // Funktion zum Ausblenden von 1- und 2-Sterne-Bewertungen
@@ -167,7 +182,7 @@ filterTestimonials();
           <ul class="inline-list payment-icons site-footer__bottom-block{% unless section.settings.colorize_payment_icons %} payment-icons--greyscale{% endunless %} text-center">
             {%- for type in shop.enabled_payment_types -%}
               <li class="icon--payment">
-                {{ type | payment_type_svg_tag 
+                {{ type | payment_type_svg_tag
                   | replace: '<title id="pi-american_express">American Express</title>', ''
                   | replace: '<title id="pi-apple_pay">Apple Pay</title>', ''
                   | replace: '<title id="pi-google_pay">Google Pay</title>', ''

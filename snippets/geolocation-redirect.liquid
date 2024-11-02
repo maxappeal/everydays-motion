@@ -15,7 +15,6 @@
       this.redirectProp = sessionStorage.getItem('redirect');
 
       if (!this.redirectProp) {
-        console.log(this.redirectProp);
         if (this.searchParams.has('no_redirect')) {
           sessionStorage.setItem('redirect', false);
         } else {
@@ -39,11 +38,20 @@
             });
         }
       } else {
-        this.localization = this.browserLanguage;
-        let redirect = sessionStorage.getItem('redirect');
-        if (redirect == 'true') {
-          this.redirect();
-        }
+          if (sessionStorage.getItem('footer_lang_click')) {
+              console.log('yay');
+              sessionStorage.setItem('redirect', false);
+              this.input.value = sessionStorage.getItem('footer_lang_click');
+              this.form.submit();
+
+          } else {
+              this.localization = this.browserLanguage;
+              let redirect = sessionStorage.getItem('redirect');
+              if (redirect == 'true') {
+                  this.redirect();
+              }
+          }
+
       }
     }
 
