@@ -39,12 +39,13 @@
         }
       } else {
           let redirect = sessionStorage.getItem('redirect');
-          if (sessionStorage.getItem('footer_lang_click') && redirect === 'false') {
-              console.log('yay');
-              sessionStorage.setItem('redirect', true);
-              this.input.value = sessionStorage.getItem('footer_lang_click');
-              this.form.submit();
-
+          if (sessionStorage.getItem('footer_lang_click')) {
+              if (redirect === 'false') {
+                  console.log('yay');
+                  sessionStorage.setItem('redirect', true);
+                  this.input.value = sessionStorage.getItem('footer_lang_click');
+                  this.form.submit();
+              }
           } else {
               this.localization = this.browserLanguage;
               if (redirect == 'true') {
