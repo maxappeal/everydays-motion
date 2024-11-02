@@ -28,6 +28,7 @@
       languages.forEach((language) => {
         language.addEventListener('click', ()=> {
             sessionStorage.setItem('footer_lang_click', language.innerHTML);
+            sessionStorage.setItem('redirect', false);
             new Geolocation();
         });
       });
