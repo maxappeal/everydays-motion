@@ -39,7 +39,7 @@
         }
       } else {
           let redirect = sessionStorage.getItem('redirect');
-          if (sessionStorage.getItem('footer_lang_click') && redirect === false) {
+          if (sessionStorage.getItem('footer_lang_click') && redirect === 'false') {
               console.log('yay');
               sessionStorage.setItem('redirect', true);
               this.input.value = sessionStorage.getItem('footer_lang_click');
