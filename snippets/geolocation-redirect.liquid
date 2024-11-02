@@ -38,7 +38,7 @@
             });
         }
       } else {
-          if (sessionStorage.getItem('footer_lang_click') ( sessionStorage.get('redirect') === false)) {
+          if (sessionStorage.getItem('footer_lang_click') && sessionStorage.get('redirect') === false) {
               console.log('yay');
               sessionStorage.setItem('redirect', true);
               this.input.value = sessionStorage.getItem('footer_lang_click');
