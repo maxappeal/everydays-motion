@@ -18,18 +18,26 @@
       if(params.get("utm_content")) utm['utm_content'] = params.get("utm_content");
       if(params.get("utm_term")) utm['utm_term'] = params.get("utm_term");
 
-
-
-      fetch('/cart/update.js', {
+      fetch('/cart/clear.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ updates: {[id]: qty}, ...(Object.values(utm).length ? {attributes: utm} : {}) })
       })
         .then(response => response.json())
-        .then(data => {
-          window.location.replace(`/checkout?${discount ? `discount=${discount}` : ''}`)
+        .then(() => {
+          fetch('/cart/update.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ updates: {[id]: qty}, ...(Object.values(utm).length ? {attributes: utm} : {}) })
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log('MY CART', data);
+              window.location.href = `/checkout?${discount ? `discount=${discount}` : ''}`
+            });
         });
     }
   </script>
